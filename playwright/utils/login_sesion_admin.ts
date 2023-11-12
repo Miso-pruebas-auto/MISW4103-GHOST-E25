@@ -1,4 +1,4 @@
-import { Page } from '@playwright/test';
+import { Page } from 'playwright';
 
 export async function loginSesionAdmin(page: Page): Promise<void> {
   await page.goto('http://localhost:3001/ghost/#/dashboard');
