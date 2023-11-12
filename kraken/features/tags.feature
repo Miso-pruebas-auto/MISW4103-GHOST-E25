@@ -80,6 +80,7 @@ Feature: Tags
     Then I should see the title containing "New tag"
     And I wait for 1 seconds
     And I navigate to tags list page
+    And I wait for 2 seconds
     Then I should see the title "Tags"
 
 

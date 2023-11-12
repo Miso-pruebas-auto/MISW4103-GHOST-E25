@@ -59,10 +59,6 @@ Then('I should see input with name {string}', async function (name) {
   return await this.driver.$(`input[name="${name}"]`);
 });
 
-Then('I should see input with name {string}', async function (name) {
-  return await this.driver.$(`input[name="${name}"]`);
-});
-
 Then('I should see textarea with name {string}', async function (name) {
   return await this.driver.$(`textarea[name="${name}"]`);
 });
