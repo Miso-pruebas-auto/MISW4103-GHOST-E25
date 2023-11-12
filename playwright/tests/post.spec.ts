@@ -13,7 +13,7 @@ test.describe('Posts creación', () => {
   });
 
   test('Crear un nuevo post con solo título y descripción', async ({ page }) => {
-    const titulo_post = 'Titulo de prueba';
+    const titulo_post = 'Titulo1';
     const contenido = 'Contenido de prueba';
     
     // When: El usuario hace clic en "New post"
@@ -87,41 +87,30 @@ test.describe('Posts creación', () => {
       description: 'Espera un segundo',
     });
     await page.waitForTimeout(1000);
-    const dato = `${titulo_post} ${contenido} •andes`
     
-    // And: Hace clic en el enlace del post creado
+    // And: el usuario se dirige al post creado
     test.info().annotations.push({
       type: 'And',
-      description: 'Hace clic en el enlace del post creado',
+      description: 'el usuario se dirige al post creado',
     });
-    const page1Promise = page.waitForEvent('popup');
-    await page.getByRole('link', { name: dato }).click();
-
-    // And: Hace clic en el título del post
-    test.info().annotations.push({
-      type: 'And',
-      description: 'Hace clic en el título del post',
-    });
-    const page1 = await page1Promise;
-    await page1.locator('h1').click();
-    await page1.locator('h1').click(); 
+    await page.goto(`./${titulo_post}/`);
     
     // Then: Se verifica que el Post con título y contenido se a creado correctamente
     test.info().annotations.push({
       type: 'Then',
       description: 'Se verifica que el Post con título y contenido se a creado correctamente',
     });
+    const title_post_create = await page.locator('h1').innerText();
+    const content_post_create = await page.locator('main').innerText();
 
-    expect(await page1.locator('h1').innerText()).toBe(titulo_post); 
-    const mainElement = await page1.locator('main');
-    const contenidoActual = await mainElement.innerText();
-    expect(contenidoActual).toMatch(contenido); 
+    expect(title_post_create).toBe(titulo_post); 
+    expect(content_post_create).toMatch(contenido); 
   
   });
 
   test('Crear un nuevo post con solo título', async ({ page }) => {
     // When: El usuario hace clic en "New post"
-    const titulo_post = 'Titulo de prueba 2';
+    const titulo_post = 'titulo2';
     
     test.info().annotations.push({
       type: 'When',
@@ -188,28 +177,28 @@ test.describe('Posts creación', () => {
     });
     await page.waitForTimeout(1000);
            
-    // And: Hace clic en el enlace del post creado
+    // And: el usuario se dirige al post creado
     test.info().annotations.push({
       type: 'And',
-      description: 'Hace clic en el enlace del post creado',
+      description: 'el usuario se dirige al post creado',
     });
-    const dato = `${titulo_post} •andes`
-    const page1Promise = page.waitForEvent('popup');
-    await page.getByRole('link', { name: dato }).click();
-    const page1 = await page1Promise;
-       
+    await page.goto(`./${titulo_post}/`);
+    
     // Then: Se verifica que el Post con título se a creado correctamente
     test.info().annotations.push({
       type: 'Then',
       description: 'Se verifica que el Post con título se a creado correctamente',
     });
-    expect(await page1.locator('h1').innerText()).toBe(titulo_post); 
+
+    const title_post_create = await page.locator('h1').innerText();
+    expect(title_post_create).toBe(titulo_post); 
+
   
   });
   
   test('Crear un nuevo post con titulo y descripción y tag', async ({ page }) => {
     // When: El usuario hace clic en "New post"
-    const titulo_post = 'Titulo de prueba';
+    const titulo_post = 'Titulo3';
     const contenido = 'Contenido de prueba';
     
     test.info().annotations.push({
@@ -299,41 +288,32 @@ test.describe('Posts creación', () => {
     });
     await page.waitForTimeout(1000);
     
-    // And: Hace clic en el enlace del post creado
+    // And: el usuario se dirige al post creado
     test.info().annotations.push({
       type: 'And',
       description: 'Hace clic en el enlace del post creado',
     });
-    const dato = `${titulo_post} ${contenido} •andes`
-    const page1Promise = page.waitForEvent('popup');
-    await page.getByRole('link', { name: dato }).click();
-    
-    // And: Hace clic en el título del post
-    test.info().annotations.push({
-      type: 'And',
-      description: 'Hace dos clics en el título del post',
-    });
-    const page1 = await page1Promise;
-    await page1.locator('h1').click();
-    await page1.locator('h1').click(); 
-    
+    await page.goto(`./${titulo_post}/`);
+       
     // Then: Se verifica que el Post con título, contenido y tag se a creado correctamente
     test.info().annotations.push({
       type: 'Then',
       description: 'Se verifica que el Post con título, contenido y tag se a creado correctamente',
     });
-    expect(await page1.locator('h1').innerText()).toBe(titulo_post); 
-    const mainElement = await page1.locator('main');
-    const contenidoActual = await mainElement.innerText();
-    expect(contenidoActual).toMatch(contenido); 
-    const value = await page1.getByRole('link', { name: 'News' }).innerText();
-    expect(value).toBe('NEWS');
+
+    const title_post_create = await page.locator('h1').innerText();
+    const content_post_create = await page.locator('main').innerText();
+    const tag_post_create = await page.getByRole('link', { name: 'News' }).innerText();
+
+    expect(title_post_create).toBe(titulo_post); 
+    expect(content_post_create).toMatch(contenido);
+    expect(tag_post_create).toBe('NEWS');
 
   });
   
   test('Validar si deja crear un post sin Autor', async ({ page }) => {
     // When: El usuario hace clic en "New post"
-    const titulo_post = 'Titulo de prueba';
+    const titulo_post = 'titulo4';
     const contenido = 'Contenido de prueba';
     
     test.info().annotations.push({
