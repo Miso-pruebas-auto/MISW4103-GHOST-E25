@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { loginSessionAdmin } from '../utils/login_sesion_admin';
+import { faker } from '@faker-js/faker';
 
 test.describe('Tags creación', () => {
 
@@ -11,7 +12,7 @@ test.describe('Tags creación', () => {
   });
 
   test('Creación de tag con título y color', async ({ page }) => {
-    const name_tag = 'Nuevo tag test';
+    const name_tag = faker.word.noun();
     const color_tag = '555555';
     await test.step('When: El usuario hace clic en "Tags"', async () => {
         await page.getByRole('link', { name: 'Tags' }).click();

@@ -17,6 +17,13 @@ test.describe('Posts creación', () => {
     const titulo_post = faker.word.noun();
     const contenido =`Contenido de ${titulo_post}`;
     
+    // Espera dos segundos
+    test.info().annotations.push({
+      type: 'And',
+      description: 'Espera dos segundo',
+    });
+    await page.waitForTimeout(2000); 
+
     // When: El usuario hace clic en "New post"
     test.info().annotations.push({
       type: 'When',
@@ -117,6 +124,14 @@ test.describe('Posts creación', () => {
       type: 'When',
       description: 'El usuario hace clic en "New post"',
     });
+
+    // Espera un segundo
+    test.info().annotations.push({
+      type: 'And',
+      description: 'Espera un segundo',
+    });
+    await page.waitForTimeout(1000); 
+
     await page.getByRole('link', { name: 'New post' }).click(); 
     
     
