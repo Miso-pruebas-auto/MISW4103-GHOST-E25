@@ -1,8 +1,8 @@
-FROM node:latest
+FROM mcr.microsoft.com/playwright:v1.39.0-jammy
 
 # Add playwright test source
-COPY . .
+COPY ./playwright/ .
 
 # Run tests
 ENTRYPOINT ["/bin/sh"]
-CMD ["/playwright/entrypoint.sh"]
+CMD ["entrypoint.sh"]
