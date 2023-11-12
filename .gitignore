@@ -4,3 +4,4 @@ kraken/reports/*
 playwright/node_modules
 
 .env
+playwright/.env

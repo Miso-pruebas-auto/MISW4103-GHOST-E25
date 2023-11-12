@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { loginSessionAdmin } from '../utils/login_sesion_admin';
 import { faker } from '@faker-js/faker';
 
-test.describe('Posts creación', () => {
+test.describe('posts', () => {
 
   test.beforeEach(async ({ page }) => {    
     // Given: El usuario ha iniciado sesión

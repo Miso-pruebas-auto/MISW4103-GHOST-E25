@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { loginSessionAdmin } from '../utils/login_sesion_admin';
 
-test.describe('Tags creación', () => {
+test.describe('tags', () => {
 
   test.beforeEach(async ({ page }) => {      
     await test.step('Given: El usuario ha iniciado sesión', async () => {
