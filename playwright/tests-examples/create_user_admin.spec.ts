@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
 test('Creación de usuario admin', async ({ page }) => {
-  await page.goto('http://localhost:3001/ghost/');
-  await page.goto('http://localhost:3001/ghost/#/setup');
+  await page.goto('http://ghost:2368/ghost/');
+  await page.goto('http://ghost:2368/ghost/#/setup');
   await page.getByPlaceholder('The Daily Awesome').click();
   await page.getByPlaceholder('The Daily Awesome').fill('grupo 25');
   await page.getByPlaceholder('The Daily Awesome').press('Tab');

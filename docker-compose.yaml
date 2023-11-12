@@ -5,27 +5,40 @@ services:
     image: ghost:4-alpine
     restart: always
     ports:
-      - 3001:2368
+      - 2368:2368
     environment:
       database__client: mysql
       database__connection__host: db
       database__connection__user: root
       database__connection__password: ghost
       database__connection__database: ghost
-      url: http://localhost:8080
+      url: http://localhost:2368
+    networks:
+      - ghost
 
   db:
     image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ghost
+    networks:
+      - ghost
 
   playwright:
     build:
       dockerfile: ./playwright/Dockerfile
     env_file:
       - .env
-    links:
-      - ghost:ghost
+    depends_on:
+      - ghost
     ports:
-      - 8080:8080
+      - 9323:9323
+    networks:
+      - ghost
+
+networks:
+  ghost:
+    driver: bridge
+
+volumes:
+  playwright-data:
