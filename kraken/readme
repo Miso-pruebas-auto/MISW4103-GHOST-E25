@@ -1,0 +1,39 @@
+version node v16.20.2
+npm 8.19.4
+Appium v 2.2.1
+SOLO SE HACEN PRUEBAS OBRE WINDOWS 11
+
+java version "20.0.2" 2023-07-18
+Java(TM) SE Runtime Environment (build 20.0.2+9-78)
+Java HotSpot(TM) 64-Bit Server VM (build 20.0.2+9-78, mixed mode, sharing)
+
+¿Qué necesita?
+Node.js actualizado en una versión estable.
+El manejador de paquetes NPM actualizado según la versión de Node.js.
+
+Nota: para la ejecucion de los script manejados en package.json, se hace uso de npx
+
+prerequisitos de programas
+
+
+¿que tiene que hacer?
+
+
+ - ir o navegar a la carpeta de kraken
+
+ - ejecutar npm install
+ - ejecute npm install -g appium
+
+---
+se ejecuta la validacion de kraken
+
+--- 
+
+
+pasos prebios para el adb
+tener la variable de entorno dentro de las variables del sistema, no del usuario
+en la carpeta path se debe agregar la sigueinte ruta, DONDE XXXXXXXXX, deberia ser el usuario donde  instalo android studio
+
+C:\Users\XXXXXXXXX\AppData\Local\Android\Sdk\platform-tools
+
+

@@ -1,0 +1,18 @@
+{
+  "name": "misw4103-ghost-e25",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "doctor": "npx kraken-node doctor",
+    "gen": "./node_modules/kraken-node/bin/kraken-node gen",
+    "kraken-run": "npx kraken-node run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "appium": "^2.2.1",
+    "kraken-node": "^1.0.24"
+  }
+}
