@@ -1,7 +1,6 @@
 import { test } from '@playwright/test';
-import { createUserAdminTest } from './create_user_admin.spec.js';
-// import { loginSesionAdmin } from './login_sesion_admin.spec.js';
-import { createPostTest } from './create_post.spec.js';
+import { createUserAdminTest } from './create_user_admin';
+import { createPostTest } from './create_post';
 
 test.describe('creación de usuario y autenticación', () => {
   let createUser = false;

@@ -1,4 +1,5 @@
-import { Page } from '@playwright/test';
+import { Page } from 'playwright';
+
 export async function createPostTest(page: Page): Promise<void> {
   await page.goto('http://localhost:3001/ghost/#/dashboard');
   await page.goto('http://localhost:3001/ghost/#/signin');
@@ -18,7 +19,6 @@ export async function createPostTest(page: Page): Promise<void> {
   await page.getByRole('textbox').nth(1).press('CapsLock');
   await page.getByRole('textbox').nth(1).press('CapsLock');
   await page.getByRole('textbox').nth(1).fill('Contenido de prueba');
-
   await page.getByRole('button', { name: 'Publish' }).click();
   await page.getByRole('button', { name: 'Continue, final review →' }).click();
 };
