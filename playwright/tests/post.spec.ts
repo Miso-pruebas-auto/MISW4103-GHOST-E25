@@ -1,5 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { loginSessionAdmin } from '../utils/login_sesion_admin';
+import { faker } from '@faker-js/faker';
 
 test.describe('Posts creación', () => {
 
@@ -13,8 +14,8 @@ test.describe('Posts creación', () => {
   });
 
   test('Crear un nuevo post con solo título y descripción', async ({ page }) => {
-    const titulo_post = 'Titulo1';
-    const contenido = 'Contenido de prueba';
+    const titulo_post = faker.word.noun();
+    const contenido =`Contenido de ${titulo_post}`;
     
     // When: El usuario hace clic en "New post"
     test.info().annotations.push({
@@ -110,7 +111,7 @@ test.describe('Posts creación', () => {
 
   test('Crear un nuevo post con solo título', async ({ page }) => {
     // When: El usuario hace clic en "New post"
-    const titulo_post = 'titulo2';
+    const titulo_post = faker.word.noun();
     
     test.info().annotations.push({
       type: 'When',
@@ -198,8 +199,8 @@ test.describe('Posts creación', () => {
   
   test('Crear un nuevo post con titulo y descripción y tag', async ({ page }) => {
     // When: El usuario hace clic en "New post"
-    const titulo_post = 'Titulo3';
-    const contenido = 'Contenido de prueba';
+    const titulo_post = faker.word.noun();
+    const contenido =`Contenido de ${titulo_post}`;
     
     test.info().annotations.push({
       type: 'When',
@@ -313,8 +314,8 @@ test.describe('Posts creación', () => {
   
   test('Validar si deja crear un post sin Autor', async ({ page }) => {
     // When: El usuario hace clic en "New post"
-    const titulo_post = 'titulo4';
-    const contenido = 'Contenido de prueba';
+    const titulo_post = faker.word.noun();
+    const contenido =`Contenido de ${titulo_post}`;
     
     test.info().annotations.push({
       type: 'When',
