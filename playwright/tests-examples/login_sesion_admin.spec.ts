@@ -9,4 +9,4 @@ export async function loginSesionAdmin(page: Page): Promise<void> {
   await page.getByPlaceholder('jamie@example.com').press('Tab');
   await page.getByPlaceholder('•••••••••••••••').fill('AdminAndes1**');
   await page.getByRole('button', { name: 'Sign in →' }).click();
-};
+}

@@ -1,6 +1,6 @@
-import { Page } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
-export async function createUserAdminTest(page: Page): Promise<void> {
+test('Creación de usuario admin', async ({ page }) => {
   await page.goto('http://localhost:3001/ghost/');
   await page.goto('http://localhost:3001/ghost/#/setup');
   await page.getByPlaceholder('The Daily Awesome').click();
@@ -13,4 +13,4 @@ export async function createUserAdminTest(page: Page): Promise<void> {
   await page.getByPlaceholder('At least 10 characters').fill('AdminAndes1**');
   await page.getByRole('button', { name: 'Create account & start publishing →' }).click();
   await page.getByRole('link', { name: 'Explore Ghost admin View the dashboard, click around, and explore Ghost for yourself.' }).click();
-};
+});

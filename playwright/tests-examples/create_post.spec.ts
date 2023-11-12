@@ -1,5 +1,6 @@
-import { Page } from '@playwright/test';
-export async function createPostTest(page: Page): Promise<void> {
+import { test, expect } from '@playwright/test';
+
+test('Creación de un post', async ({ page }) => {
   await page.goto('http://localhost:3001/ghost/#/dashboard');
   await page.goto('http://localhost:3001/ghost/#/signin');
   await page.getByPlaceholder('jamie@example.com').click();
@@ -21,4 +22,4 @@ export async function createPostTest(page: Page): Promise<void> {
 
   await page.getByRole('button', { name: 'Publish' }).click();
   await page.getByRole('button', { name: 'Continue, final review →' }).click();
-};
+});
