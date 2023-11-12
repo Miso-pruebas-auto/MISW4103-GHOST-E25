@@ -1,6 +1,6 @@
 import { Page } from 'playwright';
 
-export async function loginSesionAdmin(page: Page): Promise<void> {
+export async function loginSessionAdmin(page: Page): Promise<void> {
   await page.goto('http://localhost:3001/ghost/#/dashboard');
   await page.goto('http://localhost:3001/ghost/#/signin');
   await page.getByPlaceholder('jamie@example.com').click();
