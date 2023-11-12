@@ -2,7 +2,7 @@ import { test } from '@playwright/test';
 import { loginSesionAdmin } from '../utils/login_sesion_admin';
 import { createPostTest } from '../utils/create_post';
 
-test.describe('creación de usuario y autenticación', () => {
+test.describe('Login', () => {
   let loginUser = false;
   let createPost = false;
 
@@ -14,7 +14,8 @@ test.describe('creación de usuario y autenticación', () => {
     }
   });
 
-  test('creación de un nuevo post', async ({ page }) => {
+  test('Creación de un nuevo post', async ({ page }) => {
+    console.log("page.... " + page);
     if (!createPost) {
       await createPostTest(page);
       createPost = true;
