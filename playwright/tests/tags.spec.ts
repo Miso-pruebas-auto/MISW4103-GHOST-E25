@@ -42,7 +42,6 @@ test.describe('Tags creación', () => {
       const value_color_tag = await page.getByPlaceholder('15171A').innerText();
       expect(value_color_tag).toBe(name_tag);
 
-
     });
   });
 });
