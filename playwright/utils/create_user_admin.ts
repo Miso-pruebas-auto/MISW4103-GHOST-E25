@@ -1,6 +1,6 @@
 import { Page } from 'playwright';
 
-export async function createUserAdminTest(page: Page): Promise<void> {
+export async function createUserAdmin(page: Page): Promise<void> {
   await page.goto('http://localhost:3001/ghost/');
   await page.goto('http://localhost:3001/ghost/#/setup');
   await page.getByPlaceholder('The Daily Awesome').click();
