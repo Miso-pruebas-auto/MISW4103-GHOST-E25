@@ -1,5 +1,5 @@
 import { test } from '@playwright/test';
-import { loginSesionAdmin } from '../utils/login_sesion_admin';
+import { loginSessionAdmin } from '../utils/login_sesion_admin';
 import { createPostTest } from '../utils/create_post';
 
 test.describe('Login', () => {
@@ -8,7 +8,7 @@ test.describe('Login', () => {
 
   test.beforeEach(async ({ page }) => {
     if (!loginUser) {
-      await loginSesionAdmin(page);
+      await loginSessionAdmin(page);
       loginUser = true;
       console.log("Usuario logeado con éxito " + loginUser);
     }

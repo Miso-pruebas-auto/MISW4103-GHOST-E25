@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { loginSesionAdmin } from '../utils/login_sesion_admin';
+import { loginSessionAdmin } from '../utils/login_sesion_admin';
 
 test.describe('sección páginas', () => {
   let loginUser = false;
