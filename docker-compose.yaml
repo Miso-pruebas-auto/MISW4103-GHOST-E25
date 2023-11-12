@@ -33,6 +33,8 @@ services:
       - ghost
     ports:
       - 9323:9323
+    environment:
+      - BASE_URL='http://ghost:2368'
     networks:
       - ghost
 
