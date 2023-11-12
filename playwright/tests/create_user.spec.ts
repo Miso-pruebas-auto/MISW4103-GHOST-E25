@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test';
+import { test } from '@playwright/test';
 import { createUserAdmin } from '../utils/create_user_admin';
 
 test('creación de usuario', async ({ page }) => {
