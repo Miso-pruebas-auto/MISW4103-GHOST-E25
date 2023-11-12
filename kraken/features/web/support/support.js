@@ -1,4 +1,8 @@
-const { setWorldConstructor, setDefaultTimeout, World } = require('@cucumber/cucumber');
+const {
+  setWorldConstructor,
+  setDefaultTimeout,
+  World,
+} = require('@cucumber/cucumber');
 
 class KrakenWorld {
   constructor(input) {
