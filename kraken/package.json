@@ -19,6 +19,7 @@
     "webdriverio": "^8.22.1"
   },
   "devDependencies": {
+    "@faker-js/faker": "8.2.0",
     "prettier": "3.0.3"
   }
 }

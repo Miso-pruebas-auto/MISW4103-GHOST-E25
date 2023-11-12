@@ -8,7 +8,7 @@ function sleep(ms) {
 }
 
 When(
-  'I setup credentials with {kraken-string} and {kraken-string} and go to {kraken-string}',
+  'I authenticate using the credentials {kraken-string} and {kraken-string} and go to {kraken-string}',
   async function (email, password, page) {
     const loginForm = await this.driver.$('#login');
     const isLoginPage = await loginForm.isExisting();
@@ -45,4 +45,20 @@ Then('I should see the title {string}', async function (title) {
   const text = await element.getText();
 
   return assert.strictEqual(title, text);
+});
+
+Then('I should see the title containing {string}', async function (title) {
+  const element = await this.driver.$('.gh-canvas-title');
+  const text = await element.getText();
+  const words = text.trim().split('\n').map(word => word.toLowerCase());
+
+  return assert.strictEqual(words.includes(title.toLowerCase()), true);
+});
+
+Then('I should see input with name {string}', async function (name) {
+  return await this.driver.$(`input[name="${name}"]`);
+});
+
+Then('I should see textarea with name {string}', async function (name) {
+  return await this.driver.$(`textarea[name="${name}"]`);
 });

@@ -1,25 +1,69 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 import { loginSessionAdmin } from '../utils/login_sesion_admin';
-import { createUserAdmin } from '../utils/create_user_admin';
+import { faker } from '@faker-js/faker';
 
 test.describe.configure({ mode: 'serial' });
 
-let page: Page;
-
-test.beforeAll(async ({ browser }) => {
-  page = await browser.newPage();
-  await loginSessionAdmin(page);
+test.beforeEach(async ({ page }) => {      
+  await test.step('Given: El usuario ha iniciado sesión', async () => {
+      await loginSessionAdmin(page);
+  });
 });
 
 test('creación de pagina sin publicar', async ({ page }) => {
-  await page.getByRole('link', { name: 'Pages' }).click();
-  await page.getByRole('link', { name: 'New page' }).click();
-  await page.getByPlaceholder('Page title').click();
-  await page.getByPlaceholder('Page title').fill('Nueva Pagina Test');
-  await page.locator('.koenig-editor__editor').click();
-  await page.getByRole('link', { name: 'Pages' }).click();
+  await test.step('When: El usuario hace clic en "Pages"', async () => {
+    await page.getByRole('link', { name: 'Pages' }).click();
+  });
 
-  expect(await page.title()).toBe('Nueva Pagina Test - grupo 25');
+  await test.step('And: El usuario hace clic en "New page"', async () => {
+    await page.getByRole('link', { name: 'New page' }).click();
+  });
+
+  await test.step('And: El usuario crea el título de la nueva pagina', async () => {
+    await page.getByPlaceholder('Page title').click();
+    await page.getByPlaceholder('Page title').fill('Nueva Pagina Test');
+    await page.getByRole('paragraph').click();
+  });
+
+  await test.step('And: El usuario publica la nueva pagina', async () => {
+    await page.locator('.koenig-editor__editor').click();
+  });
+
+  await test.step('And: El usuario regresa la lista de paginas creadas', async () => {
+    await page.getByRole('link', { name: 'Pages' }).click();
+  });
+
+  await test.step('Then: La nueva pagina se muestra en la lista de paginas creadas', async () => {
+    expect(await page.title()).toBe('Nueva Pagina Test - grupo 25');
+  });
 });
 
 
+test('creación de pagina publicada', async ({ page }) => {
+  const newPageTitle = `test-${faker.word.noun()}`;
+
+  await test.step('When: El usuario hace clic en "Pages"', async () => {
+    await page.getByRole('link', { name: 'Pages' }).click();
+  });
+
+  await test.step('And: El usuario hace clic en "New page"', async () => {
+    await page.getByRole('link', { name: 'New page' }).click();
+  });
+
+  await test.step('And: El usuario crea el título de la nueva pagina', async () => {
+    await page.getByPlaceholder('Page title').click();
+    await page.getByPlaceholder('Page title').fill(newPageTitle);
+    await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
+  });
+
+  await test.step('And: El usuario publica la nueva pagina', async () => {
+    await page.getByRole('button', { name: 'Publish' }).click();
+    await page.getByText('Set it live now').click();
+    await page.getByRole('button', { name: 'Publish', exact: true }).click();
+  });
+  
+  await test.step('Then: El usuario puede abrir la nueva pagina publicada', async () => {
+    await page.goto(`/${newPageTitle.toLowerCase().replace(' ', '-')}`);
+    expect(await page.getByRole('heading', { name: newPageTitle }).innerText()).toBe(newPageTitle);
+  });
+});
