@@ -9,8 +9,8 @@ export async function createPostTest(page: Page): Promise<void> {
   await page.getByRole('button', { name: 'Publish' }).click();
   await page.getByRole('button', { name: 'Continue, final review →' }).click();
   // await page.waitForTimeout(3000);
-  await page.locator('button:has-text("Publish post, right now")').click();
-
+  const buttonSelector = `//button[contains(., 'Publish post, right now')]`;
+  await page.locator(buttonSelector).click();
 
   const page1Promise = page.waitForEvent('popup');
   await page.getByRole('link', { name: 'test 1 contenido grupo 25 •andes' }).click();
