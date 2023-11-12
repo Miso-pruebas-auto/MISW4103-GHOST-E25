@@ -3,8 +3,8 @@ FROM node:latest
 # Add playwright test source
 COPY . .
 
-RUN pwd
+CMD ["ls"]
 
 # Run tests
 ENTRYPOINT ["/bin/sh"]
-CMD ["entrypoint.sh"]
+CMD ["/playwright/entrypoint.sh"]
