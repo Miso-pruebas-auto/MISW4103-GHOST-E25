@@ -11,6 +11,8 @@ test.describe('Tags creación', () => {
   });
 
   test('Creación de tag con título y color', async ({ page }) => {
+    const name_tag = 'Nuevo tag test';
+    const color_tag = '555555';
     await test.step('When: El usuario hace clic en "Tags"', async () => {
         await page.getByRole('link', { name: 'Tags' }).click();
     });
@@ -19,48 +21,28 @@ test.describe('Tags creación', () => {
         await page.getByRole('link', { name: 'New tag', exact: true }).click();
     });
 
-    await test.step('And: Hace clic en el campo de nombre del tag', async () => {
-      // Código para llenar el título
+    await test.step('And: Hace clic en el campo de tag y lo llena', async () => {
+      await page.getByLabel('Name').fill(name_tag);
     });
 
-    await test.step('And: El usuario presiona Tab', async () => {
-      // Código para presionar Tab
+    await test.step('And: Hace clic en el campo de color y lo llena', async () => {
+      await page.getByPlaceholder('15171A').fill(color_tag);
     });
 
-    await test.step('And: El usuario llena el contenido del post', async () => {
-      // Código para llenar el contenido
+    await test.step('And: hace clic en "Save"', async () => {
+      await page.getByRole('button', { name: 'Save' }).click();
     });
 
-    await test.step('And: El usuario hace clic en "Publish"', async () => {
-      // Código para hacer clic en "Publish"
-    });
+    await test.step('Then: Se verifica ingresando a la URL del nuevo tag que tengo el nombre y color correctos', async () => {
+      await page.goto('./ghost/#/tags/nuevo-tag-test');
 
-    await test.step('And: El usuario hace clic en "Continue, final review →"', async () => {
-      // Código para hacer clic en "Continue, final review →"
-    });
+      const value_name_tag = await page.getByLabel('Name').innerText();
+      expect(value_name_tag).toBe(name_tag);
 
-    await test.step('And: Se espera un segundo', async () => {
-      await page.waitForTimeout(1000);
-    });
+      const value_color_tag = await page.getByPlaceholder('15171A').innerText();
+      expect(value_color_tag).toBe(name_tag);
 
-    await test.step('And: El usuario hace clic en el botón final de publicación', async () => {
-      // Código para hacer clic en el botón final de publicación
-    });
 
-    await test.step('And: Se espera un segundo', async () => {
-      await page.waitForTimeout(1000);
-    });
-
-    await test.step('And: El usuario hace clic en el enlace del post creado', async () => {
-      // Código para hacer clic en el enlace del post creado
-    });
-
-    await test.step('And: El usuario hace clic en el título del post', async () => {
-      // Código para hacer clic en el título del post
-    });
-
-    await test.step('Then: Se verifica que el título y contenido son correctos', async () => {
-      // Código para verificar el título y el contenido
     });
   });
 });
