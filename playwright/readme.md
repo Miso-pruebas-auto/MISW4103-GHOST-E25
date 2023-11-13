@@ -22,8 +22,8 @@ $ nvm use 16.14.2
 Asegúrese de tener Docker instalado y, dentro de la carpeta de Playwright, ejecute los siguientes comandos en la terminal para levantar los contenedores de la base de datos y Ghost:
 
 ```bash
-$ docker-compose up -d db-playwright
-$ docker-compose up -d ghost-playwright
+$ docker compose up -d db-playwright
+$ docker compose up -d ghost-playwright
 ```
 Espere a que Ghost esté disponible. Puede verificar su estado accediendo a http://localhost:2368/ghost/#/signin. Esto puede tardar aproximadamente 20 segundos.
 
@@ -59,8 +59,8 @@ Asegúrese de revisar y confirmar que desea eliminar estos recursos antes de pro
 Después de limpiar el entorno, puede reconstruir y volver a ejecutar los contenedores utilizando los siguientes comandos:
 
 ```bash
-$ docker-compose up -d db-playwright --build    # Reconstruye e inicia el contenedor de la base de datos
-$ docker-compose up -d ghost-playwright --build    # Reconstruye e inicia el contenedor de Ghost
+$ docker compose up -d db-playwright --build    # Reconstruye e inicia el contenedor de la base de datos
+$ docker compose up -d ghost-playwright --build    # Reconstruye e inicia el contenedor de Ghost
 ```
 Estos comandos aseguran que los contenedores se construyan con las últimas configuraciones y luego se ejecuten en segundo plano.
 
