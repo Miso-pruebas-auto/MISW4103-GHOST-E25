@@ -1,24 +1,24 @@
 
 ## Antes de Empezar con Playwright
 Antes de comenzar con las pruebas automatizadas utilizando Playwright, siga estos pasos para configurar el entorno y ejecutar las pruebas de extremo a extremo.
-1. Requisitos Previos
+1. Requisitos Previos: 
 Asegúrese de tener Docker instalado en su sistema. Si está utilizando Windows, se recomienda Docker Desktop.
 
-2. Clonar el Repositorio
+2. Clonar el Repositorio: 
 Clone el repositorio en su máquina local y navegue a la carpeta de Playwright utilizando los siguientes comandos: 
 ```bash
 $ git clone https://github.com/nipoanz/MISW4103-GHOST-E25
 $ cd MISW4103-GHOST-E25/playwright
 ```
 
-3. Configuración de Node.js con NVM
+3. Configuración de Node.js con NVM: 
 Se recomienda utilizar Node Version Manager (NVM) para administrar las versiones de Node.js. Asegúrese de tener NVM instalado y, si no tiene la versión 16.14.2 de Node.js, puede instalarla y activarla con los siguientes comandos:
 ```bash
 $ nvm ls
 $ nvm install 16.14.2
 $ nvm use 16.14.2
 ```
-4. Configuración del Entorno Docker
+4. Configuración del Entorno Docker: 
 Asegúrese de tener Docker instalado y, dentro de la carpeta de Playwright, ejecute los siguientes comandos en la terminal para levantar los contenedores de la base de datos y Ghost:
 
 ```bash
@@ -37,7 +37,7 @@ $ npx playwright install-deps firefox
 $ npx playwright test --workers=1
 ```
 
-6. Visualización del Reporte
+6. Visualización del Reporte: 
 Para visualizar el informe y revisar los pasos con el patrón Given-When-Then, ejecute:
 
 ```bash
@@ -49,7 +49,7 @@ Siga estos pasos para asegurarse de que su entorno esté configurado correctamen
 ## Re-Ejecución del Proyecto
 Si desea volver a ejecutar el proyecto desde cero, siga estos pasos para limpiar y reconstruir los contenedores y las imágenes:
 
-1. Limpieza de Contenedores, Volúmenes e Imágenes
+1. Limpieza de Contenedores, Volúmenes e Imágenes: 
 Para eliminar los contenedores, volúmenes e imágenes existentes, puede utilizar los siguientes comandos:
 
 ```bash
@@ -58,7 +58,7 @@ $ docker rmi $(docker images -a -q) -f    # Elimina todas las imágenes de Docke
 ```
 Asegúrese de revisar y confirmar que desea eliminar estos recursos antes de proceder.
 
-2. Reconstrucción y Ejecución de Contenedores
+2. Reconstrucción y Ejecución de Contenedores: 
 Después de limpiar el entorno, puede reconstruir y volver a ejecutar los contenedores utilizando los siguientes comandos:
 
 ```bash
