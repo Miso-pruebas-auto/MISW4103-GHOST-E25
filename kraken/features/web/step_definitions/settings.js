@@ -27,12 +27,29 @@ When('I change site name into a random value', async function () {
   return await field.setValue(faker.word.words(1));
 });
 
+When('I change site name into with empty value', async function () {
+  const field = this.driver.$(
+    'body > div.gh-app > div > main > section > div:nth-child(2) > section > div:nth-child(1) > div.gh-expandable-content > div > div > div > div:nth-child(1) > input',
+  );
+
+  return await field.setValue("");
+});
+
+
 When('I change site description into a random value', async function () {
   const field = this.driver.$(
     'body > div.gh-app > div > main > section > div:nth-child(2) > section > div:nth-child(1) > div.gh-expandable-content > div > div > div > div.description-container.form-group.ember-view > input',
   );
 
   return await field.setValue(faker.word.words(5));
+});
+
+When('I change description name into with empty value', async function () {
+  const field = this.driver.$(
+    'body > div.gh-app > div > main > section > div:nth-child(2) > section > div:nth-child(1) > div.gh-expandable-content > div > div > div > div.description-container.form-group.ember-view > input',
+  );
+
+  return await field.setValue("");
 });
 
 When('I click on save settings changes', async function () {
