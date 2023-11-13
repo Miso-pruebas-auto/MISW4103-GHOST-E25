@@ -1,7 +1,7 @@
 version: '1.0.0'
 
 services:
-  ghost:
+  ghost-playwright:
     image: ghost:4-alpine
     restart: always
     ports:
@@ -16,15 +16,15 @@ services:
       database__connection__database: ghost
       url: http://localhost:2368
     networks:
-      - ghost
+      - ghost-playwright
 
-  db:
+  db-playwright:
     image: mysql:8.0
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ghost
     networks:
-      - ghost
+      - ghost-playwright
 
   playwright:
     build:
@@ -40,9 +40,34 @@ services:
     networks:
       - ghost
 
-networks:
-  ghost:
-    driver: bridge
+  ghost-kraken:
+    image: ghost:4-alpine
+    restart: always
+    ports:
+      - 2368:2368
+    depends_on:
+      - db
+    environment:
+      database__client: mysql
+      database__connection__host: db
+      database__connection__user: root
+      database__connection__password: ghost
+      database__connection__database: ghost
+      url: http://localhost:2370
+    networks:
+      - ghost-kraken
 
-volumes:
-  playwright-data:
+  db-kraken:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ghost-kraken
+    networks:
+      - ghost-kraken
+
+
+networks:
+  ghost-kraken:
+    driver: bridge
+  ghost-playwright:
+    driver: bridge
