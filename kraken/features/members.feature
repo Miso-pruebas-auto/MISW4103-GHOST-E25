@@ -1,4 +1,4 @@
-Feature: Create Members
+Feature: Members
 
   @web @user1
   Scenario: Create a new Member with name and valid mail
