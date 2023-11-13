@@ -76,4 +76,35 @@ test.describe('members', () => {
       expect(await page.getByText('Please enter an email.').innerText()).toBe('Please enter an email.');
     });
   });
+
+  test('creación de miembro con correo inválido', async ({ page }) => {
+    const newMemberName = `test-${faker.word.noun()}`;
+    const newMemberEmail = `correoinvalido`;
+
+    await test.step('When: El usuario se dirige a la sección members', async () => {
+      await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
+      await page.goto('/ghost/#/members');      
+    });
+
+    await test.step('And: El usuario hace clic en "New member"', async () => {
+      await page.getByRole('link', { name: 'New member' }).click();
+    });
+
+    await test.step('And: El usuario crea el nuevo miembro sin correo', async () => {
+      await page.getByLabel('Name').click();
+      await page.getByLabel('Name').fill(newMemberName);
+
+      await page.getByLabel('Email').dblclick();
+      await page.getByLabel('Email').fill(newMemberEmail);
+    });
+    
+    await test.step('And: El usuario guarda el nuevo miembro', async () => {
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+    });
+
+    await test.step('Then: El nuevo miembro se muestra en la lista de miembros creados', async () => {
+      expect(await page.getByText('Invalid Email.').innerText()).toBe('Invalid Email.');
+    });
+  });
 });
