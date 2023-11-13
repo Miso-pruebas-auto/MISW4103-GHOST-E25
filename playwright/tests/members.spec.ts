@@ -107,4 +107,41 @@ test.describe('members', () => {
       expect(await page.getByText('Invalid Email.').innerText()).toBe('Invalid Email.');
     });
   });
+
+  test('cancelar creación de miembro', async ({ page }) => {
+    const newMemberName = `test-${faker.word.noun()}`;
+    const newMemberEmail = `test-${faker.internet.email()}`;
+    const newMemberNote = `test-${faker.lorem.sentence()}`;
+
+    await test.step('When: El usuario se dirige a la sección members', async () => {
+      await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
+      await page.goto('/ghost/#/members');
+    });
+
+    await test.step('And: El usuario hace clic en "New member"', async () => {
+      await page.getByRole('link', { name: 'New member' }).click();
+    });
+
+    await test.step('And: El usuario llena el formulario de nuevo miembro', async () => {
+      await page.getByLabel('Name').dblclick();
+      await page.getByLabel('Name').fill(newMemberName);
+
+      await page.getByLabel('Email').dblclick();
+      await page.getByLabel('Email').fill(newMemberEmail);
+
+      await page.getByLabel('Note (not visible to member)').dblclick();
+      await page.getByLabel('Note (not visible to member)').fill(newMemberNote);
+    });
+
+    await test.step('And: El usuario llena el formulario de nuevo miembro', async () => {
+      await page.goto('/ghost/#/members');
+      await page.waitForTimeout(1000);
+    });
+
+    await test.step('Then: El usuario no continua creando el miembro', async () => {
+      expect(await page.getByRole('button', { name: 'Leave' }).innerText()).toBe('Leave');
+      expect(await page.getByRole('heading', { name: 'Are you sure you want to leave this page?' }).innerText()).toBe('Are you sure you want to leave this page?'); 
+    });
+
+  });
 });
