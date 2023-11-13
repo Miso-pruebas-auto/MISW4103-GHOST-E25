@@ -27,10 +27,13 @@ $ docker compose up -d ghost-playwright
 ```
 Espere a que Ghost esté disponible. Puede verificar su estado accediendo a http://localhost:2368/ghost/#/signin. Esto puede tardar aproximadamente 20 segundos.
 
-5. Ejecución de las Pruebas
+5. Ejecución de las Pruebas: 
 Ejecute las pruebas automatizadas con el siguiente comando:
 
 ```bash
+$ npm install
+$ npx playwright install firefox
+$ npx playwright install-deps firefox
 $ npx playwright test --workers=1
 ```
 
