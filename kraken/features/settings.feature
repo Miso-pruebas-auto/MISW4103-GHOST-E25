@@ -4,15 +4,15 @@ Feature: General settings
   Scenario: Change site name
     Given I navigate to page "<GHOST_URL>"
     And I wait for 2 seconds
-    And I authenticate using the credentials "<USERNAME>" and "<PASSWORD>" and go to "<GHOST_URL>"
+    When I authenticate using the credentials "<USERNAME>" and "<PASSWORD>" and go to "<GHOST_URL>"
     And I wait for 2 seconds
     And I navigate to general settings page
     And I wait for 2 seconds
-    Then I should see the title containing "General"
-    Then I should see "Title & description" settings
+    And I should see the title containing "General"
+    And I should see "Title & description" settings
     And I expand Title & description settings
     And I wait for 2 seconds
-    Then I should see site name field
+    And I should see site name field
     And I change site name into a random value
     And I click on save settings changes
     And I wait for 1 seconds
@@ -22,15 +22,15 @@ Feature: General settings
   Scenario: Change site description
     Given I navigate to page "<GHOST_URL>"
     And I wait for 2 seconds
-    And I authenticate using the credentials "<USERNAME>" and "<PASSWORD>" and go to "<GHOST_URL>"
+    When I authenticate using the credentials "<USERNAME>" and "<PASSWORD>" and go to "<GHOST_URL>"
     And I wait for 2 seconds
     And I navigate to general settings page
     And I wait for 2 seconds
-    Then I should see the title containing "General"
-    Then I should see "Title & description" settings
+    And I should see the title containing "General"
+    And I should see "Title & description" settings
     And I expand Title & description settings
     And I wait for 2 seconds
-    Then I should see site description field
+    And I should see site description field
     And I change site description into a random value
     And I click on save settings changes
     And I wait for 1 seconds

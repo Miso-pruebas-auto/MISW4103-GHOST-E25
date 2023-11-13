@@ -6,6 +6,8 @@ services:
     restart: always
     ports:
       - 2368:2368
+    depends_on:
+      - db
     environment:
       database__client: mysql
       database__connection__host: db
