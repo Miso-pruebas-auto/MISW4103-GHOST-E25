@@ -7,7 +7,7 @@ Asegúrese de tener Docker instalado en su sistema. Si está utilizando Windows,
 2. Clonar el Repositorio
 Clone el repositorio en su máquina local y navegue a la carpeta de Playwright utilizando los siguientes comandos: 
 ```bash
-$ git clone [URL_DEL_REPOSITORIO]
+$ git clone https://github.com/nipoanz/MISW4103-GHOST-E25
 $ cd MISW4103-GHOST-E25/playwright
 ```
 
