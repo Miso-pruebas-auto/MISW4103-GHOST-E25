@@ -44,7 +44,7 @@ services:
     image: ghost:4-alpine
     restart: always
     ports:
-      - 2370:2370
+      - 2370:2368
     depends_on:
       - db-kraken
     environment:
