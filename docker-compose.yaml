@@ -40,30 +40,30 @@ services:
     networks:
       - ghost-playwright
 
-  ghost-kraken:
+  ghost-krake:
     image: ghost:4-alpine
     restart: always
     ports:
       - 2368:2368
     depends_on:
-      - db-kraken
+      - db-krake
     environment:
       database__client: mysql
-      database__connection__host: db-kraken
+      database__connection__host: db-krake
       database__connection__user: root
       database__connection__password: ghost
       database__connection__database: ghost
-      url: http://localhost:2370
+      url: http://localhost:2368
     networks:
-      - ghost-kraken
+      - ghost-krake
 
-  db-kraken:
+  db-krake:
     image: mysql:8.0
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: ghost-kraken
+      MYSQL_ROOT_PASSWORD: ghost
     networks:
-      - ghost-kraken
+      - ghost-krake
 
 networks:
   ghost-kraken:

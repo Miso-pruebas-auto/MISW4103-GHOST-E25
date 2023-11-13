@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { loginSessionAdmin } from '../utils/login_sesion_admin';
 import { faker } from '@faker-js/faker';
 
-test.describe('posts', () => {
+test.describe('Posts creación', () => {
 
   test.beforeEach(async ({ page }) => {      
     await test.step('Given: El usuario ha iniciado sesión', async () => {
@@ -180,7 +180,7 @@ test.describe('posts', () => {
   
   });
   
-  test('Crear un nuevo post con titulo y descripción y tag', async ({ page }) => {
+  test('Crear un nuevo post con título y descripción y tag', async ({ page }) => {
 
     const titulo_post = faker.word.noun();
     const contenido =`Contenido de ${titulo_post}`;
