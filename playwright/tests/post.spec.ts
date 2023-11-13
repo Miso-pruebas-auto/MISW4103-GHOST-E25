@@ -9,6 +9,12 @@ test.describe('posts', () => {
         await loginSessionAdmin(page);
         await page.waitForTimeout(1000); 
     });
+
+    test.info().annotations.push({
+      type: 'Given',
+      description: 'El usuario ha iniciado sesión',
+    });
+    
   });
 
   test('Crear un nuevo post con solo título y descripción', async ({ page }) => {

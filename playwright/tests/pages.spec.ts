@@ -7,6 +7,12 @@ test.describe('pages', () => {
     await test.step('Given: El usuario ha iniciado sesión', async () => {
       await loginSessionAdmin(page);
     });
+
+    test.info().annotations.push({
+      type: 'Given',
+      description: 'El usuario ha iniciado sesión',
+    });
+
   });
 
   test('creación de pagina sin publicar', async ({ page }) => {
