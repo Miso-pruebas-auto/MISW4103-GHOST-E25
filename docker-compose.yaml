@@ -7,10 +7,10 @@ services:
     ports:
       - 2368:2368
     depends_on:
-      - db
+      - db-playwright
     environment:
       database__client: mysql
-      database__connection__host: db
+      database__connection__host: db-playwright
       database__connection__user: root
       database__connection__password: ghost
       database__connection__database: ghost
@@ -32,13 +32,13 @@ services:
     env_file:
       - .env
     depends_on:
-      - ghost
+      - ghost-playwright
     ports:
       - 9323:9323
     environment:
       BASE_URL: ${BASE_URL}
     networks:
-      - ghost
+      - ghost-playwright
 
   ghost-kraken:
     image: ghost:4-alpine
@@ -46,10 +46,10 @@ services:
     ports:
       - 2368:2368
     depends_on:
-      - db
+      - db-kraken
     environment:
       database__client: mysql
-      database__connection__host: db
+      database__connection__host: db-kraken
       database__connection__user: root
       database__connection__password: ghost
       database__connection__database: ghost
@@ -64,7 +64,6 @@ services:
       MYSQL_ROOT_PASSWORD: ghost-kraken
     networks:
       - ghost-kraken
-
 
 networks:
   ghost-kraken:

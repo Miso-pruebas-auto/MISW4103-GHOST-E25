@@ -50,7 +50,7 @@ Si desea volver a ejecutar el proyecto desde cero, siga estos pasos para limpiar
 Para eliminar los contenedores, volúmenes e imágenes existentes, puede utilizar los siguientes comandos:
 
 ```bash
-$ docker-compose down -v    # Detiene y elimina contenedores y volúmenes
+$ docker compose down -v # Detiene y elimina contenedores y volúmenes
 $ docker rmi $(docker images -a -q) -f    # Elimina todas las imágenes de Docker
 ```
 Asegúrese de revisar y confirmar que desea eliminar estos recursos antes de proceder.
