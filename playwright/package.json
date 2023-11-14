@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "entrypoint": "entrypoint.sh",
+    "test": "playwright install firefox && playwright install-deps firefox && playwright test 'user' && playwright test --trace on && playwright show-report --host 0.0.0.0",
+    "report": "playwright show-report"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
