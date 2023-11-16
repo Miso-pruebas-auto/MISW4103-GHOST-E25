@@ -87,15 +87,3 @@ Then('I verificate Stay in Members List page', async function() {
   // console.log(text);
   return assert.equal(text, 'active ember-view');
 })
-
-Then('I should have select delete button', async function() {
-  const submit = await this.driver.$('.modal-footer button:nth-child(2)');
-  await submit.click();
-})
-
-Then('I should have see a redirect to Pages site', async function() {
-  const element = await this.driver.$('.gh-nav-manage li:nth-child(2) a');
-  const text = await element.getAttribute('class');
-  // console.log(text);
-  return assert.equal(text, 'active ember-view');
-})

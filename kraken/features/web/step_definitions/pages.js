@@ -8,7 +8,7 @@ Given('I navigate to pages list page', async function () {
 });
 
 Given('I click New Page Button', async function() {
-  const element = await this.driver.$('a[href="#/editor/page/');
+  const element = await this.driver.$('a[href="#/editor/page/"');
   return await element.click();
 })
 
@@ -69,10 +69,12 @@ Then('I should have see a modal with confirmation', async function () {
   return assert.equal(text, 'Are you sure you want to delete this page?');
 })
 
-Then('I should have select delete button', async function () {
-  const element = await this.driver.$('.modal-header h1');
-  const text = await element.getText();
-  return assert.equal(text, 'Are you sure you want to delete this page?');
+Then('I should have select delete button', async function() {
+  const submit = await this.driver.$('.modal-footer button:nth-child(2)');
+  await submit.click();
 })
 
-
+Then('I should have see a Pages site', async function() {
+  const currentUrl = await this.driver.getUrl()
+  return assert.equal(currentUrl.includes("ghost/#/pages"), true);
+})
