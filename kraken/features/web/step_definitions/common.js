@@ -1,11 +1,61 @@
-const { When, Then } = require('@cucumber/cucumber');
+const {
+  When,
+  BeforeStep,
+  AfterStep,
+  Then,
+  Before,
+} = require('@cucumber/cucumber');
 const assert = require('assert');
+const fs = require('fs');
 
 function sleep(ms) {
   return new Promise((resolve) => {
     setTimeout(resolve, ms);
   });
 }
+
+Before(function (scenario) {
+  this.currentScenario = scenario.pickle.name;
+  this.currentFeature = scenario.gherkinDocument.feature.name;
+  this.stepCount = 0;
+});
+
+BeforeStep(function (step) {
+  this.stepCount++;
+});
+
+AfterStep(async function (step) {
+  try {
+    const folderName = `./screenshots/${this.currentFeature
+      .toLowerCase()
+      .replaceAll(' ', ')')}/${this.currentScenario
+      .toLowerCase()
+      .replaceAll(' ', '_')}`;
+
+    if (!fs.existsSync(folderName)) {
+      fs.mkdir(folderName, { recursive: true }, async (err) => {
+        if (err) throw err;
+
+        let screenshot = await this.driver.saveScreenshot(
+          `${folderName}/${this.stepCount}.png`,
+        );
+        this.attach(screenshot, 'image/png');
+        console.log(`Screenshot taken: ${folderName}/${this.stepCount}.png`);
+      });
+      return;
+    }
+
+    let screenshot = await this.driver.saveScreenshot(
+      `${folderName}/${this.stepCount}.png`,
+    );
+    this.attach(screenshot, 'image/png');
+    console.log(`Screenshot taken: ${folderName}/${this.stepCount}.png`);
+  } catch (e) {
+    console.log(e);
+    console.log('KRAKEN: Could not take screenshot');
+  }
+  return;
+});
 
 When(
   'I authenticate using the credentials {kraken-string} and {kraken-string} and go to {kraken-string}',
@@ -50,7 +100,10 @@ Then('I should see the title {string}', async function (title) {
 Then('I should see the title containing {string}', async function (title) {
   const element = await this.driver.$('.gh-canvas-title');
   const text = await element.getText();
-  const words = text.trim().split('\n').map(word => word.toLowerCase());
+  const words = text
+    .trim()
+    .split('\n')
+    .map((word) => word.toLowerCase());
 
   return assert.strictEqual(words.includes(title.toLowerCase()), true);
 });
