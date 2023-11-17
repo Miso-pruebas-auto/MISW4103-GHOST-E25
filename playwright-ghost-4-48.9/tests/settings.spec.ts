@@ -51,7 +51,7 @@ test.describe('settings', () => {
   });
 
   test('cambiar el site title con un string vacio', async ({ page }) => {
-    const newPageTitle = ``;
+    const newPageTitle = "";
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();

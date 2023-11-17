@@ -1,5 +1,5 @@
 
-## Antes de Empezar con Playwright
+## Antes de Empezar con Playwright 4-38.0
 Antes de comenzar con las pruebas automatizadas utilizando Playwright, siga estos pasos para configurar el entorno y ejecutar las pruebas de extremo a extremo.
 1. Requisitos Previos: 
 Asegúrese de tener Docker instalado en su sistema. Si está utilizando Windows, se recomienda Docker Desktop.
@@ -19,11 +19,10 @@ $ nvm install 16.14.2
 $ nvm use 16.14.2
 ```
 4. Configuración del Entorno Docker: 
-Asegúrese de tener Docker instalado y, dentro de la carpeta de Playwright, ejecute los siguientes comandos en la terminal para levantar los contenedores de la base de datos y Ghost:
+Asegúrese de tener Docker instalado y, dentro de la carpeta de Playwright de la versión 4-38.0, ejecute los siguientes comandos en la terminal para levantar los contenedores de la base de datos y Ghost:
 
 ```bash
-$ docker compose up -d db-playwright
-$ docker compose up -d ghost-playwright
+$ docker compose up -d
 ```
 Espere a que Ghost esté disponible. Puede verificar su estado accediendo a http://localhost:2368/ghost/#/signin. Esto puede tardar aproximadamente 20 segundos.
 
@@ -50,7 +49,7 @@ Siga estos pasos para asegurarse de que su entorno esté configurado correctamen
 Si desea volver a ejecutar el proyecto desde cero, siga estos pasos para limpiar y reconstruir los contenedores y las imágenes:
 
 1. Limpieza de Contenedores, Volúmenes e Imágenes: 
-Para eliminar los contenedores, volúmenes e imágenes existentes, puede utilizar los siguientes comandos:
+Para eliminar los contenedores, volúmenes e imágenes existentes, puede utilizar los siguientes comandos (siempre asegúrese de ubicar en la versión de playwright correcta):
 
 ```bash
 $ docker compose down -v # Detiene y elimina contenedores y volúmenes
