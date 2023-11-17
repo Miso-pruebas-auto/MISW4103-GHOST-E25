@@ -230,7 +230,7 @@ test.describe('Posts creación', () => {
       await page.getByRole('button', { name: 'Settings' }).click();
     });
 
-    await test.step('And: Selecciona el campo tag haciendo clic en el tag "News"', async () => {
+    await test.step('And: Selecciona el campo tag haciendo clic en el tag "Getting Started"', async () => {
       await page.click('#tag-input');
       await page.getByRole('option', { name: 'Getting Started' }).click();
     });
@@ -335,9 +335,9 @@ test.describe('Posts creación', () => {
       await page.waitForTimeout(1000);
     });
 
-    await test.step('And: Selecciona el campo tag haciendo clic en el tag "News"', async () => {
+    await test.step('And: Selecciona el campo tag haciendo clic en el tag "Getting Started"', async () => {
       await page.click('#tag-input');
-      await page.getByRole('option', { name: 'News' }).click();
+      await page.getByRole('option', { name: 'Getting Started' }).click();
     });
     
     await test.step('And: Espera un segundo', async () => {
@@ -345,7 +345,7 @@ test.describe('Posts creación', () => {
     });
 
     await test.step('And: Removemos el autor', async () => {
-      await page.getByRole('button', { name: 'andes remove element' }).getByLabel('remove element').click();
+      await page.getByRole('button', { name: 'grupo 25 remove element' }).getByLabel('remove element').click();
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
