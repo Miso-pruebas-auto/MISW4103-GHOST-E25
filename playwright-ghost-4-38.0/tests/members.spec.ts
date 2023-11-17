@@ -60,8 +60,7 @@ test.describe('members', () => {
     const newMemberName = `test-${faker.word.noun()}`;
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
-      await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
-      await page.goto('/ghost/#/members');      
+      await page.goto('/ghost/#/members');
     });
 
     await test.step('And: El usuario hace clic en "New member"', async () => {
@@ -88,7 +87,6 @@ test.describe('members', () => {
     const newMemberEmail = `correoinvalido`;
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
-      await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
       await page.goto('/ghost/#/members');      
     });
 
@@ -120,7 +118,6 @@ test.describe('members', () => {
     const newMemberNote = `test-${faker.lorem.sentence()}`;
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
-      await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
       await page.goto('/ghost/#/members');
     });
 
