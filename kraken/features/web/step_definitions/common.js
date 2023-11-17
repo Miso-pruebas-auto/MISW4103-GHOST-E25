@@ -26,7 +26,9 @@ BeforeStep(function (step) {
 
 AfterStep(async function (step) {
   try {
-    const folderName = `./screenshots/${this.currentFeature.toLowerCase()}/${this.currentScenario
+    const folderName = `./screenshots/${this.currentFeature
+      .toLowerCase()
+      .replaceAll(' ', ')')}/${this.currentScenario
       .toLowerCase()
       .replaceAll(' ', '_')}`;
 
