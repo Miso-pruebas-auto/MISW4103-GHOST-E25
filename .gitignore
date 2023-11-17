@@ -6,3 +6,5 @@ playwright/node_modules
 .env
 playwright/.env
 node_modules
+
+kraken/screenshots/*

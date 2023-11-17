@@ -2,7 +2,7 @@ version: '1.0.0'
 
 services:
   ghost-playwright:
-    image: ghost:4-alpine
+    image: ghost:4.38.0-alpine
     restart: always
     ports:
       - 2368:2368
@@ -41,7 +41,7 @@ services:
       - ghost-playwright
 
   ghost-kraken:
-    image: ghost:4-alpine
+    image: ghost:4.38.0-alpine
     restart: always
     ports:
       - 2370:2368
@@ -58,7 +58,7 @@ services:
       - ghost-kraken
 
   db-kraken:
-    image: mysql:8.0
+    image: mariadb:latest
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ghost

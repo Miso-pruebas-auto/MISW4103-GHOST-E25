@@ -1,6 +1,6 @@
 Feature: Tags
 
-  @web @user2
+  @web @user2 @step1
   Scenario: Create a new valid tag
     Given I navigate to page "<GHOST_URL>"
     And I wait for 2 seconds
@@ -78,7 +78,6 @@ Feature: Tags
     And I click on save new tag
     And I wait for 1 seconds
     Then I should have see new tag being saved
-
 
 
 

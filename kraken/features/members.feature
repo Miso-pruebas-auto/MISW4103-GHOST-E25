@@ -12,7 +12,7 @@ Feature: Members
     And I wait for 2 seconds
     When I enter Random Member Name
     And I wait for 2 seconds
-    And I enter Random Member Email 
+    And I enter Random Member Email
     And I wait for 2 seconds
     And I click Save Button
     And I wait for 1 seconds
@@ -68,7 +68,7 @@ Feature: Members
     And I wait for 2 seconds
     When I enter Random Member Name
     And I wait for 2 seconds
-    And I enter Random Member Email 
+    And I enter Random Member Email
     And I wait for 2 seconds
     And I navigate to members list page
     And I wait for 1 seconds
