@@ -58,10 +58,10 @@ test.describe('pages', () => {
     await test.step('And: El usuario crea el título de la nueva pagina', async () => {
       await page.getByPlaceholder('Page title').click();
       await page.getByPlaceholder('Page title').fill(newPageTitle);
-      await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
     });
 
     await test.step('And: El usuario publica la nueva pagina', async () => {
+      await page.getByRole('button', { name: 'Settings' }).click(); // validar como step
       await page.getByRole('button', { name: 'Publish' }).click();
       await page.getByText('Set it live now').click();
       await page.getByRole('button', { name: 'Publish', exact: true }).click();
