@@ -54,16 +54,36 @@ test.describe('Posts creación', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      // Selecciona el elemento que tiene el atributo "data-kg" con valor "editor-wrapper"
+      const editorWrapper = await page.locator('[data-kg="editor-wrapper"]').first();
+
+      // Selecciona el elemento "div" descendiente que tiene el atributo "data-kg" con valor "editor"
+      const editorElement = await editorWrapper.locator('div[data-kg="editor"]').first();
+
+      // Realiza acciones o aserciones con el elemento seleccionado
+      await editorElement.click();  // Ejemplo: haz clic en el elemento
+
+      // Escribe en el elemento después de hacer clic
+      await editorElement.type(contenido);
+
     });
 
     await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+      await page.waitForTimeout(2000);
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
-      await page.getByRole('button', { name: 'Publish' }).click(); 
+      const publishButton = await page.getByRole('button', { name: 'Publish' });
+  
+      // Verifica si se encontró el botón antes de hacer clic
+      if (publishButton) {
+        await publishButton.click();
+      } else {
+        const publishButton2 = await page.locator('button[role="button"]').first();
+        publishButton2.click();
+      }
+
+
     }); 
     
     await test.step('And: Espera un segundo', async () => {
@@ -141,7 +161,16 @@ test.describe('Posts creación', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
-      await page.getByRole('button', { name: 'Publish' }).click(); 
+      const publishButton = await page.getByRole('button', { name: 'Publish' });
+  
+      // Verifica si se encontró el botón antes de hacer clic
+      if (publishButton) {
+        await publishButton.click();
+      } else {
+        const publishButton2 = await page.locator('button[role="button"]').first();
+        publishButton2.click();
+      }
+
     }); 
     
     await test.step('And: Espera un segundo', async () => {
@@ -218,8 +247,17 @@ test.describe('Posts creación', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      // Selecciona el elemento que tiene el atributo "data-kg" con valor "editor-wrapper"
+      const editorWrapper = await page.locator('[data-kg="editor-wrapper"]').first();
+
+      // Selecciona el elemento "div" descendiente que tiene el atributo "data-kg" con valor "editor"
+      const editorElement = await editorWrapper.locator('div[data-kg="editor"]').first();
+
+      // Realiza acciones o aserciones con el elemento seleccionado
+      await editorElement.click();  // Ejemplo: haz clic en el elemento
+
+      // Escribe en el elemento después de hacer clic
+      await editorElement.type(contenido);
     });
 
     await test.step('And: Espera un segundo', async () => {
@@ -236,7 +274,16 @@ test.describe('Posts creación', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
-      await page.getByRole('button', { name: 'Publish' }).click(); 
+      const publishButton = await page.getByRole('button', { name: 'Publish' });
+  
+      // Verifica si se encontró el botón antes de hacer clic
+      if (publishButton) {
+        await publishButton.click();
+      } else {
+        const publishButton2 = await page.locator('button[role="button"]').first();
+        publishButton2.click();
+      }
+
     }); 
     
     await test.step('And: Espera un segundo', async () => {
@@ -319,8 +366,17 @@ test.describe('Posts creación', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      // Selecciona el elemento que tiene el atributo "data-kg" con valor "editor-wrapper"
+      const editorWrapper = await page.locator('[data-kg="editor-wrapper"]').first();
+
+      // Selecciona el elemento "div" descendiente que tiene el atributo "data-kg" con valor "editor"
+      const editorElement = await editorWrapper.locator('div[data-kg="editor"]').first();
+
+      // Realiza acciones o aserciones con el elemento seleccionado
+      await editorElement.click();  // Ejemplo: haz clic en el elemento
+
+      // Escribe en el elemento después de hacer clic
+      await editorElement.type(contenido);
     });
 
     await test.step('And: Espera un segundo', async () => {
@@ -345,11 +401,20 @@ test.describe('Posts creación', () => {
     });
 
     await test.step('And: Removemos el autor', async () => {
-      await page.getByRole('button', { name: 'grupo 25 remove element' }).getByLabel('remove element').click();
+      await page.getByRole('button', { name: 'andes remove element' }).getByLabel('remove element').click();
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
-      await page.getByRole('button', { name: 'Publish' }).click(); 
+      const publishButton = await page.getByRole('button', { name: 'Publish' });
+  
+      // Verifica si se encontró el botón antes de hacer clic
+      if (publishButton) {
+        await publishButton.click();
+      } else {
+        const publishButton2 = await page.locator('button[role="button"]').first();
+        publishButton2.click();
+      }
+
     }); 
     
     await test.step('And: Espera un segundo', async () => {
