@@ -2,7 +2,7 @@ version: '1.0.0'
 
 services:
   ghost-playwright:
-    image: ghost:4-alpine
+    image: ghost:4.48.9
     restart: always
     ports:
       - 2368:2368
@@ -41,10 +41,10 @@ services:
       - ghost-playwright
 
   ghost-kraken:
-    image: ghost:4-alpine
+    image: ghost:4.48.9
     restart: always
     ports:
-      - 2370:2368
+      - 8080:2368
     depends_on:
       - db-kraken
     environment:
@@ -53,12 +53,12 @@ services:
       database__connection__user: root
       database__connection__password: ghost
       database__connection__database: ghost
-      url: http://localhost:2370
+      url: http://localhost:2368
     networks:
       - ghost-kraken
 
   db-kraken:
-    image: mysql:8.0
+    image: mariadb:latest
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ghost
