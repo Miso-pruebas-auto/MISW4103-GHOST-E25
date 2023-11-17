@@ -1,10 +1,13 @@
 .idea
 kraken/node_modules
 kraken/reports/*
+
+kraken-2/node_modules
+kraken-2/reports/*
+
 playwright/node_modules
 
 .env
 playwright/.env
 node_modules
 
-kraken/screenshots/*
