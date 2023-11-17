@@ -31,7 +31,16 @@ AfterStep(async function (step) {
       .replaceAll(' ', '_')}`;
 
     if (!fs.existsSync(folderName)) {
-      fs.mkdirSync(folderName);
+      fs.mkdir(folderName, { recursive: true }, async (err) => {
+        if (err) throw err;
+
+        let screenshot = await this.driver.saveScreenshot(
+          `${folderName}/${this.stepCount}.png`,
+        );
+        this.attach(screenshot, 'image/png');
+        console.log(`Screenshot taken: ${folderName}/${this.stepCount}.png`);
+      });
+      return;
     }
 
     let screenshot = await this.driver.saveScreenshot(
@@ -39,7 +48,8 @@ AfterStep(async function (step) {
     );
     this.attach(screenshot, 'image/png');
     console.log(`Screenshot taken: ${folderName}/${this.stepCount}.png`);
-  } catch {
+  } catch (e) {
+    console.log(e);
     console.log('KRAKEN: Could not take screenshot');
   }
   return;

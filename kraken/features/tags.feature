@@ -1,6 +1,6 @@
 Feature: Tags
 
-  @web @user2 @step1
+  @web @user2
   Scenario: Create a new valid tag
     Given I navigate to page "<GHOST_URL>"
     And I wait for 2 seconds
