@@ -1,72 +1,153 @@
 version: '1.0.0'
 
 services:
-  ghost-playwright:
-    image: ghost:4.48.9
-    restart: always
-    ports:
-      - 2368:2368
-    depends_on:
-      - db-playwright
-    environment:
-      database__client: mysql
-      database__connection__host: db-playwright
-      database__connection__user: root
-      database__connection__password: ghost
-      database__connection__database: ghost
-      url: http://localhost:2368
-    networks:
-      - ghost-playwright
 
-  db-playwright:
-    image: mysql:8.0
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: ghost
-    networks:
-      - ghost-playwright
-
-  playwright:
-    build:
-      dockerfile: ./playwright/Dockerfile
-    env_file:
-      - .env
-    depends_on:
-      - ghost-playwright
-    ports:
-      - 9323:9323
-    environment:
-      BASE_URL: ${BASE_URL}
-    networks:
-      - ghost-playwright
-
-  ghost-kraken:
+  ##########################################
+                #PLAYWRIGHT#
+  ##########################################
+  ghost-playwright-4489:
     image: ghost:4.48.9
     restart: always
     ports:
       - 8080:2368
     depends_on:
-      - db-kraken
+      - db-ghost-playwright-4489
     environment:
       database__client: mysql
-      database__connection__host: db-kraken
+      database__connection__host: db-ghost-playwright-4489
       database__connection__user: root
       database__connection__password: ghost
       database__connection__database: ghost
-      url: http://localhost:2368
+      url: http://localhost:8080
     networks:
-      - ghost-kraken
+      - ghost-playwright-4489
 
-  db-kraken:
+  db-ghost-playwright-4489:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ghost
+    networks:
+      - ghost-playwright-4489
+
+  playwright-4489:
+    build:
+      dockerfile: ./playwright-ghost-4-48.9/Dockerfile
+    env_file:
+      - .env
+    depends_on:
+      - ghost-playwright-4489
+    ports:
+      - 8081:9323
+    environment:
+      BASE_URL: ${BASE_URL}
+    networks:
+      - ghost-playwright-4489
+
+  ##########################################
+
+  ghost-playwright-4380:
+    image: ghost:4.38.0
+    restart: always
+    ports:
+      - 8082:2368
+    depends_on:
+      - db-ghost-playwright-4380
+    environment:
+      database__client: mysql
+      database__connection__host: db-ghost-playwright-4380
+      database__connection__user: root
+      database__connection__password: ghost
+      database__connection__database: ghost
+      url: http://localhost:8082
+    networks:
+      - ghost-playwright-4380
+
+  db-ghost-playwright-4380:
+    image: mysql:8.0
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ghost
+    networks:
+      - ghost-playwright-4380
+
+  playwright-4380:
+    build:
+      dockerfile: ./playwright-ghost-4-38.0/Dockerfile
+    env_file:
+      - .env
+    depends_on:
+      - ghost-playwright-4380
+    ports:
+      - 8083:9323
+    environment:
+      BASE_URL: ${BASE_URL}
+    networks:
+      - ghost-playwright-4380
+
+
+  ##########################################
+                  #KRAKEN#
+  ##########################################
+
+  ghost-kraken-4489:
+    image: ghost:4.48.9
+    restart: always
+    ports:
+      - 8090:2368
+    depends_on:
+      - db-kraken-4489
+    environment:
+      database__client: mysql
+      database__connection__host: db-kraken-4489
+      database__connection__user: root
+      database__connection__password: ghost
+      database__connection__database: ghost
+      url: http://localhost:8090
+    networks:
+      - ghost-kraken-4489
+
+  db-kraken-4489:
     image: mariadb:latest
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: ghost
     networks:
-      - ghost-kraken
+      - ghost-kraken-4489
+
+  ##########################################
+
+  ghost-kraken-4380:
+    image: ghost:4.38.0
+    restart: always
+    ports:
+      - 8091:2368
+    depends_on:
+      - db-kraken-4380
+    environment:
+      database__client: mysql
+      database__connection__host: db-kraken-4380
+      database__connection__user: root
+      database__connection__password: ghost
+      database__connection__database: ghost
+      url: http://localhost:8091
+    networks:
+      - ghost-kraken-4380
+
+  db-kraken-4380:
+    image: mariadb:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: ghost
+    networks:
+      - ghost-kraken-4380
 
 networks:
-  ghost-kraken:
+  ghost-playwright-4380:
     driver: bridge
-  ghost-playwright:
+  ghost-playwright-4489:
+    driver: bridge
+  ghost-kraken-4489:
+    driver: bridge
+  ghost-kraken-4380:
     driver: bridge
