@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "kraken": "npm run --prefix ./kraken kraken",
-    "kraken2": "npm run --prefix ./kraken-2 kraken"
+    "kraken": "npm run --prefix kraken-ghost-4-38.0 kraken",
+    "kraken2": "npm run --prefix ./kraken-ghost-4-48.9 kraken"
   },
   "dependencies": {
     "dotenv": "^16.3.1"
