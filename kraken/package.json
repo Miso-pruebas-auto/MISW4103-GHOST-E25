@@ -1,0 +1,15 @@
+{
+  "name": "kraken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "resemble": "node resemblejs.js"
+  },
+  "author": "Felipe Valencia",
+  "license": "MIT",
+  "dependencies": {
+    "mz": "^2.7.0",
+    "resemblejs": "^5.0.0"
+  }
+}

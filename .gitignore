@@ -5,6 +5,7 @@ kraken-ghost-4-48.9/node_modules
 kraken-ghost-4-48.9/reports/*
 
 playwright/node_modules
+kraken/node_modules
 
 .env
 playwright/.env
