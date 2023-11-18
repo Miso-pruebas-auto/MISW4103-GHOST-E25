@@ -1,7 +1,7 @@
 version: '1.0.0'
 
 services:
-  ghost-playwright:
+  ghost-playwright-4480:
     image: ghost:4.48.9
     restart: always
     ports:
@@ -17,6 +17,57 @@ services:
       url: http://localhost:2368
     networks:
       - ghost-playwright
+
+  ghost-playwright-4380:
+    image: ghost:4.38.0
+    restart: always
+    ports:
+      - 2370:2368
+    depends_on:
+      - db-kraken
+    environment:
+      database__client: mysql
+      database__connection__host: db-kraken
+      database__connection__user: root
+      database__connection__password: ghost
+      database__connection__database: ghost
+      url: http://localhost:2370
+    networks:
+      - ghost-kraken
+
+  ghost-kraken-4480:
+    image: ghost:4.48.9
+    restart: always
+    ports:
+      - 2370:2368
+    depends_on:
+      - db-kraken
+    environment:
+      database__client: mysql
+      database__connection__host: db-kraken
+      database__connection__user: root
+      database__connection__password: ghost
+      database__connection__database: ghost
+      url: http://localhost:2370
+    networks:
+      - ghost-kraken
+
+  ghost-kraken-4380:
+    image: ghost:4.38.0
+    restart: always
+    ports:
+      - 2370:2368
+    depends_on:
+      - db-kraken
+    environment:
+      database__client: mysql
+      database__connection__host: db-kraken
+      database__connection__user: root
+      database__connection__password: ghost
+      database__connection__database: ghost
+      url: http://localhost:2370
+    networks:
+      - ghost-kraken
 
   db-playwright:
     image: mysql:8.0
@@ -39,23 +90,6 @@ services:
       BASE_URL: ${BASE_URL}
     networks:
       - ghost-playwright
-
-  ghost-kraken:
-    image: ghost:4-alpine
-    restart: always
-    ports:
-      - 2370:2368
-    depends_on:
-      - db-kraken
-    environment:
-      database__client: mysql
-      database__connection__host: db-kraken
-      database__connection__user: root
-      database__connection__password: ghost
-      database__connection__database: ghost
-      url: http://localhost:2370
-    networks:
-      - ghost-kraken
 
   db-kraken:
     image: mysql:8.0
