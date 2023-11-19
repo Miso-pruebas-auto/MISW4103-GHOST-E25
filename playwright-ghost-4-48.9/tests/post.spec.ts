@@ -8,7 +8,7 @@ test.describe('Posts creación', () => {
   test.beforeEach(async ({ page }) => {      
     await test.step('Given: El usuario ha iniciado sesión', async () => {
         await loginSessionAdmin(page);
-        await page.waitForTimeout(1000); 
+        await page.waitForTimeout(2000); 
     });
 
     test.info().annotations.push({
@@ -28,8 +28,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
@@ -38,8 +38,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
@@ -48,8 +48,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
@@ -58,8 +58,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
@@ -69,8 +69,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
@@ -79,8 +79,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     }); 
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
@@ -89,8 +89,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
@@ -99,8 +99,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
@@ -110,8 +110,8 @@ test.describe('Posts creación', () => {
     });
 
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
@@ -135,8 +135,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
     });
 
     await test.step('And: Hace clic en el campo de título del post', async () => {
@@ -144,8 +144,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
 
@@ -154,8 +154,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
 
@@ -164,8 +164,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
 
@@ -174,8 +174,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     }); 
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
 
@@ -184,8 +184,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
 
@@ -194,8 +194,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
 
@@ -205,8 +205,8 @@ test.describe('Posts creación', () => {
     });
 
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
 
@@ -229,8 +229,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
@@ -239,8 +239,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
@@ -249,8 +249,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
@@ -259,8 +259,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
@@ -270,8 +270,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
@@ -292,8 +292,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     }); 
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
@@ -302,8 +302,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
@@ -312,8 +312,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
@@ -323,8 +323,8 @@ test.describe('Posts creación', () => {
     });
 
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
@@ -353,8 +353,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -363,8 +363,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -373,8 +373,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -383,8 +383,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -394,8 +394,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -404,8 +404,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -415,8 +415,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -430,8 +430,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     }); 
     
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -440,8 +440,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -450,8 +450,8 @@ test.describe('Posts creación', () => {
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page,'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 

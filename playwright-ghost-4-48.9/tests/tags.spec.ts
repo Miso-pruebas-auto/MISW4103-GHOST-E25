@@ -28,8 +28,8 @@ test.describe('tags', () => {
         await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color', paso++);
     });
 
@@ -38,8 +38,8 @@ test.describe('tags', () => {
         await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color', paso++);
     });
 
@@ -48,8 +48,8 @@ test.describe('tags', () => {
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color', paso++);
     });
 
@@ -58,8 +58,8 @@ test.describe('tags', () => {
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color', paso++);
     });
 
@@ -68,8 +68,8 @@ test.describe('tags', () => {
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color', paso++);
     });
 
@@ -103,8 +103,8 @@ test.describe('tags', () => {
         await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_color', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_color', paso++);
     });
 
@@ -113,8 +113,8 @@ test.describe('tags', () => {
         await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_color', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_color', paso++);
     });
 
@@ -123,8 +123,8 @@ test.describe('tags', () => {
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_color', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_color', paso++);
     });
 
@@ -133,8 +133,8 @@ test.describe('tags', () => {
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_color', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_color', paso++);
     });
 
@@ -156,8 +156,8 @@ test.describe('tags', () => {
         await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_titulo', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_titulo', paso++);
     });
 
@@ -166,8 +166,8 @@ test.describe('tags', () => {
         await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_titulo', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_titulo', paso++);
     });
 
@@ -176,8 +176,8 @@ test.describe('tags', () => {
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_titulo', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_sin_titulo', paso++);
     });
 
@@ -201,8 +201,8 @@ test.describe('tags', () => {
         await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear', paso++);
     });
 
@@ -211,8 +211,8 @@ test.describe('tags', () => {
         await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear', paso++);
     });
 
@@ -221,8 +221,8 @@ test.describe('tags', () => {
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear', paso++);
     });
 
@@ -231,8 +231,8 @@ test.describe('tags', () => {
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear', paso++);
     });
 
@@ -242,8 +242,8 @@ test.describe('tags', () => {
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear', paso++);
     });
 
-    await test.step('And: Espera un segundo', async () => {
-      await page.waitForTimeout(1000);
+    await test.step('And: Espera dos segundos', async () => {
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'tags', 'Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear', paso++);
     });
 

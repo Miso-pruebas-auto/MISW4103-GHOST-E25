@@ -24,6 +24,7 @@ test.describe('members', () => {
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
       await page.goto('/ghost/#/members');
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'members', 'creación_de_miembro', paso++);
     });
 
@@ -52,7 +53,7 @@ test.describe('members', () => {
 
     await test.step('Then: El nuevo miembro se muestra en la lista de miembros creados', async () => {
       await page.goto('/ghost/#/members');
-      await page.waitForTimeout(1000);
+      await page.waitForTimeout(2000);
       await page.getByRole('link', { name: `${newMemberName} ${newMemberEmail}` }).click();
 
       expect(await page.getByRole('heading', { name: newMemberName, exact: true }).innerText()).toBe(newMemberName);
@@ -68,6 +69,7 @@ test.describe('members', () => {
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
       await page.goto('/ghost/#/members');
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'members', 'creación_de_miembro_sin_correo', paso++);
     });
 
@@ -101,6 +103,7 @@ test.describe('members', () => {
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
       await page.goto('/ghost/#/members');
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'members', 'creación_de_miembro_con_correo_inválid', paso++);
     });
 
@@ -138,6 +141,7 @@ test.describe('members', () => {
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
       await page.goto('/ghost/#/members');
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'members', 'cancelar_creación_de_miembro', paso++);
     });
 
@@ -160,7 +164,7 @@ test.describe('members', () => {
 
     await test.step('And: El usuario llena el formulario de nuevo miembro', async () => {
       await page.goto('/ghost/#/members');
-      await page.waitForTimeout(1000);
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'members', 'cancelar_creación_de_miembro', paso++);
     });
 
