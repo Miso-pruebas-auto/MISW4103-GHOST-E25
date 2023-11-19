@@ -1,20 +1,14 @@
 const compareImages = require('resemblejs/compareImages');
 const fs = require('mz/fs');
 const path = require('path');
-
-const resultScreenshotFolders = [
-  '../kraken-ghost-4-38.0/screenshots',
-  '../kraken-ghost-4-48.9/screenshots'
-];
-
 const ignoreFiles = ['.DS_Store', '.gitkeep'];
 
 
-function getImagesToCompare() {
+function getImagesToCompare(paths) {
   const featuresToCompare = {};
 
   return new Promise((resolve, reject) => {
-    resultScreenshotFolders.forEach(async (folder) => {
+    paths.forEach(async (folder) => {
       const ghostVersion = folder.split('/')[1];
 
       const items = await fs.readdir(folder);
@@ -55,16 +49,12 @@ function getImagesToCompare() {
           const folderName = `${feature}/${scenario}`;
 
           if (!featuresToCompare[folderName]) {
-            featuresToCompare[folderName] = [
-              {
-                ghostVersion,
-                steps: stepWithEntirePath
-              }
-            ];
+            featuresToCompare[folderName] = [{
+              ghostVersion, steps: stepWithEntirePath
+            }];
           } else {
             featuresToCompare[folderName].push({
-              ghostVersion,
-              steps: stepWithEntirePath
+              ghostVersion, steps: stepWithEntirePath
             });
           }
         }
@@ -79,18 +69,9 @@ async function getDifferenceForImage(from, to) {
   const options = {
     output: {
       errorColor: {
-        red: 255,
-        green: 0,
-        blue: 255
-      },
-      errorType: 'movement',
-      transparency: 0.3,
-      largeImageThreshold: 1200,
-      useCrossOrigin: false,
-      outputDiff: true
-    },
-    scaleToSameSize: true,
-    ignore: 'antialiasing'
+        red: 255, green: 0, blue: 255
+      }, errorType: 'movement', transparency: 0.3, largeImageThreshold: 1200, useCrossOrigin: false, outputDiff: true
+    }, scaleToSameSize: true, ignore: 'antialiasing'
   };
 
 
@@ -99,11 +80,7 @@ async function getDifferenceForImage(from, to) {
   console.log(to);
   console.log('__________________________');
 
-  return await compareImages(
-    await fs.readFile(from),
-    await fs.readFile(to),
-    options
-  );
+  return await compareImages(await fs.readFile(from), await fs.readFile(to), options);
 }
 
 async function makeDir(dirPath) {
@@ -114,9 +91,9 @@ async function makeDir(dirPath) {
   }
 }
 
-async function compare() {
+async function compare(paths, framework) {
   return new Promise(async (resolve, reject) => {
-    const images = await getImagesToCompare();
+    const images = await getImagesToCompare(paths);
     const results = [];
 
     for (const [key, steps] of Object.entries(images)) {
@@ -128,22 +105,15 @@ async function compare() {
           const fromStep = from.steps[i];
           const toStep = to.steps[i];
           const resultPath = `./results/resemblejs/${key}`;
-          const nextJsImagesPath = path.join(__dirname, '../resemble-report/public/results/kraken', key);
-          const nextJsResultsPath = path.join(__dirname, '../resemble-report/src/results/kraken', key);
+          const nextJsImagesPath = path.join(__dirname, `../resemble-report/public/results/${framework}`, key);
+          const nextJsResultsPath = path.join(__dirname, `../resemble-report/src/results/${framework}`, key);
           const result = await getDifferenceForImage(fromStep, toStep);
 
           results.push({
-            path: key,
-            compare: `${i + 1}.png`,
-            from: fromStep,
-            to: toStep,
-            data: result
+            path: key, compare: `${i + 1}.png`, from: fromStep, to: toStep, data: result
           });
 
           await toNextJs(nextJsResultsPath, nextJsImagesPath, i, result, fromStep, toStep);
-
-          // await makeDir(resultPath);
-          // await storeResult(`${resultPath}/${i + 1}.png`, result);
         }
       }
     }
@@ -168,7 +138,12 @@ async function copyFile(source, target) {
   await fs.copyFile(source, target);
 }
 
-compare().then(async (res) => {
+compare(['../kraken-ghost-4-38.0/screenshots', '../kraken-ghost-4-48.9/screenshots'], 'kraken').then(async (res) => {
   await fs.writeFile('../resemble-report/src/results/kraken/results.json', JSON.stringify(res, null, 2));
+  console.log('Images compared successfully');
+});
+
+compare(['../playwright-ghost-4-38.0/screenshots', '../playwright-ghost-4-48.9/screenshots'], 'playwright').then(async (res) => {
+  await fs.writeFile('../resemble-report/src/results/playwright/results.json', JSON.stringify(res, null, 2));
   console.log('Images compared successfully');
 });
