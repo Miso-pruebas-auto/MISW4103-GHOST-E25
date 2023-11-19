@@ -1,5 +1,6 @@
+# Ejecición local (no usar si esta en ec2)
 
-## Antes de Empezar con Playwright 4-48.9
+## Antes de Empezar con Playwright 4-38.0
 Antes de comenzar con las pruebas automatizadas utilizando Playwright, siga estos pasos para configurar el entorno y ejecutar las pruebas de extremo a extremo.
 1. Requisitos Previos: 
 Asegúrese de tener Docker instalado en su sistema. Si está utilizando Windows, se recomienda Docker Desktop.
@@ -19,17 +20,31 @@ $ nvm install 16.14.2
 $ nvm use 16.14.2
 ```
 4. Configuración del Entorno Docker: 
-Asegúrese de tener Docker instalado y, dentro de la carpeta de Playwright de la versión 4-48.9,, ejecute los siguientes comandos en la terminal para levantar los contenedores de la base de datos y Ghost:
+Asegúrese de tener Docker instalado y, dentro de la carpeta de Playwright de la versión 4-38.0, ejecute los siguientes comandos en la terminal para levantar los contenedores de la base de datos y Ghost:
 
 ```bash
 $ docker compose up -d
 ```
-Espere a que Ghost esté disponible. Puede verificar su estado accediendo a http://localhost:2368/ghost/#/signin. Esto puede tardar aproximadamente 20 segundos.
+Espere a que Ghost esté disponible. Puede verificar su estado accediendo a http://localhost:8080/ghost/#/signin. Esto puede tardar aproximadamente 20 segundos.
+
+Ahora deberá ubicar el archivo de playwright.config.ts y modificar la ruta del archivo de
+
+``` js
+  use: {
+    /* Base URL to use in actions like `await page.goto('/')`. */
+    baseURL: 'http://ec2-44-216-57-54.compute-1.amazonaws.com:8082/',
+```
+``` js
+  use: {
+    /* Base URL to use in actions like `await page.goto('/')`. */
+    baseURL: 'http://localhost:8080/',
+```
 
 5. Ejecución de las Pruebas: 
 Ejecute las pruebas automatizadas con el siguiente comando:
 
 ```bash
+$ cd playwright-ghost-4-38.0
 $ npm install
 $ npx playwright install firefox
 $ npx playwright install-deps firefox
@@ -55,16 +70,8 @@ Para eliminar los contenedores, volúmenes e imágenes existentes, puede utiliza
 $ docker compose down --rmi all  # Detendrá e eliminará los servicios definidos en el archivo docker-compose.yml además eliminará todas las imágenes utilizadas por los servicios.
 $ docker volume rm $(docker volume ls -q)  # Eliminará todos los volúmenes creados por los servicios.
 ```
-Asegúrese de revisar y confirmar que desea eliminar estos recursos antes de proceder.
 
-2. Reconstrucción y Ejecución de Contenedores: 
-Después de limpiar el entorno, puede reconstruir y volver a ejecutar los contenedores utilizando los siguientes comandos:
-
-```bash
-$ docker compose up -d db-playwright --build    # Reconstruye e inicia el contenedor de la base de datos
-$ docker compose up -d ghost-playwright --build    # Reconstruye e inicia el contenedor de Ghost
-```
-Estos comandos aseguran que los contenedores se construyan con las últimas configuraciones y luego se ejecuten en segundo plano.
+2. Siga nuevamente los pasos de ejecución iniciales
 
 ### Nota Importante
 Asegúrese de ejecutar estos pasos con precaución, ya que eliminará todos los datos existentes y empezará desde cero. Este enfoque es útil cuando se realizan cambios significativos en la configuración o en el código del proyecto.
