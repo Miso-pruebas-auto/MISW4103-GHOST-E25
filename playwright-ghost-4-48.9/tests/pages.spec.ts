@@ -77,7 +77,7 @@ test.describe('pages', () => {
     await test.step('And: El usuario crea el título de la nueva pagina', async () => {
       await page.getByPlaceholder('Page title').click();
       await page.getByPlaceholder('Page title').fill(newPageTitle);
-      await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
+      await page.getByPlaceholder('Page title').press('Tab');
       await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'pages', 'Creación_página_y_publicarla', paso++);
     });
