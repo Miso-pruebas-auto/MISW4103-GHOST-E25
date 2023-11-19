@@ -1,7 +1,10 @@
 chmod 400 ubuntu.pem
 
-# Comando a ejecutar en el servidor remoto
-DOCKER-DOWN="docker-compose down --rmi all"
-DOCKER-UP="docker-compose up -d"
+# Define los comandos en el servidor remoto
+DOCKER_DOWN="docker compose down --rmi all"
+CD_REPO="cd MISW4103-GHOST-E25"
+DOCKER_UP="docker compose up -d"
+TIMEOUT="sleep 30"
 
-ssh -i ubuntu.pem ubuntu@ec2-44-216-57-54.compute-1.amazonaws.com "$DOCKER-DOWN" "$DOCKER-UP"
+# Ejecuta los comandos en el servidor remoto a través de SSH
+ssh -i ubuntu.pem ubuntu@ec2-44-216-57-54.compute-1.amazonaws.com "$CD_REPO && $DOCKER_DOWN && $DOCKER_UP && $TIMEOUT"

@@ -156,13 +156,21 @@ test.describe('pages', () => {
     await test.step('And: El usuario cancela la nueva pagina antes de publicarla', async () => {
       await page.getByRole('button', { name: 'Publish' }).click();
       await page.getByRole('button', { name: 'Cancel', exact: true }).click();
+<<<<<<< HEAD
       await screenshotPagePath(page, 'pages', 'Creación_página_y_cancelar_su_creación', paso++);
+=======
+      await expect(page).toHaveScreenshot();
+>>>>>>> 60a35c56cf6f83426937c6c9990fe883502962af
     });
 
     await test.step('Then: La nueva página no se carga en el navegador', async () => {
       await page.goto('/test-pagina-cancelada/');
       expect(await page.getByRole('heading', { name: '404' }).innerText()).toBe('404');  
+<<<<<<< HEAD
       await screenshotPagePath(page, 'pages', 'Creación_página_y_cancelar_su_creación', paso++);
+=======
+      await expect(page).toHaveScreenshot();
+>>>>>>> 60a35c56cf6f83426937c6c9990fe883502962af
     });
 
   });

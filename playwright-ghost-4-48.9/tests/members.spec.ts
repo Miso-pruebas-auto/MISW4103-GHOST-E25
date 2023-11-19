@@ -23,7 +23,6 @@ test.describe('members', () => {
     let paso = 1;
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
-      await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
       await page.goto('/ghost/#/members');
       await screenshotPagePath(page, 'members', 'creación_de_miembro', paso++);
     });
@@ -68,7 +67,6 @@ test.describe('members', () => {
     let paso = 1;
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
-      await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
       await page.goto('/ghost/#/members');
       await screenshotPagePath(page, 'members', 'creación_de_miembro_sin_correo', paso++);
     });
@@ -102,7 +100,6 @@ test.describe('members', () => {
     let paso = 1;
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
-      await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
       await page.goto('/ghost/#/members');
       await screenshotPagePath(page, 'members', 'creación_de_miembro_con_correo_inválid', paso++);
     });
@@ -140,7 +137,6 @@ test.describe('members', () => {
     let paso = 1; 
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
-      await page.locator('button').filter({ hasText: '.close-stroke_svg__a{fill:none;stroke:currentColor;stroke-linecap:round;stroke-l' }).click();
       await page.goto('/ghost/#/members');
       await screenshotPagePath(page, 'members', 'cancelar_creación_de_miembro', paso++);
     });
