@@ -1,4 +1,8 @@
 #!/bin/bash
+
+echo "Starting Ghost"
+sleep 20
+
 npm install
 npx playwright install firefox
 npx playwright install-deps firefox
