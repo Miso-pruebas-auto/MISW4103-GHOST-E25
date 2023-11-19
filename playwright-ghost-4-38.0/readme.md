@@ -52,8 +52,8 @@ Si desea volver a ejecutar el proyecto desde cero, siga estos pasos para limpiar
 Para eliminar los contenedores, volúmenes e imágenes existentes, puede utilizar los siguientes comandos (siempre asegúrese de ubicar en la versión de playwright correcta):
 
 ```bash
-$ docker compose down -v # Detiene y elimina contenedores y volúmenes
-$ docker rmi $(docker images -a -q) -f    # Elimina todas las imágenes de Docker
+$ docker compose down --rmi all  # Detendrá e eliminará los servicios definidos en el archivo docker-compose.yml además eliminará todas las imágenes utilizadas por los servicios.
+$ docker volume rm $(docker volume ls -q)  # Eliminará todos los volúmenes creados por los servicios.
 ```
 Asegúrese de revisar y confirmar que desea eliminar estos recursos antes de proceder.
 
