@@ -21,7 +21,7 @@ Documentación de las pruebas de kraken y playwright:
 - [Playwright Ghost 4.48.9](../playwright-ghost-4-48.9/readme-ejecucion-local.md)
 
 
-Posteriormente, se debe ejecutar las pruebas de regresión visual con ResembleJS previamente, para esto puede seguir los pasos de la documentación de [vrt-tools](../vrt-tools/README.md).
+Posteriormente, se debe ejecutar las pruebas de regresión visual con ResembleJS, para esto puede seguir los pasos de la documentación de [vrt-tools](../vrt-tools/README.md).
 
 ## Instalación
 
