@@ -30,23 +30,24 @@ services:
     networks:
       - ghost-playwright-4489
 
-  playwright-4489:
-    build:
-      dockerfile: ./playwright-ghost-4-48.9/Dockerfile
-    env_file:
-      - .env
-    depends_on:
-      - ghost-playwright-4489
-    ports:
-      - 8081:9323
-    environment:
-      BASE_URL: ${BASE_URL}
-    networks:
-      - ghost-playwright-4489
+  # playwright-4489:
+  #   build:
+  #     dockerfile: ./playwright-ghost-4-48.9/Dockerfile
+  #   env_file:
+  #     - .env
+  #   depends_on:
+  #     - ghost-playwright-4489
+  #   ports:
+  #     - 8081:9323
+  #   environment:
+  #     BASE_URL: ${BASE_URL}
+  #   networks:
+  #     - ghost-playwright-4489
 
   ##########################################
 
   ghost-playwright-4380:
+    
     image: ghost:4.38.0
     restart: always
     ports:
@@ -71,19 +72,19 @@ services:
     networks:
       - ghost-playwright-4380
 
-  playwright-4380:
-    build:
-      dockerfile: ./playwright-ghost-4-38.0/Dockerfile
-    env_file:
-      - .env
-    depends_on:
-      - ghost-playwright-4380
-    ports:
-      - 8083:9323
-    environment:
-      BASE_URL: ${BASE_URL}
-    networks:
-      - ghost-playwright-4380
+  # playwright-4380:
+  #   build:
+  #     dockerfile: ./playwright-ghost-4-38.0/Dockerfile
+  #   env_file:
+  #     - .env
+  #   depends_on:
+  #     - ghost-playwright-4380
+  #   ports:
+  #     - 8083:9323
+  #   environment:
+  #     BASE_URL: ${BASE_URL}
+  #   networks:
+  #     - ghost-playwright-4380
 
 
   ##########################################
