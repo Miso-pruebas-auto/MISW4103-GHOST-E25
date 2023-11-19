@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Resemble Report
 
-## Getting Started
+Proyecto de NextJS para visualizar el reporte de las pruebas de regresión visual de la herramienta usando ResembleJS para la aplicación GHOST en ambas versiones previamente seleccionadas(4.38.0 y 4.48.9). 
 
-First, run the development server:
+Provee visualización de las imagenes de referencia y las imagenes de comparación generadas para Kraken y Playwright.
+
+## Prerequisitos
+
+Para ejecutar este proyecto, necesitarás las siguientes versiones de software:
+
+- Node.js LTS
+- npm LTS
+
+Es importante que primero debe ejecutar las pruebas de kraken y playwright en ambas versiones para que se generen las imagenes de referencia, luego de esto puede ejecutar las pruebas de regresión visual.
+
+Documentación de las pruebas de kraken y playwright:
+
+- [Kraken Ghost 4.38.0](../kraken-ghost-4-38.0/README.md)
+- [Kraken Ghost 4.48.9](../kraken-ghost-4-48.9/README.md)
+- [Playwright Ghost 4.38.0](../playwright-ghost-4-38.0/readme-ejecucion-local.md)
+- [Playwright Ghost 4.48.9](../playwright-ghost-4-48.9/readme-ejecucion-local.md)
+
+
+Posteriormente, se debe ejecutar las pruebas de regresión visual con ResembleJS previamente, para esto puede seguir los pasos de la documentación de [vrt-tools](../vrt-tools/README.md).
+
+## Instalación
+
+Para instalar las dependencias del proyecto, ejecute el siguiente comando:
+
+```bash
+npm install
+```
+
+## Ejecución
+Una vez haya ejecutado tanto las pruebas de kraken y playwright, como las pruebas de regresión visual con ResembleJS, puede ejecutar el proyecto de NextJS para visualizar el reporte de las pruebas de regresión visual.
+
+Para ejecutar el proyecto, tiene dos opciones:
+
+### Development server
+Esta opción le permite ejecutar el proyecto en modo desarrollo, para esto debe ejecutar el siguiente comando:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Production server
+Esta opción le permite ejecutar el proyecto en modo producción, para esto debe ejecutar el siguiente comando:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Una vez haya ejecutado cualquiera de las dos opciones, puede acceder al proyecto en el siguiente enlace: [http://localhost:3000](http://localhost:3000)
 
-## Learn More
+### Visualización del Reporte en Vercel
+Para facilitar la visualización del reporte de ResembleJs, se ha creado un sitio web en Vercel, con el fin de que pueda visualizar el reporte de manera más sencilla. Para acceder a él, puede hacerlo a través del siguiente enlace: [https://misw-4103-ghost-e25.vercel.app/](https://misw-4103-ghost-e25.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Este proyecto ya contiene un previo reporte de ResembleJs ejecutado por nosotros, por lo que puede visualizarlo sin necesidad de ejecutar el proyecto localmente.
