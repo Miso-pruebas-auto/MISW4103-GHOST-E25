@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { loginSessionAdmin } from '../utils/login_sesion_admin';
 import { faker } from '@faker-js/faker';
+import { screenshotPagePath } from '../utils/utils';
 
 test.describe('settings', () => {
   test.beforeEach(async ({ page }) => {
@@ -11,13 +12,16 @@ test.describe('settings', () => {
 
   test('cambiar el site title con otro nombre', async ({ page }) => {
     const newPageTitle = `test-${faker.word.noun()}`;
+    let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_otro_nombre', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_otro_nombre', paso++);
     });
 
     await test.step('And: El usuario cambia el título de la pagina', async () => {
@@ -43,24 +47,29 @@ test.describe('settings', () => {
 
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(1000);
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_otro_nombre', paso++);
     });
 
     await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
       await page.goto('/');
       expect(await page.title()).toBe(newPageTitle);
       expect(await page.getByRole('heading', { name: newPageTitle }).innerText()).toBe(newPageTitle);
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_otro_nombre', paso++);
     });
   });
 
   test('cambiar el site title con un string vacio', async ({ page }) => {
     const newPageTitle = "";
+    let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_un_string_vacio', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_un_string_vacio', paso++);
     });
 
     await test.step('And: El usuario cambia el título de la pagina', async () => {
@@ -85,23 +94,28 @@ test.describe('settings', () => {
       }
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(1000);
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_un_string_vacio', paso++);
     });
 
     await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
       await page.goto('/');
       expect(await page.title()).toBe(newPageTitle);
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_un_string_vacio', paso++);
     });
   });
 
   test('cambiar el site description de la pagina', async ({ page }) => {
     const newPageDescription = `${faker.word.noun()}`;
+    let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_de_la_pagina', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_de_la_pagina', paso++);
     });
 
     await test.step('And: El usuario cambia el título de la pagina', async () => {
@@ -125,24 +139,29 @@ test.describe('settings', () => {
       }
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(1000);
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_de_la_pagina', paso++);
     });
 
     await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
       await page.goto('/');
       expect(await page.getByText(newPageDescription).innerText()).toBe(newPageDescription);
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_de_la_pagina', paso++);
     });
     
   });
 
   test('cambiar el site description por un string vacío', async ({ page }) => {
     const newPageDescription = `&nbsp;`;
+    let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_por_un_string_vacío', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_por_un_string_vacío', paso++);
     });
 
     await test.step('And: El usuario cambia el título de la pagina', async () => {
@@ -166,11 +185,13 @@ test.describe('settings', () => {
       }
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(1000);
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_por_un_string_vacío', paso++);
     });
 
     await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
       await page.goto('/');
       expect(await page.getByText(newPageDescription).innerText()).toBe(newPageDescription);
+      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_por_un_string_vacío', paso++);
     });
     
   });
