@@ -1,0 +1,3808 @@
+[
+  {
+    "path": "members/cancelar_creación_de_miembro",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/cancelar_creación_de_miembro/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/cancelar_creación_de_miembro/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 10.273328993055555,
+      "misMatchPercentage": "10.27",
+      "diffBounds": {
+        "top": 31,
+        "left": 33,
+        "bottom": 719,
+        "right": 1231
+      },
+      "analysisTime": 59
+    }
+  },
+  {
+    "path": "members/cancelar_creación_de_miembro",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/cancelar_creación_de_miembro/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/cancelar_creación_de_miembro/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3087022569444444,
+      "misMatchPercentage": "0.31",
+      "diffBounds": {
+        "top": 433,
+        "left": 57,
+        "bottom": 712,
+        "right": 1205
+      },
+      "analysisTime": 32
+    }
+  },
+  {
+    "path": "members/cancelar_creación_de_miembro",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/cancelar_creación_de_miembro/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/cancelar_creación_de_miembro/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.2228732638888888,
+      "misMatchPercentage": "1.22",
+      "diffBounds": {
+        "top": 112,
+        "left": 274,
+        "bottom": 712,
+        "right": 1193
+      },
+      "analysisTime": 33
+    }
+  },
+  {
+    "path": "members/cancelar_creación_de_miembro",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/cancelar_creación_de_miembro/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/cancelar_creación_de_miembro/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3184678819444444,
+      "misMatchPercentage": "0.32",
+      "diffBounds": {
+        "top": 151,
+        "left": 275,
+        "bottom": 711,
+        "right": 1193
+      },
+      "analysisTime": 27
+    }
+  },
+  {
+    "path": "members/cancelar_creación_de_miembro",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/cancelar_creación_de_miembro/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/cancelar_creación_de_miembro/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3184678819444444,
+      "misMatchPercentage": "0.32",
+      "diffBounds": {
+        "top": 151,
+        "left": 275,
+        "bottom": 711,
+        "right": 1193
+      },
+      "analysisTime": 31
+    }
+  },
+  {
+    "path": "members/creación_de_miembro",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0,
+      "misMatchPercentage": "0.00",
+      "diffBounds": {
+        "top": 720,
+        "left": 1280,
+        "bottom": 0,
+        "right": 0
+      },
+      "analysisTime": 29
+    }
+  },
+  {
+    "path": "members/creación_de_miembro",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.06901041666666667,
+      "misMatchPercentage": "0.07",
+      "diffBounds": {
+        "top": 577,
+        "left": 673,
+        "bottom": 712,
+        "right": 977
+      },
+      "analysisTime": 26
+    }
+  },
+  {
+    "path": "members/creación_de_miembro",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.7828776041666667,
+      "misMatchPercentage": "0.78",
+      "diffBounds": {
+        "top": 113,
+        "left": 365,
+        "bottom": 712,
+        "right": 1169
+      },
+      "analysisTime": 33
+    }
+  },
+  {
+    "path": "members/creación_de_miembro",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.0720486111111112,
+      "misMatchPercentage": "1.07",
+      "diffBounds": {
+        "top": 37,
+        "left": 365,
+        "bottom": 712,
+        "right": 1169
+      },
+      "analysisTime": 31
+    }
+  },
+  {
+    "path": "members/creación_de_miembro",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.132595486111111,
+      "misMatchPercentage": "1.13",
+      "diffBounds": {
+        "top": 37,
+        "left": 365,
+        "bottom": 719,
+        "right": 1186
+      },
+      "analysisTime": 29
+    }
+  },
+  {
+    "path": "members/creación_de_miembro_con_correo_inválid",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro_con_correo_inválid/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro_con_correo_inválid/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 10.276475694444445,
+      "misMatchPercentage": "10.28",
+      "diffBounds": {
+        "top": 31,
+        "left": 33,
+        "bottom": 719,
+        "right": 1231
+      },
+      "analysisTime": 63
+    }
+  },
+  {
+    "path": "members/creación_de_miembro_con_correo_inválid",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro_con_correo_inválid/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro_con_correo_inválid/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3087022569444444,
+      "misMatchPercentage": "0.31",
+      "diffBounds": {
+        "top": 433,
+        "left": 57,
+        "bottom": 712,
+        "right": 1205
+      },
+      "analysisTime": 28
+    }
+  },
+  {
+    "path": "members/creación_de_miembro_con_correo_inválid",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro_con_correo_inválid/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro_con_correo_inválid/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.4743923611111111,
+      "misMatchPercentage": "0.47",
+      "diffBounds": {
+        "top": 113,
+        "left": 274,
+        "bottom": 712,
+        "right": 977
+      },
+      "analysisTime": 27
+    }
+  },
+  {
+    "path": "members/creación_de_miembro_con_correo_inválid",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro_con_correo_inválid/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro_con_correo_inválid/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.4590928819444445,
+      "misMatchPercentage": "0.46",
+      "diffBounds": {
+        "top": 113,
+        "left": 274,
+        "bottom": 719,
+        "right": 977
+      },
+      "analysisTime": 28
+    }
+  },
+  {
+    "path": "members/creación_de_miembro_con_correo_inválid",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro_con_correo_inválid/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro_con_correo_inválid/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.4590928819444445,
+      "misMatchPercentage": "0.46",
+      "diffBounds": {
+        "top": 113,
+        "left": 274,
+        "bottom": 719,
+        "right": 977
+      },
+      "analysisTime": 27
+    }
+  },
+  {
+    "path": "members/creación_de_miembro_sin_correo",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro_sin_correo/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro_sin_correo/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 4.244574652777778,
+      "misMatchPercentage": "4.24",
+      "diffBounds": {
+        "top": 31,
+        "left": 33,
+        "bottom": 719,
+        "right": 1231
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "members/creación_de_miembro_sin_correo",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro_sin_correo/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro_sin_correo/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3031684027777778,
+      "misMatchPercentage": "0.30",
+      "diffBounds": {
+        "top": 433,
+        "left": 274,
+        "bottom": 712,
+        "right": 1205
+      },
+      "analysisTime": 27
+    }
+  },
+  {
+    "path": "members/creación_de_miembro_sin_correo",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro_sin_correo/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro_sin_correo/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.08561197916666667,
+      "misMatchPercentage": "0.09",
+      "diffBounds": {
+        "top": 183,
+        "left": 274,
+        "bottom": 712,
+        "right": 977
+      },
+      "analysisTime": 26
+    }
+  },
+  {
+    "path": "members/creación_de_miembro_sin_correo",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro_sin_correo/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro_sin_correo/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.45193142361111116,
+      "misMatchPercentage": "0.45",
+      "diffBounds": {
+        "top": 113,
+        "left": 274,
+        "bottom": 719,
+        "right": 977
+      },
+      "analysisTime": 28
+    }
+  },
+  {
+    "path": "members/creación_de_miembro_sin_correo",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro_sin_correo/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro_sin_correo/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.45193142361111116,
+      "misMatchPercentage": "0.45",
+      "diffBounds": {
+        "top": 113,
+        "left": 274,
+        "bottom": 719,
+        "right": 977
+      },
+      "analysisTime": 27
+    }
+  },
+  {
+    "path": "pages/Borrado_de_página_recién_creada",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Borrado_de_página_recién_creada/paso1.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Borrado_de_página_recién_creada/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.265407986111112,
+      "misMatchPercentage": "6.27",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 609,
+        "right": 1279
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "pages/Borrado_de_página_recién_creada",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Borrado_de_página_recién_creada/paso2.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Borrado_de_página_recién_creada/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.038194444444445,
+      "misMatchPercentage": "5.04",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "pages/Borrado_de_página_recién_creada",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Borrado_de_página_recién_creada/paso3.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Borrado_de_página_recién_creada/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.210828993055556,
+      "misMatchPercentage": "5.21",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "pages/Borrado_de_página_recién_creada",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Borrado_de_página_recién_creada/paso4.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Borrado_de_página_recién_creada/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.134874131944444,
+      "misMatchPercentage": "6.13",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "pages/Borrado_de_página_recién_creada",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Borrado_de_página_recién_creada/paso5.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Borrado_de_página_recién_creada/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 4.337131076388888,
+      "misMatchPercentage": "4.34",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 688,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "pages/Borrado_de_página_recién_creada",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Borrado_de_página_recién_creada/paso6.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Borrado_de_página_recién_creada/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 11.525135869565217,
+      "misMatchPercentage": "11.53",
+      "diffBounds": {
+        "top": 22,
+        "left": 1,
+        "bottom": 1237,
+        "right": 1279
+      },
+      "analysisTime": 112
+    }
+  },
+  {
+    "path": "pages/Creación_página_pero_sin_publicarla",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_pero_sin_publicarla/paso1.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_pero_sin_publicarla/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.306423611111112,
+      "misMatchPercentage": "6.31",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 661,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "pages/Creación_página_pero_sin_publicarla",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_pero_sin_publicarla/paso2.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_pero_sin_publicarla/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.038194444444445,
+      "misMatchPercentage": "5.04",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "pages/Creación_página_pero_sin_publicarla",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_pero_sin_publicarla/paso3.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_pero_sin_publicarla/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.333550347222222,
+      "misMatchPercentage": "5.33",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "pages/Creación_página_pero_sin_publicarla",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_pero_sin_publicarla/paso4.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_pero_sin_publicarla/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.293836805555555,
+      "misMatchPercentage": "5.29",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "pages/Creación_página_pero_sin_publicarla",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_pero_sin_publicarla/paso5.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_pero_sin_publicarla/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.54296875,
+      "misMatchPercentage": "6.54",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 659,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "pages/Creación_página_pero_sin_publicarla",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_pero_sin_publicarla/paso6.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_pero_sin_publicarla/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.54296875,
+      "misMatchPercentage": "6.54",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 659,
+        "right": 1279
+      },
+      "analysisTime": 46
+    }
+  },
+  {
+    "path": "pages/Creación_página_y_cancelar_su_creación",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_cancelar_su_creación/paso1.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_cancelar_su_creación/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.259657118055556,
+      "misMatchPercentage": "6.26",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 609,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "pages/Creación_página_y_cancelar_su_creación",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_cancelar_su_creación/paso2.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_cancelar_su_creación/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.038194444444445,
+      "misMatchPercentage": "5.04",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "pages/Creación_página_y_cancelar_su_creación",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_cancelar_su_creación/paso3.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_cancelar_su_creación/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.9326171875,
+      "misMatchPercentage": "5.93",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "pages/Creación_página_y_cancelar_su_creación",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_cancelar_su_creación/paso4.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_cancelar_su_creación/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.909830729166667,
+      "misMatchPercentage": "5.91",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "pages/Creación_página_y_cancelar_su_creación",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_cancelar_su_creación/paso5.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_cancelar_su_creación/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 11.50397585531005,
+      "misMatchPercentage": "11.50",
+      "diffBounds": {
+        "top": 22,
+        "left": 1,
+        "bottom": 1237,
+        "right": 1279
+      },
+      "analysisTime": 107
+    }
+  },
+  {
+    "path": "pages/Creación_página_y_publicarla",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_publicarla/paso1.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_publicarla/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.315755208333333,
+      "misMatchPercentage": "6.32",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 685,
+        "right": 1279
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "pages/Creación_página_y_publicarla",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_publicarla/paso2.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_publicarla/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.038194444444445,
+      "misMatchPercentage": "5.04",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "pages/Creación_página_y_publicarla",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_publicarla/paso3.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_publicarla/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.239474826388888,
+      "misMatchPercentage": "5.24",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "pages/Creación_página_y_publicarla",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_publicarla/paso4.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_publicarla/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.923068576388889,
+      "misMatchPercentage": "1.92",
+      "diffBounds": {
+        "top": 41,
+        "left": 93,
+        "bottom": 719,
+        "right": 1255
+      },
+      "analysisTime": 34
+    }
+  },
+  {
+    "path": "pages/Creación_página_y_publicarla",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_publicarla/paso5.png",
+    "to": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_publicarla/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.9728732638888888,
+      "misMatchPercentage": "0.97",
+      "diffBounds": {
+        "top": 22,
+        "left": 40,
+        "bottom": 691,
+        "right": 1249
+      },
+      "analysisTime": 28
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.001953125,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso10.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.349717881944445,
+      "misMatchPercentage": "5.35",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 48
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso11.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso11.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 61.208984375,
+      "misMatchPercentage": "61.21",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 184
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso12.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso12.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 4.289713541666667,
+      "misMatchPercentage": "4.29",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso13.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso13.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 61.35199652777777,
+      "misMatchPercentage": "61.35",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 183
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso14.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso14.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 50.16435274767802,
+      "misMatchPercentage": "50.16",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1291,
+        "right": 1279
+      },
+      "analysisTime": 275
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso15.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso15.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 8.634505611455108,
+      "misMatchPercentage": "8.63",
+      "diffBounds": {
+        "top": 21,
+        "left": 1,
+        "bottom": 1130,
+        "right": 1279
+      },
+      "analysisTime": 92
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso16.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso16.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 8.634505611455108,
+      "misMatchPercentage": "8.63",
+      "diffBounds": {
+        "top": 21,
+        "left": 1,
+        "bottom": 1130,
+        "right": 1279
+      },
+      "analysisTime": 93
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso17.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 50.43663194444444,
+      "misMatchPercentage": "50.44",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 156
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.004231770833333,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "11.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.057074652777778,
+      "misMatchPercentage": "5.06",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "12.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.057074652777778,
+      "misMatchPercentage": "5.06",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "13.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso6.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 4.972113715277778,
+      "misMatchPercentage": "4.97",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "14.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso7.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 4.994683159722222,
+      "misMatchPercentage": "4.99",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "15.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso8.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 4.976888020833333,
+      "misMatchPercentage": "4.98",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título",
+    "compare": "16.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso9.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.394097222222222,
+      "misMatchPercentage": "5.39",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.001953125,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso10.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.251953125,
+      "misMatchPercentage": "5.25",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso11.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso11.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.252604166666667,
+      "misMatchPercentage": "5.25",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso12.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso12.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.997829861111112,
+      "misMatchPercentage": "6.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso13.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso13.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.254774305555555,
+      "misMatchPercentage": "5.25",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 48
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso14.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso14.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 4.316948784722222,
+      "misMatchPercentage": "4.32",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 677,
+        "right": 1279
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso15.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso15.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 4.3330078125,
+      "misMatchPercentage": "4.33",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 677,
+        "right": 1279
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso16.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso16.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.297200520833333,
+      "misMatchPercentage": "5.30",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso17.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso17.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 12.27799773755656,
+      "misMatchPercentage": "12.28",
+      "diffBounds": {
+        "top": 21,
+        "left": 1,
+        "bottom": 1165,
+        "right": 1279
+      },
+      "analysisTime": 112
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso18.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso18.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 12.27799773755656,
+      "misMatchPercentage": "12.28",
+      "diffBounds": {
+        "top": 21,
+        "left": 1,
+        "bottom": 1165,
+        "right": 1279
+      },
+      "analysisTime": 114
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "11.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso19.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso19.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 12.27799773755656,
+      "misMatchPercentage": "12.28",
+      "diffBounds": {
+        "top": 21,
+        "left": 1,
+        "bottom": 1165,
+        "right": 1279
+      },
+      "analysisTime": 114
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "12.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.004231770833333,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "13.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.004231770833333,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "14.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.004231770833333,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "15.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.220594618055555,
+      "misMatchPercentage": "5.22",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "16.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso6.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.220594618055555,
+      "misMatchPercentage": "5.22",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "17.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso7.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.233723958333333,
+      "misMatchPercentage": "5.23",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "18.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso8.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.254557291666666,
+      "misMatchPercentage": "5.25",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "19.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso9.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.255208333333333,
+      "misMatchPercentage": "5.26",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.001953125,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso10.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.246961805555555,
+      "misMatchPercentage": "5.25",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso11.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso11.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.614366319444445,
+      "misMatchPercentage": "5.61",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso12.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso12.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.669813368055555,
+      "misMatchPercentage": "5.67",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso13.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso13.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.642795138888889,
+      "misMatchPercentage": "5.64",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso14.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso14.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.393663194444445,
+      "misMatchPercentage": "6.39",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso15.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso15.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.628797743055555,
+      "misMatchPercentage": "5.63",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 53
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso16.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso16.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 4.709418402777778,
+      "misMatchPercentage": "4.71",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 711,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso17.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso17.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 4.712782118055555,
+      "misMatchPercentage": "4.71",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 711,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso18.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso18.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.654188368055555,
+      "misMatchPercentage": "5.65",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "11.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso19.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso19.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.808399740548554,
+      "misMatchPercentage": "6.81",
+      "diffBounds": {
+        "top": 21,
+        "left": 1,
+        "bottom": 1187,
+        "right": 1279
+      },
+      "analysisTime": 82
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "12.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.004231770833333,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "13.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso20.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso20.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.9984247590808,
+      "misMatchPercentage": "6.00",
+      "diffBounds": {
+        "top": 21,
+        "left": 1,
+        "bottom": 1187,
+        "right": 1279
+      },
+      "analysisTime": 82
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "14.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso21.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso21.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.9984247590808,
+      "misMatchPercentage": "6.00",
+      "diffBounds": {
+        "top": 21,
+        "left": 1,
+        "bottom": 1187,
+        "right": 1279
+      },
+      "analysisTime": 79
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "15.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.004231770833333,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "16.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.004231770833333,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "17.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.215603298611112,
+      "misMatchPercentage": "5.22",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "18.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso6.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.215603298611112,
+      "misMatchPercentage": "5.22",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "19.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso7.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.228732638888889,
+      "misMatchPercentage": "5.23",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "20.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso8.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.249565972222222,
+      "misMatchPercentage": "5.25",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/Crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "21.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso9.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_título_y_descripción_y_tag/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.246961805555555,
+      "misMatchPercentage": "5.25",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.001953125,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso10.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.042317708333333,
+      "misMatchPercentage": "5.04",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso11.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso11.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.396050347222222,
+      "misMatchPercentage": "5.40",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso12.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso12.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.390842013888889,
+      "misMatchPercentage": "5.39",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso13.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso13.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.446072048611112,
+      "misMatchPercentage": "5.45",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso14.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso14.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.451497395833333,
+      "misMatchPercentage": "5.45",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso15.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso15.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.561089409722222,
+      "misMatchPercentage": "5.56",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso16.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso16.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.406792534722222,
+      "misMatchPercentage": "5.41",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso17.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso17.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.163302951388889,
+      "misMatchPercentage": "6.16",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 46
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso18.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso18.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.385199652777778,
+      "misMatchPercentage": "5.39",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "11.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso19.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso19.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 4.510525173611111,
+      "misMatchPercentage": "4.51",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "12.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.004231770833333,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "13.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso20.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso20.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 7.291666666666667,
+      "misMatchPercentage": "7.29",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 59
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "14.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso21.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso21.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 10.14431423611111,
+      "misMatchPercentage": "10.14",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 52
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "15.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso22.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso22.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 10.14431423611111,
+      "misMatchPercentage": "10.14",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 53
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "16.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.004231770833333,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "17.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.004231770833333,
+      "misMatchPercentage": "5.00",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "18.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.020073784722222,
+      "misMatchPercentage": "5.02",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "19.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso6.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.020073784722222,
+      "misMatchPercentage": "5.02",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "20.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso7.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.033203125,
+      "misMatchPercentage": "5.03",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "21.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso8.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.054036458333333,
+      "misMatchPercentage": "5.05",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/Validar_si_deja_crear_un_post_sin_Autor",
+    "compare": "22.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso9.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/post/Validar_si_deja_crear_un_post_sin_Autor/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.042209201388889,
+      "misMatchPercentage": "5.04",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_description_de_la_pagina",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_description_de_la_pagina/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_description_de_la_pagina/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 7.476236979166667,
+      "misMatchPercentage": "7.48",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_description_de_la_pagina",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_description_de_la_pagina/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_description_de_la_pagina/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.703342013888888,
+      "misMatchPercentage": "6.70",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_description_de_la_pagina",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_description_de_la_pagina/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_description_de_la_pagina/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.547743055555555,
+      "misMatchPercentage": "6.55",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 53
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_description_de_la_pagina",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_description_de_la_pagina/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_description_de_la_pagina/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 24.59469992205768,
+      "misMatchPercentage": "24.59",
+      "diffBounds": {
+        "top": 7,
+        "left": 1,
+        "bottom": 1187,
+        "right": 1279
+      },
+      "analysisTime": 212
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_description_por_un_string_vacío",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_description_por_un_string_vacío/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_description_por_un_string_vacío/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 7.476345486111111,
+      "misMatchPercentage": "7.48",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 47
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_description_por_un_string_vacío",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_description_por_un_string_vacío/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_description_por_un_string_vacío/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.704427083333334,
+      "misMatchPercentage": "6.70",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_description_por_un_string_vacío",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_description_por_un_string_vacío/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_description_por_un_string_vacío/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.541449652777779,
+      "misMatchPercentage": "6.54",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 48
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_description_por_un_string_vacío",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_description_por_un_string_vacío/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_description_por_un_string_vacío/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 24.438937061574435,
+      "misMatchPercentage": "24.44",
+      "diffBounds": {
+        "top": 7,
+        "left": 1,
+        "bottom": 1187,
+        "right": 1279
+      },
+      "analysisTime": 177
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_title_con_otro_nombre",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_title_con_otro_nombre/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_title_con_otro_nombre/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 7.491536458333334,
+      "misMatchPercentage": "7.49",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_title_con_otro_nombre",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_title_con_otro_nombre/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_title_con_otro_nombre/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.718641493055555,
+      "misMatchPercentage": "6.72",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 47
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_title_con_otro_nombre",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_title_con_otro_nombre/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_title_con_otro_nombre/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.648871527777778,
+      "misMatchPercentage": "6.65",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 47
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_title_con_otro_nombre",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_title_con_otro_nombre/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_title_con_otro_nombre/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 26.67783298794273,
+      "misMatchPercentage": "26.68",
+      "diffBounds": {
+        "top": 7,
+        "left": 1,
+        "bottom": 1229,
+        "right": 1279
+      },
+      "analysisTime": 195
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_title_con_un_string_vacio",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_title_con_un_string_vacio/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_title_con_un_string_vacio/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 7.506401909722222,
+      "misMatchPercentage": "7.51",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_title_con_un_string_vacio",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_title_con_un_string_vacio/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_title_con_un_string_vacio/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.744140625,
+      "misMatchPercentage": "6.74",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 48
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_title_con_un_string_vacio",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_title_con_un_string_vacio/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_title_con_un_string_vacio/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.599609375,
+      "misMatchPercentage": "6.60",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 46
+    }
+  },
+  {
+    "path": "settings/cambiar_el_site_title_con_un_string_vacio",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_title_con_un_string_vacio/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_title_con_un_string_vacio/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 24.612054267342167,
+      "misMatchPercentage": "24.61",
+      "diffBounds": {
+        "top": 7,
+        "left": 1,
+        "bottom": 1187,
+        "right": 1279
+      },
+      "analysisTime": 176
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.456814236111112,
+      "misMatchPercentage": "5.46",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 491,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color/paso10.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.305013020833333,
+      "misMatchPercentage": "6.31",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color/paso11.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.883355034722222,
+      "misMatchPercentage": "5.88",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 46
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.722330729166666,
+      "misMatchPercentage": "5.72",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 718,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.961588541666667,
+      "misMatchPercentage": "5.96",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.018663194444445,
+      "misMatchPercentage": "6.02",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color/paso6.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.142578125,
+      "misMatchPercentage": "6.14",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color/paso7.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.160264756944445,
+      "misMatchPercentage": "6.16",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color/paso8.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.218098958333333,
+      "misMatchPercentage": "6.22",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color/paso9.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.313476562500001,
+      "misMatchPercentage": "6.31",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.556206597222222,
+      "misMatchPercentage": "5.56",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 491,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso10.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.196180555555555,
+      "misMatchPercentage": "6.20",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso11.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso11.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.196180555555555,
+      "misMatchPercentage": "6.20",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 47
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.556206597222222,
+      "misMatchPercentage": "5.56",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 491,
+        "right": 1279
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.944444444444445,
+      "misMatchPercentage": "5.94",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 47
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.961588541666667,
+      "misMatchPercentage": "5.96",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.125434027777778,
+      "misMatchPercentage": "6.13",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso6.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.125434027777778,
+      "misMatchPercentage": "6.13",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 48
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso7.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.09765625,
+      "misMatchPercentage": "6.10",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso8.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.247612847222222,
+      "misMatchPercentage": "6.25",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 49
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear",
+    "compare": "11.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso9.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color_forzando_dos_veces_el_botón_crear/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.244140625,
+      "misMatchPercentage": "6.24",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_color",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_color/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_color/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.514322916666667,
+      "misMatchPercentage": "5.51",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 491,
+        "right": 1279
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_color",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_color/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_color/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.520399305555555,
+      "misMatchPercentage": "5.52",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 491,
+        "right": 1279
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_color",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_color/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_color/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.961588541666667,
+      "misMatchPercentage": "5.96",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_color",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_color/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_color/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.961588541666667,
+      "misMatchPercentage": "5.96",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 46
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_color",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_color/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_color/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.138888888888889,
+      "misMatchPercentage": "6.14",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_color",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_color/paso6.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_color/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.138888888888889,
+      "misMatchPercentage": "6.14",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 46
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_color",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_color/paso7.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_color/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.123806423611111,
+      "misMatchPercentage": "6.12",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_color",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_color/paso8.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_color/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.149848090277778,
+      "misMatchPercentage": "6.15",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_color",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_color/paso9.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_color/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.149848090277778,
+      "misMatchPercentage": "6.15",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_titulo",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_titulo/paso1.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_titulo/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.556098090277778,
+      "misMatchPercentage": "5.56",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 491,
+        "right": 1279
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_titulo",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_titulo/paso2.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_titulo/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.573350694444444,
+      "misMatchPercentage": "5.57",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 491,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_titulo",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_titulo/paso3.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_titulo/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.961588541666667,
+      "misMatchPercentage": "5.96",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_titulo",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_titulo/paso4.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_titulo/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 5.961588541666667,
+      "misMatchPercentage": "5.96",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_titulo",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_titulo/paso5.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_titulo/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.053168402777778,
+      "misMatchPercentage": "6.05",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_titulo",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_titulo/paso6.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_titulo/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.045789930555555,
+      "misMatchPercentage": "6.05",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 46
+    }
+  },
+  {
+    "path": "tags/Creación_de_tag_sin_titulo",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_sin_titulo/paso7.png",
+    "to": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_sin_titulo/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.045789930555555,
+      "misMatchPercentage": "6.05",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 43
+    }
+  }
+]

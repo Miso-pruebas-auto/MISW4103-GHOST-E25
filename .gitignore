@@ -1,12 +1,13 @@
 .idea
-kraken/node_modules
-kraken/reports/*
-
-kraken-2/node_modules
-kraken-2/reports/*
+kraken-ghost-4-38.0/node_modules
+kraken-ghost-4-38.0/reports/*
+kraken-ghost-4-48.9/node_modules
+kraken-ghost-4-48.9/reports/*
 
 playwright/node_modules
+kraken/node_modules
 
+ubuntu.pem
 .env
 playwright/.env
 node_modules
