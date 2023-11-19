@@ -1,0 +1,34 @@
+{
+  "scenarios": [
+      {
+        "funtionality": "general settings",
+        "scenary": "change empty site description",
+        "url": "C:/Users/nicol/Documents/MISW4103-GHOST-E25/kraken-2/screenshots/general settings/change_empty_site_description",
+        "referenceUrl": "C:/Users/nicol/Documents/MISW4103-GHOST-E25/kraken/screenshots/4.38.0-alpine/general settings/change_empty_site_description"
+      },
+       {
+        "funtionality": "general settings",
+        "scenary": "change empty site name",
+        "url": "C:/Users/nicol/Documents/MISW4103-GHOST-E25/kraken-2/screenshots/general settings/change_empty_site_name",
+        "referenceUrl": "C:/Users/nicol/Documents/MISW4103-GHOST-E25/kraken/screenshots/4.38.0-alpine/general settings/change_empty_site_name"
+      },
+      {
+        "funtionality": "general settings",
+        "scenary": "change site description",
+        "url": "C:/Users/nicol/Documents/MISW4103-GHOST-E25/kraken-2/screenshots/general settings/change_site_description",
+        "referenceUrl": "C:/Users/nicol/Documents/MISW4103-GHOST-E25/kraken/screenshots/4.38.0-alpine/general settings/change_site_description"
+      },
+      {
+        "funtionality": "general settings",
+        "scenary": "change site name",
+        "url": "C:/Users/nicol/Documents/MISW4103-GHOST-E25/kraken-2/screenshots/general settings/change_site_name",
+        "referenceUrl": "C:/Users/nicol/Documents/MISW4103-GHOST-E25/kraken/screenshots/4.38.0-alpine/general settings/change_site_name"
+      },
+      {
+        "funtionality": "members",
+        "scenary": "create a new member with name and invalid mail",
+        "url": "C:/Users/nicol/Documents/MISW4103-GHOST-E25/kraken-2/screenshots/members/create_a_new_member_with_name_and_invalid_mail",
+        "referenceUrl": "C:/Users/nicol/Documents/MISW4103-GHOST-E25/kraken/screenshots/4.38.0-alpine/members/create_a_new_member_with_name_and_invalid_mail"
+      }
+  ]
+}
