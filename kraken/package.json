@@ -1,25 +1,15 @@
 {
-  "name": "misw4103-ghost-e25",
+  "name": "kraken",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "doctor": "npx kraken-node doctor",
-    "gen": "npx kraken-node gen",
-    "kraken": "npx kraken-node run"
+    "resemble": "node resemblejs.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Felipe Valencia",
+  "license": "MIT",
   "dependencies": {
-    "@cucumber/cucumber": "7.2.1",
-    "appium": "^2.2.1",
-    "assert": "^2.1.0",
-    "kraken-node": "^1.0.24",
-    "webdriverio": "^8.22.1"
-  },
-  "devDependencies": {
-    "@faker-js/faker": "8.2.0",
-    "prettier": "3.0.3"
+    "mz": "^2.7.0",
+    "resemblejs": "^5.0.0"
   }
 }
