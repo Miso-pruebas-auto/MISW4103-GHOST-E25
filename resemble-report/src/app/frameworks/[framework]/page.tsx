@@ -9,16 +9,12 @@ import {
   Button,
   Card,
   CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
 } from '@/components/ui';
-import { krakenResults } from '@/lib/utils';
+import { krakenResults, playwrightResults } from '@/lib/utils';
 import { Framework } from '@/types/common';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { ResembleResult } from '@/types/resemble';
-import { CopyBlock } from 'react-code-blocks';
 import { useState } from 'react';
 import groupBy from 'lodash/groupBy';
 
@@ -30,10 +26,16 @@ type PageProps = {
 
 const results = {
   kraken: krakenResults,
-  playwright: [],
+  playwright: playwrightResults,
 };
 
-function ComparableItem({ item }: { item: ResembleResult }) {
+function ComparableItem({
+  item,
+  framework,
+}: {
+  item: ResembleResult;
+  framework: Framework;
+}) {
   const mainImage = item.compare.split('/').pop()?.split('.')[0];
   const fromImage = `${mainImage}-from.png`;
   const toImage = `${mainImage}-to.png`;
@@ -63,7 +65,7 @@ function ComparableItem({ item }: { item: ResembleResult }) {
             <span className="text-sm text-foreground/70">{image.title}</span>
             <div className="border rounded-md">
               <Image
-                src={`/results/kraken/${item.path}/${image.image}`}
+                src={`/results/${framework}/${item.path}/${image.image}`}
                 width={256}
                 height={256}
                 alt="something"
@@ -85,11 +87,12 @@ function ComparableItem({ item }: { item: ResembleResult }) {
 }
 
 type ScenarioItemProps = {
+  framework: Framework;
   title: string;
   items: ResembleResult[];
 };
 
-function ScenarioItem({ title, items }: ScenarioItemProps) {
+function ScenarioItem({ title, items, framework }: ScenarioItemProps) {
   const [offset, setOffset] = useState(0);
   const [page, setPage] = useState(1);
   const itemsPerPage = 5;
@@ -115,7 +118,7 @@ function ScenarioItem({ title, items }: ScenarioItemProps) {
       <AccordionContent>
         <ul role="list" className="divide-y">
           {currentItems.map((item, index) => (
-            <ComparableItem item={item} key={index} />
+            <ComparableItem item={item} framework={framework} key={index} />
           ))}
         </ul>
 
@@ -151,7 +154,12 @@ export default function Page({ params }: PageProps) {
         <CardContent className="py-6 px-0">
           <Accordion type="single" collapsible className="w-full">
             {Object.entries(grouped).map(([key, value], index) => (
-              <ScenarioItem title={key} items={value} key={index} />
+              <ScenarioItem
+                title={key}
+                items={value}
+                framework={params.framework}
+                key={index}
+              />
             ))}
           </Accordion>
         </CardContent>
