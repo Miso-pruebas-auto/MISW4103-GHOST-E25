@@ -89,7 +89,7 @@ type ScenarioItemProps = {
   items: ResembleResult[];
 };
 
-export function ScenarioItem({ title, items }: ScenarioItemProps) {
+function ScenarioItem({ title, items }: ScenarioItemProps) {
   const [offset, setOffset] = useState(0);
   const [page, setPage] = useState(1);
   const itemsPerPage = 5;
