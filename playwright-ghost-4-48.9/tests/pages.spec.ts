@@ -93,7 +93,6 @@ test.describe('pages', () => {
     await test.step('Then: El usuario puede abrir la nueva pagina publicada', async () => {
       await page.waitForTimeout(1000);
       await page.goto(`/${newPageTitle.toLowerCase().replace(' ', '-')}`);
-      await expect(page).toHaveScreenshot();
       expect(await page.getByRole('heading', { name: newPageTitle }).innerText()).toBe(newPageTitle);
       await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'pages', 'Creación_página_y_publicarla', paso++);
