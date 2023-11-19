@@ -181,7 +181,7 @@ $ git clone https://github.com/Miso-pruebas-auto/MISW4103-GHOST-E25
 Luego accede a la carpeta de Kraken(Dependiendo de la version de ghost, en este caso es la 4-38.0):
 
 ```bash
-$ cd MISW4103-GHOST-E25/kraken-ghost-4-38.0
+$ cd MISW4103-GHOST-E25/kraken-ghost-4-48.9
 ```
 
 ### Instalar dependencias
