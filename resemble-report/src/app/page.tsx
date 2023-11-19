@@ -19,14 +19,14 @@ const reports = [
 
 export default function Home() {
   return (
-    <main className="flex text-foreground min-h-screen flex-col items-center justify-center p-24">
-      <div className="w-1/2">
+    <main className="flex text-foreground min-h-screen flex-col items-center justify-center p-4 lg:p-24">
+      <div className="lg:w-1/2">
         <SectionHeading
           title="Results of ResembleJs"
           description="This is the result of running resemblejs on Kraken and Playwright applications"
         />
         <div className="overflow-hidden rounded-md bg-white shadow w-full">
-          <ul role="list" className="divide-y divide-gray-200">
+          <ul role="list" className="divide-y">
             {reports.map((report, index) => (
               <li key={index} className="px-6 py-4">
                 <Link href={report.href}>

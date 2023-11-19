@@ -59,7 +59,7 @@ function ComparableItem({
 
   return (
     <li className="py-4">
-      <div className="flex flex-row space-x-4">
+      <div className="flex flex-col space-y-4 lg:space-y-0 lg:flex-row lg:space-x-4">
         {images.map((image, index) => (
           <div className="text-center" key={index}>
             <span className="text-sm text-foreground/70">{image.title}</span>
@@ -68,12 +68,12 @@ function ComparableItem({
                 src={`/results/${framework}/${item.path}/${image.image}`}
                 width={256}
                 height={256}
-                alt="something"
+                alt={image.title}
               />
             </div>
           </div>
         ))}
-        <div className="relative w-1/3 break-words">
+        <div className="relative lg:w-1/3 break-words">
           <span className="text-sm font-medium">Analysis</span>
           <p className="text-sm">
             The second image is{' '}
@@ -114,7 +114,11 @@ function ScenarioItem({ title, items, framework }: ScenarioItemProps) {
 
   return (
     <AccordionItem value={title}>
-      <AccordionTrigger>{title}</AccordionTrigger>
+      <AccordionTrigger>
+        <span className="break-words w-80 text-left md:w-full">
+          {title}
+        </span>
+      </AccordionTrigger>
       <AccordionContent>
         <ul role="list" className="divide-y">
           {currentItems.map((item, index) => (
