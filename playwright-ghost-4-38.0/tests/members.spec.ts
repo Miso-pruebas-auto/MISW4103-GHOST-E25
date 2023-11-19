@@ -23,6 +23,7 @@ test.describe('members', () => {
     let paso = 1;
 
     await test.step('When: El usuario se dirige a la sección members', async () => {
+      await page.waitForTimeout(2000);
       await page.goto('/ghost/#/members');
       await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'members', 'creación_de_miembro', paso++);
@@ -46,15 +47,16 @@ test.describe('members', () => {
     });
 
     await test.step('And: El usuario guarda el nuevo miembro', async () => {
-      await page.waitForTimeout(2000);
       await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'members', 'creación_de_miembro', paso++);
     });
 
     await test.step('Then: El nuevo miembro se muestra en la lista de miembros creados', async () => {
       await page.goto('/ghost/#/members');
       await page.waitForTimeout(2000);
-      await page.getByRole('link', { name: `${newMemberName} ${newMemberEmail}` }).click();
+      const link_member = await page.getByRole('link', { name: `${newMemberName} ${newMemberEmail}` })
+      link_member.click();
       await page.waitForTimeout(2000);
       expect(await page.getByRole('heading', { name: newMemberName, exact: true }).innerText()).toBe(newMemberName);
       expect(await page.getByRole('link', { name: newMemberEmail }).innerText()).toBe(newMemberEmail);
