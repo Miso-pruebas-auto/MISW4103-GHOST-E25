@@ -133,35 +133,12 @@ export function ScenarioItem({ title, items }: ScenarioItemProps) {
 }
 
 export default function Page({ params }: PageProps) {
-  const [offset, setOffset] = useState(0);
-  const [page, setPage] = useState(1);
   const items = results[params.framework];
-  const itemsPerPage = 8;
-  const endOffset = offset + itemsPerPage;
-  const currentItems = items.slice(offset, endOffset);
-  const pageCount = Math.ceil(items.length / itemsPerPage);
-
-  const onClickPrevious = () => {
-    const newOffset = ((page - 1) * itemsPerPage) % items.length;
-    setPage(page - 1);
-    setOffset(newOffset);
-  };
-
-  const onClickNext = () => {
-    const newOffset = ((page + 1) * itemsPerPage) % items.length;
-    setPage(page + 1);
-    setOffset(newOffset);
-  };
-
   const grouped = groupBy(items, 'path');
-
-  console.log('grouped', grouped);
 
   if (!results[params.framework]) {
     return notFound();
   }
-
-  console.log('results', results[params.framework]);
 
   return (
     <div className="container py-10">
@@ -179,23 +156,6 @@ export default function Page({ params }: PageProps) {
           </Accordion>
         </CardContent>
       </Card>
-      {/*<Card className="px-6">*/}
-      {/*  <CardContent className="p-0">*/}
-      {/*    <ul role="list" className="divide-y">*/}
-      {/*      {currentItems.map((item, index) => (*/}
-      {/*        <ComparableItem item={item} key={index} />*/}
-      {/*      ))}*/}
-      {/*      <div className="flex justify-between py-4">*/}
-      {/*        <Button onClick={onClickPrevious} disabled={page === 1}>*/}
-      {/*          Previous*/}
-      {/*        </Button>*/}
-      {/*        <Button onClick={onClickNext} disabled={page === pageCount}>*/}
-      {/*          Next*/}
-      {/*        </Button>*/}
-      {/*      </div>*/}
-      {/*    </ul>*/}
-      {/*  </CardContent>*/}
-      {/*</Card>*/}
     </div>
   );
 }
