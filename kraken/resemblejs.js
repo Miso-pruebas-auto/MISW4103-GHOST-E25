@@ -1,5 +1,6 @@
 const compareImages = require('resemblejs/compareImages');
 const fs = require('mz/fs');
+const path = require('path');
 
 const resultScreenshotFolders = [
   '../kraken-ghost-4-38.0/screenshots',
@@ -114,30 +115,60 @@ async function makeDir(dirPath) {
 }
 
 async function compare() {
-  const images = await getImagesToCompare();
+  return new Promise(async (resolve, reject) => {
+    const images = await getImagesToCompare();
+    const results = [];
 
-  for (const [key, steps] of Object.entries(images)) {
-    if (steps.length === 2) {
-      const from = steps[0];
-      const to = steps[1];
+    for (const [key, steps] of Object.entries(images)) {
+      if (steps.length === 2) {
+        const from = steps[0];
+        const to = steps[1];
 
-      for (let i = 0; i < from.steps.length; i++) {
-        const fromStep = from.steps[i];
-        const toStep = to.steps[i];
-        const resultPath = `./results/resemblejs/${key}`;
-        const result = await getDifferenceForImage(fromStep, toStep);
+        for (let i = 0; i < from.steps.length; i++) {
+          const fromStep = from.steps[i];
+          const toStep = to.steps[i];
+          const resultPath = `./results/resemblejs/${key}`;
+          const nextJsImagesPath = path.join(__dirname, '../resemble-report/public/results/kraken', key);
+          const nextJsResultsPath = path.join(__dirname, '../resemble-report/src/results/kraken', key);
+          const result = await getDifferenceForImage(fromStep, toStep);
 
-        await makeDir(resultPath);
-        await storeResult(`${resultPath}/${i + 1}.png`, result);
+          results.push({
+            path: key,
+            compare: `${i + 1}.png`,
+            from: fromStep,
+            to: toStep,
+            data: result
+          });
+
+          await toNextJs(nextJsResultsPath, nextJsImagesPath, i, result, fromStep, toStep);
+
+          // await makeDir(resultPath);
+          // await storeResult(`${resultPath}/${i + 1}.png`, result);
+        }
       }
     }
-  }
+
+    resolve(results);
+  });
+}
+
+async function toNextJs(nextJsPath, imagesPath, i, result, fromStep, toStep) {
+  await makeDir(nextJsPath);
+  await makeDir(imagesPath);
+  await storeResult(`${imagesPath}/${i + 1}.png`, result);
+  await copyFile(fromStep, `${imagesPath}/${i + 1}-from.png`);
+  await copyFile(toStep, `${imagesPath}/${i + 1}-to.png`);
 }
 
 async function storeResult(resultPath, result) {
   await fs.writeFile(resultPath, result.getBuffer());
 }
 
-compare().then((res) => {
+async function copyFile(source, target) {
+  await fs.copyFile(source, target);
+}
+
+compare().then(async (res) => {
+  await fs.writeFile('../resemble-report/src/results/kraken/results.json', JSON.stringify(res, null, 2));
   console.log('Images compared successfully');
 });
