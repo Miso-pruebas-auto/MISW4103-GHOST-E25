@@ -2,7 +2,7 @@
   "scripts": {
     "kraken": "./kraken-ghost-4-38.0/kraken-setup.sh",
     "kraken2": "./kraken-ghost-4-48.9/kraken-setup.sh",
-    "kraken-resemble": "npm run --prefix kraken resemble"
+    "resemble": "npm run --prefix vrt-tools resemble"
   },
   "dependencies": {
     "dotenv": "^16.3.1"
