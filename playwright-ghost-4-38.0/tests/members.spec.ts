@@ -18,7 +18,7 @@ test.describe('members', () => {
 
   test('creación de miembro', async ({ page }) => {
     const newMemberName = `test-${faker.word.noun()}`;
-    const newMemberEmail = `test-${faker.internet.email()}`;
+    const newMemberEmail = `${faker.internet.email()}`;
     const newMemberNote = `test-${faker.lorem.sentence()}`;
     let paso = 1;
 

@@ -11,8 +11,8 @@ import 'dotenv/config';
  * See https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
-  /* Timeout 120 seconds by default. */
-  timeout: 120000,
+  /* Timeout 80 seconds by default. */
+  timeout: 80000,
   
   expect: { timeout: 5000 },
 
