@@ -15,14 +15,14 @@ sh restart-db-ghost.sh
 ```
 ## Para ejecutar las pruebas de Ghost con PlayWright de cualquier versión realizar:
 1. Ubicarse en la terminal de vscode ya abierta y seleccionar la versión del ghost a probar con playwright que se distinguen por el color verde (playwright-ghost-4-48.9 / playwright-ghost-4-38.0)
-2. Ejecutar el comando: 
+2. Importante que antes de ejecutar el paso 3. Verifique que las siguientes URL de Ghost que usara PlayWright esta indicando la creación de un usuario de cero (solo verificar): [GHOST URL 4.48.9](http://ec2-44-216-57-54.compute-1.amazonaws.com:8080/ghost/#/setup) [GHOST URL 4.38.0](http://ec2-44-216-57-54.compute-1.amazonaws.com:8082/ghost/#/setup/one)
+3. Ejecutar el comando en la versión de Ghost: 
 ``` bash
 npx playwright test --workers=1
 ```
-3. Una vez finalice para ver el informe (que contiene sus steps aplicando el patron given-when-then)
+4. Una vez finalice para ver el informe (que contiene sus steps aplicando el patron given-when-then)
 ``` bash
 npx playwright show-report
 ```
 - *Nota:* Las imágenes de los pasos se ubican en la carpeta **screenshots** de cada herramienta, donde hay subcarpetas con el nombre de la funcionalidad y escenarios.
-
 
