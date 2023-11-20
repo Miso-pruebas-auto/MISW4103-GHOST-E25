@@ -4,7 +4,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_1_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_1_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_1_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_1_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 1",
@@ -20,9 +20,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.010833333333333334,
+          "rawMisMatchPercentage": 0.010624999999999999,
           "misMatchPercentage": "0.01",
-          "analysisTime": 421
+          "analysisTime": 67
         }
       },
       "status": "pass"
@@ -30,7 +30,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_2_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_2_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_2_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_2_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 2",
@@ -46,9 +46,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 4.529791666666667,
-          "misMatchPercentage": "4.53",
-          "analysisTime": 413
+          "rawMisMatchPercentage": 4.52375,
+          "misMatchPercentage": "4.52",
+          "analysisTime": 206
         }
       },
       "status": "pass"
@@ -56,7 +56,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_3_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_3_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_3_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_3_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 3",
@@ -72,18 +72,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 21.30625,
-          "misMatchPercentage": "21.31",
-          "analysisTime": 104
+          "rawMisMatchPercentage": 21.186666666666667,
+          "misMatchPercentage": "21.19",
+          "analysisTime": 238
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_3_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_3_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_4_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_4_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_4_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_4_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 4",
@@ -99,18 +99,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 21.30625,
-          "misMatchPercentage": "21.31",
-          "analysisTime": 581
+          "rawMisMatchPercentage": 21.186666666666667,
+          "misMatchPercentage": "21.19",
+          "analysisTime": 173
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_4_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_4_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_5_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_5_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_5_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_5_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 5",
@@ -128,7 +128,7 @@ report({
           },
           "rawMisMatchPercentage": 0.004791666666666667,
           "misMatchPercentage": "0.00",
-          "analysisTime": 196
+          "analysisTime": 56
         }
       },
       "status": "pass"
@@ -136,7 +136,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_6_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_6_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_6_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_6_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 6",
@@ -152,18 +152,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 11.835416666666667,
-          "misMatchPercentage": "11.84",
-          "analysisTime": 93
+          "rawMisMatchPercentage": 11.9375,
+          "misMatchPercentage": "11.94",
+          "analysisTime": 215
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_6_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_6_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_7_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_7_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_7_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_7_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 7",
@@ -179,9 +179,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.9372916666666666,
+          "rawMisMatchPercentage": 0.9435416666666666,
           "misMatchPercentage": "0.94",
-          "analysisTime": 514
+          "analysisTime": 58
         }
       },
       "status": "pass"
@@ -189,7 +189,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_8_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_8_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_8_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_8_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 8",
@@ -205,9 +205,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.539375,
-          "misMatchPercentage": "0.54",
-          "analysisTime": 691
+          "rawMisMatchPercentage": 0.53,
+          "misMatchPercentage": "0.53",
+          "analysisTime": 58
         }
       },
       "status": "pass"
@@ -215,7 +215,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_9_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_9_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_9_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_9_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 9",
@@ -231,9 +231,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.5766666666666667,
-          "misMatchPercentage": "0.58",
-          "analysisTime": 217
+          "rawMisMatchPercentage": 0.566875,
+          "misMatchPercentage": "0.57",
+          "analysisTime": 104
         }
       },
       "status": "pass"
@@ -241,7 +241,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_10_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_10_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_10_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_10_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 10",
@@ -257,9 +257,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.5852083333333333,
-          "misMatchPercentage": "0.59",
-          "analysisTime": 304
+          "rawMisMatchPercentage": 0.5754166666666667,
+          "misMatchPercentage": "0.58",
+          "analysisTime": 63
         }
       },
       "status": "pass"
@@ -267,7 +267,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_11_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_11_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_11_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_11_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 11",
@@ -283,9 +283,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.2295833333333335,
-          "misMatchPercentage": "1.23",
-          "analysisTime": 267
+          "rawMisMatchPercentage": 1.2170833333333333,
+          "misMatchPercentage": "1.22",
+          "analysisTime": 59
         }
       },
       "status": "pass"
@@ -293,7 +293,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_12_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_12_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_12_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_12_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 12",
@@ -309,9 +309,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.2295833333333335,
-          "misMatchPercentage": "1.23",
-          "analysisTime": 640
+          "rawMisMatchPercentage": 1.2170833333333333,
+          "misMatchPercentage": "1.22",
+          "analysisTime": 57
         }
       },
       "status": "pass"
@@ -319,7 +319,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_13_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_13_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_13_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_13_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 13",
@@ -335,9 +335,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.9679166666666668,
+          "rawMisMatchPercentage": 1.9652083333333334,
           "misMatchPercentage": "1.97",
-          "analysisTime": 254
+          "analysisTime": 56
         }
       },
       "status": "pass"
@@ -345,7 +345,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_14_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_14_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_14_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_14_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 14",
@@ -361,9 +361,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.7145833333333336,
-          "misMatchPercentage": "2.71",
-          "analysisTime": 266
+          "rawMisMatchPercentage": 2.729791666666667,
+          "misMatchPercentage": "2.73",
+          "analysisTime": 56
         }
       },
       "status": "pass"
@@ -371,7 +371,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_15_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_15_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_15_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_15_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 15",
@@ -387,9 +387,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.7145833333333336,
-          "misMatchPercentage": "2.71",
-          "analysisTime": 106
+          "rawMisMatchPercentage": 2.729791666666667,
+          "misMatchPercentage": "2.73",
+          "analysisTime": 55
         }
       },
       "status": "pass"
@@ -397,7 +397,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_16_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_16_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_16_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_16_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 16",
@@ -413,9 +413,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 3.125208333333333,
-          "misMatchPercentage": "3.13",
-          "analysisTime": 418
+          "rawMisMatchPercentage": 3.141041666666667,
+          "misMatchPercentage": "3.14",
+          "analysisTime": 96
         }
       },
       "status": "pass"
@@ -423,7 +423,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_17_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_17_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_17_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_17_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Members - scenario: Create a new Member with name and valid mail - Step: 17",
@@ -439,9 +439,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.8806249999999998,
-          "misMatchPercentage": "2.88",
-          "analysisTime": 691
+          "rawMisMatchPercentage": 2.895833333333333,
+          "misMatchPercentage": "2.90",
+          "analysisTime": 54
         }
       },
       "status": "pass"
@@ -449,7 +449,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_1_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_1_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_1_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_1_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 1",
@@ -467,7 +467,7 @@ report({
           },
           "rawMisMatchPercentage": 0.011875,
           "misMatchPercentage": "0.01",
-          "analysisTime": 355
+          "analysisTime": 63
         }
       },
       "status": "pass"
@@ -475,7 +475,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_2_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_2_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_2_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_2_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 2",
@@ -491,9 +491,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 4.529791666666667,
-          "misMatchPercentage": "4.53",
-          "analysisTime": 542
+          "rawMisMatchPercentage": 4.52375,
+          "misMatchPercentage": "4.52",
+          "analysisTime": 110
         }
       },
       "status": "pass"
@@ -501,7 +501,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_3_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_3_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_3_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_3_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 3",
@@ -517,18 +517,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 21.109375,
-          "misMatchPercentage": "21.11",
-          "analysisTime": 187
+          "rawMisMatchPercentage": 20.970416666666665,
+          "misMatchPercentage": "20.97",
+          "analysisTime": 77
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_3_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_3_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_4_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_4_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_4_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_4_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 4",
@@ -544,18 +544,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 21.109375,
-          "misMatchPercentage": "21.11",
-          "analysisTime": 288
+          "rawMisMatchPercentage": 20.970416666666665,
+          "misMatchPercentage": "20.97",
+          "analysisTime": 101
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_4_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_4_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_5_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_5_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_5_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_5_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 5",
@@ -573,7 +573,7 @@ report({
           },
           "rawMisMatchPercentage": 0.003958333333333333,
           "misMatchPercentage": "0.00",
-          "analysisTime": 104
+          "analysisTime": 58
         }
       },
       "status": "pass"
@@ -581,7 +581,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_6_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_6_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_6_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_6_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 6",
@@ -597,9 +597,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.2960416666666665,
-          "misMatchPercentage": "2.30",
-          "analysisTime": 265
+          "rawMisMatchPercentage": 2.305833333333333,
+          "misMatchPercentage": "2.31",
+          "analysisTime": 122
         }
       },
       "status": "pass"
@@ -607,7 +607,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_7_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_7_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_7_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_7_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 7",
@@ -623,9 +623,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.40687500000000004,
-          "misMatchPercentage": "0.41",
-          "analysisTime": 790
+          "rawMisMatchPercentage": 0.40124999999999994,
+          "misMatchPercentage": "0.40",
+          "analysisTime": 51
         }
       },
       "status": "pass"
@@ -633,7 +633,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_8_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_8_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_8_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_8_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 8",
@@ -649,9 +649,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.40687500000000004,
-          "misMatchPercentage": "0.41",
-          "analysisTime": 411
+          "rawMisMatchPercentage": 0.40124999999999994,
+          "misMatchPercentage": "0.40",
+          "analysisTime": 54
         }
       },
       "status": "pass"
@@ -659,7 +659,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_9_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_9_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_9_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_9_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 9",
@@ -675,9 +675,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.4639583333333333,
+          "rawMisMatchPercentage": 1.4627083333333335,
           "misMatchPercentage": "1.46",
-          "analysisTime": 261
+          "analysisTime": 55
         }
       },
       "status": "pass"
@@ -685,7 +685,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_10_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_10_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_10_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_10_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 10",
@@ -701,9 +701,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.6391666666666667,
+          "rawMisMatchPercentage": 1.6416666666666666,
           "misMatchPercentage": "1.64",
-          "analysisTime": 464
+          "analysisTime": 58
         }
       },
       "status": "pass"
@@ -711,7 +711,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_11_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_11_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_11_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_11_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 11",
@@ -727,9 +727,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.8608333333333333,
+          "rawMisMatchPercentage": 1.8614583333333334,
           "misMatchPercentage": "1.86",
-          "analysisTime": 406
+          "analysisTime": 54
         }
       },
       "status": "pass"
@@ -737,7 +737,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_12_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_12_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_12_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_12_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 12",
@@ -753,9 +753,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.9739583333333335,
-          "misMatchPercentage": "1.97",
-          "analysisTime": 249
+          "rawMisMatchPercentage": 1.9754166666666666,
+          "misMatchPercentage": "1.98",
+          "analysisTime": 55
         }
       },
       "status": "pass"
@@ -763,7 +763,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_13_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_13_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_13_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_13_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 13",
@@ -779,9 +779,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.9702083333333331,
+          "rawMisMatchPercentage": 1.9716666666666667,
           "misMatchPercentage": "1.97",
-          "analysisTime": 448
+          "analysisTime": 66
         }
       },
       "status": "pass"
@@ -789,7 +789,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_14_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_14_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_14_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_14_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 14",
@@ -805,9 +805,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.2875,
+          "rawMisMatchPercentage": 2.288125,
           "misMatchPercentage": "2.29",
-          "analysisTime": 241
+          "analysisTime": 143
         }
       },
       "status": "pass"
@@ -815,7 +815,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_15_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_15_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_15_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_15_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 15",
@@ -831,9 +831,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.2875,
+          "rawMisMatchPercentage": 2.288125,
           "misMatchPercentage": "2.29",
-          "analysisTime": 335
+          "analysisTime": 146
         }
       },
       "status": "pass"
@@ -841,7 +841,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_16_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_16_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_16_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Pages_-_scenario_Create_a_new_Page_-_Step_16_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Pages - scenario: Create a new Page - Step: 16",
@@ -857,9 +857,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.2875,
+          "rawMisMatchPercentage": 2.288125,
           "misMatchPercentage": "2.29",
-          "analysisTime": 176
+          "analysisTime": 56
         }
       },
       "status": "pass"
@@ -867,7 +867,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_1_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_1_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_1_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_1_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 1",
@@ -883,9 +883,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.010624999999999999,
+          "rawMisMatchPercentage": 0.010833333333333334,
           "misMatchPercentage": "0.01",
-          "analysisTime": 401
+          "analysisTime": 54
         }
       },
       "status": "pass"
@@ -893,7 +893,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_2_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_2_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_2_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_2_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 2",
@@ -909,9 +909,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 4.529791666666667,
-          "misMatchPercentage": "4.53",
-          "analysisTime": 620
+          "rawMisMatchPercentage": 4.52375,
+          "misMatchPercentage": "4.52",
+          "analysisTime": 125
         }
       },
       "status": "pass"
@@ -919,7 +919,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_3_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_3_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_3_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_3_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 3",
@@ -935,18 +935,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 21.114583333333332,
-          "misMatchPercentage": "21.11",
-          "analysisTime": 394
+          "rawMisMatchPercentage": 20.974999999999998,
+          "misMatchPercentage": "20.97",
+          "analysisTime": 138
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_3_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_3_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_4_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_4_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_4_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_4_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 4",
@@ -962,18 +962,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 21.114583333333332,
-          "misMatchPercentage": "21.11",
-          "analysisTime": 159
+          "rawMisMatchPercentage": 20.974999999999998,
+          "misMatchPercentage": "20.97",
+          "analysisTime": 207
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_4_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_4_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_5_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_5_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_5_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_5_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 5",
@@ -991,7 +991,7 @@ report({
           },
           "rawMisMatchPercentage": 0.003958333333333333,
           "misMatchPercentage": "0.00",
-          "analysisTime": 134
+          "analysisTime": 50
         }
       },
       "status": "pass"
@@ -999,7 +999,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_6_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_6_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_6_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_6_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 6",
@@ -1015,9 +1015,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.3033333333333332,
-          "misMatchPercentage": "1.30",
-          "analysisTime": 386
+          "rawMisMatchPercentage": 1.3110416666666667,
+          "misMatchPercentage": "1.31",
+          "analysisTime": 102
         }
       },
       "status": "pass"
@@ -1025,7 +1025,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_7_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_7_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_7_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_7_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 7",
@@ -1041,9 +1041,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.3033333333333332,
-          "misMatchPercentage": "1.30",
-          "analysisTime": 215
+          "rawMisMatchPercentage": 1.3110416666666667,
+          "misMatchPercentage": "1.31",
+          "analysisTime": 132
         }
       },
       "status": "pass"
@@ -1051,7 +1051,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_8_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_8_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_8_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_8_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 8",
@@ -1067,9 +1067,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.3033333333333332,
-          "misMatchPercentage": "1.30",
-          "analysisTime": 223
+          "rawMisMatchPercentage": 1.3110416666666667,
+          "misMatchPercentage": "1.31",
+          "analysisTime": 91
         }
       },
       "status": "pass"
@@ -1077,7 +1077,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_9_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_9_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_9_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_9_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 9",
@@ -1093,9 +1093,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.3804166666666667,
+          "rawMisMatchPercentage": 0.37625,
           "misMatchPercentage": "0.38",
-          "analysisTime": 257
+          "analysisTime": 57
         }
       },
       "status": "pass"
@@ -1103,7 +1103,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_10_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_10_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_10_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_10_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 10",
@@ -1119,9 +1119,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.3804166666666667,
+          "rawMisMatchPercentage": 0.37625,
           "misMatchPercentage": "0.38",
-          "analysisTime": 324
+          "analysisTime": 50
         }
       },
       "status": "pass"
@@ -1129,7 +1129,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_11_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_11_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_11_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_11_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 11",
@@ -1145,9 +1145,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.388125,
-          "misMatchPercentage": "0.39",
-          "analysisTime": 339
+          "rawMisMatchPercentage": 0.38395833333333335,
+          "misMatchPercentage": "0.38",
+          "analysisTime": 61
         }
       },
       "status": "pass"
@@ -1155,7 +1155,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_12_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_12_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_12_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_12_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 12",
@@ -1171,9 +1171,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.38,
+          "rawMisMatchPercentage": 0.3758333333333333,
           "misMatchPercentage": "0.38",
-          "analysisTime": 297
+          "analysisTime": 52
         }
       },
       "status": "pass"
@@ -1181,7 +1181,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_13_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_13_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_13_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_13_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 13",
@@ -1197,9 +1197,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.3804166666666667,
+          "rawMisMatchPercentage": 0.37625,
           "misMatchPercentage": "0.38",
-          "analysisTime": 637
+          "analysisTime": 52
         }
       },
       "status": "pass"
@@ -1207,7 +1207,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_14_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_14_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_14_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_14_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 14",
@@ -1223,9 +1223,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.016875,
+          "rawMisMatchPercentage": 1.0177083333333332,
           "misMatchPercentage": "1.02",
-          "analysisTime": 741
+          "analysisTime": 51
         }
       },
       "status": "pass"
@@ -1233,7 +1233,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_15_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_15_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_15_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_15_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 15",
@@ -1249,9 +1249,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.6797916666666666,
+          "rawMisMatchPercentage": 1.6839583333333334,
           "misMatchPercentage": "1.68",
-          "analysisTime": 330
+          "analysisTime": 52
         }
       },
       "status": "pass"
@@ -1259,7 +1259,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_16_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_16_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_16_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_16_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 16",
@@ -1275,9 +1275,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.9277083333333334,
+          "rawMisMatchPercentage": 1.930625,
           "misMatchPercentage": "1.93",
-          "analysisTime": 254
+          "analysisTime": 52
         }
       },
       "status": "pass"
@@ -1285,7 +1285,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_17_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_17_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_17_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_17_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 17",
@@ -1301,9 +1301,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.9277083333333334,
+          "rawMisMatchPercentage": 1.930625,
           "misMatchPercentage": "1.93",
-          "analysisTime": 215
+          "analysisTime": 67
         }
       },
       "status": "pass"
@@ -1311,7 +1311,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_18_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_18_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_18_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_18_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 18",
@@ -1327,9 +1327,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.0527083333333334,
+          "rawMisMatchPercentage": 1.0547916666666668,
           "misMatchPercentage": "1.05",
-          "analysisTime": 146
+          "analysisTime": 96
         }
       },
       "status": "pass"
@@ -1337,7 +1337,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_19_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_19_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_19_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_19_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 19",
@@ -1353,9 +1353,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.0491666666666666,
+          "rawMisMatchPercentage": 1.0514583333333334,
           "misMatchPercentage": "1.05",
-          "analysisTime": 119
+          "analysisTime": 52
         }
       },
       "status": "pass"
@@ -1363,7 +1363,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_20_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_20_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_20_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_20_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 20",
@@ -1379,9 +1379,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.0491666666666666,
+          "rawMisMatchPercentage": 1.0514583333333334,
           "misMatchPercentage": "1.05",
-          "analysisTime": 146
+          "analysisTime": 51
         }
       },
       "status": "pass"
@@ -1389,7 +1389,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_21_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_21_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_21_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_21_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 21",
@@ -1405,9 +1405,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.0491666666666666,
+          "rawMisMatchPercentage": 1.0514583333333334,
           "misMatchPercentage": "1.05",
-          "analysisTime": 122
+          "analysisTime": 59
         }
       },
       "status": "pass"
@@ -1415,7 +1415,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_22_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_22_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_22_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_22_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 22",
@@ -1431,9 +1431,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.9212500000000001,
-          "misMatchPercentage": "1.92",
-          "analysisTime": 112
+          "rawMisMatchPercentage": 1.9258333333333333,
+          "misMatchPercentage": "1.93",
+          "analysisTime": 53
         }
       },
       "status": "pass"
@@ -1441,7 +1441,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_23_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_23_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_23_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Post_-_scenario__Create_a_new_valid_post_-_Step_23_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Post - scenario:  Create a new valid post - Step: 23",
@@ -1457,9 +1457,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 3.764583333333334,
-          "misMatchPercentage": "3.76",
-          "analysisTime": 113
+          "rawMisMatchPercentage": 3.7691666666666666,
+          "misMatchPercentage": "3.77",
+          "analysisTime": 49
         }
       },
       "status": "pass"
@@ -1467,7 +1467,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_1_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_1_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_1_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_1_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 1",
@@ -1485,7 +1485,7 @@ report({
           },
           "rawMisMatchPercentage": 0.011666666666666667,
           "misMatchPercentage": "0.01",
-          "analysisTime": 83
+          "analysisTime": 50
         }
       },
       "status": "pass"
@@ -1493,7 +1493,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_2_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_2_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_2_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_2_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 2",
@@ -1509,9 +1509,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 4.289166666666667,
-          "misMatchPercentage": "4.29",
-          "analysisTime": 124
+          "rawMisMatchPercentage": 4.282708333333334,
+          "misMatchPercentage": "4.28",
+          "analysisTime": 112
         }
       },
       "status": "pass"
@@ -1519,7 +1519,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_3_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_3_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_3_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_3_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 3",
@@ -1535,18 +1535,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 21.208333333333336,
-          "misMatchPercentage": "21.21",
-          "analysisTime": 105
+          "rawMisMatchPercentage": 21.068541666666665,
+          "misMatchPercentage": "21.07",
+          "analysisTime": 131
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_3_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_3_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 4",
@@ -1562,18 +1562,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 21.208333333333336,
-          "misMatchPercentage": "21.21",
-          "analysisTime": 99
+          "rawMisMatchPercentage": 21.068541666666665,
+          "misMatchPercentage": "21.07",
+          "analysisTime": 68
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_5_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_5_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_5_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_5_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 5",
@@ -1591,7 +1591,7 @@ report({
           },
           "rawMisMatchPercentage": 0.09729166666666667,
           "misMatchPercentage": "0.10",
-          "analysisTime": 113
+          "analysisTime": 54
         }
       },
       "status": "pass"
@@ -1599,7 +1599,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_6_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_6_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_6_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_6_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 6",
@@ -1617,7 +1617,7 @@ report({
           },
           "rawMisMatchPercentage": 0.09729166666666667,
           "misMatchPercentage": "0.10",
-          "analysisTime": 61
+          "analysisTime": 195
         }
       },
       "status": "pass"
@@ -1625,7 +1625,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_7_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_7_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_7_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_7_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 7",
@@ -1643,7 +1643,7 @@ report({
           },
           "rawMisMatchPercentage": 0.09729166666666667,
           "misMatchPercentage": "0.10",
-          "analysisTime": 82
+          "analysisTime": 121
         }
       },
       "status": "pass"
@@ -1651,7 +1651,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_8_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_8_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_8_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_8_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 8",
@@ -1669,7 +1669,7 @@ report({
           },
           "rawMisMatchPercentage": 0.09729166666666667,
           "misMatchPercentage": "0.10",
-          "analysisTime": 72
+          "analysisTime": 45
         }
       },
       "status": "pass"
@@ -1677,7 +1677,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_9_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_9_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_9_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_9_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 9",
@@ -1693,9 +1693,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 3.9779166666666663,
-          "misMatchPercentage": "3.98",
-          "analysisTime": 92
+          "rawMisMatchPercentage": 3.9899999999999998,
+          "misMatchPercentage": "3.99",
+          "analysisTime": 106
         }
       },
       "status": "pass"
@@ -1703,7 +1703,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_10_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_10_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_10_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_10_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 10",
@@ -1719,9 +1719,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.37,
+          "rawMisMatchPercentage": 0.3672916666666667,
           "misMatchPercentage": "0.37",
-          "analysisTime": 102
+          "analysisTime": 65
         }
       },
       "status": "pass"
@@ -1729,7 +1729,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_11_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_11_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_11_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_11_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 11",
@@ -1745,9 +1745,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.37,
+          "rawMisMatchPercentage": 0.3672916666666667,
           "misMatchPercentage": "0.37",
-          "analysisTime": 102
+          "analysisTime": 51
         }
       },
       "status": "pass"
@@ -1755,7 +1755,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_12_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_12_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_12_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_12_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 12",
@@ -1771,9 +1771,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.3516666666666667,
+          "rawMisMatchPercentage": 0.35229166666666667,
           "misMatchPercentage": "0.35",
-          "analysisTime": 91
+          "analysisTime": 119
         }
       },
       "status": "pass"
@@ -1781,7 +1781,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_13_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_13_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_13_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_13_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 13",
@@ -1797,9 +1797,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.3516666666666667,
+          "rawMisMatchPercentage": 0.35229166666666667,
           "misMatchPercentage": "0.35",
-          "analysisTime": 74
+          "analysisTime": 79
         }
       },
       "status": "pass"
@@ -1807,7 +1807,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_14_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_14_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_14_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_14_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 14",
@@ -1823,9 +1823,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.3277083333333333,
+          "rawMisMatchPercentage": 0.3279166666666667,
           "misMatchPercentage": "0.33",
-          "analysisTime": 89
+          "analysisTime": 142
         }
       },
       "status": "pass"
@@ -1833,7 +1833,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_15_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_15_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_15_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Settings_-_scenario_Change_site_name_-_Step_15_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Settings - scenario: Change site name - Step: 15",
@@ -1849,9 +1849,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.3277083333333333,
+          "rawMisMatchPercentage": 0.3279166666666667,
           "misMatchPercentage": "0.33",
-          "analysisTime": 106
+          "analysisTime": 91
         }
       },
       "status": "pass"
@@ -1859,7 +1859,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_1_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_1_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_1_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_1_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 1",
@@ -1875,9 +1875,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.009791666666666667,
+          "rawMisMatchPercentage": 0.01,
           "misMatchPercentage": "0.01",
-          "analysisTime": 112
+          "analysisTime": 60
         }
       },
       "status": "pass"
@@ -1885,7 +1885,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_2_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_2_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_2_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_2_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 2",
@@ -1901,9 +1901,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 4.125625,
-          "misMatchPercentage": "4.13",
-          "analysisTime": 100
+          "rawMisMatchPercentage": 4.121458333333333,
+          "misMatchPercentage": "4.12",
+          "analysisTime": 121
         }
       },
       "status": "pass"
@@ -1911,7 +1911,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_3_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_3_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_3_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_3_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 3",
@@ -1927,18 +1927,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 21.17729166666667,
-          "misMatchPercentage": "21.18",
-          "analysisTime": 116
+          "rawMisMatchPercentage": 21.038958333333333,
+          "misMatchPercentage": "21.04",
+          "analysisTime": 79
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_3_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_3_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_4_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_4_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_4_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_4_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 4",
@@ -1954,18 +1954,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 21.17729166666667,
-          "misMatchPercentage": "21.18",
-          "analysisTime": 129
+          "rawMisMatchPercentage": 21.038958333333333,
+          "misMatchPercentage": "21.04",
+          "analysisTime": 63
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_4_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_4_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_5_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_5_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_5_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_5_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 5",
@@ -1981,9 +1981,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.06916666666666667,
+          "rawMisMatchPercentage": 0.07020833333333333,
           "misMatchPercentage": "0.07",
-          "analysisTime": 104
+          "analysisTime": 50
         }
       },
       "status": "pass"
@@ -1991,7 +1991,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_6_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_6_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_6_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_6_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 6",
@@ -2007,9 +2007,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.42583333333333334,
+          "rawMisMatchPercentage": 0.42604166666666665,
           "misMatchPercentage": "0.43",
-          "analysisTime": 113
+          "analysisTime": 86
         }
       },
       "status": "pass"
@@ -2017,7 +2017,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_7_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_7_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_7_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_7_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 7",
@@ -2033,9 +2033,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.42583333333333334,
+          "rawMisMatchPercentage": 0.42604166666666665,
           "misMatchPercentage": "0.43",
-          "analysisTime": 121
+          "analysisTime": 60
         }
       },
       "status": "pass"
@@ -2043,7 +2043,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_8_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_8_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_8_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_8_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 8",
@@ -2059,9 +2059,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.42583333333333334,
+          "rawMisMatchPercentage": 0.42604166666666665,
           "misMatchPercentage": "0.43",
-          "analysisTime": 100
+          "analysisTime": 56
         }
       },
       "status": "pass"
@@ -2069,7 +2069,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_9_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_9_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_9_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_9_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 9",
@@ -2085,9 +2085,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.075,
-          "misMatchPercentage": "0.07",
-          "analysisTime": 98
+          "rawMisMatchPercentage": 0.07604166666666666,
+          "misMatchPercentage": "0.08",
+          "analysisTime": 73
         }
       },
       "status": "pass"
@@ -2095,7 +2095,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_10_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_10_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_10_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_10_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 10",
@@ -2111,9 +2111,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.075,
-          "misMatchPercentage": "0.07",
-          "analysisTime": 80
+          "rawMisMatchPercentage": 0.07604166666666666,
+          "misMatchPercentage": "0.08",
+          "analysisTime": 51
         }
       },
       "status": "pass"
@@ -2121,7 +2121,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_11_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_11_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_11_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_11_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 11",
@@ -2137,9 +2137,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.075,
-          "misMatchPercentage": "0.07",
-          "analysisTime": 107
+          "rawMisMatchPercentage": 0.07604166666666666,
+          "misMatchPercentage": "0.08",
+          "analysisTime": 48
         }
       },
       "status": "pass"
@@ -2147,7 +2147,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_12_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_12_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_12_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_12_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 12",
@@ -2163,9 +2163,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.075,
-          "misMatchPercentage": "0.07",
-          "analysisTime": 110
+          "rawMisMatchPercentage": 0.07604166666666666,
+          "misMatchPercentage": "0.08",
+          "analysisTime": 47
         }
       },
       "status": "pass"
@@ -2173,7 +2173,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_13_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_13_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_13_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_13_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 13",
@@ -2189,9 +2189,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.075,
-          "misMatchPercentage": "0.07",
-          "analysisTime": 102
+          "rawMisMatchPercentage": 0.07604166666666666,
+          "misMatchPercentage": "0.08",
+          "analysisTime": 49
         }
       },
       "status": "pass"
@@ -2199,7 +2199,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_14_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_14_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_14_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_14_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 14",
@@ -2217,7 +2217,7 @@ report({
           },
           "rawMisMatchPercentage": 0.12812500000000002,
           "misMatchPercentage": "0.13",
-          "analysisTime": 128
+          "analysisTime": 52
         }
       },
       "status": "pass"
@@ -2225,7 +2225,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_15_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_15_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_15_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_15_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 15",
@@ -2241,9 +2241,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.3275,
+          "rawMisMatchPercentage": 0.32958333333333334,
           "misMatchPercentage": "0.33",
-          "analysisTime": 109
+          "analysisTime": 54
         }
       },
       "status": "pass"
@@ -2251,7 +2251,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_16_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_16_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_16_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_16_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 16",
@@ -2267,9 +2267,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.32833333333333337,
+          "rawMisMatchPercentage": 0.33041666666666664,
           "misMatchPercentage": "0.33",
-          "analysisTime": 114
+          "analysisTime": 55
         }
       },
       "status": "pass"
@@ -2277,7 +2277,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_17_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_17_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_17_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_17_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 17",
@@ -2293,9 +2293,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.5027083333333333,
+          "rawMisMatchPercentage": 0.504375,
           "misMatchPercentage": "0.50",
-          "analysisTime": 128
+          "analysisTime": 52
         }
       },
       "status": "pass"
@@ -2303,7 +2303,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_18_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_18_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_18_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_Kraken_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_18_0_document_0_desktop.png",
         "label": "Functionality: Kraken - Tags - scenario: Create a new valid tag - Step: 18",
@@ -2319,9 +2319,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.5027083333333333,
+          "rawMisMatchPercentage": 0.504375,
           "misMatchPercentage": "0.50",
-          "analysisTime": 103
+          "analysisTime": 132
         }
       },
       "status": "pass"
@@ -2329,7 +2329,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_1_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_1_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_1_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_1_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Members - scenario: Create a new Member with name and valid mail - Step: 1",
@@ -2345,9 +2345,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.051666666666666666,
+          "rawMisMatchPercentage": 0.050208333333333334,
           "misMatchPercentage": "0.05",
-          "analysisTime": 69
+          "analysisTime": 49
         }
       },
       "status": "pass"
@@ -2355,7 +2355,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_2_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_2_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_2_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_2_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Members - scenario: Create a new Member with name and valid mail - Step: 2",
@@ -2371,9 +2371,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.588125,
+          "rawMisMatchPercentage": 0.5891666666666666,
           "misMatchPercentage": "0.59",
-          "analysisTime": 72
+          "analysisTime": 61
         }
       },
       "status": "pass"
@@ -2381,7 +2381,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_3_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_3_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_3_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_3_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Members - scenario: Create a new Member with name and valid mail - Step: 3",
@@ -2397,9 +2397,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.7316666666666667,
+          "rawMisMatchPercentage": 1.7285416666666669,
           "misMatchPercentage": "1.73",
-          "analysisTime": 86
+          "analysisTime": 55
         }
       },
       "status": "pass"
@@ -2407,7 +2407,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_4_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_4_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_4_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_4_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Members - scenario: Create a new Member with name and valid mail - Step: 4",
@@ -2423,9 +2423,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.2027083333333333,
+          "rawMisMatchPercentage": 2.2035416666666663,
           "misMatchPercentage": "2.20",
-          "analysisTime": 89
+          "analysisTime": 90
         }
       },
       "status": "pass"
@@ -2433,7 +2433,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_5_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_5_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_5_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Members_-_scenario_Create_a_new_Member_with_name_and_valid_mail_-_Step_5_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Members - scenario: Create a new Member with name and valid mail - Step: 5",
@@ -2449,9 +2449,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 2.261041666666667,
-          "misMatchPercentage": "2.26",
-          "analysisTime": 74
+          "rawMisMatchPercentage": 2.283541666666667,
+          "misMatchPercentage": "2.28",
+          "analysisTime": 173
         }
       },
       "status": "pass"
@@ -2459,7 +2459,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_1_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_1_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_1_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_1_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Pages - scenario: Create a new Page - Step: 1",
@@ -2475,9 +2475,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.018125,
+          "rawMisMatchPercentage": 1.02,
           "misMatchPercentage": "1.02",
-          "analysisTime": 92
+          "analysisTime": 107
         }
       },
       "status": "pass"
@@ -2485,7 +2485,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_2_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_2_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_2_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_2_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Pages - scenario: Create a new Page - Step: 2",
@@ -2501,9 +2501,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.38395833333333335,
-          "misMatchPercentage": "0.38",
-          "analysisTime": 111
+          "rawMisMatchPercentage": 0.3877083333333334,
+          "misMatchPercentage": "0.39",
+          "analysisTime": 76
         }
       },
       "status": "pass"
@@ -2511,7 +2511,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_3_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_3_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_3_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_3_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Pages - scenario: Create a new Page - Step: 3",
@@ -2527,9 +2527,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.7283333333333334,
-          "misMatchPercentage": "0.73",
-          "analysisTime": 106
+          "rawMisMatchPercentage": 0.7189583333333334,
+          "misMatchPercentage": "0.72",
+          "analysisTime": 67
         }
       },
       "status": "pass"
@@ -2537,7 +2537,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_4_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_4_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_4_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_4_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Pages - scenario: Create a new Page - Step: 4",
@@ -2553,9 +2553,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 4.6675,
-          "misMatchPercentage": "4.67",
-          "analysisTime": 109
+          "rawMisMatchPercentage": 4.7075,
+          "misMatchPercentage": "4.71",
+          "analysisTime": 95
         }
       },
       "status": "pass"
@@ -2563,7 +2563,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_5_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_5_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_5_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Pages_-_scenario_Create_a_new_Page_-_Step_5_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Pages - scenario: Create a new Page - Step: 5",
@@ -2579,9 +2579,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.5283333333333333,
+          "rawMisMatchPercentage": 0.5293749999999999,
           "misMatchPercentage": "0.53",
-          "analysisTime": 115
+          "analysisTime": 56
         }
       },
       "status": "pass"
@@ -2589,7 +2589,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_1_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_1_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_1_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_1_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 1",
@@ -2605,9 +2605,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.36020833333333335,
+          "rawMisMatchPercentage": 0.36270833333333335,
           "misMatchPercentage": "0.36",
-          "analysisTime": 94
+          "analysisTime": 62
         }
       },
       "status": "pass"
@@ -2615,7 +2615,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_2_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_2_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_2_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_2_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 2",
@@ -2631,9 +2631,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.36020833333333335,
+          "rawMisMatchPercentage": 0.36270833333333335,
           "misMatchPercentage": "0.36",
-          "analysisTime": 69
+          "analysisTime": 55
         }
       },
       "status": "pass"
@@ -2641,7 +2641,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_3_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_3_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_3_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_3_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 3",
@@ -2657,9 +2657,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.36020833333333335,
+          "rawMisMatchPercentage": 0.36270833333333335,
           "misMatchPercentage": "0.36",
-          "analysisTime": 71
+          "analysisTime": 69
         }
       },
       "status": "pass"
@@ -2667,7 +2667,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_4_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_4_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_4_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_4_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 4",
@@ -2683,9 +2683,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.36020833333333335,
+          "rawMisMatchPercentage": 0.36270833333333335,
           "misMatchPercentage": "0.36",
-          "analysisTime": 72
+          "analysisTime": 56
         }
       },
       "status": "pass"
@@ -2693,7 +2693,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_5_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_5_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_5_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_5_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 5",
@@ -2709,9 +2709,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.5910416666666666,
-          "misMatchPercentage": "0.59",
-          "analysisTime": 68
+          "rawMisMatchPercentage": 0.5845833333333333,
+          "misMatchPercentage": "0.58",
+          "analysisTime": 53
         }
       },
       "status": "pass"
@@ -2719,7 +2719,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_6_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_6_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_6_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_6_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 6",
@@ -2735,9 +2735,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.5910416666666666,
-          "misMatchPercentage": "0.59",
-          "analysisTime": 80
+          "rawMisMatchPercentage": 0.5845833333333333,
+          "misMatchPercentage": "0.58",
+          "analysisTime": 60
         }
       },
       "status": "pass"
@@ -2745,7 +2745,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_7_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_7_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_7_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_7_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 7",
@@ -2761,9 +2761,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.619375,
-          "misMatchPercentage": "0.62",
-          "analysisTime": 86
+          "rawMisMatchPercentage": 0.6120833333333333,
+          "misMatchPercentage": "0.61",
+          "analysisTime": 66
         }
       },
       "status": "pass"
@@ -2771,7 +2771,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_8_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_8_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_8_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_8_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 8",
@@ -2787,9 +2787,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.619375,
-          "misMatchPercentage": "0.62",
-          "analysisTime": 99
+          "rawMisMatchPercentage": 0.6120833333333333,
+          "misMatchPercentage": "0.61",
+          "analysisTime": 54
         }
       },
       "status": "pass"
@@ -2797,7 +2797,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_9_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_9_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_9_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_9_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 9",
@@ -2813,9 +2813,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.7112499999999999,
-          "misMatchPercentage": "0.71",
-          "analysisTime": 105
+          "rawMisMatchPercentage": 0.6975,
+          "misMatchPercentage": "0.70",
+          "analysisTime": 61
         }
       },
       "status": "pass"
@@ -2823,7 +2823,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_10_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_10_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_10_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_10_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 10",
@@ -2839,9 +2839,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.7085416666666667,
-          "misMatchPercentage": "0.71",
-          "analysisTime": 91
+          "rawMisMatchPercentage": 0.6947916666666667,
+          "misMatchPercentage": "0.69",
+          "analysisTime": 55
         }
       },
       "status": "pass"
@@ -2849,7 +2849,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_11_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_11_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_11_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_11_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 11",
@@ -2865,9 +2865,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.7852083333333334,
-          "misMatchPercentage": "0.79",
-          "analysisTime": 89
+          "rawMisMatchPercentage": 0.7714583333333334,
+          "misMatchPercentage": "0.77",
+          "analysisTime": 63
         }
       },
       "status": "pass"
@@ -2875,7 +2875,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_12_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_12_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_12_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_12_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 12",
@@ -2891,9 +2891,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 1.4802083333333333,
-          "misMatchPercentage": "1.48",
-          "analysisTime": 91
+          "rawMisMatchPercentage": 1.4722916666666668,
+          "misMatchPercentage": "1.47",
+          "analysisTime": 56
         }
       },
       "status": "pass"
@@ -2901,7 +2901,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_13_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_13_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_13_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_13_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 13",
@@ -2917,18 +2917,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 74.65416666666667,
+          "rawMisMatchPercentage": 74.65229166666667,
           "misMatchPercentage": "74.65",
-          "analysisTime": 99
+          "analysisTime": 83
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_13_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_13_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_14_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_14_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_14_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_14_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 14",
@@ -2946,7 +2946,7 @@ report({
           },
           "rawMisMatchPercentage": 0.3514583333333334,
           "misMatchPercentage": "0.35",
-          "analysisTime": 90
+          "analysisTime": 63
         }
       },
       "status": "pass"
@@ -2954,7 +2954,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_15_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_15_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_15_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_15_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 15",
@@ -2972,7 +2972,7 @@ report({
           },
           "rawMisMatchPercentage": 0.3514583333333334,
           "misMatchPercentage": "0.35",
-          "analysisTime": 83
+          "analysisTime": 74
         }
       },
       "status": "pass"
@@ -2980,7 +2980,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_16_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_16_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_16_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_16_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 16",
@@ -2996,9 +2996,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.7085416666666667,
-          "misMatchPercentage": "0.71",
-          "analysisTime": 71
+          "rawMisMatchPercentage": 0.6947916666666667,
+          "misMatchPercentage": "0.69",
+          "analysisTime": 51
         }
       },
       "status": "pass"
@@ -3006,7 +3006,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_17_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_17_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_17_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_17_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 17",
@@ -3022,18 +3022,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 15.696666666666667,
-          "misMatchPercentage": "15.70",
-          "analysisTime": 90
+          "rawMisMatchPercentage": 15.687916666666665,
+          "misMatchPercentage": "15.69",
+          "analysisTime": 52
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_17_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_17_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_18_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_18_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_18_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_18_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 18",
@@ -3049,18 +3049,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 15.696666666666667,
-          "misMatchPercentage": "15.70",
-          "analysisTime": 92
+          "rawMisMatchPercentage": 15.687916666666665,
+          "misMatchPercentage": "15.69",
+          "analysisTime": 73
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_18_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_18_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_19_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_19_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_19_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_19_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Post - scenario:  Create a new valid post - Step: 19",
@@ -3076,18 +3076,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 15.696666666666667,
-          "misMatchPercentage": "15.70",
-          "analysisTime": 82
+          "rawMisMatchPercentage": 15.687916666666665,
+          "misMatchPercentage": "15.69",
+          "analysisTime": 59
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_19_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Post_-_scenario__Create_a_new_valid_post_-_Step_19_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_1_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_1_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_1_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_1_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Settings - scenario: Change site name - Step: 1",
@@ -3111,7 +3111,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_2_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_2_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_2_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_2_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Settings - scenario: Change site name - Step: 2",
@@ -3135,7 +3135,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_3_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_3_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_3_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_3_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Settings - scenario: Change site name - Step: 3",
@@ -3151,9 +3151,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.08104166666666666,
+          "rawMisMatchPercentage": 0.07979166666666668,
           "misMatchPercentage": "0.08",
-          "analysisTime": 98
+          "analysisTime": 86
         }
       },
       "status": "pass"
@@ -3161,7 +3161,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Settings - scenario: Change site name - Step: 4",
@@ -3177,18 +3177,18 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 45.760625,
-          "misMatchPercentage": "45.76",
-          "analysisTime": 48
+          "rawMisMatchPercentage": 45.751875,
+          "misMatchPercentage": "45.75",
+          "analysisTime": 95
         },
-        "diffImage": "bitmaps_test\\20231119-205636\\failed_diff_Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png"
+        "diffImage": "bitmaps_test\\20231120-020736\\failed_diff_Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Settings_-_scenario_Change_site_name_-_Step_4_0_document_0_desktop.png"
       },
       "status": "fail"
     },
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_1_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_1_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_1_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_1_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Tags - scenario: Create a new valid tag - Step: 1",
@@ -3204,9 +3204,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.069375,
+          "rawMisMatchPercentage": 0.06791666666666667,
           "misMatchPercentage": "0.07",
-          "analysisTime": 88
+          "analysisTime": 51
         }
       },
       "status": "pass"
@@ -3214,7 +3214,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_2_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_2_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_2_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_2_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Tags - scenario: Create a new valid tag - Step: 2",
@@ -3230,9 +3230,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.069375,
+          "rawMisMatchPercentage": 0.06791666666666667,
           "misMatchPercentage": "0.07",
-          "analysisTime": 116
+          "analysisTime": 45
         }
       },
       "status": "pass"
@@ -3240,7 +3240,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_3_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_3_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_3_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_3_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Tags - scenario: Create a new valid tag - Step: 3",
@@ -3256,9 +3256,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.010624999999999999,
+          "rawMisMatchPercentage": 0.01125,
           "misMatchPercentage": "0.01",
-          "analysisTime": 102
+          "analysisTime": 55
         }
       },
       "status": "pass"
@@ -3266,7 +3266,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_4_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_4_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_4_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_4_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Tags - scenario: Create a new valid tag - Step: 4",
@@ -3282,9 +3282,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.010624999999999999,
+          "rawMisMatchPercentage": 0.01125,
           "misMatchPercentage": "0.01",
-          "analysisTime": 90
+          "analysisTime": 51
         }
       },
       "status": "pass"
@@ -3292,7 +3292,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_5_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_5_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_5_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_5_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Tags - scenario: Create a new valid tag - Step: 5",
@@ -3308,9 +3308,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.03770833333333333,
+          "rawMisMatchPercentage": 0.03708333333333333,
           "misMatchPercentage": "0.04",
-          "analysisTime": 79
+          "analysisTime": 80
         }
       },
       "status": "pass"
@@ -3318,7 +3318,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_6_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_6_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_6_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_6_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Tags - scenario: Create a new valid tag - Step: 6",
@@ -3334,9 +3334,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.03770833333333333,
+          "rawMisMatchPercentage": 0.03708333333333333,
           "misMatchPercentage": "0.04",
-          "analysisTime": 62
+          "analysisTime": 49
         }
       },
       "status": "pass"
@@ -3344,7 +3344,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_7_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_7_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_7_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_7_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Tags - scenario: Create a new valid tag - Step: 7",
@@ -3360,9 +3360,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.169375,
+          "rawMisMatchPercentage": 0.16854166666666667,
           "misMatchPercentage": "0.17",
-          "analysisTime": 50
+          "analysisTime": 43
         }
       },
       "status": "pass"
@@ -3370,7 +3370,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_8_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_8_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_8_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_8_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Tags - scenario: Create a new valid tag - Step: 8",
@@ -3386,9 +3386,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.081875,
+          "rawMisMatchPercentage": 0.08104166666666666,
           "misMatchPercentage": "0.08",
-          "analysisTime": 32
+          "analysisTime": 89
         }
       },
       "status": "pass"
@@ -3396,7 +3396,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_9_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_9_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_9_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_9_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Tags - scenario: Create a new valid tag - Step: 9",
@@ -3412,9 +3412,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.081875,
+          "rawMisMatchPercentage": 0.08104166666666666,
           "misMatchPercentage": "0.08",
-          "analysisTime": 31
+          "analysisTime": 68
         }
       },
       "status": "pass"
@@ -3422,7 +3422,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_10_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_10_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_10_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_10_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Tags - scenario: Create a new valid tag - Step: 10",
@@ -3438,9 +3438,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.21520833333333336,
-          "misMatchPercentage": "0.22",
-          "analysisTime": 24
+          "rawMisMatchPercentage": 0.21458333333333335,
+          "misMatchPercentage": "0.21",
+          "analysisTime": 38
         }
       },
       "status": "pass"
@@ -3448,7 +3448,7 @@ report({
     {
       "pair": {
         "reference": "bitmaps_reference\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_11_0_document_0_desktop.png",
-        "test": "bitmaps_test\\20231119-205636\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_11_0_document_0_desktop.png",
+        "test": "bitmaps_test\\20231120-020736\\Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_11_0_document_0_desktop.png",
         "selector": "document",
         "fileName": "Ghost-VRT-AllScenarios_Functionality_PlayWright_-_Tags_-_scenario_Create_a_new_valid_tag_-_Step_11_0_document_0_desktop.png",
         "label": "Functionality: PlayWright - Tags - scenario: Create a new valid tag - Step: 11",
@@ -3464,9 +3464,9 @@ report({
             "width": 0,
             "height": 0
           },
-          "rawMisMatchPercentage": 0.21520833333333336,
-          "misMatchPercentage": "0.22",
-          "analysisTime": 20
+          "rawMisMatchPercentage": 0.21458333333333335,
+          "misMatchPercentage": "0.21",
+          "analysisTime": 61
         }
       },
       "status": "pass"
