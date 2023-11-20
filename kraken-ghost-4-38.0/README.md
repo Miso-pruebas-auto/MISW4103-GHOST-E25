@@ -117,7 +117,7 @@ $ docker-compose up -d db
 $ docker-compose up -d ghost
 ```
 
-O tambien puede ejecutar el siguiente comando para levantar los contenedores de la base de datos y Ghost:
+O también puede ejecutar el siguiente comando para levantar los contenedores de la base de datos y Ghost:
 
 ```bash
 $ ./kraken-setup.sh
@@ -128,6 +128,10 @@ Cabe mencionar que este comando tambien se encarga de ejecutar el script de prue
 Luego, espere a que Ghost esté disponible. Puede verificar su estado accediendo a http://localhost:8080/ghost/#/signin.
 Esto
 puede tardar aproximadamente 20 segundos.
+
+**Nota:** en caso de usar docker, debes actualizar el archivo `properties.json` y cambiar la propiedad `GHOST_URL` por
+la
+siguiente: `http://localhost:8080/ghost/`.
 
 #### Re-Ejecución del Proyecto
 
@@ -241,7 +245,9 @@ debes dirigirte a la siguiente URL: [https://misw-4103-ghost-e25.vercel.app/](ht
 Este reporte ya contiene las imágenes de referencia y las imágenes de prueba, además de la comparación entre ambas.
 
 ### Generación de Reporte local de ResembleJs
+
 Por favor leer el siguiente [README](../vrt-tools/README.md) para generar el reporte de ResembleJs y visualizarlo usando
 NextJs.
 
-Para la visualizacion del reporte de ResembleJs leer el siguiente [README](../resemble-report/README.md) para mas información.
+Para la visualizacion del reporte de ResembleJs leer el siguiente [README](../resemble-report/README.md) para mas
+información.

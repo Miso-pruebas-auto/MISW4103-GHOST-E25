@@ -129,6 +129,10 @@ Luego, espere a que Ghost esté disponible. Puede verificar su estado accediendo
 Esto
 puede tardar aproximadamente 20 segundos.
 
+**Nota:** en caso de usar docker, debes actualizar el archivo `properties.json` y cambiar la propiedad `GHOST_URL` por
+la
+siguiente: `http://localhost:8080/ghost/`.
+
 #### Re-Ejecución del Proyecto
 
 Si desea volver a ejecutar el proyecto desde cero, siga estos pasos para limpiar y reconstruir los contenedores y las
@@ -241,7 +245,9 @@ debes dirigirte a la siguiente URL: [https://misw-4103-ghost-e25.vercel.app/](ht
 Este reporte ya contiene las imágenes de referencia y las imágenes de prueba, además de la comparación entre ambas.
 
 ### Generación de Reporte local de ResembleJs
+
 Por favor leer el siguiente [README](../vrt-tools/README.md) para generar el reporte de ResembleJs y visualizarlo usando
 NextJs.
 
-Para la visualizacion del reporte de ResembleJs leer el siguiente [README](../resemble-report/README.md) para mas información.
+Para la visualizacion del reporte de ResembleJs leer el siguiente [README](../resemble-report/README.md) para mas
+información.
