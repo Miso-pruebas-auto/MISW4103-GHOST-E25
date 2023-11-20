@@ -151,8 +151,8 @@ async function saveBackStopConfig(misMatchThreshold, unique) {
     const backstopConfig = await generateBackStopConfig(
       `Ghost - VRT - All Scenarios`,
       combinedScenarios,
-      'backstop_data/bitmaps_reference/all',
-      'backstop_data/bitmaps_test/all',
+      '../backstop-report/bitmaps_reference',
+      '../backstop-report/bitmaps_test',
       'backstop_data/engine_scripts',
       '../backstop-report',
       'backstop_data/ci_report/all',

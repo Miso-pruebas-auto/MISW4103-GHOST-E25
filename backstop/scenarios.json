@@ -1,34 +1,64 @@
 {
   "scenarios": [
       {
-        "funtionality": "general settings",
-        "scenary": "change empty site description",
-        "url": "../kraken-ghost-4-48.9/screenshots/general settings/change_empty_site_description",
-        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/general_settings/change_empty_site_description"
-      },
-       {
-        "funtionality": "general settings",
-        "scenary": "change empty site name",
-        "url": "../kraken-ghost-4-48.9/screenshots/general settings/change_empty_site_name",
-        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/general_settings/change_empty_site_name"
+        "funtionality": "Kraken - Members",
+        "scenary": "Create a new Member with name and valid mail",
+        "url": "../kraken-ghost-4-48.9/screenshots/members/create_a_new_member_with_name_and_valid_mail",
+        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/members/create_a_new_member_with_name_and_valid_mail"
       },
       {
-        "funtionality": "general settings",
-        "scenary": "change site description",
-        "url": "../kraken-ghost-4-48.9/screenshots/general settings/change_site_description",
-        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/general_settings/change_site_description"
+        "funtionality": "Kraken - Pages",
+        "scenary": "Create a new Page",
+        "url": "../kraken-ghost-4-48.9/screenshots/pages/create_a_new_page",
+        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/pages/create_a_new_page"
       },
       {
-        "funtionality": "general settings",
-        "scenary": "change site name",
-        "url": "../kraken-ghost-4-48.9/screenshots/general settings/change_site_name",
+        "funtionality": "Kraken - Post",
+        "scenary": " Create a new valid post",
+        "url": "../kraken-ghost-4-48.9/screenshots/posts/create_a_new_valid_post",
+        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/posts/create_a_new_valid_post"
+      },
+      {
+        "funtionality": "Kraken - Settings",
+        "scenary": "Change site name",
+        "url": "../kraken-ghost-4-48.9/screenshots/general_settings/change_site_name",
         "referenceUrl": "../kraken-ghost-4-38.0/screenshots/general_settings/change_site_name"
       },
       {
-        "funtionality": "members",
-        "scenary": "create a new member with name and invalid mail",
-        "url": "../kraken-ghost-4-48.9/screenshots/members/create_a_new_member_with_name_and_invalid_mail",
-        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/members/create_a_new_member_with_name_and_invalid_mail"
+        "funtionality": "Kraken - Tags",
+        "scenary": "Create a new valid tag",
+        "url": "../kraken-ghost-4-48.9/screenshots/tags/create_a_new_valid_tag",
+        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/tags/create_a_new_valid_tag"
+      },
+      {
+        "funtionality": "PlayWright - Members",
+        "scenary": "Create a new Member with name and valid mail",
+        "url": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro",
+        "referenceUrl": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro"
+      },
+      {
+        "funtionality": "PlayWright - Pages",
+        "scenary": "Create a new Page",
+        "url": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_publicarla",
+        "referenceUrl": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_publicarla"
+      },
+      {
+        "funtionality": "PlayWright - Post",
+        "scenary": " Create a new valid post",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción",
+        "referenceUrl": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción"
+      },
+      {
+        "funtionality": "PlayWright - Settings",
+        "scenary": "Change site name",
+        "url": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_title_con_otro_nombre",
+        "referenceUrl": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_title_con_otro_nombre"
+      },
+      {
+        "funtionality": "PlayWright - Tags",
+        "scenary": "Create a new valid tag",
+        "url": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color",
+        "referenceUrl": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color"
       }
   ]
 }
