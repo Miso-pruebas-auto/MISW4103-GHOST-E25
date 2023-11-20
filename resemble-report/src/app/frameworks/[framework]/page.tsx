@@ -17,6 +17,7 @@ import Image from 'next/image';
 import { ResembleResult } from '@/types/resemble';
 import { useState } from 'react';
 import groupBy from 'lodash/groupBy';
+import Link from 'next/link';
 
 type PageProps = {
   params: {
@@ -28,6 +29,20 @@ const results = {
   kraken: krakenResults,
   playwright: playwrightResults,
 };
+
+const highlightScenarios = [
+  'pages/create_a_new_page',
+  'members/create_a_new_member_with_name_and_valid_mail',
+  'posts/create_a_new_valid_post',
+  'tags/create_a_new_valid_tag',
+  'general_settings/change_site_name',
+
+  'members/creación_de_miembro',
+  'pages/Creación_página_y_publicarla',
+  'post/Crear_un_nuevo_post_con_solo_título_y_descripción',
+  'tags/Creación_de_tag_con_título_y_color',
+  'settings/cambiar_el_site_title_con_otro_nombre',
+];
 
 function ComparableItem({
   item,
@@ -115,9 +130,7 @@ function ScenarioItem({ title, items, framework }: ScenarioItemProps) {
   return (
     <AccordionItem value={title}>
       <AccordionTrigger>
-        <span className="break-words w-80 text-left md:w-full">
-          {title}
-        </span>
+        <span className="break-words w-80 text-left md:w-full">{title}</span>
       </AccordionTrigger>
       <AccordionContent>
         <ul role="list" className="divide-y">
@@ -140,6 +153,7 @@ function ScenarioItem({ title, items, framework }: ScenarioItemProps) {
 }
 
 export default function Page({ params }: PageProps) {
+  const [showAll, setShowAll] = useState(false);
   const items = results[params.framework];
   const grouped = groupBy(items, 'path');
 
@@ -149,22 +163,34 @@ export default function Page({ params }: PageProps) {
 
   return (
     <div className="container py-10">
-      <SectionHeading
-        title={`Report of ${params.framework}`}
-        description={`All related results after executing ResembleJs on ${params.framework}`}
-      />
+      <div className="flex justify-between">
+        <SectionHeading
+          title={`Report of ${params.framework}`}
+          description={`All related results after executing ResembleJs on ${params.framework}`}
+        />
+        <div className="flex justify-end space-x-2">
+          <Button variant="secondary" asChild>
+            <Link href="/">Go Back</Link>
+          </Button>
+          <Button onClick={() => setShowAll(!showAll)}>
+            {showAll ? 'Show only selected' : 'Show all'}
+          </Button>
+        </div>
+      </div>
 
       <Card className="px-6">
         <CardContent className="py-6 px-0">
           <Accordion type="single" collapsible className="w-full">
-            {Object.entries(grouped).map(([key, value], index) => (
-              <ScenarioItem
-                title={key}
-                items={value}
-                framework={params.framework}
-                key={index}
-              />
-            ))}
+            {Object.entries(grouped)
+              .filter(([key]) => showAll || highlightScenarios.includes(key))
+              .map(([key, value], index) => (
+                <ScenarioItem
+                  title={key}
+                  items={value}
+                  framework={params.framework}
+                  key={index}
+                />
+              ))}
           </Accordion>
         </CardContent>
       </Card>
