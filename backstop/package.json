@@ -3,13 +3,6 @@
   "description": "BackstopJS test suite",
   "version": "1.0.0",
   "scripts": {
-    "create:scenarios:0.1": "node ./createbackstop.js --misMatchThreshold=0.1",
-    "create:scenarios:0.5": "node ./createbackstop.js --misMatchThreshold=0.5",
-    "create:scenarios:1": "node ./createbackstop.js --misMatchThreshold=1",
-    "create:scenarios:5": "node ./createbackstop.js --misMatchThreshold=5",
-    "create:scenarios:10": "node ./createbackstop.js --misMatchThreshold=10",
-    "create:scenarios:25": "node ./createbackstop.js --misMatchThreshold=25",
-    "create:scenarios:50": "node ./createbackstop.js --misMatchThreshold=50",
     "create:0.1": "node ./createbackstop.js --misMatchThreshold=0.1 --unique=true",
     "create:0.5": "node ./createbackstop.js --misMatchThreshold=0.5 --unique=true",
     "create:1": "node ./createbackstop.js --misMatchThreshold=1 --unique=true",
@@ -17,12 +10,7 @@
     "create:10": "node ./createbackstop.js --misMatchThreshold=10 --unique=true",
     "create:25": "node ./createbackstop.js --misMatchThreshold=25 --unique=true",
     "create:50": "node ./createbackstop.js --misMatchThreshold=50 --unique=true",
-    "run:scenary:one": "node ./runBackStop.js --config=backstop_change_empty_site_description.json",
-    "run:scenary:two": "node ./runBackStop.js --config=backstop_change_empty_site_name.json",
-    "run:scenary:three": "node ./runBackStop.js --config=backstop_change_site_description.json",
-    "run:scenary:four": "node ./runBackStop.js --config=backstop_change_site_name.json",
-    "run:scenary:five": "node ./runBackStop.js --config=backstop_create_a_new_member_with_name_and_invalid_mail.json",
-    "run:scenary:all": "node ./runBackStop.js"
+    "test:scenary:all": "node ./runBackStop.js"
   },
   "dependencies": {
     "yargs": "^17.7.2"

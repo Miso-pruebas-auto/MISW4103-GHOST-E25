@@ -16,12 +16,14 @@ async function updateFiles(config, report) {
   if (config) {
     folderPath = `./${config}`;
   }
+  // console.log(folderPath);
   const scenariosFilePath = path.join(__dirname, folderPath);
   const scenariosContent = await fs.readFile(scenariosFilePath, { encoding: 'utf-8' });
+  // console.log(scenariosContent);
   const backstopConfig = await JSON.parse(scenariosContent);
   const scenarios = await backstopConfig.scenarios;
   // console.log(scenarios);
-  const updateScenarios = scenarios.map((file) => {
+  const updateScenarios = await scenarios.map((file) => {
     const referenceUrl = file.url;
     const url = file.referenceUrl;
     return {
@@ -30,8 +32,7 @@ async function updateFiles(config, report) {
       referenceUrl,
     }
   });
-  // console.log(updateScenarios);
-  backstopConfig['scenarios'] = updateScenarios;
+  backstopConfig['scenarios'] = await updateScenarios;
   backstopConfig['report'] = ['browser']; 
   await fs.writeFile(scenariosFilePath, JSON.stringify(backstopConfig, null, 2), 'utf-8');
 }
@@ -44,9 +45,11 @@ async function updateFiles(config, report) {
 async function runOperation(config, operation) {
   try {
     let command = operation;
-    if (config) command += ` --config=${config}`;
+    if (config) command = `${command} --config=${config}`;
+    console.log(command);
     await execAsync(command)
   } catch (e) {
+    console.log(e);
     //Lo serrores son esperados por la cherramienta de backstop si al principio fallan las pruebas
   }
 }
