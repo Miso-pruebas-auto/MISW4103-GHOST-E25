@@ -34,7 +34,7 @@ async function cleanReferenceImages(folderPath) {
     const files = await fs.readdir(referenceFolder);
     for (const file of files) {
       const filePath = path.join(referenceFolder, file);
-      if (path.extname(file).toLowerCase() === '.png') {
+      if (path.extname(file).toLowerCase() === '.png' || path.extname(file).toLowerCase() === '.js' || path.extname(file).toLowerCase() === '.html') {
         await fs.unlink(filePath);
       } else if ((await fs.stat(filePath)).isDirectory()) {
         await fs.rm(filePath, { recursive: true, force: true });
@@ -62,11 +62,9 @@ async function generateScenarioConfig(scenariosData, misMatchThreshold) {
     const scenarioConfig = urlImages.map((referenceImage, index) => ({
       label: `Functionality: ${scenariosData.funtionality} - scenario: ${scenariosData.scenary} - Step: ${index + 1}`,
       url: path.join(scenariosData.url, referenceImage),
-      // url: '../kraken-2/screenshots/general settings/change_empty_site_description/11.png',
       referenceUrl: path.join(scenariosData.referenceUrl, refUrlImages[index]),
-      // referenceUrl: '../kraken/screenshots/4.38.0-alpine/general settings/change_empty_site_description/2.png',
       readyEvent: '',
-      delay: 1000,
+      delay: 1500,
       misMatchThreshold,
       readySelector: "",
       hideSelectors: [],
@@ -156,26 +154,28 @@ async function saveBackStopConfig(misMatchThreshold, unique) {
       'backstop_data/bitmaps_reference/all',
       'backstop_data/bitmaps_test/all',
       'backstop_data/engine_scripts',
-      'backstop_data/html_report/all',
+      '../backstop-report',
       'backstop_data/ci_report/all',
     );
     const configFilePath = path.join(__dirname, `backstop.json`);
     await fs.writeFile(configFilePath, JSON.stringify(backstopConfig, null, 2), 'utf-8');
-    console.log(`\n ============================== \n Ahora puede ejecutar: node runBackStop.js \n ==============================`);
+    console.log(`\n ============================== \n Ahora puede ejecutar: npm run test:scenary:all \n ==============================`);
   } else {
     for (const scenario of scenarios) {
       const result = await generateScenarioConfig(scenario, misMatchThreshold);
+      const folderName = `${scenario.funtionality}_${scenario.scenary}`.replace(/\s+/g, '_');
       const backstopConfig = await generateBackStopConfig(
         `Ghost - VRT - ${scenario.funtionality} - ${scenario.scenary}`,
         result,
-        `backstop_data/bitmaps_reference/${scenario.funtionality}_${scenario.scenary}`,
-        `backstop_data/bitmaps_test/${scenario.funtionality}_${scenario.scenary}`,
+        `backstop_data/bitmaps_reference/${folderName}`,
+        `backstop_data/bitmaps_test/${folderName}`,
         'backstop_data/engine_scripts',
-        `backstop_data/html_report/${scenario.funtionality}_${scenario.scenary}`,
-        `backstop_data/ci_report/${scenario.funtionality}_${scenario.scenary}`,
+        `backstop_data/html_report/${scenario.funtionality} ${scenario.scenary}`,
+        `backstop_data/ci_report/${folderName}`,
       );
+      backstopConfig['name'] = `${scenario.scenary.replace(/\s+/g, '_')}`;
       //AGREGAR CONFIGURACION DE ESCENARIOS
-      backstopConfigs.push(backstopConfig);
+      await backstopConfigs.push(backstopConfig);
     }
     for (const [index, backstopConfig] of backstopConfigs.entries()) {
       const configFilePath = path.join(__dirname, `backstop_${backstopConfig.name}.json`);
@@ -192,10 +192,10 @@ async function main() {
     const unique = argv.unique;
     try {
         //LIMPIA CARPETA DE REFERENCIA
+        const reportFolderPath = '../backstop-report'
+        await cleanReferenceImages(reportFolderPath);
         const folderPath = 'backstop_data/bitmaps_reference'
         await cleanReferenceImages(folderPath);
-        const folderReportPath = 'backstop_data/html_report';
-        await cleanReferenceImages(folderReportPath);
         //GENERA CONFIGURACIONES DE BACKSTOP POR CADA SCENARIO
         saveBackStopConfig(misMatch, unique);
     } catch (e) {
