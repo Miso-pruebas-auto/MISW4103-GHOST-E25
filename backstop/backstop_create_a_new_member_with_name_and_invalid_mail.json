@@ -1,0 +1,193 @@
+{
+  "id": "Ghost - VRT - members - create a new member with name and invalid mail",
+  "viewports": [
+    {
+      "label": "desktop",
+      "width": 800,
+      "height": 600
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 1",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\1.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\1.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 2",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\2.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\2.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 3",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\3.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\3.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 4",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\4.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\4.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 5",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\5.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\5.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 6",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\6.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\6.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 7",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\7.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\7.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 8",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\8.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\8.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 9",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\9.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\9.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 10",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\10.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\10.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 11",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\11.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\11.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 12",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\12.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\12.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 13",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\13.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\13.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 14",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\14.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\14.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 15",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\15.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\15.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    },
+    {
+      "label": "Functionality: members - scenario: create a new member with name and invalid mail - Step: 16",
+      "url": "..\\kraken-2\\screenshots\\members\\create_a_new_member_with_name_and_invalid_mail\\16.png",
+      "referenceUrl": "..\\kraken\\screenshots\\4.38.0-alpine\\members\\create_a_new_member_with_name_and_invalid_mail\\16.png",
+      "readyEvent": "",
+      "delay": 1000,
+      "clickSelector": "#generate",
+      "postInteractionWait": 1,
+      "misMatchThreshold": 0.1
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference/members_create a new member with name and invalid mail",
+    "bitmaps_test": "backstop_data/bitmaps_test/members_create a new member with name and invalid mail",
+    "engine_scripts": "backstop_data/engine_scripts",
+    "html_report": "backstop_data/html_report/members_create a new member with name and invalid mail",
+    "ci_report": "backstop_data/ci_report/members_create a new member with name and invalid mail"
+  },
+  "report": [
+    "browser"
+  ],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "headless": "new",
+    "args": [
+      "--no-sandbox"
+    ]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false
+}

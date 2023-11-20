@@ -1,0 +1,407 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 1",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 7
+          },
+          "rawMisMatchPercentage": 40.04218106995885,
+          "misMatchPercentage": "40.04",
+          "analysisTime": 77
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 2",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 12
+          },
+          "rawMisMatchPercentage": 4.903064738292011,
+          "misMatchPercentage": "4.90",
+          "analysisTime": 48
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 3",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 4
+          },
+          "rawMisMatchPercentage": 46.616769547325106,
+          "misMatchPercentage": "46.62",
+          "analysisTime": 64
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_4_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_4_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_4_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 4",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_5_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_5_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_5_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 5",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -77
+          },
+          "rawMisMatchPercentage": 55.464876033057855,
+          "misMatchPercentage": "55.46",
+          "analysisTime": 113
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_5_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 6",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -118
+          },
+          "rawMisMatchPercentage": 64.2150069637883,
+          "misMatchPercentage": "64.22",
+          "analysisTime": 258
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 7",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -80
+          },
+          "rawMisMatchPercentage": 12.67318244170096,
+          "misMatchPercentage": "12.67",
+          "analysisTime": 110
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_8_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_8_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_8_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 8",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 2.061042524005487,
+          "misMatchPercentage": "2.06",
+          "analysisTime": 59
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_8_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 9",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 2.0174897119341564,
+          "misMatchPercentage": "2.02",
+          "analysisTime": 35
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 10",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -129
+          },
+          "rawMisMatchPercentage": 64.0886488340192,
+          "misMatchPercentage": "64.09",
+          "analysisTime": 62
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 11",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -126
+          },
+          "rawMisMatchPercentage": 63.04183884297521,
+          "misMatchPercentage": "63.04",
+          "analysisTime": 72
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 12",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 3
+          },
+          "rawMisMatchPercentage": 31.249314128943755,
+          "misMatchPercentage": "31.25",
+          "analysisTime": 124
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 13",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -80
+          },
+          "rawMisMatchPercentage": 12.398148148148149,
+          "misMatchPercentage": "12.40",
+          "analysisTime": 82
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 14",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 4.097842835130971,
+          "misMatchPercentage": "4.10",
+          "analysisTime": 79
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-150003\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_15_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-150003\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_15_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_15_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 15",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "https://en.wikipedia.org/wiki/Image#/media/File:Pencil_drawing_of_a_girl_in_ecstasy.jpg",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0.002696456086286595,
+          "misMatchPercentage": "0.00",
+          "analysisTime": 40
+        }
+      },
+      "status": "pass"
+    }
+  ],
+  "id": "Ghost - VRT - All Scenarios"
+}

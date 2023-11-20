@@ -1,0 +1,407 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 1",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 3
+          },
+          "rawMisMatchPercentage": 46.52383401920439,
+          "misMatchPercentage": "46.52",
+          "analysisTime": 65
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 2",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 3
+          },
+          "rawMisMatchPercentage": 46.52383401920439,
+          "misMatchPercentage": "46.52",
+          "analysisTime": 63
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 3",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -77
+          },
+          "rawMisMatchPercentage": 55.464876033057855,
+          "misMatchPercentage": "55.46",
+          "analysisTime": 65
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_4_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_4_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_4_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 4",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 5
+          },
+          "rawMisMatchPercentage": 4.174758953168044,
+          "misMatchPercentage": "4.17",
+          "analysisTime": 57
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_4_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_5_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_5_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_5_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 5",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "misMatchPercentage": "0.00"
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 6",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 3
+          },
+          "rawMisMatchPercentage": 46.15209190672154,
+          "misMatchPercentage": "46.15",
+          "analysisTime": 80
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 7",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 5
+          },
+          "rawMisMatchPercentage": 46.76954732510288,
+          "misMatchPercentage": "46.77",
+          "analysisTime": 53
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_8_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_8_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_8_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 8",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 0.09036351165980795,
+          "misMatchPercentage": "0.09",
+          "analysisTime": 35
+        }
+      },
+      "status": "pass"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 9",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 4
+          },
+          "rawMisMatchPercentage": 46.598765432098766,
+          "misMatchPercentage": "46.60",
+          "analysisTime": 72
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 10",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -62
+          },
+          "rawMisMatchPercentage": 57.422644163150494,
+          "misMatchPercentage": "57.42",
+          "analysisTime": 77
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 11",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -129
+          },
+          "rawMisMatchPercentage": 64.0886488340192,
+          "misMatchPercentage": "64.09",
+          "analysisTime": 64
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 12",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 3
+          },
+          "rawMisMatchPercentage": 46.52383401920439,
+          "misMatchPercentage": "46.52",
+          "analysisTime": 58
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 13",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 3
+          },
+          "rawMisMatchPercentage": 46.52383401920439,
+          "misMatchPercentage": "46.52",
+          "analysisTime": 60
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 14",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": true,
+          "dimensionDifference": {
+            "width": 0,
+            "height": 0
+          },
+          "rawMisMatchPercentage": 20.06714876033058,
+          "misMatchPercentage": "20.07",
+          "analysisTime": 58
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_15_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-145546\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_15_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_15_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 15",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+        "referenceUrl": "file:///C:/Users/nicol/Documents/testHtml/index-3.html",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "diff": {
+          "isSameDimensions": false,
+          "dimensionDifference": {
+            "width": 0,
+            "height": -124
+          },
+          "rawMisMatchPercentage": 54.12361878453039,
+          "misMatchPercentage": "54.12",
+          "analysisTime": 76
+        },
+        "diffImage": "..\\..\\bitmaps_test\\all\\20231119-145546\\failed_diff_Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_15_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "Ghost - VRT - All Scenarios"
+}

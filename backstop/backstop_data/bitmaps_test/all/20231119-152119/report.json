@@ -1,0 +1,247 @@
+{
+  "testSuite": "BackstopJS",
+  "tests": [
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 1",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_1_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 2",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_2_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0__0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0__0_desktop.png",
+        "selector": "",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0__0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 3",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "engineErrorMsg": "Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_3_0__0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_4_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_4_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_4_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 4",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_4_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_5_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_5_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_5_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 5",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_5_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 6",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_6_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 7",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_7_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_8_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_8_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_8_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 8",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_8_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 9",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_9_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 10",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_10_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 11",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_11_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 12",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_12_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 13",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_13_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 14",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_14_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    },
+    {
+      "pair": {
+        "reference": "..\\..\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_15_0_document_0_desktop.png",
+        "test": "..\\..\\bitmaps_test\\all\\20231119-152119\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_15_0_document_0_desktop.png",
+        "selector": "document",
+        "fileName": "Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_15_0_document_0_desktop.png",
+        "label": "Functionality: general settings - scenario: change empty site description - Step: 15",
+        "requireSameDimensions": true,
+        "misMatchThreshold": 0.2,
+        "url": "http://localhost:3000/screenshots/1/general%20settings/change_empty_site_description/3.png",
+        "expect": 0,
+        "viewportLabel": "desktop",
+        "error": "Reference file not found C:\\Users\\nicol\\Documents\\MISW4103-GHOST-E25\\backstop\\backstop_data\\bitmaps_reference\\all\\Ghost-VRT-AllScenarios_Functionality_general_settings_-_scenario_change_empty_site_description_-_Step_15_0_document_0_desktop.png"
+      },
+      "status": "fail"
+    }
+  ],
+  "id": "Ghost - VRT - All Scenarios"
+}

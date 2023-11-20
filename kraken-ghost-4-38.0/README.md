@@ -6,6 +6,7 @@ Este proyecto usa [Kraken](https://github.com/TheSoftwareDesignLab/Kraken) para 
 GHOST.
 
 ## Estructura del Proyecto
+
 ```
 features
 |_web
@@ -29,15 +30,18 @@ properties.json
 mobile.json
 ```
 
-Como se puede observar cada `.feature` tiene su respectivo archivo `.js` en la carpeta `step_definitions`. Esto con la finalidad de tener un orden en el código y que sea más fácil de mantener.
+Como se puede observar cada `.feature` tiene su respectivo archivo `.js` en la carpeta `step_definitions`. Esto con la
+finalidad de tener un orden en el código y que sea más fácil de mantener.
 
-El archivo `properties.json` contiene las propiedades de la aplicación web, como el URL base, el usuario y la contraseña. Estas propiedades ya poseen un valor por defecto, pero pueden ser modificadas según sea necesario. Debe seguir el siguiente formato:
+El archivo `properties.json` contiene las propiedades de la aplicación web, como el URL base, el usuario y la
+contraseña. Estas propiedades ya poseen un valor por defecto, pero pueden ser modificadas según sea necesario. Debe
+seguir el siguiente formato:
 
 ```json
 {
-    "GHOST_URL": "",
-    "USERNAME": "",
-    "PASSWORD": ""
+  "GHOST_URL": "",
+  "USERNAME": "",
+  "PASSWORD": ""
 }
 ```
 
@@ -92,18 +96,43 @@ PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/platform-to
 
 Recuerda reiniciar la terminal para que los cambios surtan efecto.
 
+### Configuración de Node.js con NVM
+
+Se recomienda utilizar Node Version Manager (NVM) para administrar las versiones de Node.js. Asegúrese de tener NVM
+instalado y, si no tiene la versión 16.14.2 de Node.js, puede instalarla y activarla con los siguientes comandos:
+
+```bash
+$ nvm ls
+$ nvm install 16.14.2
+$ nvm use 16.14.2
+```
+
 ### Docker
-Configuración del Entorno Docker Asegúrese de tener Docker instalado y, ejecute los siguientes comandos en la carpeta raiz del proyecto para levantar los contenedores de la base de datos y Ghost:
+
+Configuración del Entorno Docker Asegúrese de tener Docker instalado y, ejecute los siguientes comandos en la carpeta
+raiz del proyecto para levantar los contenedores de la base de datos y Ghost:
 
 ```bash
 $ docker-compose up -d db
 $ docker-compose up -d ghost
 ```
 
-Espere a que Ghost esté disponible. Puede verificar su estado accediendo a http://localhost:2368/ghost/#/signin. Esto puede tardar aproximadamente 20 segundos.
+O tambien puede ejecutar el siguiente comando para levantar los contenedores de la base de datos y Ghost:
+
+```bash
+$ ./kraken-setup.sh
+```
+
+Cabe mencionar que este comando tambien se encarga de ejecutar el script de prueba de kraken.
+
+Luego, espere a que Ghost esté disponible. Puede verificar su estado accediendo a http://localhost:8080/ghost/#/signin.
+Esto
+puede tardar aproximadamente 20 segundos.
 
 #### Re-Ejecución del Proyecto
-Si desea volver a ejecutar el proyecto desde cero, siga estos pasos para limpiar y reconstruir los contenedores y las imágenes:
+
+Si desea volver a ejecutar el proyecto desde cero, siga estos pasos para limpiar y reconstruir los contenedores y las
+imágenes:
 
 1. Limpieza de Contenedores, Volúmenes e Imágenes
    Para eliminar los contenedores, volúmenes e imágenes existentes, puede utilizar los siguientes comandos:
@@ -112,19 +141,32 @@ Si desea volver a ejecutar el proyecto desde cero, siga estos pasos para limpiar
 $ docker-compose down -v    # Detiene y elimina contenedores y volúmenes
 $ docker rmi $(docker images -a -q) -f    # Elimina todas las imágenes de Docker
 ```
+
 Asegúrese de revisar y confirmar que desea eliminar estos recursos antes de proceder.
 
 2. Reconstrucción y Ejecución de Contenedores
-   Después de limpiar el entorno, puede reconstruir y volver a ejecutar los contenedores utilizando los siguientes comandos:
+   Después de limpiar el entorno, puede reconstruir y volver a ejecutar los contenedores utilizando los siguientes
+   comandos:
 
 ```bash
-$ docker-compose up -d db --build    # Reconstruye e inicia el contenedor de la base de datos
-$ docker-compose up -d ghost --build    # Reconstruye e inicia el contenedor de Ghost
+$ docker compose up -d db-kraken    # Reconstruye e inicia el contenedor de la base de datos
+$ docker compose up -d ghost-kraken   # Reconstruye e inicia el contenedor de Ghost
 ```
-Estos comandos aseguran que los contenedores se construyan con las últimas configuraciones y luego se ejecuten en segundo plano.
+
+Estos comandos aseguran que los contenedores se construyan con las últimas configuraciones y luego se ejecuten en
+segundo plano.
+
+O también puede ejecutar el siguiente comando para limpiar y reconstruir los contenedores y las imágenes y correr la
+herramienta de kraken:
+
+```bash
+$ ./kraken-setup.sh
+```
 
 ### Nota Importante
-Asegúrese de ejecutar estos pasos con precaución, ya que eliminará todos los datos existentes y empezará desde cero. Este enfoque es útil cuando se realizan cambios significativos en la configuración o en el código del proyecto.
+
+Asegúrese de ejecutar estos pasos con precaución, ya que eliminará todos los datos existentes y empezará desde cero.
+Este enfoque es útil cuando se realizan cambios significativos en la configuración o en el código del proyecto.
 
 ## Instalación
 
@@ -133,28 +175,28 @@ Asegúrese de ejecutar estos pasos con precaución, ya que eliminará todos los 
 Para clonar el repositorio, sigue estos pasos:
 
 ```bash
-$ git clone https://github.com/nipoanz/MISW4103-GHOST-E25.git
+$ git clone https://github.com/Miso-pruebas-auto/MISW4103-GHOST-E25
 ```
 
-Luego accede a la carpeta de Kraken:
+Luego accede a la carpeta de Kraken(Dependiendo de la version de ghost, en este caso es la 4-38.0):
 
 ```bash
-$ cd MISW4103-GHOST-E25/kraken
+$ cd MISW4103-GHOST-E25/kraken-ghost-4-38.0
 ```
 
 ### Instalar dependencias
 
-Para configurar el entorno de pruebas, sigue estos pasos:
+Una vez que el repositorio se haya clonado, debes instalar las dependencias del proyecto. Para hacerlo, sigue estos
+pasos:
 
 1. Instalar Appium de manera global
     - `npm install -g appium`
 2. Instalar Kraken de manera global
     - `npm install -g kraken`
-3. Navega a la carpeta de Kraken.
-    - `cd kraken`
-4. Ejecuta `npm install` para instalar las dependencias del proyecto.
+3. Ejecuta `npm install` para instalar las dependencias del proyecto.
 
 ## Ejecución de Pruebas
+
 Para validar la configuración de Kraken, asegúrate de que los prerequisitos estén instalados y configurados
 correctamente y luego procede a ejecutar los scripts definidos en el archivo `package.json`.
 
@@ -167,7 +209,8 @@ Usa `npm run doctor` para validar la configuración de Kraken. Si todo está bie
 $ npm run doctor
 ```
 
-Es posible que veas algunos warnings, dado que Kraken tambien puede ser utilizado para mobile testing. Puedes ignorarlos.
+Es posible que veas algunos warnings, dado que Kraken tambien puede ser utilizado para mobile testing. Puedes
+ignorarlos.
 
 Una vez que la configuración esté validada, puedes ejecutar las pruebas de Kraken con el siguiente comando:
 
@@ -175,8 +218,10 @@ Una vez que la configuración esté validada, puedes ejecutar las pruebas de Kra
 $ npm run kraken
 ```
 
-### Visualización del Reporte
-Una vez que las pruebas se hayan ejecutado, puedes visualizar el reporte en el navegador. Primero debes dirigirte a la carpeta `reports` y acceder a la ultima carpeta creada. Luego, debes abrir el archivo `index.html` en el navegador.
+### Visualización del Reporte de Kraken
+
+Una vez que las pruebas se hayan ejecutado, puedes visualizar el reporte en el navegador. Primero debes dirigirte a la
+carpeta `reports` y acceder a la última carpeta creada. Luego, debes abrir el archivo `index.html` en el navegador.
 
 ```bash
     $ cd reports
@@ -184,4 +229,19 @@ Una vez que las pruebas se hayan ejecutado, puedes visualizar el reporte en el n
     $ open index.html
 ```
 
-Recuerda reemplazar `<carpeta>` por el nombre de la carpeta que se haya creado al ejecutar las pruebas.
+Recuerda reemplazar `<carpeta>` por el nombre de la carpeta que se haya creado al ejecutar las pruebas.'
+
+## ResembleJs de Kraken
+
+### Reporte de ResembleJs previamente generado en Vercel
+
+Para facilitar la visualización del reporte de ResembleJs, se ha creado un sitio web en Vercel. Para acceder a él,
+debes dirigirte a la siguiente URL: [https://misw-4103-ghost-e25.vercel.app/](https://misw-4103-ghost-e25.vercel.app/)
+
+Este reporte ya contiene las imágenes de referencia y las imágenes de prueba, además de la comparación entre ambas.
+
+### Generación de Reporte local de ResembleJs
+Por favor leer el siguiente [README](../vrt-tools/README.md) para generar el reporte de ResembleJs y visualizarlo usando
+NextJs.
+
+Para la visualizacion del reporte de ResembleJs leer el siguiente [README](../resemble-report/README.md) para mas información.
