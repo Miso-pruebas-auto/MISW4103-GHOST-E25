@@ -74,9 +74,6 @@ When(
       return;
     }
 
-    const createAccountButton = await this.driver.$('body > div.gh-app > div > main > div > div > section > a');
-    await createAccountButton.click();
-    await sleep(5000);
     const blogTitleInput = await this.driver.$('input[name="blog-title"]');
     await blogTitleInput.setValue('Ghost Demo App');
     const fullNameInput = await this.driver.$('input[name="name"]');

@@ -3,7 +3,7 @@ const {
   BeforeStep,
   AfterStep,
   Then,
-  Before
+  Before,
 } = require('@cucumber/cucumber');
 const assert = require('assert');
 const fs = require('fs');
@@ -14,17 +14,17 @@ function sleep(ms) {
   });
 }
 
-Before(function(scenario) {
+Before(function (scenario) {
   this.currentScenario = scenario.pickle.name;
   this.currentFeature = scenario.gherkinDocument.feature.name;
   this.stepCount = 0;
 });
 
-BeforeStep(function(step) {
+BeforeStep(function (step) {
   this.stepCount++;
 });
 
-AfterStep(async function(step) {
+AfterStep(async function (step) {
   try {
     const folderName = `./screenshots/${this.currentFeature
       .toLowerCase()
@@ -37,7 +37,7 @@ AfterStep(async function(step) {
         if (err) throw err;
 
         let screenshot = await this.driver.saveScreenshot(
-          `${folderName}/${this.stepCount}.png`
+          `${folderName}/${this.stepCount}.png`,
         );
         this.attach(screenshot, 'image/png');
         console.log(`Screenshot taken: ${folderName}/${this.stepCount}.png`);
@@ -46,7 +46,7 @@ AfterStep(async function(step) {
     }
 
     let screenshot = await this.driver.saveScreenshot(
-      `${folderName}/${this.stepCount}.png`
+      `${folderName}/${this.stepCount}.png`,
     );
     this.attach(screenshot, 'image/png');
     console.log(`Screenshot taken: ${folderName}/${this.stepCount}.png`);
@@ -59,7 +59,7 @@ AfterStep(async function(step) {
 
 When(
   'I authenticate using the credentials {kraken-string} and {kraken-string} and go to {kraken-string}',
-  async function(email, password, page) {
+  async function (email, password, page) {
     const loginForm = await this.driver.$('#login');
     const isLoginPage = await loginForm.isExisting();
 
@@ -74,6 +74,11 @@ When(
       return;
     }
 
+    const createAccountButton = await this.driver.$(
+      'body > div.gh-app > div > main > div > div > section > a',
+    );
+    await createAccountButton.click();
+    await sleep(5000);
     const blogTitleInput = await this.driver.$('input[name="blog-title"]');
     await blogTitleInput.setValue('Ghost Demo App');
     const fullNameInput = await this.driver.$('input[name="name"]');
@@ -87,17 +92,17 @@ When(
     await sleep(5000);
 
     return await this.driver.url(page);
-  }
+  },
 );
 
-Then('I should see the title {string}', async function(title) {
+Then('I should see the title {string}', async function (title) {
   const element = await this.driver.$('.gh-canvas-title');
   const text = await element.getText();
 
   return assert.strictEqual(title, text);
 });
 
-Then('I should see the title containing {string}', async function(title) {
+Then('I should see the title containing {string}', async function (title) {
   const element = await this.driver.$('.gh-canvas-title');
   const text = await element.getText();
   const words = text
@@ -108,10 +113,10 @@ Then('I should see the title containing {string}', async function(title) {
   return assert.strictEqual(words.includes(title.toLowerCase()), true);
 });
 
-Then('I should see input with name {string}', async function(name) {
+Then('I should see input with name {string}', async function (name) {
   return await this.driver.$(`input[name="${name}"]`);
 });
 
-Then('I should see textarea with name {string}', async function(name) {
+Then('I should see textarea with name {string}', async function (name) {
   return await this.driver.$(`textarea[name="${name}"]`);
 });
