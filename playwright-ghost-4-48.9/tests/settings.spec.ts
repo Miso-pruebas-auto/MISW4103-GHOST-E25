@@ -69,6 +69,118 @@ test.describe('settings', () => {
 
   });
 
+  test('No puede guardar en Publication Language el idioma vació', async ({ page }) => {
+    const lenguage = '';
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Publication Language"', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(2).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+    });
+
+    await test.step('And: El usuario borra y deja vacio el Publication Language y lo cierra"', async () => {
+        
+      // Selector específico para el input
+      const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
+
+      // Borra el contenido del input
+      await inputLocator.fill(lenguage);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+
+    });
+
+    await test.step('And: El usuario oprime el botón guardar', async () => {
+      // hace clic en botón save
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+    });
+    
+    await test.step('Then: se valida que no se guarda vacios en Lenguage', async () => {
+      
+      // captura el valor del error
+      const error_page = page.getByText('Validation error, cannot edit setting. ValidationError: Validation (isEmpty) fai')
+      // se valida que contiene una parte del error_page
+      expect(error_page).toContainText('Validation error, cannot edit setting. ValidationError: Validation (isEmpty) fai');
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+    });
+
+  });
+
+
+  test('No deberia permitir guardar en Publication Language un numero como idioma', async ({ page }) => {
+    const lenguage = '7898';
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Publication Language"', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(2).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario borra el campo de idioma y escribe en el campo de idioma numeros"', async () => {
+        
+      // Selector específico para el input
+      const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
+
+      // Borra el contenido del input
+      await inputLocator.fill(lenguage);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+
+    });
+
+    await test.step('And: El usuario oprime el botón guardar"', async () => {
+      // hace clic en botón save
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+    });
+    
+    await test.step('Then: se valida que guardo numeros en en Lenguage', async () => {
+      
+      // validamos que el campo de idioma al recargar si contenga numeros
+      const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
+      // obtenemos el valor del input
+      const valorDelInput = await inputLocator.inputValue();
+      
+      expect(lenguage).toBe(valorDelInput);
+
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+    });
+
+  });
+
+
+
   test('cambiar el site title con otro nombre', async ({ page }) => {
     const newPageTitle = `test-${faker.word.noun()}`;
     let paso = 1;
