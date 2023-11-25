@@ -10,6 +10,65 @@ test.describe('settings', () => {
     });
   });
 
+  test('No puede cambiar la zona horaria sin guardarla', async ({ page }) => {
+    const timezone_stantdard = 'America/Anchorage';
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Site timezone"', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(1).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+    });
+
+    await test.step('And: El usuario cambia la zona horaria por Anchorage y cierra"', async () => {
+      await page.locator('#timezone').selectOption(timezone_stantdard);
+      await page.getByRole('button', { name: 'Close' }).click();
+      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+    });
+
+    await test.step('And: El usuario recarga la pagina y no se observa ningun mensaje"', async () => {
+      await page.reload();
+      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Site timezone"', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(1).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+    });
+    
+    await test.step('Then: se valida que no se actualizo el campo', async () => {
+      // Obtiene el valor del elemento de entrada con el selector '#timezone'
+      const valorDelInput = await page.evaluate(() => {
+        const select = document.getElementById('timezone') as HTMLSelectElement | null;
+        return select ? select.value : null;
+      });
+
+      if (valorDelInput !== null) {
+        console.log('Valor seleccionado:', valorDelInput);
+      }
+
+      expect(valorDelInput).toBe('Etc/UTC');
+      // Asegúrate de que el valorDelInput no contenga la data de timezone_standard
+      expect(valorDelInput).not.toContain(timezone_stantdard);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+    });
+
+  });
+
   test('cambiar el site title con otro nombre', async ({ page }) => {
     const newPageTitle = `test-${faker.word.noun()}`;
     let paso = 1;
