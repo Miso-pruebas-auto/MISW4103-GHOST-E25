@@ -179,7 +179,120 @@ test.describe('settings', () => {
 
   });
 
+  test('No deberia permitir guardar en Publication Language caracteres extraños como idioma', async ({ page }) => {
+    const lenguage = '*a!"*+-/()=?¿¡';
+    let paso = 1;
 
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Publication Language"', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(2).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario borra el campo de idioma y escribe en el campo de idioma caracteres"', async () => {
+        
+      // Selector específico para el input
+      const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
+
+      // Borra el contenido del input
+      await inputLocator.fill(lenguage);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+
+    });
+
+    await test.step('And: El usuario oprime el botón guardar"', async () => {
+      // hace clic en botón save
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+    });
+    
+    await test.step('Then: se valida que guardo caracteres en en Lenguage', async () => {
+      
+      // validamos que el campo de idioma al recargar si contenga numeros
+      const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
+      // obtenemos el valor del input
+      const valorDelInput = await inputLocator.inputValue();
+      
+      expect(lenguage).toBe(valorDelInput);
+
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+    });
+
+  });
+
+  test('No deberia permitir guardar en Publication Language más de 4 letras como idioma', async ({ page }) => {
+    const lenguage = 'engl';
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Publication Language"', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(2).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario borra el campo de idioma y escribe en el campo de idioma caracteres"', async () => {
+        
+      // Selector específico para el input
+      const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
+
+      // Borra el contenido del input
+      await inputLocator.fill(lenguage);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+
+    });
+
+    await test.step('And: El usuario oprime el botón guardar"', async () => {
+      // hace clic en botón save
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+    });
+    
+    await test.step('Then: se valida que guardo más de 4 letras en en Lenguage', async () => {
+      
+      // validamos que el campo de idioma al recargar si contenga numeros
+      const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
+      // obtenemos el valor del input
+      const valorDelInput = await inputLocator.inputValue();
+      
+      expect(lenguage).toBe(valorDelInput);
+
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+    });
+
+  });
+
+
+  // prueba maxima de caracteres es de 4167
 
   test('cambiar el site title con otro nombre', async ({ page }) => {
     const newPageTitle = `test-${faker.word.noun()}`;
