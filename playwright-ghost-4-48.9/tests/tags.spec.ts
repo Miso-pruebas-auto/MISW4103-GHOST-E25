@@ -5,7 +5,7 @@ import { rgbToHex } from '../utils/rgb_to_hex';
 import { screenshotPagePath } from '../utils/utils';
 import { getAprioriData, cleanMockaroHex } from '../utils/getMockaroJson';
 
-test.describe('Tags - Apriori data', () => {
+test.describe('Tags - A priori data', () => {
 
   test.beforeEach(async ({ page }) => {      
     await test.step('Given: El usuario ha iniciado sesión', async () => {
@@ -322,7 +322,7 @@ test.describe('Tags - Apriori data', () => {
   });
 })
 
-test.describe('Tags - Dinamic data', () => {
+test.describe('Tags - Dynamic data', () => {
   test.beforeEach(async ({ page }) => {      
     await test.step('Given: El usuario ha iniciado sesión', async () => {
         await loginSessionAdmin(page);
@@ -529,9 +529,79 @@ test.describe('Tags - Dinamic data', () => {
     });
 
     await test.step('Then: El Meta title indica que el campo es demasiado largo', async () => {
-      await page.goto('/ghost/#/tags');
-      await page.goto(`/ghost/#/tags/${name_tag}`);
-      expect(page.url().split('/tags/')[1]).toBe(name_tag);
+      const errMsg = await page.getByText('Meta Title cannot be longer than 300 characters.').innerText();
+      expect(errMsg).toBe('Meta Title cannot be longer than 300 characters.');
+
+      const errBtn = await page.getByRole('button', { name: 'Retry' }).innerText();
+      expect(errBtn).toBe('Retry');
+    });
+  });
+})
+
+test.describe('Tags - Random data', () => {
+  test.beforeEach(async ({ page }) => {      
+    await test.step('Given: El usuario ha iniciado sesión', async () => {
+        await loginSessionAdmin(page);
+    });
+    
+    test.info().annotations.push({
+      type: 'Given',
+      description: 'El usuario ha iniciado sesión',
+    });
+  });
+
+  test('Falla creación de tag con Meta data con más de 156 caracteres en el meta description', async ({ page }) => {
+    const name_tag = faker.word.noun();
+    const color_tag = cleanMockaroHex(faker.internet.color());
+    const description_tag = faker.lorem.paragraphs(1);
+    const meta_description_tag = faker.lorem.words(157);
+
+    await test.step('When: El usuario hace clic en "Tags"', async () => {
+      await page.getByRole('link', { name: 'Tags' }).click();
+    });
+
+    await test.step('And: hace clic en la sección tags', async () => {
+      await page.getByRole('link', { name: 'Tags' }).click();
+    });
+
+    await test.step('And: hace clic en el botón de "New tag"', async () => {
+      await page.getByRole('link', { name: 'New tag', exact: true }).click();
+    });
+
+    await test.step('And: Hace clic en el campo de tag y lo llena', async () => {
+      await page.getByLabel('Name').click();
+      await page.getByLabel('Name').fill(name_tag);
+    });
+
+    await test.step('And: Hace clic en el campo de color y lo llena', async () => {
+      await page.getByPlaceholder('15171A').click();
+      await page.getByPlaceholder('15171A').fill(color_tag);
+    });
+    
+    await test.step('And: Hace clic en el campo de descripción y lo llena', async () => {
+      await page.getByLabel('Description').click();
+      await page.getByLabel('Description').fill(description_tag);
+    });
+
+    await test.step('And: Hace clic en el botón Expand de Meta data', async () => {
+      await page.getByRole('button', { name: 'Expand' }).first().click();
+    });
+
+    await test.step('And: Hace clic en el campo de meta description y lo llena', async () => {
+      await page.getByPlaceholder(description_tag).click();
+      await page.getByPlaceholder(description_tag).fill(meta_description_tag);
+    });
+
+    await test.step('And: hace clic en "Save"', async () => {
+      await page.getByRole('button', { name: 'Save' }).click();
+    });
+
+    await test.step('Then: El Meta description indica que el campo es demasiado largo', async () => {
+      const errMsg = await page.getByText('Meta Description cannot be longer than 500 characters.').innerText();
+      expect(errMsg).toBe('Meta Description cannot be longer than 500 characters.');
+
+      const errBtn = await page.getByRole('button', { name: 'Retry' }).innerText();
+      expect(errBtn).toBe('Retry');
     });
   });
 })
