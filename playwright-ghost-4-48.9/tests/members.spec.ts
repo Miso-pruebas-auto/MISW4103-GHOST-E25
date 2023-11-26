@@ -1,6 +1,6 @@
-import { test, expect } from "@playwright/test";
+import { expect, test } from "@playwright/test";
 import { loginSessionAdmin } from "../utils/login_sesion_admin";
-import { fa, faker } from "@faker-js/faker";
+import { faker } from "@faker-js/faker";
 import { screenshotPagePath } from "../utils/utils";
 import data from "../data/members.json";
 
@@ -227,7 +227,6 @@ test.describe("members", () => {
   });
 
   test("No se puede crear miembro si solo se llena el campo labels", async ({ page }) => {
-    const newMemberName = `test-${faker.word.noun()}`;
     const selected = getRandomDataValue();
     let paso = 1;
 
@@ -345,9 +344,8 @@ test.describe("members", () => {
     });
   });
 
-  test("No se puede crear miembro si el campo email excede 191 caracteres.", async ({ page }) => {
-    const selected = data[0];
-    const newMemberName = `test-${selected.name}`;
+  test("No se puede crear miembro si el campo email excede 191 caracteres", async ({ page }) => {
+    const newMemberName = `test-${faker.person.fullName()}`;
     const newMemberEmail = `${faker.lorem.paragraphs(10)}@${faker.lorem.paragraphs(10)}.com`;
 
     let paso = 1;
@@ -386,9 +384,8 @@ test.describe("members", () => {
   });
 
   test("No se puede crear miembro si el campo name excede 191 caracteres.", async ({ page }) => {
-    const selected = data[0];
     const newMemberName = `${faker.lorem.paragraphs(10)}@${faker.lorem.paragraphs(10)}.com`;
-    const newMemberEmail = `test-${selected.email}`;
+    const newMemberEmail = `test-${faker.internet.email()}`;
 
     let paso = 1;
 
@@ -471,10 +468,11 @@ test.describe("members", () => {
   });
 
   test("Creacion de usuario si desactiva subscripcion a newlestter", async ({ page }) => {
-    const newMemberName = `test-${faker.person.fullName()}`;
-    const newMemberEmail = `test-${faker.internet.email()}`;
+    const selected = getRandomDataValue();
+    const newMemberName = `test-${selected.name}`;
+    const newMemberEmail = `test-${selected.email}`;
     const newMemberNote = `test-${faker.lorem.sentence()}`;
-    const newMemberLabel = `${faker.lorem.word()}`;
+    const newMemberLabel = `${selected.labels}`;
 
     let paso = 1;
 
@@ -522,10 +520,11 @@ test.describe("members", () => {
   });
 
   test("Creacion de usuario si se presiona control + s", async ({ page }) => {
-    const newMemberName = `test-${faker.person.fullName()}`;
-    const newMemberEmail = `test-${faker.internet.email()}`;
-    const newMemberNote = `test-${faker.lorem.sentence()}`;
-    const newMemberLabel = `${faker.lorem.word()}`;
+    const selected = getRandomDataValue();
+    const newMemberName = `test-${selected.name}`;
+    const newMemberEmail = selected.email;
+    const newMemberNote = faker.lorem.sentence();
+    const newMemberLabel = selected.labels;
 
     let paso = 1;
 
@@ -685,7 +684,7 @@ test.describe("members", () => {
     });
   });
 
-  test("Al buscar miembro por nombre usando mas de 4000 parrafos hace que la pagina se rompa", async ({ page }) => {
+  test("Al buscar miembro por nombre usando mas de 4000 parrafos hace que la pagina no responda", async ({ page }) => {
     const newMemberName = `${faker.lorem.paragraphs(4000)}`;
     let paso = 1;
 
