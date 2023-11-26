@@ -96,8 +96,11 @@ test.describe('settings', () => {
       // Selector específico para el input
       const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
 
-      // Borra el contenido del input
+      // Limpiar el campo (dejarlo vacío)
+      await inputLocator.clear();
+      // llena el campo
       await inputLocator.fill(lenguage);
+
       await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
 
@@ -150,8 +153,11 @@ test.describe('settings', () => {
       // Selector específico para el input
       const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
 
-      // Borra el contenido del input
+      // Limpiar el campo (dejarlo vacío)
+      await inputLocator.clear();
+      // llena el campo
       await inputLocator.fill(lenguage);
+
       await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
 
@@ -206,8 +212,11 @@ test.describe('settings', () => {
       // Selector específico para el input
       const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
 
-      // Borra el contenido del input
+      // Limpiar el campo (dejarlo vacío)
+      await inputLocator.clear();
+      // llena el campo
       await inputLocator.fill(lenguage);
+      
       await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
 
@@ -262,8 +271,11 @@ test.describe('settings', () => {
       // Selector específico para el input
       const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
 
-      // Borra el contenido del input
+      // Limpiar el campo (dejarlo vacío)
+      await inputLocator.clear();
+      // llena el campo
       await inputLocator.fill(lenguage);
+
       await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
 
@@ -293,6 +305,62 @@ test.describe('settings', () => {
 
 
   // prueba maxima de caracteres es de 4167
+  test('No permite guardar en Publication Language con un numero mayor de 4800 caracteres', async ({ page }) => {
+    // Crear una cadena con 4800 caracteres o más
+    const lenguage: string = "a".repeat(4800);
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Publication Language"', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(2).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+    });
+
+    await test.step('And: El usuario borra el campo de idioma y escribe en el campo de idioma caracteres"', async () => {
+        
+      // Selector específico para el input
+      const inputLocator = await page.locator('div:nth-child(3) > .gh-expandable-content input[type="text"]').first();
+
+      // Limpiar el campo (dejarlo vacío)
+      await inputLocator.clear();
+      // llena el campo
+      await inputLocator.fill(lenguage);
+
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+
+    });
+
+    await test.step('And: El usuario oprime el botón guardar"', async () => {
+      // hace clic en botón save
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+    });
+    
+    await test.step('Then: se valida que genera una excepción por el máximo de caracteres', async () => {
+      
+       // captura el valor del error
+       const error_page = page.getByText('Internal server error, cannot edit setting. ENAMETOOLONG: name too long, open \'/');
+       // se valida que contiene una parte del error_page
+       expect(error_page).toContainText('Internal server error, cannot edit setting. ENAMETOOLONG: name too long, open \'/');
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+    });
+
+  });
 
   test('cambiar el site title con otro nombre', async ({ page }) => {
     const newPageTitle = `test-${faker.word.noun()}`;
