@@ -10,43 +10,385 @@ test.describe('settings', () => {
     });
   });
 
-  test('No puede cambiar la zona horaria sin guardarla', async ({ page }) => {
+
+  test('Title & description: Modificar el site title con solo números aleatorios de (12 cifras)', async ({ page }) => {
+    const newPageTitle = `${faker.number.int({ min: 100000000000, max: 999999999999 })}`;
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+
+    await test.step('And: El usuario cambia el título de la pagina', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().click();
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().press('Tab');  
+      // Obtiene el primer input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
+      const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
+
+      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const inputConIdEmber = await page.locator('input[id^="#ember"]').first();
+
+
+      if (primerInput) {
+        await primerInput.fill(newPageTitle);
+      }else if (inputConIdEmber) {       
+        await inputConIdEmber.fill(newPageTitle);
+      }
+        else {
+        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
+  
+      }
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+
+    await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
+      await page.goto('/');
+      expect(await page.title()).toBe(newPageTitle);
+      expect(await page.getByRole('heading', { name: newPageTitle }).innerText()).toBe(newPageTitle);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+  });
+
+  test('Title & description: No se puede modificar el site title con valores máximos (151)', async ({ page }) => {
+    // Crear una cadena con 4800 caracteres o más
+    const newPageTitle: string = "a".repeat(151);
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_No_se_puede_modificar_el_site_title_con_valores_máximos_(151)', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_No_se_puede_modificar_el_site_title_con_valores_máximos_(151)', paso++);
+    });
+
+    await test.step('And: El usuario cambia el título de la pagina', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().click();
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().press('Tab');  
+      // Obtiene el primer input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
+      const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
+
+      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const inputConIdEmber = await page.locator('input[id^="#ember"]').first();
+
+
+      if (primerInput) {
+        await primerInput.fill(newPageTitle);
+      }else if (inputConIdEmber) {       
+        await inputConIdEmber.fill(newPageTitle);
+      }
+        else {
+        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
+  
+      }
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_No_se_puede_modificar_el_site_title_con_valores_máximos_(151)', paso++);
+    });
+
+    await test.step('Then: La pagina muestra un mensaje de Title is too long', async () => {
+      expect(await page.getByText('Title is too long').innerText()).toBe('Title is too long');
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_No_se_puede_modificar_el_site_title_con_valores_máximos_(151)', paso++);
+    });
+  });
+
+  test('Title & description: Modificar el site title con nombre aleatorio', async ({ page }) => {
+    const newPageTitle = `test-${faker.word.noun()}`;
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_nombre_aleatorio', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_nombre_aleatorio', paso++);
+    });
+
+    await test.step('And: El usuario cambia el título de la pagina', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().click();
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().press('Tab');  
+      // Obtiene el primer input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
+      const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
+
+      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const inputConIdEmber = await page.locator('input[id^="#ember"]').first();
+
+
+      if (primerInput) {
+        await primerInput.fill(newPageTitle);
+      }else if (inputConIdEmber) {       
+        await inputConIdEmber.fill(newPageTitle);
+      }
+        else {
+        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
+  
+      }
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_nombre_aleatorio', paso++);
+    });
+
+    await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
+      await page.goto('/');
+      expect(await page.title()).toBe(newPageTitle);
+      expect(await page.getByRole('heading', { name: newPageTitle }).innerText()).toBe(newPageTitle);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_nombre_aleatorio', paso++);
+    });
+  });
+
+
+  test('Title & description: Modificar el site title con un string vació', async ({ page }) => {
+    const newPageTitle = "";
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_un_string_vació', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_un_string_vació', paso++);
+    });
+
+    await test.step('And: El usuario cambia el título de la pagina', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().click();
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().press('Tab');  
+      // Obtiene el primer input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
+      const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
+
+      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const inputConIdEmber = await page.locator('input[id^="#ember"]').first();
+
+
+      if (primerInput) {
+        await primerInput.fill(newPageTitle);
+      }else if (inputConIdEmber) {       
+        await inputConIdEmber.fill(newPageTitle);
+      }
+        else {
+        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
+  
+      }
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_un_string_vació', paso++);
+    });
+
+    await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
+      await page.goto('/');
+      expect(await page.title()).toBe(newPageTitle);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_un_string_vació', paso++);
+    });
+  });
+  
+  test('Title & description: Modificar el site description de la pagina con nombre aleatorio', async ({ page }) => {
+    const newPageDescription = `${faker.word.noun()}`;
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+    });
+
+    await test.step('And: El usuario cambia el título de la pagina', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().click();
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().press('Tab');  
+      // Obtiene el segundo input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
+      const secondInput = await page.locator('.gh-setting-content-extended input[type="text"]').nth(1);
+
+      // Obtiene el segundo input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const inputConIdEmber = await page.locator('input[id^="#ember"]').nth(1);
+
+
+      if (secondInput) {
+        await secondInput.fill(newPageDescription);
+      }else if (inputConIdEmber) {       
+        await inputConIdEmber.fill(newPageDescription);
+      }
+        else {
+        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
+  
+      }
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+    });
+
+    await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
+      await page.goto('/');
+      expect(await page.getByText(newPageDescription).innerText()).toBe(newPageDescription);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+    });
+    
+  });
+  
+  test('Title & description: No se puede modificar el site description de la pagina con valores máximos (207)', async ({ page }) => {
+    const newPageDescription: string = "a".repeat(207);
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_No_se_puede_modificar_el_site_description_de_la_pagina_con_valores_máximos_(207)', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_No_se_puede_modificar_el_site_description_de_la_pagina_con_valores_máximos_(207)', paso++);
+    });
+
+    await test.step('And: El usuario cambia el título de la pagina', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().click();
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().press('Tab');  
+      // Obtiene el segundo input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
+      const secondInput = await page.locator('.gh-setting-content-extended input[type="text"]').nth(1);
+
+      // Obtiene el segundo input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const inputConIdEmber = await page.locator('input[id^="#ember"]').nth(1);
+
+
+      if (secondInput) {
+        await secondInput.fill(newPageDescription);
+      }else if (inputConIdEmber) {       
+        await inputConIdEmber.fill(newPageDescription);
+      }
+        else {
+        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
+  
+      }
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_No_se_puede_modificar_el_site_description_de_la_pagina_con_valores_máximos_(207)', paso++);
+    });
+
+    await test.step('Then: La pagina se muestra un mensaje de Description is too long', async () => {
+      expect(await page.getByText('Description is too long').innerText()).toBe('Description is too long');
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_No_se_puede_modificar_el_site_description_de_la_pagina_con_valores_máximos_(207)', paso++);
+    });
+    
+  });
+
+  test('Title & description: Modificar el site description por un string vacío', async ({ page }) => {
+    const newPageDescription = `&nbsp;`;
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000); 
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_por_un_string_vacío', paso++);
+    });
+
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000); 
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_por_un_string_vacío', paso++);
+    });
+
+    await test.step('And: El usuario cambia el título de la pagina', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().click();
+      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().press('Tab');  
+      // Obtiene el segundo input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
+      const secondInput = await page.locator('.gh-setting-content-extended input[type="text"]').nth(1);
+
+      // Obtiene el segundo input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const inputConIdEmber = await page.locator('input[id^="#ember"]').nth(1);
+
+
+      if (secondInput) {
+        await secondInput.fill(newPageDescription);
+      }else if (inputConIdEmber) {       
+        await inputConIdEmber.fill(newPageDescription);
+      }
+        else {
+        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
+  
+      }
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000); 
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_por_un_string_vacío', paso++);
+    });
+
+    await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
+      await page.goto('/');
+      expect(await page.getByText(newPageDescription).innerText()).toBe(newPageDescription);
+      await page.waitForTimeout(2000); 
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_por_un_string_vacío', paso++);
+    });
+    
+  });
+
+  test('Site timezone: No puede cambiar la zona horaria sin guardarla', async ({ page }) => {
     const timezone_stantdard = 'America/Anchorage';
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+      await screenshotPagePath(page, 'settings', 'Site_timezone_No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+      await screenshotPagePath(page, 'settings', 'Site_timezone_No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Site timezone"', async () => {
       await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(1).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+      await screenshotPagePath(page, 'settings', 'Site_timezone_No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
     });
 
     await test.step('And: El usuario cambia la zona horaria por Anchorage y cierra"', async () => {
       await page.locator('#timezone').selectOption(timezone_stantdard);
       await page.getByRole('button', { name: 'Close' }).click();
-      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+      await screenshotPagePath(page, 'settings', 'Site_timezone_No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
     });
 
     await test.step('And: El usuario recarga la pagina y no se observa ningun mensaje"', async () => {
       await page.reload();
-      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+      await screenshotPagePath(page, 'settings', 'Site_timezone_No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Site timezone"', async () => {
       await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(1).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+      await screenshotPagePath(page, 'settings', 'Site_timezone_No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
     });
     
     await test.step('Then: se valida que no se actualizo el campo', async () => {
@@ -64,31 +406,31 @@ test.describe('settings', () => {
       // Asegúrate de que el valorDelInput no contenga la data de timezone_standard
       expect(valorDelInput).not.toContain(timezone_stantdard);
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
+      await screenshotPagePath(page, 'settings', 'Site_timezone_No_puede_cambiar_la_zona_horaria_sin_guardarla', paso++);
     });
 
   });
-
-  test('No puede guardar en Publication Language el idioma vació', async ({ page }) => {
+  
+  test('Publication Language: No puede guardar en el idioma vació', async ({ page }) => {
     const lenguage = '';
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_puede_guardar_en_el_idioma_vació', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_puede_guardar_en_el_idioma_vació', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Publication Language"', async () => {
       await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(2).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_puede_guardar_en_el_idioma_vació', paso++);
     });
 
     await test.step('And: El usuario borra y deja vacio el Publication Language y lo cierra"', async () => {
@@ -102,7 +444,7 @@ test.describe('settings', () => {
       await inputLocator.fill(lenguage);
 
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_puede_guardar_en_el_idioma_vació', paso++);
 
     });
 
@@ -110,7 +452,7 @@ test.describe('settings', () => {
       // hace clic en botón save
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_puede_guardar_en_el_idioma_vació', paso++);
     });
     
     await test.step('Then: se valida que no se guarda vacios en Lenguage', async () => {
@@ -120,32 +462,31 @@ test.describe('settings', () => {
       // se valida que contiene una parte del error_page
       expect(error_page).toContainText('Validation error, cannot edit setting. ValidationError: Validation (isEmpty) fai');
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_puede_guardar_en_Publication_Language_el_idioma_vació', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_puede_guardar_en_el_idioma_vació', paso++);
     });
 
   });
-
-
-  test('No deberia permitir guardar en Publication Language un numero como idioma', async ({ page }) => {
+  
+  test('Publication Language: No debería permitir guardar un numero como idioma', async ({ page }) => {
     const lenguage = '7898';
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_debería_permitir_guardar_un_numero_como_idioma', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_debería_permitir_guardar_un_numero_como_idioma', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Publication Language"', async () => {
       await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(2).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_debería_permitir_guardar_un_numero_como_idioma', paso++);
     });
 
     await test.step('And: El usuario borra el campo de idioma y escribe en el campo de idioma numeros"', async () => {
@@ -159,7 +500,7 @@ test.describe('settings', () => {
       await inputLocator.fill(lenguage);
 
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_debería_permitir_guardar_un_numero_como_idioma', paso++);
 
     });
 
@@ -167,7 +508,7 @@ test.describe('settings', () => {
       // hace clic en botón save
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_debería_permitir_guardar_un_numero_como_idioma', paso++);
     });
     
     await test.step('Then: se valida que guardo numeros en en Lenguage', async () => {
@@ -180,31 +521,31 @@ test.describe('settings', () => {
       expect(lenguage).toBe(valorDelInput);
 
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_un_numero_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_debería_permitir_guardar_un_numero_como_idioma', paso++);
     });
 
   });
 
-  test('No deberia permitir guardar en Publication Language caracteres extraños como idioma', async ({ page }) => {
-    const lenguage = '*a!"*+-/()=?¿¡';
+  test('Publication Language: No deberia permitir guardar caracteres extraños como idioma', async ({ page }) => {
+    const lenguage = '*a!"*+-/()=?¿¡¿¡';
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_caracteres_extraños_como_idioma', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_caracteres_extraños_como_idioma', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Publication Language"', async () => {
       await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(2).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_caracteres_extraños_como_idioma', paso++);
     });
 
     await test.step('And: El usuario borra el campo de idioma y escribe en el campo de idioma caracteres"', async () => {
@@ -216,9 +557,9 @@ test.describe('settings', () => {
       await inputLocator.clear();
       // llena el campo
       await inputLocator.fill(lenguage);
-      
+
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_caracteres_extraños_como_idioma', paso++);
 
     });
 
@@ -226,7 +567,7 @@ test.describe('settings', () => {
       // hace clic en botón save
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_caracteres_extraños_como_idioma', paso++);
     });
     
     await test.step('Then: se valida que guardo caracteres en en Lenguage', async () => {
@@ -239,31 +580,31 @@ test.describe('settings', () => {
       expect(lenguage).toBe(valorDelInput);
 
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_caracteres_extraños_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_caracteres_extraños_como_idioma', paso++);
     });
 
   });
 
-  test('No deberia permitir guardar en Publication Language más de 4 letras como idioma', async ({ page }) => {
+  test('Publication Language: No deberia permitir guardar más de 4 letras como idioma', async ({ page }) => {
     const lenguage = 'engl';
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_más_de_4_letras_como_idioma', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_más_de_4_letras_como_idioma', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Publication Language"', async () => {
       await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(2).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_más_de_4_letras_como_idioma', paso++);
     });
 
     await test.step('And: El usuario borra el campo de idioma y escribe en el campo de idioma caracteres"', async () => {
@@ -277,7 +618,7 @@ test.describe('settings', () => {
       await inputLocator.fill(lenguage);
 
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_más_de_4_letras_como_idioma', paso++);
 
     });
 
@@ -285,7 +626,7 @@ test.describe('settings', () => {
       // hace clic en botón save
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_más_de_4_letras_como_idioma', paso++);
     });
     
     await test.step('Then: se valida que guardo más de 4 letras en en Lenguage', async () => {
@@ -298,14 +639,12 @@ test.describe('settings', () => {
       expect(lenguage).toBe(valorDelInput);
 
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_deberia_permitir_guardar_más_de_4_letras_como_idioma', paso++);
     });
 
   });
-
-
-  // prueba maxima de caracteres es de 4167
-  test('No permite guardar en Publication Language con un numero mayor de 4800 caracteres', async ({ page }) => {
+  
+  test('Publication Language: No permite guardar con en el campo idioma con valores máximos (4800)', async ({ page }) => {
     // Crear una cadena con 4800 caracteres o más
     const lenguage: string = "a".repeat(4800);
     let paso = 1;
@@ -313,19 +652,19 @@ test.describe('settings', () => {
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_permite_guardar_con_en_el_campo_idioma_con_valores_máximos_(4800)', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_permite_guardar_con_en_el_campo_idioma_con_valores_máximos_(4800)', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Publication Language"', async () => {
       await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').nth(2).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_permite_guardar_con_en_el_campo_idioma_con_valores_máximos_(4800)', paso++);
     });
 
     await test.step('And: El usuario borra el campo de idioma y escribe en el campo de idioma caracteres"', async () => {
@@ -339,7 +678,7 @@ test.describe('settings', () => {
       await inputLocator.fill(lenguage);
 
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_permite_guardar_con_en_el_campo_idioma_con_valores_máximos_(4800)', paso++);
 
     });
 
@@ -347,7 +686,7 @@ test.describe('settings', () => {
       // hace clic en botón save
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_permite_guardar_con_en_el_campo_idioma_con_valores_máximos_(4800)', paso++);
     });
     
     await test.step('Then: se valida que genera una excepción por el máximo de caracteres', async () => {
@@ -357,204 +696,10 @@ test.describe('settings', () => {
        // se valida que contiene una parte del error_page
        expect(error_page).toContainText('Internal server error, cannot edit setting. ENAMETOOLONG: name too long, open \'/');
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'No_deberia_permitir_guardar_en_Publication_Language_más_de_4_letras_como_idioma', paso++);
+      await screenshotPagePath(page, 'settings', 'Publication_Language_No_permite_guardar_con_en_el_campo_idioma_con_valores_máximos_(4800)', paso++);
     });
 
   });
-
-  test('cambiar el site title con otro nombre', async ({ page }) => {
-    const newPageTitle = `test-${faker.word.noun()}`;
-    let paso = 1;
-
-    await test.step('When: El usuario hace clic en "settings"', async () => {
-      await page.locator('#ember34').click();
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_otro_nombre', paso++);
-    });
-
-    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
-      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_otro_nombre', paso++);
-    });
-
-    await test.step('And: El usuario cambia el título de la pagina', async () => {
-      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().click();
-      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().press('Tab');  
-      // Obtiene el primer input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
-      const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
-
-      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
-      const inputConIdEmber = await page.locator('input[id^="#ember"]').first();
-
-
-      if (primerInput) {
-        await primerInput.fill(newPageTitle);
-      }else if (inputConIdEmber) {       
-        await inputConIdEmber.fill(newPageTitle);
-      }
-        else {
-        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
   
-      }
-      await page.getByRole('button', { name: 'Save' }).click();
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_otro_nombre', paso++);
-    });
-
-    await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
-      await page.goto('/');
-      expect(await page.title()).toBe(newPageTitle);
-      expect(await page.getByRole('heading', { name: newPageTitle }).innerText()).toBe(newPageTitle);
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_otro_nombre', paso++);
-    });
-  });
-
-  test('cambiar el site title con un string vacio', async ({ page }) => {
-    const newPageTitle = "";
-    let paso = 1;
-
-    await test.step('When: El usuario hace clic en "settings"', async () => {
-      await page.locator('#ember34').click();
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_un_string_vacio', paso++);
-    });
-
-    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
-      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_un_string_vacio', paso++);
-    });
-
-    await test.step('And: El usuario cambia el título de la pagina', async () => {
-      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().click();
-      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().press('Tab');  
-      // Obtiene el primer input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
-      const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
-
-      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
-      const inputConIdEmber = await page.locator('input[id^="#ember"]').first();
-
-
-      if (primerInput) {
-        await primerInput.fill(newPageTitle);
-      }else if (inputConIdEmber) {       
-        await inputConIdEmber.fill(newPageTitle);
-      }
-        else {
-        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
   
-      }
-      await page.getByRole('button', { name: 'Save' }).click();
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_un_string_vacio', paso++);
-    });
-
-    await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
-      await page.goto('/');
-      expect(await page.title()).toBe(newPageTitle);
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_title_con_un_string_vacio', paso++);
-    });
-  });
-
-  test('cambiar el site description de la pagina', async ({ page }) => {
-    const newPageDescription = `${faker.word.noun()}`;
-    let paso = 1;
-
-    await test.step('When: El usuario hace clic en "settings"', async () => {
-      await page.locator('#ember34').click();
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_de_la_pagina', paso++);
-    });
-
-    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
-      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_de_la_pagina', paso++);
-    });
-
-    await test.step('And: El usuario cambia el título de la pagina', async () => {
-      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().click();
-      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().press('Tab');  
-      // Obtiene el segundo input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
-      const secondInput = await page.locator('.gh-setting-content-extended input[type="text"]').nth(1);
-
-      // Obtiene el segundo input que se encuentre en la pagina que contenga el id que empiece con #ember
-      const inputConIdEmber = await page.locator('input[id^="#ember"]').nth(1);
-
-
-      if (secondInput) {
-        await secondInput.fill(newPageDescription);
-      }else if (inputConIdEmber) {       
-        await inputConIdEmber.fill(newPageDescription);
-      }
-        else {
-        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
-  
-      }
-      await page.getByRole('button', { name: 'Save' }).click();
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_de_la_pagina', paso++);
-    });
-
-    await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
-      await page.goto('/');
-      expect(await page.getByText(newPageDescription).innerText()).toBe(newPageDescription);
-      await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_de_la_pagina', paso++);
-    });
-    
-  });
-
-  test('cambiar el site description por un string vacío', async ({ page }) => {
-    const newPageDescription = `&nbsp;`;
-    let paso = 1;
-
-    await test.step('When: El usuario hace clic en "settings"', async () => {
-      await page.locator('#ember34').click();
-      await page.waitForTimeout(2000); 
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_por_un_string_vacío', paso++);
-    });
-
-    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
-      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
-      await page.waitForTimeout(2000); 
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_por_un_string_vacío', paso++);
-    });
-
-    await test.step('And: El usuario cambia el título de la pagina', async () => {
-      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().click();
-      await page.getByRole('main').locator('div').filter({ hasText: 'Publication info Title & description The details used to identify your publicati' }).getByRole('button').first().press('Tab');  
-      // Obtiene el segundo input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
-      const secondInput = await page.locator('.gh-setting-content-extended input[type="text"]').nth(1);
-
-      // Obtiene el segundo input que se encuentre en la pagina que contenga el id que empiece con #ember
-      const inputConIdEmber = await page.locator('input[id^="#ember"]').nth(1);
-
-
-      if (secondInput) {
-        await secondInput.fill(newPageDescription);
-      }else if (inputConIdEmber) {       
-        await inputConIdEmber.fill(newPageDescription);
-      }
-        else {
-        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
-  
-      }
-      await page.getByRole('button', { name: 'Save' }).click();
-      await page.waitForTimeout(2000); 
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_por_un_string_vacío', paso++);
-    });
-
-    await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
-      await page.goto('/');
-      expect(await page.getByText(newPageDescription).innerText()).toBe(newPageDescription);
-      await page.waitForTimeout(2000); 
-      await screenshotPagePath(page, 'settings', 'cambiar_el_site_description_por_un_string_vacío', paso++);
-    });
-    
-  });
-
 });
