@@ -700,6 +700,197 @@ test.describe('settings', () => {
     });
 
   });
+
+  // Meta data
+  test('Meta title: crear el title con solo números aleatorios de 50 caracteres', async ({ page }) => {
+    const newPageTitle = `${faker.number.int({ min: 100000000000, max: 999999999999 })}`;
+    let paso = 1;
+
+    // paso obligatorio
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+
+    // paso obligatorio
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+
+    // paso a modificar el botón de expand
+    await test.step('And: El usuario cambia el título de la pagina', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Site meta settings Meta data Extra content for search engines Expand Twitter car' }).getByRole('button').first().click();
+      // Obtiene el primer input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
+      const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
+      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const inputConIdEmber = await page.locator('input[id^="#ember"]').first();
+
+      if (primerInput) {
+        await primerInput.clear();
+        await primerInput.fill(newPageTitle);
+      }else if (inputConIdEmber) {       
+        await inputConIdEmber.clear();
+        await inputConIdEmber.fill(newPageTitle);
+      }
+        else {
+        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
+  
+      }
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+
+    await test.step('and: recarga la pagina e ingresa a Meta data', async () => {
+      //recarga la pagina
+      await page.reload();
+      await page.getByRole('main').locator('div').filter({ hasText: 'Site meta settings Meta data Extra content for search engines Expand Twitter car' }).getByRole('button').first().click();
+    });  
+          
+    await test.step('Then: valida que la pagina se muestra con el nuevo titulo', async () => {
+      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
+      // Obtiene el valor de la variable primerInput
+      const valorDelInput = await primerInput.inputValue();
+      console.log("valorDelInput "+ valorDelInput)
+      await page.waitForTimeout(2000);
+      expect(valorDelInput).toBe(newPageTitle);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+  });
+
+  // Meta title: crear el title con superando los valores recomendados (71 caracteres)
+  test('Meta title: crear el title con superando los valores recomendados (71 caracteres)', async ({ page }) => {
+    // Faker que genere 71 caracteres aleatorios en string
+    const newPageTitle = "a".repeat(71);
+    let paso = 1;
+
+    // paso obligatorio
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+
+    // paso obligatorio
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+
+    // paso a modificar el botón de expand
+    await test.step('And: El usuario cambia el título de la pagina', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Site meta settings Meta data Extra content for search engines Expand Twitter car' }).getByRole('button').first().click();
+      // Obtiene el primer input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
+      const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
+      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const inputConIdEmber = await page.locator('input[id^="#ember"]').first();
+
+      if (primerInput) {
+        // limpiar el campo
+        await primerInput.clear();
+        await primerInput.fill(newPageTitle);
+      }else if (inputConIdEmber) {       
+        await inputConIdEmber.clear();
+        await inputConIdEmber.fill(newPageTitle);
+      }
+        else {
+        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
+  
+      }
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+    
+    await test.step('and: recarga la pagina e ingresa a Meta data', async () => {
+      //recarga la pagina
+      await page.reload();
+      await page.getByRole('main').locator('div').filter({ hasText: 'Site meta settings Meta data Extra content for search engines Expand Twitter car' }).getByRole('button').first().click();
+    });  
+          
+    await test.step('Then: valida que la pagina se muestra con el nuevo titulo', async () => {
+      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
+      // Obtiene el valor de la variable primerInput
+      const valorDelInput = await primerInput.inputValue();
+      console.log("valorDelInput "+ valorDelInput)
+      await page.waitForTimeout(2000);
+      expect(valorDelInput).toBe(newPageTitle);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+  });
+
+
+  // Meta title: no se puede crear el title con más de 301 caracteres
+  test('Meta title: no se puede crear el title con más de 301 caracteres)', async ({ page }) => {
+    // Faker que genere 301 caracteres aleatorios en string
+    const newPageTitle = "a".repeat(301);
+    let paso = 1;
+
+    // paso obligatorio
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+
+    // paso obligatorio
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+
+    // paso a modificar el botón de expand
+    await test.step('And: El usuario cambia el título de la pagina', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Site meta settings Meta data Extra content for search engines Expand Twitter car' }).getByRole('button').first().click();
+      // Obtiene el primer input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
+      const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
+      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const inputConIdEmber = await page.locator('input[id^="#ember"]').first();
+
+      if (primerInput) {
+        // limpiar el campo
+        await primerInput.clear();
+        await primerInput.fill(newPageTitle);
+      }else if (inputConIdEmber) {       
+        await inputConIdEmber.clear();
+        await inputConIdEmber.fill(newPageTitle);
+      }
+        else {
+        throw new Error('No se encontró el elemento del titulo. La prueba se detendrá.');
+  
+      }
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+     
+    await test.step('Then: La pagina muestra un mensaje de maximum length of 300 characters.', async () => {
+      // captura el valor del error
+      const error_page = page.getByText('Validation error, cannot edit setting. ValidationError: Value in [settings.meta_');
+      // se valida que contiene una parte del error_page
+      expect(error_page).toContainText('Validation error, cannot edit setting. ValidationError: Value in [settings.meta_');
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+    });
+  });
+
+
+  // Meta description: permite crear la description con caracteres especiales
+  // Meta description: crear la description superando los valores recomendados (156 caracteres)
+  // Meta description: no se puede crear el description con más de 501 caracteres
+
+
+ // Meta data: permite modificar campos creados y dejar title y descripción vacios
+
+
   
   
 });
