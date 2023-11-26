@@ -13,7 +13,7 @@ import 'dotenv/config';
 export default defineConfig({
   /* Timeout 80 seconds by default. */
   timeout: 80000,
-  
+
   expect: { timeout: 5000 },
 
   testDir: './tests',
@@ -30,8 +30,8 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'http://ec2-44-216-57-54.compute-1.amazonaws.com:8080',// process.env.BASE_URL,
-    // baseURL: 'http://localhost:2368/',
+    // baseURL: 'http://ec2-44-216-57-54.compute-1.amazonaws.com:8080',// process.env.BASE_URL,
+    baseURL: 'http://localhost:2368/',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',

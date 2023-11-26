@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "prepare": "npx playwright install firefox && npx playwright install-deps firefox",
+    "feature:members": "npx playwright test tests/members.spec.ts --workers=1",
+    "feature:create_user": "npx playwright test tests/create_user.spec.ts --workers=1"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
