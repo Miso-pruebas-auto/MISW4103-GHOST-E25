@@ -2,6 +2,8 @@ import { test, expect } from '@playwright/test';
 import { loginSessionAdmin } from '../utils/login_sesion_admin';
 import { faker } from '@faker-js/faker';
 import { screenshotPagePath } from '../utils/utils';
+import { getMockaroJson } from '../utils/getMockaroJson';
+
 
 test.describe('settings', () => {
   test.beforeEach(async ({ page }) => {
@@ -59,7 +61,10 @@ test.describe('settings', () => {
   });
 
   test('Title & description: No se puede modificar el site title con valores máximos (151)', async ({ page }) => {
-    const newPageTitle: string = "a".repeat(151);
+    // const newPageTitle: string = "a".repeat(151);
+    const aprioriData = await getMockaroJson('/settings/title-description-apriori.json');
+    const newPageTitle = aprioriData[0].titleMax151;
+
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -155,9 +160,10 @@ test.describe('settings', () => {
 
 
   test('Title & description: Modificar el site title con emojis', async ({ page }) => {
-    // crear una variable con emojis
-    const newPageTitle = '😀😎🚀🌟❤️🎉';
-    
+    // crear una variable con emojis 
+    const aprioriData = await getMockaroJson('/settings/emoji-apropri.json');
+    const newPageTitle = aprioriData[0].titleEmoji;
+
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -256,7 +262,8 @@ test.describe('settings', () => {
   });
   
   test('Title & description: Modificar el site title con caracteres especiales', async ({ page }) => {
-    const newPageTitle = `!@#$%^&*()_+{}|:"<>?¿¡'` ;
+    const aprioriData = await getMockaroJson('/settings/especial-caracters.json');
+    const newPageTitle = aprioriData[0].titleEspecialCaracters;
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -304,7 +311,9 @@ test.describe('settings', () => {
   });
 
   test('Title & description: Modificar el site title con texto de inyección sql', async ({ page }) => {
-    const newPageTitle = "'; DROP TABLE pages; --";
+    const aprioriData = await getMockaroJson('/settings/sql-inyeccion.json');
+    const newPageTitle = aprioriData[0].sqlInyeccion;
+
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -350,7 +359,6 @@ test.describe('settings', () => {
       await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_caracteres_especiales', paso++);
     });
   });
-
 
   test('Title & description: Modificar el site description de la pagina con nombre aleatorio', async ({ page }) => {
     const newPageDescription = `${faker.word.noun()}`;
@@ -403,7 +411,9 @@ test.describe('settings', () => {
   
 
   test('Title & description: Modificar el site description de la pagina con emojis', async ({ page }) => {
-    const newPageDescription = '😀😎🚀🌟❤️🎉' ;
+    const aprioriData = await getMockaroJson('/settings/emoji-apropri.json');
+    const newPageDescription = aprioriData[0].titleEmoji;
+
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -501,7 +511,9 @@ test.describe('settings', () => {
   });
 
   test('Title & description: Modificar el site description con texto de inyección sql', async ({ page }) => {
-    const newPageDescription = "; 'DROP TABLE users; --";
+    const aprioriData = await getMockaroJson('/settings/sql-inyeccion.json');
+    const newPageDescription = aprioriData[0].sqlInyeccion;
+
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -541,7 +553,6 @@ test.describe('settings', () => {
     });
 
     await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
-      await page.goto('/');
       expect(await page.getByText(newPageDescription).innerText()).toBe(newPageDescription);
       await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_con_texto_de_inyección_sql', paso++);
@@ -550,7 +561,9 @@ test.describe('settings', () => {
   });
 
   test('Title & description: No se puede modificar el site description de la pagina con valores máximos (207)', async ({ page }) => {
-    const newPageDescription: string = "a".repeat(207);
+    const aprioriData = await getMockaroJson('/settings/title-description-apriori.json');
+    const newPageDescription = aprioriData[0].descriptionMax207;
+
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -598,7 +611,8 @@ test.describe('settings', () => {
   });
 
   test('Site timezone: No puede cambiar la zona horaria sin guardarla', async ({ page }) => {
-    const timezone_stantdard = 'America/Anchorage';
+    const aprioriData = await getMockaroJson('/settings/time-zone.json');
+    const timezone_stantdard = aprioriData[0].timezoneStantdard;
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -655,10 +669,11 @@ test.describe('settings', () => {
     });
 
   });
-  
 
   test('Publication Language: No debería permitir guardar un emojis como idioma', async ({ page }) => {
-    const lenguage = '😀😎🚀🌟❤️🎉';
+    const aprioriData = await getMockaroJson('/settings/emoji-apropri.json');
+    const lenguage = aprioriData[0].titleEmoji;
+
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -715,7 +730,7 @@ test.describe('settings', () => {
     });
 
   });
-  
+
   test('Publication Language: No debería permitir guardar una URL como idioma', async ({ page }) => {
     const lenguage = `${faker.internet.url()}`;
     let paso = 1;
@@ -776,7 +791,7 @@ test.describe('settings', () => {
   });
 
   test('Publication Language: No debería permitir guardar un numero como idioma', async ({ page }) => {
-    const lenguage = '7898';
+    const lenguage = `${faker.number.int({ min: 100000000000, max: 999999999999 })}`;
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -834,8 +849,10 @@ test.describe('settings', () => {
 
   });
 
-  test('Publication Language: No deberia permitir guardar caracteres extraños como idioma', async ({ page }) => {
-    const lenguage = '*a!"*+-/()=?¿¡¿¡';
+  test('Publication Language: No debería permitir guardar caracteres extraños como idioma', async ({ page }) => {
+    const aprioriData = await getMockaroJson('/settings/especial-caracters.json');
+    const lenguage = aprioriData[0].titleEspecialCaracters;
+
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -894,7 +911,9 @@ test.describe('settings', () => {
   });
 
   test('Publication Language: No deberia permitir guardar más de 4 letras como idioma', async ({ page }) => {
-    const lenguage = 'engl';
+    const aprioriData = await getMockaroJson('/settings/language.json');
+    const lenguage = aprioriData[0].languageCode;
+
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -954,7 +973,8 @@ test.describe('settings', () => {
   
   test('Publication Language: No permite guardar con en el campo idioma con valores máximos (4800)', async ({ page }) => {
     // Crear una cadena con 4800 caracteres o más
-    const lenguage: string = "a".repeat(4800);
+    // const lenguage: string = "a".repeat(4800);
+    const lenguage = `${faker.lorem.words(4800)}`;
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -1010,7 +1030,9 @@ test.describe('settings', () => {
   });
   
   test('Publication Language: protección contra inyección sql en campo idioma', async ({ page }) => {
-    const lenguage = 'DROP TABLE users;';
+    const aprioriData = await getMockaroJson('/settings/sql-inyeccion.json');
+    const lenguage = aprioriData[0].sqlInyeccion;
+
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "settings"', async () => {
@@ -1068,7 +1090,6 @@ test.describe('settings', () => {
 
   });
   
-  
   // Meta data
   test('Meta title: crear el title con solo números aleatorios de 50 caracteres', async ({ page }) => {
     const newPageTitle = `${faker.number.int({ min: 100000000000, max: 999999999999 })}`;
@@ -1123,7 +1144,7 @@ test.describe('settings', () => {
       const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
       // Obtiene el valor de la variable primerInput
       const valorDelInput = await primerInput.inputValue();
-      console.log("valorDelInput "+ valorDelInput)
+
       await page.waitForTimeout(2000);
       expect(valorDelInput).toBe(newPageTitle);
       await page.waitForTimeout(2000);
@@ -1133,7 +1154,9 @@ test.describe('settings', () => {
 
   test('Meta title: crear el title con superando los valores recomendados (71 caracteres)', async ({ page }) => {
     // Faker que genere 71 caracteres aleatorios en string
-    const newPageTitle = "a".repeat(71);
+    const aprioriData = await getMockaroJson('/settings/meta-title.json');
+    const newPageTitle = aprioriData[0].shortTextTitle;
+
     let paso = 1;
 
     // paso obligatorio
@@ -1186,7 +1209,7 @@ test.describe('settings', () => {
       const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
       // Obtiene el valor de la variable primerInput
       const valorDelInput = await primerInput.inputValue();
-      console.log("valorDelInput "+ valorDelInput)
+
       await page.waitForTimeout(2000);
       expect(valorDelInput).toBe(newPageTitle);
       await page.waitForTimeout(2000);
@@ -1196,7 +1219,9 @@ test.describe('settings', () => {
 
   test('Meta title: crear el title con valores de inyección sql', async ({ page }) => {
     // Faker que genere 71 caracteres aleatorios en string
-    const newPageTitle = "DROP TABLE users;";
+    const aprioriData = await getMockaroJson('/settings/sql-inyeccion.json');
+    const newPageTitle = aprioriData[0].sqlInyeccion;
+
     let paso = 1;
 
     // paso obligatorio
@@ -1249,7 +1274,7 @@ test.describe('settings', () => {
       const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
       // Obtiene el valor de la variable primerInput
       const valorDelInput = await primerInput.inputValue();
-      console.log("valorDelInput "+ valorDelInput)
+
       await page.waitForTimeout(2000);
       expect(valorDelInput).toBe(newPageTitle);
       await page.waitForTimeout(2000);
@@ -1257,9 +1282,9 @@ test.describe('settings', () => {
     });
   });
   
-  test('Meta title: crear el title con iconos', async ({ page }) => {
-    // Faker que genere 71 caracteres aleatorios en string
-    const newPageTitle = "👨‍💻👨‍💻👨‍💻👨‍💻👨‍💻👨‍💻";
+  test('Meta title: crear el title con emojis', async ({ page }) => {
+    const aprioriData = await getMockaroJson('/settings/emoji-apropri.json');
+    const newPageTitle = aprioriData[0].titleEmoji;
     let paso = 1;
 
     // paso obligatorio
@@ -1312,7 +1337,7 @@ test.describe('settings', () => {
       const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
       // Obtiene el valor de la variable primerInput
       const valorDelInput = await primerInput.inputValue();
-      console.log("valorDelInput "+ valorDelInput)
+
       await page.waitForTimeout(2000);
       expect(valorDelInput).toBe(newPageTitle);
       await page.waitForTimeout(2000);
@@ -1321,8 +1346,8 @@ test.describe('settings', () => {
   });
 
   test('Meta title: crear el title con caracteres especiales', async ({ page }) => {
-    // Faker que genere 71 caracteres aleatorios en string
-    const newPageTitle = "�@![]{}¿?¡!#$%&/()=?¿¡¿¡";
+    const aprioriData = await getMockaroJson('/settings/especial-caracters.json');
+    const newPageTitle = aprioriData[0].titleEspecialCaracters;
     let paso = 1;
 
     // paso obligatorio
@@ -1375,7 +1400,7 @@ test.describe('settings', () => {
       const primerInput = await page.locator('.gh-setting-content-extended input[type="text"]').first();
       // Obtiene el valor de la variable primerInput
       const valorDelInput = await primerInput.inputValue();
-      console.log("valorDelInput "+ valorDelInput)
+
       await page.waitForTimeout(2000);
       expect(valorDelInput).toBe(newPageTitle);
       await page.waitForTimeout(2000);
@@ -1385,7 +1410,7 @@ test.describe('settings', () => {
   // Meta title: no se puede crear el title con más de 301 caracteres
   test('Meta title: no se puede crear el title con más de 301 caracteres)', async ({ page }) => {
     // Faker que genere 301 caracteres aleatorios en string
-    const newPageTitle = "a".repeat(301);
+    const newPageTitle = `${faker.lorem.words(301)}`;
     let paso = 1;
 
     // paso obligatorio
@@ -1438,8 +1463,8 @@ test.describe('settings', () => {
 
   //*** */ Meta description: permite crear la description con caracteres especiales
   test('Meta description: crear el description con caracteres especiales', async ({ page }) => {
-    // Faker que genere 71 caracteres aleatorios en string
-    const newPageTitle = "�@![]{}¿?¡!#$%&/()=?¿¡¿¡";
+    const aprioriData = await getMockaroJson('/settings/especial-caracters.json');
+    const newPageTitle = aprioriData[0].titleEspecialCaracters;
     let paso = 1;
 
     // paso obligatorio
@@ -1479,7 +1504,7 @@ test.describe('settings', () => {
       const primerInput = await page.locator('#metaDescription');
       // Obtiene el valor de la variable primerInput
       const valorDelInput = await primerInput.inputValue();
-      console.log("valorDelInput "+ valorDelInput)
+
       await page.waitForTimeout(2000);
       expect(valorDelInput).toBe(newPageTitle);
       await page.waitForTimeout(2000);
@@ -1487,9 +1512,9 @@ test.describe('settings', () => {
     });
   });
 
-  test('Meta description: crear el description con iconos', async ({ page }) => {
-    // Faker que genere 71 caracteres aleatorios en string
-    const newPageTitle = "👨‍💻👨‍💻👨‍💻👨‍💻👨‍💻👨‍💻";
+  test('Meta description: crear el description con emojis', async ({ page }) => {
+    const aprioriData = await getMockaroJson('/settings/emoji-apropri.json');
+    const newPageTitle = aprioriData[0].titleEmoji;
     let paso = 1;
 
     // paso obligatorio
@@ -1529,7 +1554,6 @@ test.describe('settings', () => {
       const primerInput = await page.locator('#metaDescription');
       // Obtiene el valor de la variable primerInput
       const valorDelInput = await primerInput.inputValue();
-      console.log("valorDelInput "+ valorDelInput)
       await page.waitForTimeout(2000);
       expect(valorDelInput).toBe(newPageTitle);
       await page.waitForTimeout(2000);
@@ -1539,7 +1563,7 @@ test.describe('settings', () => {
 
   test('Meta description: No permite guardar con en el campo descripción con valores máximos (501)', async ({ page }) => {
 
-    const newPageTitle = "a".repeat(510);
+    const newPageTitle = `${faker.lorem.words(501)}`;
     let paso = 1;
 
     // paso obligatorio
@@ -1584,5 +1608,5 @@ test.describe('settings', () => {
     });
   });
 
-  
+
 });
