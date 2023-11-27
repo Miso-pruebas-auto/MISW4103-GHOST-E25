@@ -1,6 +1,6 @@
 import { request } from "@playwright/test";
 
-export async function getMockaroData(schema: string): Promise<object> {
+export async function getMockaroData(schema: string): Promise<any> {
   const context = await request.newContext({
     baseURL: `https://my.api.mockaroo.com/${schema}?key=a4360b50`
   });
