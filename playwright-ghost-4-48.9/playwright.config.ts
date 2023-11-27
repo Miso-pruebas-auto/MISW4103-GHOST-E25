@@ -13,7 +13,7 @@ import 'dotenv/config';
 export default defineConfig({
   /* Timeout 80 seconds by default. */
   timeout: 80000,
-  
+
   expect: { timeout: 5000 },
 
   testDir: './tests',
