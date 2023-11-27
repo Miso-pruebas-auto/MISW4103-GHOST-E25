@@ -24,6 +24,36 @@
 4. [General settings](#4-general-settings)
 5. [Tags](#5-tags)
 
+# Ejecutar Tests
+
+``` shell
+cd playwright-ghost-4-48.9
+npm install
+```
+
+Se Requiere ejecutar los tests en dos tandas debido a una validación que tiene Ghost 4.48.9 que bloquea la ejecución del loging mas de 100 veces cada 3600 segundos
+
+``` shell
+docker compose up -d
+
+# Creamos el usuario
+npx playwright test -g 'user'
+
+npx playwright test post.spec.ts --workers=1 --headed
+npx playwirght test pages.spec.ts --workers=1 --headed
+npx playwright test members.spec.ts --workers=1 --headed
+```
+
+``` shell
+docker compose down --rmi all
+docker compose up -d
+
+# Creamos el usuario
+npx playwright test -g 'user'
+
+npx playwright test settings.spec.ts --workers=1 --headed
+npx playwright test tags.spec.ts --workers=1 --headed
+```
 
 ## 1. Post
 
