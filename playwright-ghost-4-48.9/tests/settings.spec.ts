@@ -309,7 +309,7 @@ test.describe('settings', () => {
       await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_caracteres_especiales', paso++);
     });
   });
-
+  
   test('Title & description: Modificar el site title con texto de inyección sql', async ({ page }) => {
     const aprioriData = await getMockaroJson('/settings/sql-inyeccion.json');
     const newPageTitle = aprioriData[0].sqlInyeccion;
@@ -319,13 +319,13 @@ test.describe('settings', () => {
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_caracteres_especiales', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_texto_de_inyección_sql', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_caracteres_especiales', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_texto_de_inyección_sql', paso++);
     });
 
     await test.step('And: El usuario cambia el título de la pagina', async () => {
@@ -349,17 +349,17 @@ test.describe('settings', () => {
       }
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_caracteres_especiales', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_texto_de_inyección_sql', paso++);
     });
 
     await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
       await page.goto('/');
       expect(await page.getByRole('heading', { name: newPageTitle }).innerText()).toBe(newPageTitle);
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_caracteres_especiales', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_texto_de_inyección_sql', paso++);
     });
   });
-
+  
   test('Title & description: Modificar el site description de la pagina con nombre aleatorio', async ({ page }) => {
     const newPageDescription = `${faker.word.noun()}`;
     let paso = 1;
@@ -367,13 +367,13 @@ test.describe('settings', () => {
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description:_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description:_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
     });
 
     await test.step('And: El usuario cambia el título de la pagina', async () => {
@@ -397,14 +397,14 @@ test.describe('settings', () => {
       }
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description:_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
     });
 
     await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
       await page.goto('/');
       expect(await page.getByText(newPageDescription).innerText()).toBe(newPageDescription);
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description:_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
     });
     
   });
@@ -1291,14 +1291,14 @@ test.describe('settings', () => {
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_emojis', paso++);
     });
 
     // paso obligatorio
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_emojis', paso++);
     });
 
     // paso a modificar el botón de expand
@@ -1323,13 +1323,14 @@ test.describe('settings', () => {
       }
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_emojis', paso++);
     });
     
     await test.step('and: recarga la pagina e ingresa a Meta data', async () => {
       //recarga la pagina
       await page.reload();
       await page.getByRole('main').locator('div').filter({ hasText: 'Site meta settings Meta data Extra content for search engines Expand Twitter car' }).getByRole('button').first().click();
+      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_emojis', paso++);
     });  
           
     await test.step('Then: valida que la pagina se muestra con el nuevo titulo', async () => {
@@ -1341,10 +1342,10 @@ test.describe('settings', () => {
       await page.waitForTimeout(2000);
       expect(valorDelInput).toBe(newPageTitle);
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_emojis', paso++);
     });
   });
-
+  
   test('Meta title: crear el title con caracteres especiales', async ({ page }) => {
     const aprioriData = await getMockaroJson('/settings/especial-caracters.json');
     const newPageTitle = aprioriData[0].titleEspecialCaracters;
@@ -1354,14 +1355,14 @@ test.describe('settings', () => {
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_caracteres_especiales', paso++);
     });
 
     // paso obligatorio
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_caracteres_especiales', paso++);
     });
 
     // paso a modificar el botón de expand
@@ -1386,13 +1387,14 @@ test.describe('settings', () => {
       }
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_caracteres_especiales', paso++);
     });
     
     await test.step('and: recarga la pagina e ingresa a Meta data', async () => {
       //recarga la pagina
       await page.reload();
       await page.getByRole('main').locator('div').filter({ hasText: 'Site meta settings Meta data Extra content for search engines Expand Twitter car' }).getByRole('button').first().click();
+      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_caracteres_especiales', paso++);
     });  
           
     await test.step('Then: valida que la pagina se muestra con el nuevo titulo', async () => {
@@ -1404,10 +1406,11 @@ test.describe('settings', () => {
       await page.waitForTimeout(2000);
       expect(valorDelInput).toBe(newPageTitle);
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_caracteres_especiales', paso++);
     });
   });
   // Meta title: no se puede crear el title con más de 301 caracteres
+  
   test('Meta title: no se puede crear el title con más de 301 caracteres)', async ({ page }) => {
     // Faker que genere 301 caracteres aleatorios en string
     const newPageTitle = `${faker.lorem.words(301)}`;
@@ -1417,14 +1420,14 @@ test.describe('settings', () => {
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_no_se_puede_crear_el_title_con_más_de_301_caracteres', paso++);
     });
 
     // paso obligatorio
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_no_se_puede_crear_el_title_con_más_de_301_caracteres', paso++);
     });
 
     // paso a modificar el botón de expand
@@ -1449,7 +1452,7 @@ test.describe('settings', () => {
       }
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_no_se_puede_crear_el_title_con_más_de_301_caracteres', paso++);
     });
      
     await test.step('Then: La pagina muestra un mensaje de maximum length of 300 characters.', async () => {
@@ -1457,11 +1460,12 @@ test.describe('settings', () => {
       const error_page = page.getByText('Validation error, cannot edit setting. ValidationError: Value in [settings.meta_');
       // se valida que contiene una parte del error_page
       expect(error_page).toContainText('Validation error, cannot edit setting. ValidationError: Value in [settings.meta_');
-      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_title_con_solo_números_aleatorios_de_(12_cifras)', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_title_no_se_puede_crear_el_title_con_más_de_301_caracteres', paso++);
     });
   });
 
   //*** */ Meta description: permite crear la description con caracteres especiales
+  
   test('Meta description: crear el description con caracteres especiales', async ({ page }) => {
     const aprioriData = await getMockaroJson('/settings/especial-caracters.json');
     const newPageTitle = aprioriData[0].titleEspecialCaracters;
@@ -1471,14 +1475,14 @@ test.describe('settings', () => {
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_caracteres_especiales', paso++);
     });
 
     // paso obligatorio
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_caracteres_especiales', paso++);
     });
 
     // paso a modificar el botón de expand
@@ -1490,13 +1494,14 @@ test.describe('settings', () => {
       await primerInput.fill(newPageTitle);
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_caracteres_especiales', paso++);
     });
     
     await test.step('and: recarga la pagina e ingresa a Meta data', async () => {
       //recarga la pagina
       await page.reload();
       await page.getByRole('main').locator('div').filter({ hasText: 'Site meta settings Meta data Extra content for search engines Expand Twitter car' }).getByRole('button').first().click();
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_caracteres_especiales', paso++);
     });  
           
     await test.step('Then: valida que la pagina se muestra con el nuevo titulo', async () => {
@@ -1508,10 +1513,10 @@ test.describe('settings', () => {
       await page.waitForTimeout(2000);
       expect(valorDelInput).toBe(newPageTitle);
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_caracteres_especiales', paso++);
     });
   });
-
+  
   test('Meta description: crear el description con emojis', async ({ page }) => {
     const aprioriData = await getMockaroJson('/settings/emoji-apropri.json');
     const newPageTitle = aprioriData[0].titleEmoji;
@@ -1521,14 +1526,14 @@ test.describe('settings', () => {
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_emojis', paso++);
     });
 
     // paso obligatorio
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_emojis', paso++);
     });
 
     // paso a modificar el botón de expand
@@ -1540,13 +1545,14 @@ test.describe('settings', () => {
       await primerInput.fill(newPageTitle);
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      
     });
     
     await test.step('and: recarga la pagina e ingresa a Meta data', async () => {
       //recarga la pagina
       await page.reload();
       await page.getByRole('main').locator('div').filter({ hasText: 'Site meta settings Meta data Extra content for search engines Expand Twitter car' }).getByRole('button').first().click();
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_emojis', paso++);
     });  
           
     await test.step('Then: valida que la pagina se muestra con el nuevo titulo', async () => {
@@ -1557,10 +1563,10 @@ test.describe('settings', () => {
       await page.waitForTimeout(2000);
       expect(valorDelInput).toBe(newPageTitle);
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_emojis', paso++);
     });
   });
-
+  
   test('Meta description: No permite guardar con en el campo descripción con valores máximos (501)', async ({ page }) => {
 
     const newPageTitle = `${faker.lorem.words(501)}`;
@@ -1570,14 +1576,14 @@ test.describe('settings', () => {
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_description_No_permite_guardar_con_en_el_campo_descripción_con_valores_máximos_(501)', paso++);
     });
 
     // paso obligatorio
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_description_No_permite_guardar_con_en_el_campo_descripción_con_valores_máximos_(501)', paso++);
     });
 
     // paso a modificar el botón de expand
@@ -1589,7 +1595,7 @@ test.describe('settings', () => {
       await primerInput.fill(newPageTitle);
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_description_No_permite_guardar_con_en_el_campo_descripción_con_valores_máximos_(501)', paso++);
     });
     
   
@@ -1604,7 +1610,7 @@ test.describe('settings', () => {
       expect(textoDelError).toContain('Validation error, cannot edit setting. ValidationError: Value in [settings.meta_');
       
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Meta_title_crear_el_title_con_iconos', paso++);
+      await screenshotPagePath(page, 'settings', 'Meta_description_No_permite_guardar_con_en_el_campo_descripción_con_valores_máximos_(501)', paso++);
     });
   });
 
