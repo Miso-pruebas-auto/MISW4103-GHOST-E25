@@ -36,7 +36,7 @@ Se Requiere ejecutar los tests en dos tandas debido a una validación que tiene 
 ``` shell
 docker compose up -d
 
-# Creamos el usuario
+# Creamos el usuario, tener en cuenta que el servicio de ghost debe estar levantado para iniciar los test.
 npx playwright test -g 'user'
 
 npx playwright test post.spec.ts --workers=1 --headed
@@ -48,7 +48,7 @@ npx playwright test members.spec.ts --workers=1 --headed
 docker compose down --rmi all
 docker compose up -d
 
-# Creamos el usuario
+# Creamos el usuario, tener en cuenta que el servicio de ghost debe estar levantado para iniciar los test.
 npx playwright test -g 'user'
 
 npx playwright test settings.spec.ts --workers=1 --headed
