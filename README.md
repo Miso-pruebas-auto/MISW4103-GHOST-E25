@@ -26,7 +26,7 @@
 5. [Pages](#5-pages)
 
 # Ejecutar Tests
-Debido a que este repo se ha usado para las pruebas de las semanas anteriores, tener en cuenta que todos los test se encuentran en la carpeta playwright-ghost-t-48.9
+Debido a que este repositorio se ha usado para las pruebas de las semanas anteriores, tener en cuenta que todos los test se encuentran en la carpeta playwright-ghost-t-48.9
 ``` shell
 cd playwright-ghost-4-48.9
 npm install
