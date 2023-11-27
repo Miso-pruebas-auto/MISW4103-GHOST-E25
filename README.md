@@ -20,9 +20,9 @@
 # Escenarios
 
 1. [Post](#1-post)
-3. [Members](#3-members)
-4. [General settings](#4-general-settings)
-5. [Tags](#5-tags)
+3. [Members](#2-members)
+4. [General settings](#3-general-settings)
+5. [Tags](#4-tags)
 5. [Pages](#5-pages)
 
 # Ejecutar Tests
