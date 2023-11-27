@@ -19,8 +19,11 @@
 
 # Escenarios
 
-1. [General settings](#1-general-settings)
-2. [Members](#2-members)
+1. [Post](#1-post)
+3. [Members](#3-members)
+4. [General settings](#4-general-settings)
+5. [Tags](#5-tags)
+
 
 ## 1. Post
 
