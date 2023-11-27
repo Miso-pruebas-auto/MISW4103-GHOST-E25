@@ -134,24 +134,24 @@ Posts - Random data › Crear un post con excerpt de 5000 palabras random
 
 ### A-priori implementados por json
 
-Tags - A priori data › Creación de tag con título y color sin descripción
-Tags - A priori data › Creación de tag con título, sin color y sin descripción
-Tags - A priori data › Creación de tag con título vacío sin color y sin descripción
-Tags - A priori data › Creación de tag con título y color forzando dos veces el botón crear
-Tags - A priori data › Creación de tag con título, color y descripción
+- Tags - A priori data › Creación de tag con título y color sin descripción
+- Tags - A priori data › Creación de tag con título, sin color y sin descripción
+- Tags - A priori data › Creación de tag con título vacío sin color y sin descripción
+- Tags - A priori data › Creación de tag con título y color forzando dos veces el botón crear
+- Tags - A priori data › Creación de tag con título, color y descripción
 
 ### Dinámicos implementados con Faker
 
-Tags - Dynamic data › Falla creación de tag con título con más de 50 palabras, color y descripción
-Tags - Dynamic data › Falla creación de tag con título, color y descripción con más de 500 caracteres
-Tags - Dynamic data › Falla creación de tag con color no hexadecimals
-Tags - Dynamic data › Falla creación de tag con slug con mas de 191 caracteres
-Tags - Dynamic data › Falla creación de tag con Meta data con más de 70 caracteres en el meta title
+- Tags - Dynamic data › Falla creación de tag con título con más de 50 palabras, color y descripción
+- Tags - Dynamic data › Falla creación de tag con título, color y descripción con más de 500 caracteres
+- Tags - Dynamic data › Falla creación de tag con color no hexadecimals
+- Tags - Dynamic data › Falla creación de tag con slug con mas de 191 caracteres
+- Tags - Dynamic data › Falla creación de tag con Meta data con más de 70 caracteres en el meta title
 
 ### Aleatorios implementados con Faker
 
-Tags - Random data › Falla creación de tag llenando color con valores aleatorios
-Tags - Random data › Falla creación de tag con Meta data con más de 156 caracteres aleatorios en el meta description
-Tags - Random data › Fall creación de tag con título usando 1 palabra de mas de 191 caracteres random
-Tags - Random data › Falla creación de tag con twitter title con más de 70 caracteres aleatorios
-Tags - Random data › Falla creación de tag con twitter description con más de 200 caracteres aleatorios
+- Tags - Random data › Falla creación de tag llenando color con valores aleatorios
+- Tags - Random data › Falla creación de tag con Meta data con más de 156 caracteres aleatorios en el meta description
+- Tags - Random data › Fall creación de tag con título usando 1 palabra de mas de 191 caracteres random
+- Tags - Random data › Falla creación de tag con twitter title con más de 70 caracteres aleatorios
+- Tags - Random data › Falla creación de tag con twitter description con más de 200 caracteres aleatorios
