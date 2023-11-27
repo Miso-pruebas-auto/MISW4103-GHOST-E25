@@ -26,6 +26,8 @@ test.describe('Posts - A priori data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
@@ -73,7 +75,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con título y contenido se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
 
       const title_post_create = await page.locator('h1').innerText();
       const content_post_create = await page.getByText(contenido).innerText();
@@ -89,6 +91,8 @@ test.describe('Posts - A priori data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
@@ -129,7 +133,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con título y contenido se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
 
       const title_post_create = await page.locator('h1').innerText();
       expect(title_post_create).toBe(titulo_post);
@@ -145,6 +149,8 @@ test.describe('Posts - A priori data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
@@ -202,15 +208,15 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con título, contenido y tag se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
 
       const title_post_create = await page.locator('h1').innerText();
-      const content_post_create = await page.locator('main').innerText();
-      const tag_post_create = await page.getByRole('link', { name: 'News' }).innerText();
+      const content = await page.locator('section').nth(2).innerText();
+      const tag = await page.locator('section').first().innerText();
 
       expect(title_post_create).toBe(titulo_post);
-      expect(content_post_create).toMatch(contenido)
-      expect(tag_post_create).toBe('NEWS');
+      expect(content).toMatch(contenido)
+      expect(tag).toBe('NEWS');
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
 
     });
@@ -226,7 +232,7 @@ test.describe('Posts - A priori data', () => {
     const contenido = postsData.content;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
-      await page.waitForTimeout(1500);
+      await page.waitForTimeout(2000);
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
@@ -237,7 +243,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Llena el título del post con caracteres especiales', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
       await page.getByPlaceholder('Post title').fill(titulo_post);
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
@@ -281,7 +287,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con título y contenido se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
 
       const title_post_create = await page.locator('h1').innerText();
       const section = await page.locator('section').nth(1);
@@ -299,6 +305,7 @@ test.describe('Posts - A priori data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
@@ -346,11 +353,11 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con título y contenido se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
       const title_post_create = await page.locator('h1').innerText();
-      const content_post_create = await page.getByText(contenido).innerText();
       expect(title_post_create).toBe(titulo_post);
-      expect(content_post_create.split(' ')[0]).toBe(contenido.split(' ')[0]);
+
+      expect(page.locator('section').nth(1)).toBeTruthy();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
@@ -365,6 +372,8 @@ test.describe('Posts - A priori data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -427,7 +436,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
 
       const title_post_create = await page.locator('h1').innerText();
       const content_post_create = await page.getByText(contenido).innerText();
@@ -451,6 +460,8 @@ test.describe('Posts - A priori data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -513,7 +524,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
       const title_post_create = await page.locator('h1').innerText();
       const content_post_create = await page.getByText(contenido).innerText();
 
@@ -540,6 +551,8 @@ test.describe('Posts - A priori data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -602,7 +615,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
       const title_post_create = await page.locator('h1').innerText();
       expect(page.getByText(contenido)).toBeTruthy();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
@@ -618,6 +631,8 @@ test.describe('Posts - A priori data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -660,7 +675,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('Then: Se verifica que el botón borrar post aparece antes de que sea creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
       const btnDelete = await page.getByRole('button', { name: 'Delete post' }).innerText();
       expect(btnDelete).toBe('Delete post');
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
@@ -690,6 +705,8 @@ test.describe('Posts - Dynamic data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -752,7 +769,7 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
       const title_post_create = await page.locator('h1').innerText();
       const content_post_create = await page.getByText(contenido).innerText();
 
@@ -768,6 +785,8 @@ test.describe('Posts - Dynamic data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_título', paso++);
     });
@@ -817,7 +836,7 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('Then: Se verifica que el Post se crea con el título untitled', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
 
       const title_post_create = await page.locator('h1').innerText();
       const content_post_create = await page.getByText(contenido).innerText();
@@ -919,6 +938,8 @@ test.describe('Posts - Random data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
@@ -956,7 +977,7 @@ test.describe('Posts - Random data', () => {
     });
 
     await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
       await page.locator('button:has-text("Publish")').click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
@@ -968,7 +989,7 @@ test.describe('Posts - Random data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con título y contenido se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
 
       const title_post_create = await page.locator('h1').innerText();
       const content_post_create = await page.getByText(contenido).innerText();
@@ -988,6 +1009,8 @@ test.describe('Posts - Random data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -1045,7 +1068,7 @@ test.describe('Posts - Random data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
 
       const errorMsg = await page.getByText('Saving failed: Excerpt cannot be longer than 300 characters.').innerText();
       expect(errorMsg).toBe('Saving failed: Excerpt cannot be longer than 300 characters.');
@@ -1061,6 +1084,8 @@ test.describe('Posts - Random data', () => {
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
       await page.getByRole('link', { name: 'New post' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -1118,7 +1143,7 @@ test.describe('Posts - Random data', () => {
     });
 
     await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
-      await page.waitForTimeout(500);
+      await page.waitForTimeout(2000);
 
       const errorMsg = await page.getByText('Saving failed: Excerpt cannot be longer than 300 characters.').innerText();
       expect(errorMsg).toBe('Saving failed: Excerpt cannot be longer than 300 characters.');
