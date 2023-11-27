@@ -59,8 +59,18 @@ npx playwright test pages.spec.ts --workers=1 --headed
 # Estrategias
 - Se decidió trabajar por funcionalidad teniendo en cuenta las distintas estrategias de generación de datos; a priori, dinámicos y random.
 - A cada integrante del equipo se le asignó una respectiva funcionalidad a testear con el fin de generar 30 pruebas por cada uno de los miembros.
-- Para la generación de datos a priori y datos dinámicos nos apoyamos de la herramienta mockaroo y para la generación de datos aleatorios lo hicimos con faker.
+- Para la generación de las 120 pruebas, se dividio entre las 5 funcionalidades (post - members -general settings - tags - pages) y se asignaron de la siguiente manera, teniendo en cuenta las 3 estrategias de generación de datos (a-priori, dinámicos y aleatorios):
 
+| Funcionalidad | Distribución |
+| ---------- |-------------- |
+| Post | 15 Pruebas |
+| Members | 30 Pruebas |
+| General settings | 30 Pruebas |
+| Tags | 15 Pruebas |
+| Pages | 30 Pruebas |
+
+
+- Para la generación de datos a priori y datos dinámicos nos apoyamos de la herramienta mockaroo y para la generación de datos aleatorios lo hicimos con faker.
 A continuación se lista la implementación de la estrategia de generación de datos a cada una de las funcionalidades por cada escenario.
 
 ## 1. Post
