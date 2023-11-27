@@ -55,6 +55,8 @@ npx playwright test settings.spec.ts --workers=1 --headed
 npx playwright test tags.spec.ts --workers=1 --headed
 ```
 
+# Estrategias
+
 ## 1. Post
 
 ### A-priori implementados por json
