@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
 import { loginSessionAdmin } from '../utils/login_sesion_admin';
+import { getMockaroData } from '../utils/getMockaroData';
 import { faker } from '@faker-js/faker';
 import { screenshotPagePath } from '../utils/utils';
+import { getMockaroJson } from '../utils/getMockaroJson';
 
 test.describe('pages', () => {
   test.beforeEach(async ({ page }) => {
@@ -147,21 +149,17 @@ test.describe('pages', () => {
   });
 
   test('Creación página y cancelar su creación	', async ({ page }) => {
-
     let paso = 1;
-
     await test.step('When: El usuario hace clic en "Pages"', async () => {
       await page.getByRole('link', { name: 'Pages' }).click();
       await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'pages', 'Creación_página_y_cancelar_su_creación', paso++);
     });
-
     await test.step('And: El usuario hace clic en "New page"', async () => {
       await page.getByRole('link', { name: 'New page' }).click();
       await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'pages', 'Creación_página_y_cancelar_su_creación', paso++);
     });
-
     await test.step('And: El usuario crea el título de la nueva pagina', async () => {
       await page.getByPlaceholder('Page title').click();
       await page.getByPlaceholder('Page title').fill('Test Pagina Cancelada');
@@ -169,20 +167,162 @@ test.describe('pages', () => {
       await page.waitForTimeout(2000);
       await screenshotPagePath(page, 'pages', 'Creación_página_y_cancelar_su_creación', paso++);
     });
-
     await test.step('And: El usuario cancela la nueva pagina antes de publicarla', async () => {
       await page.getByRole('button', { name: 'Publish' }).click();
       await page.getByRole('button', { name: 'Cancel', exact: true }).click();
       await page.waitForTimeout(2000);      
       await screenshotPagePath(page, 'pages', 'Creación_página_y_cancelar_su_creación', paso++);
     });
-
     await test.step('Then: La nueva página no se carga en el navegador', async () => {
       await page.goto('/test-pagina-cancelada/');
       expect(await page.getByRole('heading', { name: '404' }).innerText()).toBe('404');  
       await page.waitForTimeout(2000);      
       await screenshotPagePath(page, 'pages', 'Creación_página_y_cancelar_su_creación', paso++);
     });
+  });
+
+  test('Creación página con un titulo mayor a 255 carácteres', async ({ page }) => {
+    //SCHEMA CON LA INFORMACION DE TITULO Y DESCRIPCION
+    // const data = await getMockaroData('pages_schema.json');
+    const result =  await getMockaroJson('pages_schema.json');
+    // console.log(data);
+    // console.log(result);
+    // console.log('---------------------------------');
+
+    const newPageTitle = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Donec euismod, nisl eget aliquam luctus, nisl nisl aliquet nisl, nec aliquam ni Donec euismod, nisl eget aliquam luctus, nisl nisl aliquet nisl, nec aliquam ni Donec euismod, nisl eget aliquam luctus, nisl nisl aliquet nisl, nec aliquam ni Donec euismod, nisl eget aliquam luctus, nisl nisl aliquet nisl, nec aliquam ni Donec euismod, nisl eget aliquam luctus, nisl nisl aliquet nisl, nec aliquam niDonec euismod, nisl eget aliquam luctus, nisl nisl aliquet nisl, nec aliquam ni';
+    let paso = 1;
+    await test.step('When: El usuario hace clic en "Pages"', async () => {
+      await page.getByRole('link', { name: 'Pages' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_titulo_mayor_a_255_caracteres', paso++);
+    });
+    await test.step('And: El usuario hace clic en "New page"', async () => {
+      await page.getByRole('link', { name: 'New page' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_titulo_mayor_a_255_caracteres', paso++);
+    });
+    await test.step('And: El usuario crea el título de la nueva pagina', async () => {
+      await page.getByPlaceholder('Page title').click();
+      await page.getByPlaceholder('Page title').fill(newPageTitle);
+      await page.getByPlaceholder('Page title').press('Tab');
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_titulo_mayor_a_255_caracteres', paso++);
+    });
+    // await test.step('And: El usuario crea el contenido de la nueva pagina', async () => {
+    //   await page.getByText("Begin writing your page...").click();
+    //   await page.getByText("Begin writing your page...").fill(newPageTitle);
+    //   await page.waitForTimeout(2000);
+    //   await screenshotPagePath(page, 'pages', 'Creación_página_con_titulo_mayor_a_255_caracteres', paso++);
+    // });
+    await test.step('And: El usuario publica la nueva pagina', async () => {
+      await page.locator('.koenig-editor__editor').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_titulo_mayor_a_255_caracteres', paso++);
+    });
+    await test.step('Then: El usuario ve el error del tamaño del titulo', async () => {
+      const selectorError = await page.getByText('Update failed: Title cannot be longer than 255 characters.')
+      const errorMsg = await selectorError.textContent()
+      console.log(errorMsg);
+      expect(errorMsg).toBe("Update failed: Title cannot be longer than 255 characters.");
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_titulo_mayor_a_255_caracteres', paso++);
+    });
+
+  });
+
+  test('Creación página y actualizar la url para visualizarla', async ({ page }) => {
+
+  });
+
+  test('Creación página con mal formato de fecha', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con un extracto mayor a 300 carácteres', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con multiples tags', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con meta data Title con mas de 300 carácteres', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con meta data Description con mas de 500 carácteres', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con canonical URL invalida', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con canonical URL con mal formato', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con canonical URL con más de 2000 caracteres', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con Twitter card title con más de 300 carácteres', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con Twitter card description con más de 500 carácteres', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con Twitter card con data correcta', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con Facebook card title con más de 300 carácteres', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con Facebook card description con más de 500 carácteres', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con Facebook card con data correcta', async ({ page }) => {
+
+  });
+
+  test('Publicar Página con url distinta a la anterior', async ({ page }) => {
+
+  });
+
+  test('Programar Publicación de un Página con fecha anterior a la actual', async ({ page }) => {
+
+  });
+
+  test('Publicar Página con contenido publico y solo para miembros', async ({ page }) => {
+
+  });
+
+  test('Publicar Página con titulo de solo Emojis', async ({ page }) => {
+
+  });
+
+  test('Publicar Página con page Url de solo Emojis', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con Meta data Title de solo emojis', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con Twitter data Title de solo emojis', async ({ page }) => {
+
+  });
+
+  test('Creación de Página con Facebook data Title de solo emojis', async ({ page }) => {
+
+  });
+
+  test('Creación de una pagina con todos los datos correctos', async ({ page }) => {
 
   });
 
