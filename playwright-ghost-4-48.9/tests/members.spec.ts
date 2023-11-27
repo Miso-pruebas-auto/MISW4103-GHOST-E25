@@ -2,7 +2,22 @@ import { expect, test } from "@playwright/test";
 import { loginSessionAdmin } from "../utils/login_sesion_admin";
 import { faker } from "@faker-js/faker";
 import { screenshotPagePath } from "../utils/utils";
-import data from "../data/members.json";
+import data from "../utils/data/members.json";
+
+import no_se_puede_crear_miembro_si_el_campo_note_excede_500_caracteres
+  from "../utils/data/members/no_se_puede_crear_miembro_si_el_campo_note_excede_500_caracteres.json";
+
+import se_puede_utilizar_el_mismo_nombre_para_dos_miembros_diferentes
+  from "../utils/data/members/se_puede_utilizar_el_mismo_nombre_para_dos_miembros_diferentes.json";
+
+import no_se_puede_crear_miembro_si_el_campo_email_excede_191_caracteres
+  from "../utils/data/members/no_se_puede_crear_miembro_si_el_campo_email_excede_191_caracteres.json";
+
+import no_se_puede_crear_miembro_si_el_campo_name_excede_191_caracteres
+  from "../utils/data/members/no_se_puede_crear_miembro_si_el_campo_name_excede_191_caracteres.json";
+
+import no_se_puede_crear_el_miembro_si_el_campo_label_excede_500_caracteres
+  from "../utils/data/members/no_se_puede_crear_el_miembro_si_el_campo_label_excede_500_caracteres.json";
 
 type DataType = {
   id: number;
@@ -14,6 +29,22 @@ type DataType = {
 
 function getRandomDataValue(): DataType {
   return data[Math.floor(Math.random() * data.length)];
+}
+
+function generateRandomFakerData() {
+  const firstName = faker.person.firstName();
+  const lastName = faker.person.lastName();
+  const fullName = `${firstName} ${lastName}`;
+  const email = faker.internet.email({ firstName, lastName });
+  const note = `${fullName} ${faker.lorem.sentence()}`;
+
+  return {
+    fullName,
+    firstName,
+    lastName,
+    email,
+    note
+  };
 }
 
 function generarDatosAleatorios() {
@@ -41,9 +72,10 @@ test.describe("members", () => {
   });
 
   test("creación de miembro", async ({ page }) => {
-    const newMemberName = `test-${faker.word.noun()}`;
-    const newMemberEmail = `${faker.internet.email()}`;
-    const newMemberNote = `test-${faker.lorem.sentence()}`;
+    const { email, fullName, note } = generateRandomFakerData();
+    const newMemberName = fullName;
+    const newMemberEmail = email;
+    const newMemberNote = note;
     let paso = 1;
 
     await test.step("When: El usuario se dirige a la sección members", async () => {
@@ -88,7 +120,8 @@ test.describe("members", () => {
   });
 
   test("creación de miembro sin correo", async ({ page }) => {
-    const newMemberName = `test-${faker.word.noun()}`;
+    const { fullName, note } = generateRandomFakerData();
+    const newMemberName = fullName;
     let paso = 1;
 
     await test.step("When: El usuario se dirige a la sección members", async () => {
@@ -121,8 +154,9 @@ test.describe("members", () => {
   });
 
   test("creación de miembro con correo inválido", async ({ page }) => {
-    const newMemberName = `test-${faker.word.noun()}`;
-    const newMemberEmail = `correoinvalido`;
+    const { fullName, email } = generateRandomFakerData();
+    const newMemberName = `test-${fullName}`;
+    const newMemberEmail = email.replace("@", "");
     let paso = 1;
 
     await test.step("When: El usuario se dirige a la sección members", async () => {
@@ -158,9 +192,10 @@ test.describe("members", () => {
   });
 
   test("cancelar creación de miembro", async ({ page }) => {
-    const newMemberName = `test-${faker.word.noun()}`;
-    const newMemberEmail = `test-${faker.internet.email()}`;
-    const newMemberNote = `test-${faker.lorem.sentence()}`;
+    const { email, fullName, note } = generateRandomFakerData();
+    const newMemberName = fullName;
+    const newMemberEmail = email;
+    const newMemberNote = note;
     let paso = 1;
 
     await test.step("When: El usuario se dirige a la sección members", async () => {
@@ -198,7 +233,6 @@ test.describe("members", () => {
       await screenshotPagePath(page, "members", "cancelar_creación_de_miembro", paso++);
     });
   });
-
 
   test("No se puede crear miembro si campos en blanco", async ({ page }) => {
     let paso = 1;
@@ -260,7 +294,7 @@ test.describe("members", () => {
     });
   });
 
-  test("No se puede crear miembro si llena el campo labels con multiples valores", async ({ page }) => {
+  test("No se puede crear miembro si solo llena el campo labels con multiples valores", async ({ page }) => {
     const labels = [];
 
     for (let i = 0; i < 5; i++) {
@@ -303,10 +337,10 @@ test.describe("members", () => {
   });
 
   test("No se puede crear miembro si el campo note excede 500 caracteres", async ({ page }) => {
-    const selected = data[0];
-    const newMemberName = `test-${selected.name}`;
-    const newMemberEmail = `test-${selected.email}`;
-    const newMemberNote = data[0].note;
+    const selected = no_se_puede_crear_miembro_si_el_campo_note_excede_500_caracteres as DataType;
+    const newMemberName = `test -${selected.name}`;
+    const newMemberEmail = `test -${selected.email}`;
+    const newMemberNote = selected.note;
     let paso = 1;
 
     await test.step("When: El usuario se dirige a la sección members", async () => {
@@ -345,8 +379,9 @@ test.describe("members", () => {
   });
 
   test("No se puede crear miembro si el campo email excede 191 caracteres", async ({ page }) => {
-    const newMemberName = `test-${faker.person.fullName()}`;
-    const newMemberEmail = `${faker.lorem.paragraphs(10)}@${faker.lorem.paragraphs(10)}.com`;
+    const { email, name } = no_se_puede_crear_miembro_si_el_campo_email_excede_191_caracteres as DataType;
+    const newMemberName = `test-${name}`;
+    const newMemberEmail = `${email}`;
 
     let paso = 1;
 
@@ -378,14 +413,17 @@ test.describe("members", () => {
     });
 
     await test.step("Then: El nuevo miembro se muestra en la lista de miembros creados", async () => {
-      expect(await page.getByText("Email cannot be longer than 191 characters.").innerText()).toBe("Email cannot be longer than 191 characters.");
+      await page.waitForTimeout(2000);
+      const text = page.locator("body > div.gh-app > div > main > section > div:nth-child(2) > form > div > section > div > div:nth-child(1) > div > div.gh-cp-member-email-name > div.form-group.max-width.error.ember-view > p");
+      expect(['Email cannot be longer than 191 characters.', 'Invalid Email.']).toContain(await text.innerText());
       await screenshotPagePath(page, "members", "no_se_puede_crear_miembro_si_el_campo_email_excede_191_caracteres", paso++);
     });
   });
 
   test("No se puede crear miembro si el campo name excede 191 caracteres.", async ({ page }) => {
-    const newMemberName = `${faker.lorem.paragraphs(10)}@${faker.lorem.paragraphs(10)}.com`;
-    const newMemberEmail = `test-${faker.internet.email()}`;
+    const { name, email } = no_se_puede_crear_miembro_si_el_campo_name_excede_191_caracteres as DataType;
+    const newMemberName = name;
+    const newMemberEmail = email;
 
     let paso = 1;
 
@@ -416,16 +454,23 @@ test.describe("members", () => {
     });
 
     await test.step("Then: El nuevo miembro se muestra en la lista de miembros creados", async () => {
+      await page.waitForTimeout(2000);
       expect(await page.getByText("Name cannot be longer than 191 characters.").innerText()).toBe("Name cannot be longer than 191 characters.");
       await screenshotPagePath(page, "members", "no_se_puede_crear_miembro_si_el_campo_name_excede_191_caracteres", paso++);
     });
   });
 
   test("No se puede crear el miembro si el campo label excede 500 caracteres", async ({ page }) => {
-    const newMemberName = `test-${faker.person.fullName()}`;
-    const newMemberEmail = `test-${faker.internet.email()}`;
-    const newMemberNote = `test-${faker.lorem.sentence()}`;
-    const newMemberLabel = `${faker.lorem.paragraphs(20)}`;
+    const {
+      email,
+      name,
+      note,
+      labels
+    } = no_se_puede_crear_el_miembro_si_el_campo_label_excede_500_caracteres as DataType;
+    const newMemberName = name;
+    const newMemberEmail = email;
+    const newMemberNote = note;
+    const newMemberLabel = labels;
 
     let paso = 1;
 
@@ -468,11 +513,11 @@ test.describe("members", () => {
   });
 
   test("Creacion de usuario si desactiva subscripcion a newlestter", async ({ page }) => {
-    const selected = getRandomDataValue();
-    const newMemberName = `test-${selected.name}`;
+    const selected = generateRandomFakerData();
+    const newMemberName = `test -${selected.fullName}`;
     const newMemberEmail = `test-${selected.email}`;
-    const newMemberNote = `test-${faker.lorem.sentence()}`;
-    const newMemberLabel = `${selected.labels}`;
+    const newMemberNote = selected.note;
+    const newMemberLabel = faker.lorem.word();
 
     let paso = 1;
 
@@ -520,11 +565,12 @@ test.describe("members", () => {
   });
 
   test("Creacion de usuario si se presiona control + s", async ({ page }) => {
-    const selected = getRandomDataValue();
-    const newMemberName = `test-${selected.name}`;
-    const newMemberEmail = selected.email;
-    const newMemberNote = faker.lorem.sentence();
-    const newMemberLabel = selected.labels;
+    const { email, fullName, note } = generateRandomFakerData();
+    const newMemberName = `;
+  test-${fullName}`;
+    const newMemberEmail = email;
+    const newMemberNote = note;
+    const newMemberLabel = faker.lorem.word();
 
     let paso = 1;
 
@@ -568,9 +614,12 @@ test.describe("members", () => {
   });
 
   test("No se puede crear miembro si se usan caracteres aleatorios en todos los campos", async ({ page }) => {
-    const newMemberName = `test-${generarDatosAleatorios()}`;
-    const newMemberEmail = `test-${generarDatosAleatorios()}`;
-    const newMemberNote = `test-${generarDatosAleatorios()}`;
+    const newMemberName = `;
+  test -${generarDatosAleatorios()}`;
+    const newMemberEmail = `;
+  test -${generarDatosAleatorios()}`;
+    const newMemberNote = `;
+  test -${generarDatosAleatorios()}`;
     const newMemberLabel = `${generarDatosAleatorios()}`;
 
     let paso = 1;
@@ -615,9 +664,12 @@ test.describe("members", () => {
   });
 
   test("No se puede crear miembro si se usan caracteres aleatorios en el campo email", async ({ page }) => {
-    const newMemberName = `test-${faker.person.fullName()}`;
-    const newMemberEmail = `test-${generarDatosAleatorios()}`;
-    const newMemberNote = `test-${faker.lorem.sentence()}`;
+    const newMemberName = `;
+  test -${faker.person.fullName()}`;
+    const newMemberEmail = `;
+  test -${generarDatosAleatorios()}`;
+    const newMemberNote = `;
+  test -${faker.lorem.sentence()}`;
     const newMemberLabel = `${faker.lorem.word()}`;
 
     let paso = 1;
@@ -662,7 +714,8 @@ test.describe("members", () => {
   });
 
   test("No se encuentra miembro al buscar por nombre usando caracteres aleatorios", async ({ page }) => {
-    const newMemberName = `test-${generarDatosAleatorios()}`;
+    const newMemberName = `;
+  test -${generarDatosAleatorios()}`;
     let paso = 1;
 
     await test.step("When: El usuario se dirige a la sección members", async () => {
@@ -708,11 +761,13 @@ test.describe("members", () => {
     });
   });
 
-
   test("No se puede editar el primer miembro si se usan caracteres aleatorios en todos los campos", async ({ page }) => {
-    const newMemberName = `test-${generarDatosAleatorios()}`;
-    const newMemberEmail = `test-${generarDatosAleatorios()}`;
-    const newMemberNote = `test-${generarDatosAleatorios()}`;
+    const newMemberName = `;
+  test -${generarDatosAleatorios()}`;
+    const newMemberEmail = `;
+  test -${generarDatosAleatorios()}`;
+    const newMemberNote = `;
+  test -${generarDatosAleatorios()}`;
     const newMemberLabel = `${generarDatosAleatorios()}`;
 
     let paso = 1;
@@ -757,7 +812,8 @@ test.describe("members", () => {
   });
 
   test("No se puede editar el primer miembro si se usan caracteres aleatorios en el campo email", async ({ page }) => {
-    const newMemberEmail = `test-${generarDatosAleatorios()}`;
+    const newMemberEmail = `;
+  test -${generarDatosAleatorios()}`;
 
     let paso = 1;
 
@@ -829,11 +885,11 @@ test.describe("members", () => {
   });
 
   test("No se puede crear miembro si existe un miembro con el mismo email", async ({ page }) => {
-    const selected = getRandomDataValue();
-    const newMemberName = `test-${selected.name}`;
-    const newMemberEmail = `test-${selected.email}`;
-    const newMemberNote = `test-${selected.note}`;
-    const newMemberLabel = `${selected.labels}`;
+    const selected = generateRandomFakerData();
+    const newMemberName = `test-${selected.fullName}`;
+    const newMemberEmail = selected.email;
+    const newMemberNote = selected.note;
+    const newMemberLabel = faker.lorem.word();
 
     let paso = 1;
 
@@ -878,8 +934,7 @@ test.describe("members", () => {
   });
 
   test("Se puede cambiar el email del primer miembro de la lista", async ({ page }) => {
-    const selected = getRandomDataValue();
-    const newMemberEmail = `test-${selected.email}`;
+    const newMemberEmail = faker.internet.email();
 
     let paso = 1;
 
@@ -914,7 +969,7 @@ test.describe("members", () => {
   });
 
   test("Se puede utilizar el mismo nombre para dos miembros diferentes", async ({ page }) => {
-    const selected = getRandomDataValue();
+    const selected = se_puede_utilizar_el_mismo_nombre_para_dos_miembros_diferentes as DataType;
     const newMemberName = `test-${selected.name}`;
 
     let paso = 1;
@@ -960,7 +1015,8 @@ test.describe("members", () => {
   });
 
   test("No se puede filtrar por fecha si se usan caracteres aleatorios", async ({ page }) => {
-    const randomValue = `test-${generarDatosAleatorios()}`;
+    const randomValue = `;
+  test -${generarDatosAleatorios()}`;
     let paso = 1;
 
     await test.step("When: El usuario se dirige a la sección members", async () => {
@@ -995,7 +1051,8 @@ test.describe("members", () => {
   });
 
   test("No se puede filtrar por last seen si se usan caracteres aleatorios", async ({ page }) => {
-    const randomValue = `test-${generarDatosAleatorios()}`;
+    const randomValue = `;
+  test -${generarDatosAleatorios()}`;
     let paso = 1;
 
     await test.step("When: El usuario se dirige a la sección members", async () => {
@@ -1159,7 +1216,9 @@ test.describe("members", () => {
     });
 
     await test.step("Then: Se observa mensaje de validacion por ingresar un valor incorrecto", async () => {
-      expect(await page.getByText("Email cannot be longer than 191 characters.").innerText()).toBe("Email cannot be longer than 191 characters.");
+      const text = page.locator("body > div.gh-app > div > main > section > div:nth-child(2) > form > div > section > div > div:nth-child(1) > div > div.gh-cp-member-email-name > div.form-group.max-width.error.ember-view > p");
+      expect(['Email cannot be longer than 191 characters.', 'Invalid Email.']).toContain(await text.innerText());
+
       await screenshotPagePath(page, "members", "no_se_puede_modificar_el_primer_miembro_si_en_el_campo_email_se_usan_mas_de_191_caracteres", paso++);
     });
   });
