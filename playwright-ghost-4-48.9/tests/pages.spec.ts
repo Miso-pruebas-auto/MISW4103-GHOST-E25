@@ -1495,6 +1495,61 @@ test.describe('pages', () => {
   });
 
   //OK - DINAMIC - API MOCKARO
+  test('Creación de Página con Facebook data Description de solo emojis', async ({ page }) => {
+    let paso = 1;
+    const result =  await getMockaroData('facebook_emoji_description.json');
+    await test.step('When: El usuario hace clic en "Pages"', async () => {
+      await page.getByRole('link', { name: 'Pages' }).click();
+      await page.waitForTimeout(1000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_meta_facebook_description_de_solo_emojis', paso++);
+    });
+    await test.step('And: El usuario hace clic en "New page"', async () => {
+      await page.getByRole('link', { name: 'New page', exact: true }).click();
+      await page.waitForTimeout(1000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_meta_facebook_description_de_solo_emojis', paso++);
+    });
+    await test.step('And: El usuario crea el título de la nueva pagina', async () => {
+      await page.getByPlaceholder('Page title').click();
+      await page.getByPlaceholder('Page title').fill(result.title);
+      await page.getByPlaceholder('Page title').press('Tab');
+      await page.waitForTimeout(1000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_meta_facebook_description_de_solo_emojis', paso++);
+    });
+    await test.step('And: El usuario abre el menu lateral', async () => {
+      const element = await page.waitForSelector('.settings-menu-toggle')
+      await element.click();
+      await page.waitForTimeout(1000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_meta_facebook_description_de_solo_emojis', paso++);
+    });
+    await test.step('And: El usuario abre el Meta Card', async () => {
+      await page.getByRole('button', { name: 'Facebook card' }).click();
+      await page.waitForTimeout(1000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_meta_facebook_description_de_solo_emojis', paso++);
+    });
+    await test.step('And: El usuario introduce un titulo de facebook card de emojis', async () => {
+      const element = await page.waitForSelector('.post-setting-og-description');
+      await element.click();
+      await element.fill(result.description);
+      await element.press('Tab');
+      await page.waitForTimeout(1000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_meta_facebook_description_de_solo_emojis', paso++);
+    });
+    await test.step('And: El usuario publica la nueva pagina', async () => {
+      await page.getByRole('button', { name: 'Publish' }).click();
+      await page.getByRole('button', { name: 'Publish', exact: true }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_meta_facebook_description_de_solo_emojis', paso++);
+    });
+    await test.step('Then: El usuario ve que la página se publica', async () => {
+      const element = await page.waitForSelector('.gh-notification-content .gh-notification-title');
+      const text = await element.innerText();
+      expect(text).toBe('Published');
+      await page.waitForTimeout(1000);
+      await screenshotPagePath(page, 'pages', 'Creación_página_con_meta_facebook_description_de_solo_emojis', paso++);
+    });
+  });
+
+  //OK - DINAMIC - API MOCKARO
   test('Creación de Página con Twitter data Title de solo emojis', async ({ page }) => {
     let paso = 1;
     const result =  await getMockaroData('twitter_emoji_title.json');
