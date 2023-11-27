@@ -26,6 +26,17 @@ services:
     networks:
       - ghost-playwright
 
+  playwright-4489:
+    build:
+      dockerfile: ./Dockerfile
+    depends_on:
+      - ghost-playwright
+    ports:
+      - 8081:9323
+    networks:
+      - ghost-playwright
+
+
 networks:
   ghost-playwright:
     driver: bridge
