@@ -1567,6 +1567,57 @@ test.describe('settings', () => {
     });
   });
   
+  test('Meta description: crear el description con valores de inyección sql', async ({ page }) => {
+    const aprioriData = await getMockaroJson('/settings/sql-inyeccion.json');
+    const newPageTitle = aprioriData[0].sqlInyeccion;
+    let paso = 1;
+
+    // paso obligatorio
+    await test.step('When: El usuario hace clic en "settings"', async () => {
+      await page.locator('#ember34').click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_valores_de_inyección_sql', paso++);
+    });
+
+    // paso obligatorio
+    await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
+      await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_valores_de_inyección_sql', paso++);
+    });
+
+    // paso a modificar el botón de expand
+    await test.step('And: El usuario cambia el título de la pagina', async () => {
+      await page.getByRole('main').locator('div').filter({ hasText: 'Site meta settings Meta data Extra content for search engines Expand Twitter car' }).getByRole('button').first().click();
+      // Obtiene el primer input que se encuentre en la pagina que contenga la clase y sea input de tipo texto
+      const primerInput = await page.locator('#metaDescription');
+      await primerInput.clear();
+      await primerInput.fill(newPageTitle);
+      await page.getByRole('button', { name: 'Save' }).click();
+      await page.waitForTimeout(2000);
+      
+    });
+    
+    await test.step('and: recarga la pagina e ingresa a Meta data', async () => {
+      //recarga la pagina
+      await page.reload();
+      await page.getByRole('main').locator('div').filter({ hasText: 'Site meta settings Meta data Extra content for search engines Expand Twitter car' }).getByRole('button').first().click();
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_valores_de_inyección_sql', paso++);
+    });  
+          
+    await test.step('Then: valida que la pagina se muestra con el nuevo titulo', async () => {
+      // Obtiene el primer input que se encuentre en la pagina que contenga el id que empiece con #ember
+      const primerInput = await page.locator('#metaDescription');
+      // Obtiene el valor de la variable primerInput
+      const valorDelInput = await primerInput.inputValue();
+      await page.waitForTimeout(2000);
+      expect(valorDelInput).toBe(newPageTitle);
+      await page.waitForTimeout(2000);
+      await screenshotPagePath(page, 'settings', 'Meta_description_crear_el_description_con_valores_de_inyección_sql', paso++);
+    });
+  });
+  
+  
   test('Meta description: No permite guardar con en el campo descripción con valores máximos (501)', async ({ page }) => {
 
     const newPageTitle = `${faker.lorem.words(501)}`;
@@ -1613,6 +1664,7 @@ test.describe('settings', () => {
       await screenshotPagePath(page, 'settings', 'Meta_description_No_permite_guardar_con_en_el_campo_descripción_con_valores_máximos_(501)', paso++);
     });
   });
+
 
 
 });
