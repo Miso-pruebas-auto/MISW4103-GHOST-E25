@@ -367,13 +367,13 @@ test.describe('settings', () => {
     await test.step('When: El usuario hace clic en "settings"', async () => {
       await page.locator('#ember34').click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description:_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
     });
 
     await test.step('And: El usuario hace clic en "Detalles Generales"', async () => {
       await page.getByRole('link', { name: 'General Basic publication details and site metadata' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description:_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
     });
 
     await test.step('And: El usuario cambia el título de la pagina', async () => {
@@ -397,14 +397,14 @@ test.describe('settings', () => {
       }
       await page.getByRole('button', { name: 'Save' }).click();
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description:_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
     });
 
     await test.step('Then: La pagina se muestra con el nuevo titulo', async () => {
       await page.goto('/');
       expect(await page.getByText(newPageDescription).innerText()).toBe(newPageDescription);
       await page.waitForTimeout(2000);
-      await screenshotPagePath(page, 'settings', 'Title_&_description:_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
+      await screenshotPagePath(page, 'settings', 'Title_&_description_Modificar_el_site_description_de_la_pagina_con_nombre_aleatorio', paso++);
     });
     
   });
