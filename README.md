@@ -41,10 +41,8 @@ docker compose up -d
 npx playwright test -g 'user'
 
 npx playwright test post.spec.ts --workers=1 --headed
-npx playwirght test pages.spec.ts --workers=1 --headed
 npx playwright test members.spec.ts --workers=1 --headed
-npx playwright test members.spec.ts --workers=1 --headed
-npx playwright test pages.spec.ts --workers=1 --headed
+npx playwright test settings.spec.ts --workers=1 --headed
 ```
 
 ``` shell
@@ -54,8 +52,8 @@ docker compose up -d
 # Creamos el usuario, tener en cuenta que el servicio de ghost debe estar levantado para iniciar los test.
 npx playwright test -g 'user'
 
-npx playwright test settings.spec.ts --workers=1 --headed
 npx playwright test tags.spec.ts --workers=1 --headed
+npx playwright test pages.spec.ts --workers=1 --headed
 ```
 
 # Estrategias
