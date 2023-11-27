@@ -26,27 +26,27 @@
 
 ### A-priori implementados por json
 
-Posts - A priori data › Crear un nuevo post con solo título y descripción
-Posts - A priori data › Crear un nuevo post con solo título
-Posts - A priori data › Crear un nuevo post con título y descripción y tag
-Posts - A priori data › Crear un post con título con caracteres especialess
-Posts - A priori data › Crear un post con contenido con caracteres especiales
-Posts - A priori data › Crear un post con excerpt
-Posts - A priori data › Crear un post con excerpt con caracteres especiales
-Posts - A priori data › Crear un post con hora de publicación
-Posts - A priori data › Botón borrar post aparece antes de crearlo
+- Posts - A priori data › Crear un nuevo post con solo título y descripción
+- Posts - A priori data › Crear un nuevo post con solo título
+- Posts - A priori data › Crear un nuevo post con título y descripción y tag
+- Posts - A priori data › Crear un post con título con caracteres especialess
+- Posts - A priori data › Crear un post con contenido con caracteres especiales
+- Posts - A priori data › Crear un post con excerpt
+- Posts - A priori data › Crear un post con excerpt con caracteres especiales
+- Posts - A priori data › Crear un post con hora de publicación
+- Posts - A priori data › Botón borrar post aparece antes de crearlo
 
 ### Dinámicos implementados con Faker
 
-Posts - Dynamic data › Crear un post con caracteres random en la hora de publicación, dejando la hora default
-Posts - Dynamic data › Crear un post post sin título
-Posts - Dynamic data › Falla la creación de un post sin Autor
+- Posts - Dynamic data › Crear un post con caracteres random en la hora de publicación, dejando la hora default
+- Posts - Dynamic data › Crear un post post sin título
+- Posts - Dynamic data › Falla la creación de un post sin Autor
 
 ### Aleatorios implementados con Faker
 
-Posts - Random data › Crear un nuevo post con contenido de 1 sola palabra con 5000 caracteres random
-Posts - Random data › Crear un post con excerpt de 1 sola palabra con 50.000 caracteres random
-Posts - Random data › Crear un post con excerpt de 5000 palabras random
+- Posts - Random data › Crear un nuevo post con contenido de 1 sola palabra con 5000 caracteres random
+- Posts - Random data › Crear un post con excerpt de 1 sola palabra con 50.000 caracteres random
+- Posts - Random data › Crear un post con excerpt de 5000 palabras random
 
 
 ## 3. Members
