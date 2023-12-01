@@ -14,5 +14,5 @@
         "username": "admin@admin.com",
         "identification": "admin@admin.com"
     },
-    "browsers": ["firefox", "chrome", "webkit"]
+    "browsers": ["firefox", "chromium", "webkit"]
 }
