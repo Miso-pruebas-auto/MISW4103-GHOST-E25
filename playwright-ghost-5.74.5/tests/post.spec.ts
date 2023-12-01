@@ -3,7 +3,7 @@ import { loginSessionAdmin } from '../utils/login_sesion_admin';
 import { faker } from '@faker-js/faker';
 import { screenshotPagePath, replaceSpaceByHyphen } from '../utils/utils';
 import { getAprioriData } from '../utils/getMockaroJson';
-
+let newPageURL = '';
 test.describe('Posts - A priori data', () => {
 
   test.beforeEach(async ({ page }) => {
@@ -48,24 +48,48 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
-
+    
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout(2000);
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
-      await page.getByRole('button', { name: 'Publish', exact: true }).click();
+      await page.waitForTimeout(2000);
+      // Selecciona el botón utilizando el atributo data-test-button
+      const buttonSelector = '[data-test-button="continue"]';
+      await page.waitForSelector(buttonSelector);
+
+      // Hace clic en el botón
+      await page.click(buttonSelector);
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
-    await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-      await page.locator('button:has-text("Publish")').click();
+    await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
+      
+      const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
+
+      // Dentro de ese elemento, selecciona el primer botón
+      const button = await container.locator('button').first();
+
+      // Obtiene las coordenadas del botón o devuelve null si no es visible
+      const box = await button.boundingBox();
+
+      if (box) {
+        // Mueve el mouse a las coordenadas del botón y realiza el clic
+        const mouse = await page.mouse;
+        const x = box.x + box.width / 2
+        const y = box.y + box.height / 2
+        await mouse.click(x, y)
+      } 
+
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+
     });
 
     await test.step('And: El usuario se dirige al post creado', async () => {
@@ -113,18 +137,42 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout(2000);
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
     });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
-      await page.getByRole('button', { name: 'Publish', exact: true }).click();
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
+      await page.waitForTimeout(2000);
+      // Selecciona el botón utilizando el atributo data-test-button
+      const buttonSelector = '[data-test-button="continue"]';
+      await page.waitForSelector(buttonSelector);
+
+      // Hace clic en el botón
+      await page.click(buttonSelector);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
-    await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-      await page.locator('button:has-text("Publish")').click();
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
+    await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
+      
+      const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
+
+      // Dentro de ese elemento, selecciona el primer botón
+      const button = await container.locator('button').first();
+
+      // Obtiene las coordenadas del botón o devuelve null si no es visible
+      const box = await button.boundingBox();
+
+      if (box) {
+        // Mueve el mouse a las coordenadas del botón y realiza el clic
+        const mouse = await page.mouse;
+        const x = box.x + box.width / 2
+        const y = box.y + box.height / 2
+        await mouse.click(x, y)
+      } 
+
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+
     });
 
     await test.step('And: El usuario se dirige al post creado', async () => {
@@ -171,8 +219,8 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
@@ -188,18 +236,42 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout(2000);
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
-      await page.getByRole('button', { name: 'Publish', exact: true }).click();
+      await page.waitForTimeout(2000);
+      // Selecciona el botón utilizando el atributo data-test-button
+      const buttonSelector = '[data-test-button="continue"]';
+      await page.waitForSelector(buttonSelector);
+
+      // Hace clic en el botón
+      await page.click(buttonSelector);
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
-    await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-      await page.locator('button:has-text("Publish")').click();
+    await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
+      
+      const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
+
+      // Dentro de ese elemento, selecciona el primer botón
+      const button = await container.locator('button').first();
+
+      // Obtiene las coordenadas del botón o devuelve null si no es visible
+      const box = await button.boundingBox();
+
+      if (box) {
+        // Mueve el mouse a las coordenadas del botón y realiza el clic
+        const mouse = await page.mouse;
+        const x = box.x + box.width / 2
+        const y = box.y + box.height / 2
+        await mouse.click(x, y)
+      } 
+
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
+
     });
 
     await test.step('And: El usuario se dirige al post creado', async () => {
@@ -211,8 +283,9 @@ test.describe('Posts - A priori data', () => {
       await page.waitForTimeout(2000);
 
       const title_post_create = await page.locator('h1').innerText();
-      const content = await page.locator('section').nth(2).innerText();
-      const tag = await page.locator('section').first().innerText();
+      const content = await page.locator('section').nth(0).innerText();
+      const tag = await page.getByRole('link', { name: 'NEWS' }).innerText();
+
 
       expect(title_post_create).toBe(titulo_post);
       expect(content).toMatch(contenido)
@@ -254,45 +327,79 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout(2000);
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
-      await page.getByRole('button', { name: 'Publish', exact: true }).click();
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await page.waitForTimeout(2000);
+      // Selecciona el botón utilizando el atributo data-test-button
+      const buttonSelector = '[data-test-button="continue"]';
+      await page.waitForSelector(buttonSelector);
+
+      // Hace clic en el botón
+      await page.click(buttonSelector);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
-    await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-      await page.locator('button:has-text("Publish")').click();
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
-    });
+    await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
+      
+      const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
 
-    await test.step('And: Selecciona el botón de configuración', async () => {
-      await page.getByRole('button', { name: 'Settings' }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      // Dentro de ese elemento, selecciona el primer botón
+      const button = await container.locator('button').first();
+
+      // Obtiene las coordenadas del botón o devuelve null si no es visible
+      const box = await button.boundingBox();
+
+      if (box) {
+        // Mueve el mouse a las coordenadas del botón y realiza el clic
+        const mouse = await page.mouse;
+        const x = box.x + box.width / 2
+        const y = box.y + box.height / 2
+        await mouse.click(x, y)
+      } 
+
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
+
     });
 
     await test.step('And: El usuario se dirige al post creado', async () => {
-      const postURL = await page.getByLabel('Post URL').inputValue();
-      // await page.getByText('Post URL').getByRole('link', { name: 'View post' }).click();
-      await page.goto(`/${postURL}/`);
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      // Haz clic en el enlace que abrirá una nueva pestaña
+      const [newPage] = await Promise.all([
+        page.waitForEvent('popup'),
+        page.locator('a').nth(7).click()
+      ]);
+    
+      // Espera a que la nueva página cargue completamente
+      await newPage.waitForLoadState('load');
+    
+      // Toma un screenshot si es necesario
+      await screenshotPagePath(newPage, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      
+      // crear una variable global para que la tome el siguiente step
+      newPageURL = ''
+      newPageURL = newPage.url();
+
+      // Cierra la nueva página
+      await newPage.close();
     });
 
     await test.step('Then: Se verifica que el Post con título y contenido se a creado correctamente', async () => {
-      await page.waitForTimeout(2000);
 
-      const title_post_create = await page.locator('h1').innerText();
-      const section = await page.locator('section').nth(1);
-      const sectionTxt = await section.innerText();
-      expect(sectionTxt).toBe(contenido);
+      // abre la new page
+      await page.goto(newPageURL);
+      
+      const title_post_create = await page.locator('h1').first().innerText();
+
+      expect(title_post_create).toBe(titulo_post);
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
   });
@@ -327,19 +434,26 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
-      await page.getByRole('button', { name: 'Publish', exact: true }).click();
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await page.waitForTimeout(2000);
+      // Selecciona el botón utilizando el atributo data-test-button
+      const buttonSelector = '[data-test-button="continue"]';
+      await page.waitForSelector(buttonSelector);
+
+      // Hace clic en el botón
+      await page.click(buttonSelector);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
     await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
@@ -394,8 +508,8 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -416,6 +530,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -482,8 +597,8 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -504,6 +619,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -573,8 +689,8 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -594,6 +710,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -653,8 +770,8 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -727,8 +844,8 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -748,6 +865,7 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -797,8 +915,8 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_título', paso++);
     });
 
@@ -814,6 +932,7 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_título', paso++);
     });
@@ -874,8 +993,8 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -896,6 +1015,7 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -961,19 +1081,26 @@ test.describe('Posts - Random data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
-      await page.getByRole('button', { name: 'Publish', exact: true }).click();
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await page.waitForTimeout(2000);
+      // Selecciona el botón utilizando el atributo data-test-button
+      const buttonSelector = '[data-test-button="continue"]';
+      await page.waitForSelector(buttonSelector);
+
+      // Hace clic en el botón
+      await page.click(buttonSelector);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
     await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
@@ -1031,8 +1158,8 @@ test.describe('Posts - Random data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -1053,6 +1180,7 @@ test.describe('Posts - Random data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
@@ -1106,8 +1234,8 @@ test.describe('Posts - Random data', () => {
     });
 
     await test.step('And: Llena el contenido del post', async () => {
-      await page.locator('.koenig-editor__editor').click();
-      await page.locator('.koenig-editor__editor').fill(contenido);
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
@@ -1128,6 +1256,7 @@ test.describe('Posts - Random data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });

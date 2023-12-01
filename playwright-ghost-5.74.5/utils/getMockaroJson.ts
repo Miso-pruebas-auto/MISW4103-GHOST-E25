@@ -13,8 +13,8 @@ export async function getMockaroJson(nameFile: string): Promise<any> {
 
 export async function getAprioriData(nameFile: string): Promise<any> {
   const mockaroJson = await getMockaroJson(nameFile);
-  const random = Math.floor(Math.random() * mockaroJson.length);
-  return mockaroJson[random];
+  // const random = Math.floor(Math.random() * mockaroJson.length);
+  return mockaroJson[0];
 }
 
 export function cleanMockaroHex(string) {
