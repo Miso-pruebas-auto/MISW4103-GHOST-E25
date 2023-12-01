@@ -1,0 +1,11 @@
+[
+    {"sqlInyeccion": "'; DROP TABLE pages; --"},
+    {"sqlInyeccion": "'; SELECT * FROM users; --"},
+    {"sqlInyeccion": "'; UPDATE products SET price = 0 WHERE 1=1; --"},
+    {"sqlInyeccion": "'; INSERT INTO log (event) VALUES ('SQL injection'); --"},
+    {"sqlInyeccion": "'; DELETE FROM customers WHERE 1=1; --"},
+    {"sqlInyeccion": "'; --"},
+    {"sqlInyeccion": "' OR '1'='1'; --"},
+    {"sqlInyeccion": "'; SELECT password FROM users WHERE username='admin'; --"}
+  ]
+  
