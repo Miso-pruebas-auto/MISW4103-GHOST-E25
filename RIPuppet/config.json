@@ -1,0 +1,18 @@
+{
+    "url": "http://ghost5.wym.services/",
+    "headless": false,
+    "depthLevels": 2,
+    "inputValues": true,
+    "values": {
+        "userInput": "admin@admin.com",
+        "passwordInput": "AdminAndes1**",
+        "passwordTwoInput": "AdminAndes1**",
+        "nameInput": "admin@admin.com",
+        "emailInput": "admin@admin.com",
+        "password": "AdminAndes1**",
+        "current-password": "AdminAndes1**",
+        "username": "admin@admin.com",
+        "identification": "admin@admin.com"
+    },
+    "browsers": ["firefox", "chromium", "webkit"]
+}

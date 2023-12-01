@@ -1,0 +1,28 @@
+{
+  "name": "ripuppet",
+  "version": "1.0.0",
+  "description": "NodeJS library for GUI ripping on web applications",
+  "main": "index.js",
+  "scripts": {
+    "firefox:public": "node index.js --file=config-firefox.json",
+    "chrome:admin": "node index.js --file=config-admin-chrome.json",
+    "chrome:public": "node index.js --file=config-public-chrome.json"
+  },
+  "keywords": [
+    "Testing",
+    "Ripping",
+    "GUI"
+  ],
+  "author": "Juan Manuel Domínguez Andrés Felipe López",
+  "license": "MIT",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "firebase": "^7.10.0",
+    "node-html-parser": "^1.2.12",
+    "playwright": "^0.11.1",
+    "yargs": "^17.7.2"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

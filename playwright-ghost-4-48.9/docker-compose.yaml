@@ -2,7 +2,7 @@ version: '1.0.0'
 
 services:
   ghost-playwright:
-    image: ghost:4.48.9
+    image: ghost:4.48.9 
     restart: always
     ports:
       - 2368:2368
