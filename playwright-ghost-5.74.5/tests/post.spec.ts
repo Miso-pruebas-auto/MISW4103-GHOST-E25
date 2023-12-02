@@ -1269,7 +1269,7 @@ test.describe('Posts - A priori data', () => {
       });
     });
 
-  test('Crear un nuevo post con contenido de 1 sola palabra con 5000 caracteres random', async ({ page }) => {
+  test('Crear un nuevo post con contenido de 1 sola palabra con 1000 caracteres random', async ({ page }) => {
     const titulo_post = faker.word.noun();
     const contenido = faker.string.alphanumeric(1000);
     let paso = 1;
