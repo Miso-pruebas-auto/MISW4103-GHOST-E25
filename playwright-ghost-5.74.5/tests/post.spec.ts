@@ -1081,27 +1081,24 @@ test.describe('Posts - A priori data', () => {
         await page.getByRole('textbox').nth(3).fill(hour);
       });
 
-      await test.step('And: Hace clic en "Publish"', async () => {
-        await page.waitForTimeout
-        await page.getByRole('button', { name: 'Publish' }).click();
-        await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
-      });
+    await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout(2000);
+      await page.getByRole('button', { name: 'Publish', exact: true }).click();
+      await page.getByRole('button', { name: 'Continue, final review →' }).click();
+      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+    });
 
-      await test.step('And: hace clic en confirmación de publicación', async () => {
-        await page.getByRole('button', { name: 'Publish', exact: true }).click();
-        await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
-      });
+    await test.step('And: hace clic en confirmación de publicación', async () => {
+      // await page.getByRole('button', { name: 'Publish', exact: true }).click();
+      await page.getByRole('button', { name: 'Publish post, right now' }).click();
+      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+    });
 
-      await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-        await page.waitForTimeout(1000);
-        await page.locator('button:has-text("Publish")').click();
-        await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
-      });
-
-      await test.step('And: El usuario se dirige al post creado', async () => {
-        await page.goto(`./${replaceSpaceByHyphen(titulo_post)}/`);
-        await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
-      });
+    await test.step('And: El usuario se dirige al post creado', async () => {
+      await page.waitForTimeout(2000);
+      await page.goto(`./${replaceSpaceByHyphen(titulo_post)}/`);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+    });
 
       await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
         await page.waitForTimeout(2000);
