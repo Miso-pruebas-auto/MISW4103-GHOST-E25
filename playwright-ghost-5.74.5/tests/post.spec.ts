@@ -1087,11 +1087,9 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
-      await page.waitForTimeout(2000);
-      await page.locator('button[data-test-button="confirm-publish"]').click({
-        force: true
-      })
-      await screenshotPagePath(page, 'post', 'crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
+      // await page.getByRole('button', { name: 'Publish', exact: true }).click();
+      await page.getByRole('button', { name: 'Publish post, right now' }).dispatchEvent('click');
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
     await test.step('And: El usuario se dirige al post creado', async () => {
@@ -1151,15 +1149,15 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
-      await page.getByRole('button', { name: 'Publish', exact: true }).nth(2).click();
-      await screenshotPagePath(page, 'post', 'crear_un_post_post_sin_título', paso++);
+      await page.waitForTimeout(2000);
+      await page.getByRole('button', { name: 'Continue, final review →' }).dispatchEvent('click');
+      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
-    await test.step('And: Se confirma la publicación', async () => {
-      await page.getByText('Publish only').click();
-      await page.getByRole('button', { name: 'Continue, final review →' }).click();
+    await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
+      // await page.locator('button:has-text("Publish")').click();
       await page.getByRole('button', { name: 'Publish post, right now' }).dispatchEvent('click');
-      await screenshotPagePath(page, 'post', 'crear_un_post_post_sin_título', paso++);
+      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
     await test.step('And: El usuario se dirige al post creado', async () => {
@@ -1230,24 +1228,14 @@ test.describe('Posts - Dynamic data', () => {
 
     await test.step('And: Hace clic en "Publish"', async () => {
       await page.waitForTimeout
-      await page.getByRole('button', { name: 'Publish' }).click();
-      await screenshotPagePath(page, 'post', 'falla_la_creación_de_un_post_sin_Autor', paso++);
-    });
-
-    await test.step('And: hace clic en confirmación de publicación', async () => {
       await page.getByRole('button', { name: 'Publish', exact: true }).click();
-      await screenshotPagePath(page, 'post', 'falla_la_creación_de_un_post_sin_Autor', paso++);
-    });
-
-    await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-      await page.locator('button:has-text("Publish")').click();
-      await screenshotPagePath(page, 'post', 'falla_la_creación_de_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
     await test.step('Then: Se verifica que el Post valide que un post sin autor no se puede crear', async () => {
       await page.waitForTimeout(2000);
-      expect(page.getByText('Saving failed: At least one author is required.')).toBeTruthy();
-      await screenshotPagePath(page, 'post', 'falla_la_creación_de_un_post_sin_Autor', paso++);
+      expect(page.getByText('Validation failed: At least one author is required.')).toBeTruthy();  
+      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
     });
 
   });
