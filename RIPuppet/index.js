@@ -12,16 +12,17 @@ const beforeInteraction = 'BEFORE';
 const afterInteraction = 'AFTER';
 var temp_directory = './temp'; //Stores the visitedDOMs
 var graphFilenameRoot = 'graph';
-let configFile = argv.config || './config.json';
-
+let configFile = argv.file ?  `./${argv.file}` : './config.json';
+console.log(configFile);
 //Get configuration parameters.
 let config = require(configFile);
 let baseUrl = config.url;
 let headlessFlag = config.headless;
 let depthLevels = config.depthLevels;
 let inputValuesFlag = config.inputValues;
-let viewportHeight = config.viewportHeight || 720;
-let viewportWidth = config.viewportWidth || 1280;
+let reportName = config.name;
+// let viewportHeight = config.viewportHeight || 720;
+// let viewportWidth = config.viewportWidth || 1280;
 let browsers = config.browsers; //Possible values: 'webkit', 'chromium', 'firefox'
 
 //Execution global variables
@@ -46,67 +47,82 @@ if(inputValuesFlag === true){
 console.log(ids);
 console.log(inputValues);
 
+// Main execution
+(async () => {
+  if (browsers.length === 0 || config.viewports.length === 0) {
+    return;
+  }
 
-  //Main execution
-  (async () => {
-    if(browsers.length === 0){
+  // let datetime = new Date().toISOString().replace(/:/g, ".");
+  let datetime = reportName;
+  for (let b of browsers) {
+    if (!['chromium', 'webkit', 'firefox'].includes(b)) {
       return;
     }
-    let datetime = new Date().toISOString().replace(/:/g,".");
-    for(b of browsers){
-      if(!b in ['chromium', 'webkit', 'firefox']){
-        return;
-      }
-      console.log(b);
-      let basePath = `./results/${datetime}/${b}`
+    console.log('------------------------------------------------------------------------------------');
+    console.log('------------------------------------------------------------------------------------');
+    console.log(`Starting execution for browser ${b}`);
+    console.log('------------------------------------------------------------------------------------');
+    for (let viewport of config.viewports) {
+      console.log(`Browser: ${b}, Viewport: ${viewport.name}`);
+      let basePath = `./results/${datetime}/${b}/${viewport.name}`;
       screenshots_directory = `${basePath}/screenshots`;
-      temp_directory = `${basePath}/temp` + b;
+      temp_directory = `${basePath}/temp${b}`;
       graphFilenameRoot = `${basePath}/graph`;
-      //Launch the current browser context
-      const browser = await playwright[b].launch({headless: headlessFlag, viewport: {width:viewportWidth, height:viewportHeight}});
-      const context = await browser.newContext();
+      
+      // Launch the current browser context with the specified viewport
+      const browser = await playwright[b].launch({
+        headless: headlessFlag,
+        // use: {
+        //   ...playwright.devices['4k'],
+        // }
+        // viewport: { width: viewport.width, height: viewport.height },
+      });
+      // const context = await browser.newContext();
+      // const context = await browser.newContext(playwright.devices['iPhone 11']);
+      const context = await browser.newContext({
+        viewport: { width: viewport.width, height: viewport.height },
+      });
       const page = await context.newPage();
 
-      //Make sure errors and console events are catched
+      // Make sure errors and console events are caught
       await addListeners(page);
-      
-      if (!fs.existsSync(screenshots_directory)){
+
+      if (!fs.existsSync(screenshots_directory)) {
         fs.mkdirSync(screenshots_directory, { recursive: true });
+      } else {
+        clean(screenshots_directory);
       }
-      else{
-        clean(screenshots_directory)
-      }
-      //Create the temp directory if it doesn't exist. Clean the directory if it does.
-      if (!fs.existsSync(temp_directory)){
+      // Create the temp directory if it doesn't exist. Clean the directory if it does.
+      if (!fs.existsSync(temp_directory)) {
         fs.mkdirSync(temp_directory);
-      }
-      else{
-        clean(temp_directory)
+      } else {
+        clean(temp_directory);
       }
 
-      //-------------------------------------------------------------------------------------------------------------------------------------------------
-      //Web application ripping
-      //Initial params: Playwright's Page object, URL of the current page, index of current page, parent's index
-      await recursiveExploration(page, baseUrl, 0, -1); 
-  
-      printTree(); //Log in the console
-      createTree(); //Persist in JSON file
-      createErrorGraph(); //Persist graph with errors
+      // Web application ripping
+      // Initial params: Playwright's Page object, URL of the current page, index of current page, parent's index
+      await recursiveExploration(page, baseUrl, 0, -1);
+
+      printTree(); // Log in the console
+      createTree(); // Persist in JSON file
+      createErrorGraph(); // Persist graph with errors
       statesDiscovered = 0;
-      nodos = []; 
+      nodos = [];
       enlaces = [];
-      visitedPages.clear()
+      visitedPages.clear();
       pageTree = {};
       errors = [];
       browser.close();
 
       fs.copyFileSync('./index.html', `${basePath}/report.html`);
     }
+  }
 
-    console.log('------------------------------------------------------------------------------------')
-    console.log("Execution finished. Check the report under the results folder")
-    return;  
-  })();
+    console.log('------------------------------------------------------------------------------------');
+    console.log("Execution finished. Check the reports under the results folder");
+  return;
+})();
 
 //Get all anchors <a>
 async function scrapLinks(page){
@@ -140,7 +156,7 @@ async function recursiveExploration(page, link, depth, parentState){
   });
   let html = await getDOM(page);
   let parsedHtml = parser.parse(html);
-  let body = parsedHtml.querySelector('body');
+  let body = await parsedHtml.querySelector('body');
 
   if(!!body) {
     let DOM = body.structure;
@@ -654,7 +670,7 @@ async function fillInput(elementHandle, page){
     elementHandle.click();
     page.keyboard.type(faker.random.number) ;
   }
-  else if(type === 'submit' || type === 'radio' || type === 'checkbox'){
+  else if(type === 'submit' || type === 'radio' || type === 'checkbox' || type === 'reset' || type === 'button' || type === 'image'){
     elementHandle.click();
   }
 }

@@ -1,8 +1,8 @@
 {
-    "name": "public-ghost",
-    "url": "http://ghost5.wym.services/",
+    "name": "admin-ghost",
+    "url": "http://ghost5.wym.services/ghost/#/dashboard",
     "headless": false,
-    "depthLevels": 1,
+    "depthLevels": 10,
     "inputValues": true,
     "viewports": [
         {
@@ -47,5 +47,5 @@
         "username": "admin@admin.com",
         "identification": "admin@admin.com"
     },
-    "browsers": ["firefox", "chromium", "webkit"]
+    "browsers": ["chromium"]
 }
