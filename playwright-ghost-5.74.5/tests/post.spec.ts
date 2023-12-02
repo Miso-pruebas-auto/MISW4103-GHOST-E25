@@ -403,6 +403,7 @@ test.describe('Posts - A priori data', () => {
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
   });
+  
 
   test('Crear un post con contenido con caracteres especiales', async ({ page }) => {
     const specialCharsData = await getAprioriData('special_chars.json');
@@ -414,35 +415,35 @@ test.describe('Posts - A priori data', () => {
     await test.step('When: El usuario hace clic en "New post', async () => {
       await page.waitForTimeout(2000);
       await page.getByRole('link', { name: 'New post' }).click();
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
     });
 
     await test.step('And: Hace clic en el campo de título del post', async () => {
       await page.getByPlaceholder('Post title').click();
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
     });
 
     await test.step('And: Llena el título del post', async () => {
       await page.getByPlaceholder('Post title').fill(titulo_post);
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
     });
 
 
     await test.step('And: Presiona Tab', async () => {
       await page.getByPlaceholder('Post title').press('Tab');
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
     });
 
     await test.step('And: Llena el contenido del post', async () => {
       await page.getByRole('paragraph').click;
       await page.getByRole('paragraph').fill(contenido);
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
       await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish' }).click();
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
     });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
@@ -453,26 +454,64 @@ test.describe('Posts - A priori data', () => {
 
       // Hace clic en el botón
       await page.click(buttonSelector);
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
     });
 
-    await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-      await page.locator('button:has-text("Publish")').click();
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+    await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
+      
+      const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
+
+      // Dentro de ese elemento, selecciona el primer botón
+      const button = await container.locator('button').first();
+
+      // Obtiene las coordenadas del botón o devuelve null si no es visible
+      const box = await button.boundingBox();
+
+      if (box) {
+        // Mueve el mouse a las coordenadas del botón y realiza el clic
+        const mouse = await page.mouse;
+        const x = box.x + box.width / 2
+        const y = box.y + box.height / 2
+        await mouse.click(x, y)
+      } 
+
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
+
     });
 
     await test.step('And: El usuario se dirige al post creado', async () => {
-      await page.goto(`./${replaceSpaceByHyphen(titulo_post)}/`);
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      // Haz clic en el enlace que abrirá una nueva pestaña
+      const [newPage] = await Promise.all([
+        page.waitForEvent('popup'),
+        page.locator('a').nth(7).click()
+      ]);
+    
+      // Espera a que la nueva página cargue completamente
+      await newPage.waitForLoadState('load');
+    
+      // Toma un screenshot si es necesario
+      await screenshotPagePath(newPage, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
+      
+      // crear una variable global para que la tome el siguiente step
+      newPageURL = ''
+      newPageURL = newPage.url();
+
+      // Cierra la nueva página
+      await newPage.close();
     });
 
     await test.step('Then: Se verifica que el Post con título y contenido se a creado correctamente', async () => {
       await page.waitForTimeout(2000);
+      // abre la new page
+      await page.goto(newPageURL);
+      
       const title_post_create = await page.locator('h1').innerText();
-      expect(title_post_create).toBe(titulo_post);
+      const content = await page.locator('section').nth(0).innerText();
 
-      expect(page.locator('section').nth(1)).toBeTruthy();
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      expect(title_post_create).toBe(titulo_post);
+      expect(content).toMatch(contenido)
+
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
     });
 
 
@@ -530,36 +569,76 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
-      await page.waitForTimeout
+      await page.waitForTimeout(2000);
       await page.getByRole('button', { name: 'Publish' }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
-      await page.getByRole('button', { name: 'Publish', exact: true }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await page.waitForTimeout(2000);
+      // Selecciona el botón utilizando el atributo data-test-button
+      const buttonSelector = '[data-test-button="continue"]';
+      await page.waitForSelector(buttonSelector);
+
+      // Hace clic en el botón
+      await page.click(buttonSelector);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
-    await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-      await page.locator('button:has-text("Publish")').click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+    await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
+      
+      const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
+
+      // Dentro de ese elemento, selecciona el primer botón
+      const button = await container.locator('button').first();
+
+      // Obtiene las coordenadas del botón o devuelve null si no es visible
+      const box = await button.boundingBox();
+
+      if (box) {
+        // Mueve el mouse a las coordenadas del botón y realiza el clic
+        const mouse = await page.mouse;
+        const x = box.x + box.width / 2
+        const y = box.y + box.height / 2
+        await mouse.click(x, y)
+      } 
+
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
+
     });
 
     await test.step('And: El usuario se dirige al post creado', async () => {
-      await page.goto(`./${replaceSpaceByHyphen(titulo_post)}/`);
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
-    });
+      // Haz clic en el enlace que abrirá una nueva pestaña
+      const [newPage] = await Promise.all([
+        page.waitForEvent('popup'),
+        page.locator('a').nth(7).click()
+      ]);
+    
+      // Espera a que la nueva página cargue completamente
+      await newPage.waitForLoadState('load');
+    
+      // Toma un screenshot si es necesario
+      await screenshotPagePath(newPage, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      
+      // crear una variable global para que la tome el siguiente step
+      newPageURL = ''
+      newPageURL = newPage.url();
 
+      // Cierra la nueva página
+      await newPage.close();
+    });
     await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
       await page.waitForTimeout(2000);
 
       const title_post_create = await page.locator('h1').innerText();
-      const content_post_create = await page.getByText(contenido).innerText();
+      const content_post_create = await page.locator('section').nth(0).innerText();
       const excerpt_post_create = await page.getByText(excerpt).innerText();
+      const tag = await page.getByRole('link', { name: 'NEWS' }).innerText();
 
       expect(title_post_create).toBe(titulo_post);
-      expect(content_post_create.split(' ')[0]).toBe(contenido.split(' ')[0]);
+      expect(content_post_create).toMatch(contenido)
       expect(excerpt_post_create).toBe(excerpt);
+      expect(tag).toBe('NEWS');
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
@@ -619,41 +698,78 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
-      await page.waitForTimeout
+      await page.waitForTimeout(2000);
       await page.getByRole('button', { name: 'Publish' }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
-      await page.getByRole('button', { name: 'Publish', exact: true }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await page.waitForTimeout(2000);
+      // Selecciona el botón utilizando el atributo data-test-button
+      const buttonSelector = '[data-test-button="continue"]';
+      await page.waitForSelector(buttonSelector);
+
+      // Hace clic en el botón
+      await page.click(buttonSelector);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
     });
 
-    await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-      await page.locator('button:has-text("Publish")').click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+    await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
+      
+      const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
+
+      // Dentro de ese elemento, selecciona el primer botón
+      const button = await container.locator('button').first();
+
+      // Obtiene las coordenadas del botón o devuelve null si no es visible
+      const box = await button.boundingBox();
+
+      if (box) {
+        // Mueve el mouse a las coordenadas del botón y realiza el clic
+        const mouse = await page.mouse;
+        const x = box.x + box.width / 2
+        const y = box.y + box.height / 2
+        await mouse.click(x, y)
+      } 
+
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
+
     });
 
     await test.step('And: El usuario se dirige al post creado', async () => {
-      await page.goto(`./${replaceSpaceByHyphen(titulo_post)}/`);
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      // Haz clic en el enlace que abrirá una nueva pestaña
+      const [newPage] = await Promise.all([
+        page.waitForEvent('popup'),
+        page.getByRole('link', { name: 'grupo 25 •andes' }).click()
+      ]);
+    
+      // Espera a que la nueva página cargue completamente
+      await newPage.waitForLoadState('load');
+    
+      // Toma un screenshot si es necesario
+      await screenshotPagePath(newPage, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      
+      // crear una variable global para que la tome el siguiente step
+      newPageURL = ''
+      newPageURL = newPage.url();
+
+      // Cierra la nueva página
+      await newPage.close();
     });
 
     await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
+      // abre la new page
+      await page.goto(newPageURL);
       await page.waitForTimeout(2000);
       const title_post_create = await page.locator('h1').innerText();
-      const content_post_create = await page.getByText(contenido).innerText();
-
-      // Only check excerpt if it is not empty
-      if (excerpt.trim(' ') === '') {
-        return
-      }
-
-      const excerpt_post_create = await page.getByText(excerpt).innerText();
+      const content_post_create = await page.locator('section').first().innerText();
+      const excerpt_post_create = await page.getByText(excerpt).first().innerText();
+      const tag = await page.getByRole('link', { name: 'NEWS' }).innerText();
 
       expect(title_post_create).toBe(titulo_post);
-      expect(content_post_create.split(' ')[0]).toBe(contenido.split(' ')[0]);
-      expect(excerpt_post_create.trim()).toContain(excerpt.trim());
+      expect(content_post_create).toMatch(contenido)
+      expect(excerpt_post_create).toBe(excerpt);
+      expect(tag).toBe('NEWS');
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
