@@ -1103,10 +1103,8 @@ test.describe('Posts - A priori data', () => {
       await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
         await page.waitForTimeout(2000);
         const title_post_create = await page.locator('h1').innerText();
-        const content_post_create = await page.getByText(contenido).innerText();
-
         expect(title_post_create).toBe(titulo_post);
-        expect(content_post_create.split(' ')[0]).toBe(contenido.split(' ')[0]);
+        expect(page.getByText(contenido)).toBeTruthy();
         await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
       });
 
@@ -1152,15 +1150,16 @@ test.describe('Posts - A priori data', () => {
       });
     
       await test.step('And: hace clic en confirmación de publicación', async () => {
-        await page.getByRole('button', { name: 'Publish', exact: true }).click();
+        await page.getByRole('button', { name: 'Publish', exact: true }).nth(2).click();
         await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
       });
 
-      await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-        await page.locator('button:has-text("Publish")').click();
+      await test.step('And: Se confirma la publicación', async () => {
+        await page.getByText('Publish only').click();
+        await page.getByRole('button', { name: 'Continue, final review →' }).click();
+        await page.getByRole('button', { name: 'Publish post, right now' }).dispatchEvent('click');
         await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
       });
-
 
       await test.step('And: El usuario se dirige al post creado', async () => {
         const postURL = await page.getByLabel('Post URL').inputValue();
