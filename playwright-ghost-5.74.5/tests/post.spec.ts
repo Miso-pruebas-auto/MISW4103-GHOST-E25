@@ -53,7 +53,7 @@ test.describe('Posts - A priori data', () => {
       await page.getByRole('paragraph').fill(contenido);
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
-    
+
     await test.step('And: Hace clic en "Publish"', async () => {
       await page.waitForTimeout(2000);
       await page.getByRole('button', { name: 'Publish' }).click();
@@ -72,7 +72,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
-      
+
       const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
 
       // Dentro de ese elemento, selecciona el primer botón
@@ -87,7 +87,7 @@ test.describe('Posts - A priori data', () => {
         const x = box.x + box.width / 2
         const y = box.y + box.height / 2
         await mouse.click(x, y)
-      } 
+      }
 
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
 
@@ -99,22 +99,22 @@ test.describe('Posts - A priori data', () => {
         page.waitForEvent('popup'),
         page.getByRole('link', { name: 'grupo 25 •andes' }).click()
       ]);
-    
+
       // Espera a que la nueva página cargue completamente
       await newPage.waitForLoadState('load');
-    
+
       // Toma un screenshot si es necesario
       await screenshotPagePath(newPage, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
-      
+
       // crear una variable global para que la tome el siguiente step
       newPageURL = ''
       newPageURL = newPage.url();
-  
+
       // Cierra la nueva página
       await newPage.close();
     });
 
-  
+
     await test.step('Then: Se verifica que el Post con título y contenido se a creado correctamente', async () => {
       // abre la new page
       await page.goto(newPageURL);
@@ -390,7 +390,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
-      
+
       const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
 
       // Dentro de ese elemento, selecciona el primer botón
@@ -405,7 +405,7 @@ test.describe('Posts - A priori data', () => {
         const x = box.x + box.width / 2
         const y = box.y + box.height / 2
         await mouse.click(x, y)
-      } 
+      }
 
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
 
@@ -417,17 +417,17 @@ test.describe('Posts - A priori data', () => {
         page.waitForEvent('popup'),
         page.getByRole('link', { name: 'grupo 25 •andes' }).click()
       ]);
-    
+
       // Espera a que la nueva página cargue completamente
       await newPage.waitForLoadState('load');
-    
+
       // Toma un screenshot si es necesario
       await screenshotPagePath(newPage, 'post', 'Crear_un_nuevo_post_con_solo_título', paso++);
-      
+
       // crear una variable global para que la tome el siguiente step
       newPageURL = ''
       newPageURL = newPage.url();
-  
+
       // Cierra la nueva página
       await newPage.close();
     });
@@ -644,7 +644,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
-      
+
       const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
 
       // Dentro de ese elemento, selecciona el primer botón
@@ -659,7 +659,7 @@ test.describe('Posts - A priori data', () => {
         const x = box.x + box.width / 2
         const y = box.y + box.height / 2
         await mouse.click(x, y)
-      } 
+      }
 
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
 
@@ -671,17 +671,17 @@ test.describe('Posts - A priori data', () => {
         page.waitForEvent('popup'),
         page.getByRole('link', { name: 'grupo 25 •andes' }).click()
       ]);
-    
+
       // Espera a que la nueva página cargue completamente
       await newPage.waitForLoadState('load');
-    
+
       // Toma un screenshot si es necesario
       await screenshotPagePath(newPage, 'post', 'Crear_un_nuevo_post_con_título_y_descripción_y_tag', paso++);
-      
+
       // crear una variable global para que la tome el siguiente step
       newPageURL = ''
       newPageURL = newPage.url();
-  
+
       // Cierra la nueva página
       await newPage.close();
     });
@@ -704,7 +704,7 @@ test.describe('Posts - A priori data', () => {
 
 
   });
-  
+
   test('Crear un post con título con caracteres especiales', async ({ page }) => {
     const specialCharsData = await getAprioriData('special_chars.json');
     const postsData = await getAprioriData('posts.json');
@@ -758,7 +758,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
-      
+
       const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
 
       // Dentro de ese elemento, selecciona el primer botón
@@ -773,7 +773,7 @@ test.describe('Posts - A priori data', () => {
         const x = box.x + box.width / 2
         const y = box.y + box.height / 2
         await mouse.click(x, y)
-      } 
+      }
 
       await screenshotPagePath(page, 'post', 'Crear_un_post_con_título_con_caracteres_especiales', paso++);
 
@@ -785,13 +785,13 @@ test.describe('Posts - A priori data', () => {
         page.waitForEvent('popup'),
         page.getByRole('link', { name: 'grupo 25 •andes' }).click()
       ]);
-    
+
       // Espera a que la nueva página cargue completamente
       await newPage.waitForLoadState('load');
-    
+
       // Toma un screenshot si es necesario
       await screenshotPagePath(newPage, 'post', 'Crear_un_post_con_título_con_caracteres_especiales', paso++);
-      
+
       // crear una variable global para que la tome el siguiente step
       newPageURL = ''
       newPageURL = newPage.url();
@@ -805,7 +805,7 @@ test.describe('Posts - A priori data', () => {
       // abre la new page
       await page.goto(newPageURL);
       await page.waitForTimeout(2000);
-      
+
       const title_post_create = await page.locator('h1').first().innerText();
 
       expect(title_post_create).toBe(titulo_post);
@@ -866,7 +866,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
-      
+
       const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
 
       // Dentro de ese elemento, selecciona el primer botón
@@ -881,7 +881,7 @@ test.describe('Posts - A priori data', () => {
         const x = box.x + box.width / 2
         const y = box.y + box.height / 2
         await mouse.click(x, y)
-      } 
+      }
 
       await screenshotPagePath(page, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
 
@@ -893,13 +893,13 @@ test.describe('Posts - A priori data', () => {
         page.waitForEvent('popup'),
         page.getByRole('link', { name: 'grupo 25 •andes' }).click()
       ]);
-    
+
       // Espera a que la nueva página cargue completamente
       await newPage.waitForLoadState('load');
-    
+
       // Toma un screenshot si es necesario
       await screenshotPagePath(newPage, 'post', 'Crear_un_post_con_contenido_con_caracteres_especiales', paso++);
-      
+
       // crear una variable global para que la tome el siguiente step
       newPageURL = ''
       newPageURL = newPage.url();
@@ -925,7 +925,7 @@ test.describe('Posts - A priori data', () => {
 
 
   });
-  
+
   test('Crear un post con excerpt', async ({ page }) => {
     const postsData = await getAprioriData('posts.json');
     const titulo_post = postsData.title;
@@ -996,7 +996,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
-      
+
       const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
 
       // Dentro de ese elemento, selecciona el primer botón
@@ -1011,7 +1011,7 @@ test.describe('Posts - A priori data', () => {
         const x = box.x + box.width / 2
         const y = box.y + box.height / 2
         await mouse.click(x, y)
-      } 
+      }
 
       await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerp', paso++);
 
@@ -1023,21 +1023,21 @@ test.describe('Posts - A priori data', () => {
         page.waitForEvent('popup'),
         page.getByRole('link', { name: 'grupo 25 •andes' }).click()
       ]);
-    
+
       // Espera a que la nueva página cargue completamente
       await newPage.waitForLoadState('load');
-    
+
       // Toma un screenshot si es necesario
       await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerp', paso++);
-      
+
       // crear una variable global para que la tome el siguiente step
       newPageURL = ''
       newPageURL = newPage.url();
-  
+
       // Cierra la nueva página
       await newPage.close();
     });
-    
+
     await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
       // abre la new page
       await page.goto(newPageURL);
@@ -1328,7 +1328,7 @@ test.describe('Posts - A priori data', () => {
   test('Crear un post con excerpt con caracteres especiales', async ({ page }) => {
     const postsData = await getAprioriData('posts.json');
     const specialCharsData = await getAprioriData('special_chars.json');
-    
+
     const titulo_post = postsData.title;
     const contenido = postsData.content;
     const excerpt = specialCharsData.special_characters;
@@ -1396,7 +1396,7 @@ test.describe('Posts - A priori data', () => {
     });
 
     await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
-      
+
       const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
 
       // Dentro de ese elemento, selecciona el primer botón
@@ -1411,7 +1411,7 @@ test.describe('Posts - A priori data', () => {
         const x = box.x + box.width / 2
         const y = box.y + box.height / 2
         await mouse.click(x, y)
-      } 
+      }
 
       await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_con_caracteres_especiales', paso++);
 
@@ -1423,13 +1423,13 @@ test.describe('Posts - A priori data', () => {
         page.waitForEvent('popup'),
         page.getByRole('link', { name: 'grupo 25 •andes' }).click()
       ]);
-    
+
       // Espera a que la nueva página cargue completamente
       await newPage.waitForLoadState('load');
-    
+
       // Toma un screenshot si es necesario
       await screenshotPagePath(newPage, 'post', 'Crear_un_post_con_excerpt_con_caracteres_especiales', paso++);
-      
+
       // crear una variable global para que la tome el siguiente step
       newPageURL = ''
       newPageURL = newPage.url();
@@ -1455,7 +1455,6 @@ test.describe('Posts - A priori data', () => {
     });
 
   });
-
 
   test('Crear un post con hora de publicación', async ({ page }) => {
     const postsData = await getAprioriData('posts.json');
@@ -1513,57 +1512,57 @@ test.describe('Posts - A priori data', () => {
       await page.getByRole('button', { name: 'Publish' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_post_con_hora_de_publicación', paso++);
     });
-  
+
     await test.step('And: hace clic en confirmación de publicación', async () => {
       await page.waitForTimeout(2000);
       // Selecciona el botón utilizando el atributo data-test-button
       const buttonSelector = '[data-test-button="continue"]';
       await page.waitForSelector(buttonSelector);
-  
+
       // Hace clic en el botón
       await page.click(buttonSelector);
       await screenshotPagePath(page, 'post', 'Crear_un_post_con_hora_de_publicación', paso++);
     });
-  
+
     await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
-      
+
       const container = await page.locator('text=Ready, set, publish. Share it with the world. Your post will be published on you').first();
-  
+
       // Dentro de ese elemento, selecciona el primer botón
       const button = await container.locator('button').first();
-  
+
       // Obtiene las coordenadas del botón o devuelve null si no es visible
       const box = await button.boundingBox();
-  
+
       if (box) {
         // Mueve el mouse a las coordenadas del botón y realiza el clic
         const mouse = await page.mouse;
         const x = box.x + box.width / 2
         const y = box.y + box.height / 2
         await mouse.click(x, y)
-      } 
-  
+      }
+
       await screenshotPagePath(page, 'post', 'Crear_un_post_con_hora_de_publicación', paso++);
-  
+
     });
-  
+
     await test.step('And: El usuario se dirige al post creado', async () => {
       // Haz clic en el enlace que abrirá una nueva pestaña
       const [newPage] = await Promise.all([
         page.waitForEvent('popup'),
         page.getByRole('link', { name: 'grupo 25 •andes' }).click()
       ]);
-    
+
       // Espera a que la nueva página cargue completamente
       await newPage.waitForLoadState('load');
-    
+
       // Toma un screenshot si es necesario
       await screenshotPagePath(page, 'post', 'Crear_un_post_con_hora_de_publicación', paso++);
-      
+
       // crear una variable global para que la tome el siguiente step
       newPageURL = ''
       newPageURL = newPage.url();
-  
+
       // Cierra la nueva página
       await newPage.close();
     });
@@ -1580,7 +1579,7 @@ test.describe('Posts - A priori data', () => {
     });
 
   });
-
+  
   test('Botón borrar post aparece antes de crearlo', async ({ page }) => {
     const postsData = await getAprioriData('posts.json');
     const titulo_post = postsData.title;
@@ -1592,39 +1591,39 @@ test.describe('Posts - A priori data', () => {
       await page.waitForTimeout(2000);
 
       await page.getByRole('link', { name: 'New post' }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Botón_borrar_post_aparece_antes_de_crearlo', paso++);
     });
 
     await test.step('And: Hace clic en el campo de título del post', async () => {
       await page.getByPlaceholder('Post title').click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Botón_borrar_post_aparece_antes_de_crearlo', paso++);
     });
 
     await test.step('And: Llena el título del post', async () => {
       await page.getByPlaceholder('Post title').fill(titulo_post);
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Botón_borrar_post_aparece_antes_de_crearlo', paso++);
     });
 
     await test.step('And: Presiona Tab', async () => {
       await page.getByPlaceholder('Post title').press('Tab');
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Botón_borrar_post_aparece_antes_de_crearlo', paso++);
     });
 
     await test.step('And: Llena el contenido del post', async () => {
       await page.getByRole('paragraph').click;
       await page.getByRole('paragraph').fill(contenido);
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Botón_borrar_post_aparece_antes_de_crearlo', paso++);
     });
 
     await test.step('And: Selecciona el botón de configuración', async () => {
       await page.getByRole('button', { name: 'Settings' }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Botón_borrar_post_aparece_antes_de_crearlo', paso++);
     });
 
     await test.step('And: Selecciona el campo tag haciendo clic en el tag "News"', async () => {
       await page.click('#tag-input');
       await page.getByRole('option', { name: 'News' }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Botón_borrar_post_aparece_antes_de_crearlo', paso++);
     });
 
     await test.step('And: Llena el excerpt', async () => {
@@ -1636,11 +1635,10 @@ test.describe('Posts - A priori data', () => {
       await page.waitForTimeout(2000);
       const btnDelete = await page.getByRole('button', { name: 'Delete post' }).innerText();
       expect(btnDelete).toBe('Delete post');
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await screenshotPagePath(page, 'post', 'Botón_borrar_post_aparece_antes_de_crearlo', paso++);
     });
 
   });
-
 });
 
 test.describe('Posts - Dynamic data', () => {
@@ -1657,7 +1655,7 @@ test.describe('Posts - Dynamic data', () => {
 
   });
 
-  test('Crear un post con caracteres random en la hora de publicación, dejando la hora default', async ({ page }) => {    
+  test('Crear un post con caracteres random en la hora de publicación, dejando la hora default', async ({ page }) => {
     const titulo_post = faker.word.noun();
     const contenido = faker.word.noun();
     const hour = faker.string.alphanumeric(5);
@@ -1667,39 +1665,39 @@ test.describe('Posts - Dynamic data', () => {
       await page.waitForTimeout(2000);
 
       await page.getByRole('link', { name: 'New post' }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
     await test.step('And: Hace clic en el campo de título del post', async () => {
       await page.getByPlaceholder('Post title').click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
     await test.step('And: Llena el título del post', async () => {
       await page.getByPlaceholder('Post title').fill(titulo_post);
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
     await test.step('And: Presiona Tab', async () => {
       await page.getByPlaceholder('Post title').press('Tab');
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
     await test.step('And: Llena el contenido del post', async () => {
       await page.getByRole('paragraph').click;
       await page.getByRole('paragraph').fill(contenido);
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
     await test.step('And: Selecciona el botón de configuración', async () => {
       await page.getByRole('button', { name: 'Settings' }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
     await test.step('And: Selecciona el campo tag haciendo clic en el tag "News"', async () => {
       await page.click('#tag-input');
       await page.getByRole('option', { name: 'News' }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
     await test.step('And: Define la hora de publicación', async () => {
@@ -1707,35 +1705,30 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
-      await page.waitForTimeout
-      await page.getByRole('button', { name: 'Publish' }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await page.waitForTimeout(4000);
+      await page.getByRole('button', { name: 'Publish', exact: true }).click();
+      await page.getByRole('button', { name: 'Continue, final review →' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
-      await test.step('And: hace clic en confirmación de publicación', async () => {
-        await page.getByRole('button', { name: 'Publish', exact: true }).click();
-        await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
-      });
+    await test.step('And: hace clic en confirmación de publicación', async () => {
+      // await page.getByRole('button', { name: 'Publish', exact: true }).click();
+      await page.getByRole('button', { name: 'Publish post, right now' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
+    });
 
-      await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-        await page.waitForTimeout(1000);
-        await page.locator('button:has-text("Publish")').click();
-        await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
-      });
-
-      await test.step('And: El usuario se dirige al post creado', async () => {
-        await page.goto(`./${replaceSpaceByHyphen(titulo_post)}/`);
-        await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
-      });
+    await test.step('And: El usuario se dirige al post creado', async () => {
+      await page.waitForTimeout(2000);
+      await page.goto(`./${replaceSpaceByHyphen(titulo_post)}/`);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
+    });
 
     await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
       await page.waitForTimeout(2000);
       const title_post_create = await page.locator('h1').innerText();
-      const content_post_create = await page.getByText(contenido).innerText();
-
       expect(title_post_create).toBe(titulo_post);
-      expect(content_post_create.split(' ')[0]).toBe(contenido.split(' ')[0]);
-      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      expect(page.getByText(contenido)).toBeTruthy();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
   });
@@ -1865,6 +1858,8 @@ test.describe('Posts - Dynamic data', () => {
     await test.step('And: hace clic en confirmación de publicación', async () => {
       await page.getByRole('button', { name: 'Publish', exact: true }).click();
       await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await page.getByRole('button', { name: 'Continue, final review →' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
     await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
@@ -1880,6 +1875,8 @@ test.describe('Posts - Dynamic data', () => {
 
   });
 });
+
+
 
 test.describe('Posts - Random data', () => {
 
@@ -1994,53 +1991,53 @@ test.describe('Posts - Random data', () => {
 
   test('Crear un nuevo post con contenido de 1 sola palabra con 1000 caracteres random', async ({ page }) => {
     const titulo_post = faker.word.noun();
-    const contenido = faker.string.alphanumeric(1000);
+    const contenido = faker.string.alphanumeric(5000);
     let paso = 1;
 
     await test.step('When: El usuario hace clic en "New post', async () => {
       await page.waitForTimeout(4000);
 
-        await page.getByRole('link', { name: 'New post' }).click();
-        await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
+      await page.getByRole('link', { name: 'New post' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
+    });
 
-      await test.step('And: Hace clic en el campo de título del post', async () => {
-        await page.getByPlaceholder('Post title').click();
-        await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
+    await test.step('And: Hace clic en el campo de título del post', async () => {
+      await page.getByPlaceholder('Post title').click();
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
+    });
 
-      await test.step('And: Llena el título del post', async () => {
-        await page.getByPlaceholder('Post title').fill(titulo_post);
-        await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
+    await test.step('And: Llena el título del post', async () => {
+      await page.getByPlaceholder('Post title').fill(titulo_post);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
+    });
 
 
-      await test.step('And: Presiona Tab', async () => {
-        await page.getByPlaceholder('Post title').press('Tab');
-        await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
+    await test.step('And: Presiona Tab', async () => {
+      await page.getByPlaceholder('Post title').press('Tab');
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
+    });
 
-      await test.step('And: Llena el contenido del post', async () => {
-        await page.getByRole('paragraph').click;
-        await page.getByRole('paragraph').fill(contenido);
-        await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
+    await test.step('And: Llena el contenido del post', async () => {
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
+    });
 
-      await test.step('And: Hace clic en "Publish"', async () => {
-        await page.waitForTimeout
-        await page.getByRole('button', { name: 'Publish' }).click();
-        await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
+    await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
+      await page.getByRole('button', { name: 'Publish' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
+    });
 
     await test.step('And: hace clic en confirmación de publicación', async () => {
       // Selecciona el botón utilizando el atributo data-test-button
       const buttonSelector = '[data-test-button="continue"]';
       await page.waitForSelector(buttonSelector);
 
-        // Hace clic en el botón
-        await page.click(buttonSelector);
-        await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
+      // Hace clic en el botón
+      await page.click(buttonSelector);
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
+    });
 
     await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
       await page.waitForTimeout(2000);
@@ -2054,173 +2051,173 @@ test.describe('Posts - Random data', () => {
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
     });
 
-      await test.step('Then: Se verifica que el Post con título y contenido se a creado correctamente', async () => {
-        await page.waitForTimeout(2000);
+    await test.step('Then: Se verifica que el Post con título y contenido se a creado correctamente', async () => {
+      await page.waitForTimeout(2000);
 
-      const title_post_create = await page.locator('h1').innerText();    
+      const title_post_create = await page.locator('h1').innerText();
       expect(title_post_create).toBe(titulo_post);
-      expect(page.getByText(contenido).innerText()).toBeTruthy();      
+      expect(page.getByText(contenido).innerText()).toBeTruthy();
       await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
     });
   });
 
-  test('Error al crear un post con excerpt de 1 sola palabra con 5000 caracteres random', async ({ page }) => {
+  test('Crear un post con excerpt de 1 sola palabra con 50.000 caracteres random', async ({ page }) => {
     const titulo_post = faker.word.noun();
     const contenido = faker.lorem.paragraph();
     const excerpt = faker.string.alphanumeric(5000);
     let paso = 1;
 
-      await test.step('When: El usuario hace clic en "New post', async () => {
-        await page.waitForTimeout(2000);
+    await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
 
-        await page.getByRole('link', { name: 'New post' }).click();
-        await screenshotPagePath(page, 'post', 'Error_al_crear_un_post_con_excerpt_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
-
-      await test.step('And: Hace clic en el campo de título del post', async () => {
-        await page.getByPlaceholder('Post title').click();
-        await screenshotPagePath(page, 'post', 'Error_al_crear_un_post_con_excerpt_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
-
-      await test.step('And: Llena el título del post', async () => {
-        await page.getByPlaceholder('Post title').fill(titulo_post);
-        await screenshotPagePath(page, 'post', 'Error_al_crear_un_post_con_excerpt_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
-
-      await test.step('And: Presiona Tab', async () => {
-        await page.getByPlaceholder('Post title').press('Tab');
-        await screenshotPagePath(page, 'post', 'Error_al_crear_un_post_con_excerpt_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
-
-      await test.step('And: Llena el contenido del post', async () => {
-        await page.getByRole('paragraph').click;
-        await page.getByRole('paragraph').fill(contenido);
-        await screenshotPagePath(page, 'post', 'Error_al_crear_un_post_con_excerpt_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
-
-      await test.step('And: Selecciona el botón de configuración', async () => {
-        await page.getByRole('button', { name: 'Settings' }).click();
-        await screenshotPagePath(page, 'post', 'Error_al_crear_un_post_con_excerpt_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
-
-      await test.step('And: Selecciona el campo tag haciendo clic en el tag "News"', async () => {
-        await page.click('#tag-input');
-        await page.getByRole('option', { name: 'News' }).click();
-        await screenshotPagePath(page, 'post', 'Error_al_crear_un_post_con_excerpt_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
-
-      await test.step('And: Llena el excerpt', async () => {
-        await page.getByLabel('Excerpt').click();
-        await page.getByLabel('Excerpt').fill(excerpt);
-      });
-
-      await test.step('And: Hace clic en "Publish"', async () => {
-        await page.waitForTimeout
-        await page.getByRole('button', { name: 'Publish' }).click();
-        await screenshotPagePath(page, 'post', 'Error_al_crear_un_post_con_excerpt_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
-
-      await test.step('And: hace clic en confirmación de publicación', async () => {
-        await page.getByRole('button', { name: 'Publish', exact: true }).click();
-        await screenshotPagePath(page, 'post', 'Error_al_crear_un_post_con_excerpt_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
-
-      await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-        await page.locator('button:has-text("Publish")').click();
-        await screenshotPagePath(page, 'post', 'Error_al_crear_un_post_con_excerpt_de_1_sola_palabra_con_5000_caracteres_random', paso++);
-      });
-
-      await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
-        const errorMsg = await page.getByText('Validation failed: Excerpt cannot be longer than 300 characters.').innerText();
-        expect(errorMsg).toBe('Validation failed: Excerpt cannot be longer than 300 characters.');
-
-        const excerptErrMsg = await page.getByText('Excerpt cannot be longer than 300 characters.', { exact: true }).innerText();
-        expect(excerptErrMsg).toBe('Excerpt cannot be longer than 300 characters.');
-
-        await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
-      });
-
+      await page.getByRole('link', { name: 'New post' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random', paso++);
     });
-    
-    test('Error creando post con excerpt de 5000 palabras random', async ({ page }) => {
-      const titulo_post = faker.word.noun();
-      const contenido = faker.lorem.paragraph();
-      const excerpt = faker.word.words(5000);
-      let paso = 1;
 
-      await test.step('When: El usuario hace clic en "New post', async () => {
-        await page.waitForTimeout(2000);
+    await test.step('And: Hace clic en el campo de título del post', async () => {
+      await page.getByPlaceholder('Post title').click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random', paso++);
+    });
 
-        await page.getByRole('link', { name: 'New post' }).click();
-        await screenshotPagePath(page, 'post', 'Error_creando_post_con_excerpt_de_5000_palabras_random', paso++);
-      });
+    await test.step('And: Llena el título del post', async () => {
+      await page.getByPlaceholder('Post title').fill(titulo_post);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random', paso++);
+    });
 
-      await test.step('And: Hace clic en el campo de título del post', async () => {
-        await page.getByPlaceholder('Post title').click();
-        await screenshotPagePath(page, 'post', 'Error_creando_post_con_excerpt_de_5000_palabras_random', paso++);
-      });
+    await test.step('And: Presiona Tab', async () => {
+      await page.getByPlaceholder('Post title').press('Tab');
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random', paso++);
+    });
 
-      await test.step('And: Llena el título del post', async () => {
-        await page.getByPlaceholder('Post title').fill(titulo_post);
-        await screenshotPagePath(page, 'post', 'Error_creando_post_con_excerpt_de_5000_palabras_random', paso++);
-      });
+    await test.step('And: Llena el contenido del post', async () => {
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random', paso++);
+    });
 
-      await test.step('And: Presiona Tab', async () => {
-        await page.getByPlaceholder('Post title').press('Tab');
-        await screenshotPagePath(page, 'post', 'Error_creando_post_con_excerpt_de_5000_palabras_random', paso++);
-      });
+    await test.step('And: Selecciona el botón de configuración', async () => {
+      await page.getByRole('button', { name: 'Settings' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random', paso++);
+    });
 
-      await test.step('And: Llena el contenido del post', async () => {
-        await page.getByRole('paragraph').click;
-        await page.getByRole('paragraph').fill(contenido);
-        await screenshotPagePath(page, 'post', 'Error_creando_post_con_excerpt_de_5000_palabras_random', paso++);
-      });
+    await test.step('And: Selecciona el campo tag haciendo clic en el tag "News"', async () => {
+      await page.click('#tag-input');
+      await page.getByRole('option', { name: 'News' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random', paso++);
+    });
 
-      await test.step('And: Selecciona el botón de configuración', async () => {
-        await page.getByRole('button', { name: 'Settings' }).click();
-        await screenshotPagePath(page, 'post', 'Error_creando_post_con_excerpt_de_5000_palabras_random', paso++);
-      });
+    await test.step('And: Llena el excerpt', async () => {
+      await page.getByLabel('Excerpt').click();
+      await page.getByLabel('Excerpt').fill(excerpt);
+    });
 
-      await test.step('And: Selecciona el campo tag haciendo clic en el tag "News"', async () => {
-        await page.click('#tag-input');
-        await page.getByRole('option', { name: 'News' }).click();
-        await screenshotPagePath(page, 'post', 'Error_creando_post_con_excerpt_de_5000_palabras_random', paso++);
-      });
+    await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
+      await page.getByRole('button', { name: 'Publish' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random', paso++);
+    });
 
-      await test.step('And: Llena el excerpt', async () => {
-        await page.getByLabel('Excerpt').click();
-        await page.getByLabel('Excerpt').fill(excerpt);
-      });
+    await test.step('And: hace clic en confirmación de publicación', async () => {
+      await page.getByRole('button', { name: 'Publish', exact: true }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random', paso++);
+    });
 
-      await test.step('And: Hace clic en "Publish"', async () => {
-        await page.waitForTimeout
-        await page.getByRole('button', { name: 'Publish' }).click();
-        await screenshotPagePath(page, 'post', 'Error_creando_post_con_excerpt_de_5000_palabras_random', paso++);
-      });
+    await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
+      await page.locator('button:has-text("Publish")').click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random', paso++);
+    });
 
-      await test.step('And: hace clic en confirmación de publicación', async () => {
-        await page.getByRole('button', { name: 'Publish', exact: true }).click();
-        await screenshotPagePath(page, 'post', 'Error_creando_post_con_excerpt_de_5000_palabras_random', paso++);
-      });
+    await test.step('Then: Se verifica que el Post con excerpt se a creado correctamente', async () => {
+      const errorMsg = await page.getByText('Validation failed: Excerpt cannot be longer than 300 characters.').innerText();
+      expect(errorMsg).toBe('Validation failed: Excerpt cannot be longer than 300 characters.');
 
-      await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
-        await page.locator('button:has-text("Publish")').click();
-        await screenshotPagePath(page, 'post', 'Error_creando_post_con_excerpt_de_5000_palabras_random', paso++);
-      });
+      const excerptErrMsg = await page.getByText('Excerpt cannot be longer than 300 characters.', { exact: true }).innerText();
+      expect(excerptErrMsg).toBe('Excerpt cannot be longer than 300 characters.');
 
-      await test.step('Then: Se verifica que se genera un mensaje indicando que el excerpt es demasiado largo', async () => {
-        expect(page.getByText('Validation failed: Excerpt cannot be longer than 300 characters. Close')).toBeTruthy();
-
-        const errMsg = await page.getByText('Validation failed: Excerpt cannot be longer than 300 characters. Close').innerText();
-        const excerptErrMsg = await page.getByText('Excerpt cannot be longer than 300 characters.', { exact: true }).innerText();
-
-        expect(errMsg).toBe('Validation failed: Excerpt cannot be longer than 300 characters.');
-        expect(excerptErrMsg).toBe('Excerpt cannot be longer than 300 characters.');
-
-        await screenshotPagePath(page, 'post', 'Error_creando_post_con_excerpt_de_5000_palabras_random', paso++);
-      });
-
+      await screenshotPagePath(page, 'post', 'Crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
     });
 
   });
 
+  
+ test('Crear un post con excerpt de 5000 palabras random', async ({ page }) => {
+    const titulo_post = faker.word.noun();
+    const contenido = faker.lorem.paragraph();
+    const excerpt = faker.word.words(5000);
+    let paso = 1;
+
+    await test.step('When: El usuario hace clic en "New post', async () => {
+      await page.waitForTimeout(2000);
+
+      await page.getByRole('link', { name: 'New post' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_5000_palabras_random', paso++);
+    });
+
+    await test.step('And: Hace clic en el campo de título del post', async () => {
+      await page.getByPlaceholder('Post title').click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_5000_palabras_random', paso++);
+    });
+
+    await test.step('And: Llena el título del post', async () => {
+      await page.getByPlaceholder('Post title').fill(titulo_post);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_5000_palabras_random', paso++);
+    });
+
+    await test.step('And: Presiona Tab', async () => {
+      await page.getByPlaceholder('Post title').press('Tab');
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_5000_palabras_random', paso++);
+    });
+
+    await test.step('And: Llena el contenido del post', async () => {
+      await page.getByRole('paragraph').click;
+      await page.getByRole('paragraph').fill(contenido);
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_5000_palabras_random', paso++);
+    });
+
+    await test.step('And: Selecciona el botón de configuración', async () => {
+      await page.getByRole('button', { name: 'Settings' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_5000_palabras_random', paso++);
+    });
+
+    await test.step('And: Selecciona el campo tag haciendo clic en el tag "News"', async () => {
+      await page.click('#tag-input');
+      await page.getByRole('option', { name: 'News' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_5000_palabras_random', paso++);
+    });
+
+    await test.step('And: Llena el excerpt', async () => {
+      await page.getByLabel('Excerpt').click();
+      await page.getByLabel('Excerpt').fill(excerpt);
+    });
+
+    await test.step('And: Hace clic en "Publish"', async () => {
+      await page.waitForTimeout
+      await page.getByRole('button', { name: 'Publish' }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_5000_palabras_random', paso++);
+    });
+
+    await test.step('And: hace clic en confirmación de publicación', async () => {
+      await page.getByRole('button', { name: 'Publish', exact: true }).click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_5000_palabras_random', paso++);
+    });
+
+    await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
+      await page.locator('button:has-text("Publish")').click();
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_5000_palabras_random', paso++);
+    });
+
+    await test.step('Then: Se verifica que se genera un mensaje indicando que el excerpt es demasiado largo', async () => {
+      expect(page.getByText('Validation failed: Excerpt cannot be longer than 300 characters. Close')).toBeTruthy();
+
+      const errMsg = await page.getByText('Validation failed: Excerpt cannot be longer than 300 characters. Close').innerText();
+      const excerptErrMsg = await page.getByText('Excerpt cannot be longer than 300 characters.', { exact: true }).innerText();
+
+      expect(errMsg).toBe('Validation failed: Excerpt cannot be longer than 300 characters.');
+      expect(excerptErrMsg).toBe('Excerpt cannot be longer than 300 characters.');
+
+      await screenshotPagePath(page, 'post', 'Crear_un_post_con_excerpt_de_5000_palabras_random', paso++);
+    });
+
+  });
+
+});

@@ -2,7 +2,7 @@
     "name": "admin-ghost",
     "url": "http://ghost5.wym.services/ghost/#/dashboard",
     "headless": false,
-    "depthLevels": 10,
+    "depthLevels": 5,
     "inputValues": true,
     "viewports": [
         {
@@ -47,5 +47,5 @@
         "username": "admin@admin.com",
         "identification": "admin@admin.com"
     },
-    "browsers": ["chromium"]
+    "browsers": ["chromium", "webkit"]
 }
