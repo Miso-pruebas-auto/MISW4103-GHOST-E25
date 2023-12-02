@@ -8,7 +8,7 @@
     "feature:members": "npx playwright test tests/members.spec.ts --workers=1",
     "feature:create_user": "npx playwright test tests/create_user.spec.ts --workers=1",
     "feature:pages": "npx playwright test tests/pages.spec.ts --workers=1",
-    "feature:posts": "npx playwright test tests/posts.spec.ts --workers=1",
+    "feature:posts": "npx playwright test tests/post.spec.ts --workers=1",
     "feature:tags": "npx playwright test tests/tags.spec.ts --workers=1",
     "feature:settings": "npx playwright test tests/settings.spec.ts --workers=1"
   },

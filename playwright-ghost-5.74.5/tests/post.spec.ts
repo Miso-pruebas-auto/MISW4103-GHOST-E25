@@ -954,7 +954,7 @@ test.describe('Posts - A priori data', () => {
     });
 
   });
-  
+
   test('Botón borrar post aparece antes de crearlo', async ({ page }) => {
     const postsData = await getAprioriData('posts.json');
     const titulo_post = postsData.title;
@@ -1080,7 +1080,7 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
-      await page.waitForTimeout(2000);
+      await page.waitForTimeout(4000);
       await page.getByRole('button', { name: 'Publish', exact: true }).click();
       await page.getByRole('button', { name: 'Continue, final review →' }).click();
       await screenshotPagePath(page, 'post', 'Crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
@@ -1108,7 +1108,7 @@ test.describe('Posts - Dynamic data', () => {
 
   });
 
-  
+
   test('Crear un post post sin título', async ({ page }) => {
     const contenido = faker.word.noun();
     let paso = 1;
@@ -1177,7 +1177,7 @@ test.describe('Posts - Dynamic data', () => {
       await screenshotPagePath(page, 'post', 'Crear_un_post_post_sin_título', paso++);
     });
   });
-  
+
   test('Falla la creación de un post sin Autor', async ({ page }) => {
     const titulo_post = faker.word.noun();
     const contenido = faker.word.noun();
@@ -1414,7 +1414,7 @@ test.describe('Posts - Random data', () => {
 
   });
 
-  
+
  test('Crear un post con excerpt de 5000 palabras random', async ({ page }) => {
     const titulo_post = faker.word.noun();
     const contenido = faker.lorem.paragraph();

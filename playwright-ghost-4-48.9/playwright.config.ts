@@ -31,8 +31,8 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://ec2-44-216-57-54.compute-1.amazonaws.com:8080',// process.env.BASE_URL,
-    // baseURL: 'http://localhost:2368',
-    baseURL: 'http://ghost5.wym.services/ghost/#/setup',
+    baseURL: 'http://localhost:2368',
+    // baseURL: 'http://ghost5.wym.services/ghost/#/setup',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
