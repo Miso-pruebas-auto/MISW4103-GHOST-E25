@@ -1579,7 +1579,7 @@ test.describe('Posts - A priori data', () => {
     });
 
   });
-  
+
   test('Botón borrar post aparece antes de crearlo', async ({ page }) => {
     const postsData = await getAprioriData('posts.json');
     const titulo_post = postsData.title;
@@ -2139,7 +2139,7 @@ test.describe('Posts - Random data', () => {
 
   });
 
-  
+
  test('Crear un post con excerpt de 5000 palabras random', async ({ page }) => {
     const titulo_post = faker.word.noun();
     const contenido = faker.lorem.paragraph();
