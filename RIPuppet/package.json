@@ -4,9 +4,42 @@
   "description": "NodeJS library for GUI ripping on web applications",
   "main": "index.js",
   "scripts": {
-    "firefox:public": "node index.js --file=config-firefox.json",
-    "chrome:admin": "node index.js --file=config-admin-chrome.json",
-    "chrome:public": "node index.js --file=config-public-chrome.json"
+    "general:public": "node index.js",
+    "general:admin": "node index.js --file config-admin.json",
+    "admin:chrome:report:laptop": "http-server ./results/admin-ghost/chromium/Laptop",
+    "admin:chrome:report:4k": "http-server ./results/admin-ghost/chromium/4k",
+    "admin:chrome:report:ipadpro": "http-server ./results/admin-ghost/chromium/iPadPro",
+    "admin:chrome:report:iphonese": "http-server ./results/admin-ghost/chromium/iPhoneSe",
+    "admin:chrome:report:pixel7": "http-server ./results/admin-ghost/chromium/Pixel7",
+    "admin:chrome:report:tablet": "http-server ./results/admin-ghost/chromium/Tablet",
+   
+    "admin:webkit:report:laptop": "http-server ./results/admin-ghost/webkit/Laptop",
+    "admin:webkit:report:4k": "http-server ./results/admin-ghost/webkit/4k",
+    "admin:webkit:report:ipadpro": "http-server ./results/admin-ghost/webkit/iPadPro",
+    "admin:webkit:report:iphonese": "http-server ./results/admin-ghost/webkit/iPhoneSe",
+    "admin:webkit:report:pixel7": "http-server ./results/admin-ghost/webkit/Pixel7",
+    "admin:webkit:report:tablet": "http-server ./results/admin-ghost/webkit/Tablet",
+
+    "public:chrome:report:laptop": "http-server ./results/public-ghost/chromium/Laptop",
+    "public:chrome:report:4k": "http-server ./results/public-ghost/chromium/4k",
+    "public:chrome:report:ipadpro": "http-server ./results/public-ghost/chromium/iPadPro",
+    "public:chrome:report:iphonese": "http-server ./results/public-ghost/chromium/iPhoneSe",
+    "public:chrome:report:pixel7": "http-server ./results/public-ghost/chromium/Pixel7",
+    "public:chrome:report:tablet": "http-server ./results/public-ghost/chromium/Tablet",
+    
+    "public:webkit:report:laptop": "http-server ./results/public-ghost/webkit/Laptop",
+    "public:webkit:report:4k": "http-server ./results/public-ghost/webkit/4k",
+    "public:webkit:report:ipadpro": "http-server ./results/public-ghost/webkit/iPadPro",
+    "public:webkit:report:iphonese": "http-server ./results/public-ghost/webkit/iPhoneSe",
+    "public:webkit:report:pixel7": "http-server ./results/public-ghost/webkit/Pixel7",
+    "public:webkit:report:tablet": "http-server ./results/public-ghost/webkit/Tablet",
+    
+    "public:firefox:report:laptop": "http-server ./results/public-ghost/firefox/Laptop",
+    "public:firefox:report:4k": "http-server ./results/public-ghost/firefox/4k",
+    "public:firefox:report:ipadpro": "http-server ./results/public-ghost/firefox/iPadPro",
+    "public:firefox:report:iphonese": "http-server ./results/public-ghost/firefox/iPhoneSe",
+    "public:firefox:report:pixel7": "http-server ./results/public-ghost/firefox/Pixel7",
+    "public:firefox:report:tablet": "http-server ./results/public-ghost/firefox/Tablet"
   },
   "keywords": [
     "Testing",
