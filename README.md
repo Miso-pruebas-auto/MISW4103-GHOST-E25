@@ -32,4 +32,25 @@ docker compose down --rmi all
 docker compose up -d
 ```
 
+## Test VRT Reportes
+
+En esta entrega el equipo quiso realizar la creación de dos reportes para poder implementar de una manera mas amplia las herramientas propuestas en la semana, las cuales son  `Resemble` & `Backstop`, en el que cada una tiene su propia carpeta para la realización y/o ejecución de pruebas de VRT y reportes, los cuales son analizados en la wiki de este proyecto.
+
+### Resemble Report
+
+Proyecto de NextJS para visualizar el reporte de las pruebas de regresión visual de la herramienta usando ResembleJS para la aplicación GHOST en ambas versiones previamente seleccionadas(4.38.0 y 4.48.9) de Kraken y Playwright.
+
+* Leer la respectiva documentación: [README.md](resemble-report/README.md)
+* El reporte generado de **Resemble** se encuentra en la carpeta **`resemble-report`**  en la raiz de este proyecto
+* Puede ver el reporte generado en el siguiente link: [REPORTE - RESEMBLE](https://misw-4103-ghost-e25.vercel.app/)
+
+### Bakstop Report
+
+Proyecto de Html que visualiza el reporte de pruebas de regresión visual (VRT) implementando la herramienta BackStop para la aplicación GHOST en ambas versiones previamente seleccionadas(4.38.0 y 4.48.9) de Kraken y Playwright.
+
+* Leer la respectiva documentación: [README.md](backstop-report/README.md)
+* El reporte generado de **BackStop** se encuentra en la carpeta **`backstop-report`**  en la raiz de este proyecto
+* Puede verel reporte generado en el siguiente [REPORTE - BACKSTOP](https://misw-4103-ghost-e25-delta.vercel.app/)
+
+
 
