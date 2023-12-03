@@ -271,10 +271,6 @@ test.describe("Posts - A priori data", () => {
 
     await test.step("And: Hace clic en el botón de publicar para confirmar", async () => {
       await page.locator("button:has-text(\"Publish\")").click();
-      await screenshotPagePath(page, "post", "crear_un_post_con_título_con_caracteres_especiales", paso++);
-    });
-
-    await test.step("And: Selecciona el botón de configuración", async () => {
       await page.getByRole("button", { name: "Settings" }).click();
       await screenshotPagePath(page, "post", "crear_un_post_con_título_con_caracteres_especiales", paso++);
     });
@@ -507,10 +503,7 @@ test.describe("Posts - A priori data", () => {
 
     await test.step("And: Hace clic en \"Publish\"", async () => {
       await page.getByRole("button", { name: "Publish" }).click();
-      await screenshotPagePath(page, "post", "crear_un_post_con_excerpt_con_caracteres_especiales", paso++);
-    });
-
-    await test.step("And: hace clic en confirmación de publicación", async () => {
+      await page.waitForTimeout(1000);
       await page.getByRole("button", { name: "Publish", exact: true }).click();
       await screenshotPagePath(page, "post", "crear_un_post_con_excerpt_con_caracteres_especiales", paso++);
     });
@@ -753,10 +746,7 @@ test.describe("Posts - Dynamic data", () => {
 
     await test.step("And: Hace clic en \"Publish\"", async () => {
       await page.getByRole("button", { name: "Publish" }).click();
-      await screenshotPagePath(page, "post", "crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default", paso++);
-    });
-
-    await test.step("And: hace clic en confirmación de publicación", async () => {
+      await page.waitForTimeout(1000);
       await page.getByRole("button", { name: "Publish", exact: true }).click();
       await screenshotPagePath(page, "post", "crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default", paso++);
     });
@@ -1051,17 +1041,13 @@ test.describe("Posts - Random data", () => {
 
     await test.step("And: hace clic en confirmación de publicación", async () => {
       await page.getByRole("button", { name: "Publish", exact: true }).click();
-      await screenshotPagePath(page, "post", "crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random", paso++);
-    });
-
-    await test.step("And: Hace clic en el botón de publicar para confirmar", async () => {
+      await page.waitForTimeout(1000);
       await page.locator("button:has-text(\"Publish\")").click();
       await screenshotPagePath(page, "post", "crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random", paso++);
     });
 
     await test.step("Then: Se verifica que el Post con excerpt se a creado correctamente", async () => {
       await page.waitForTimeout(2000);
-
       const errorMsg = await page.getByText("Saving failed: Excerpt cannot be longer than 300 characters.").innerText();
       expect(errorMsg).toBe("Saving failed: Excerpt cannot be longer than 300 characters.");
       await screenshotPagePath(page, "post", "crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random", paso++);
@@ -1127,10 +1113,7 @@ test.describe("Posts - Random data", () => {
 
     await test.step("And: hace clic en confirmación de publicación", async () => {
       await page.getByRole("button", { name: "Publish", exact: true }).click();
-      await screenshotPagePath(page, "post", "crear_un_post_con_excerpt_de_5000_palabras_random", paso++);
-    });
-
-    await test.step("And: Hace clic en el botón de publicar para confirmar", async () => {
+      await page.waitForTimeout(1000);
       await page.locator("button:has-text(\"Publish\")").click();
       await screenshotPagePath(page, "post", "crear_un_post_con_excerpt_de_5000_palabras_random", paso++);
     });

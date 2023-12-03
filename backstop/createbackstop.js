@@ -64,7 +64,7 @@ async function generateScenarioConfig(scenariosData, misMatchThreshold) {
       url: path.join(scenariosData.url, referenceImage),
       referenceUrl: path.join(scenariosData.referenceUrl, refUrlImages[index]),
       readyEvent: '',
-      delay: 1500,
+      delay: 0,
       misMatchThreshold,
       readySelector: "",
       hideSelectors: [],

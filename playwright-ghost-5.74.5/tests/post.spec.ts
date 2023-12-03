@@ -167,7 +167,7 @@ test.describe('Posts - A priori data', () => {
 
       // Hace clic en el botón
       await page.click(buttonSelector);
-      await screenshotPagePath(page, 'post', 'crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await screenshotPagePath(page, 'post', 'crear_un_nuevo_post_con_solo_título', paso++);
     });
 
     await test.step('And: Hace clic en el botón de: "publish post, righ now"', async () => {
@@ -1150,13 +1150,13 @@ test.describe('Posts - Dynamic data', () => {
     await test.step('And: hace clic en confirmación de publicación', async () => {
       await page.waitForTimeout(2000);
       await page.getByRole('button', { name: 'Continue, final review →' }).dispatchEvent('click');
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'crear_un_post_post_sin_título', paso++);
     });
 
     await test.step('And: Hace clic en el botón de publicar para confirmar', async () => {
       // await page.locator('button:has-text("Publish")').click();
       await page.getByRole('button', { name: 'Publish post, right now' }).dispatchEvent('click');
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'crear_un_post_post_sin_título', paso++);
     });
 
     await test.step('And: El usuario se dirige al post creado', async () => {
@@ -1228,13 +1228,13 @@ test.describe('Posts - Dynamic data', () => {
     await test.step('And: Hace clic en "Publish"', async () => {
       await page.waitForTimeout
       await page.getByRole('button', { name: 'Publish', exact: true }).click();
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'falla_la_creación_de_un_post_sin_Autor', paso++);
     });
 
     await test.step('Then: Se verifica que el Post valide que un post sin autor no se puede crear', async () => {
       await page.waitForTimeout(2000);
       expect(page.getByText('Validation failed: At least one author is required.')).toBeTruthy();  
-      await screenshotPagePath(page, 'post', 'Validar_si_deja_crear_un_post_sin_Autor', paso++);
+      await screenshotPagePath(page, 'post', 'falla_la_creación_de_un_post_sin_Autor', paso++);
     });
 
   });
@@ -1398,7 +1398,7 @@ test.describe('Posts - Random data', () => {
       const excerptErrMsg = await page.getByText('Excerpt cannot be longer than 300 characters.', { exact: true }).innerText();
       expect(excerptErrMsg).toBe('Excerpt cannot be longer than 300 characters.');
 
-      await screenshotPagePath(page, 'post', 'crear_un_nuevo_post_con_solo_título_y_descripción', paso++);
+      await screenshotPagePath(page, 'post', 'crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random', paso++);
     });
 
   });

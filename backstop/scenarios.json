@@ -8,7 +8,7 @@
       },
       {
         "funtionality": "PlayWright - Post",
-        "scenary": "Crear un nuevo post con contenido de 1 sola palabra con 5000 caracteres random",
+        "scenary": "Crear un nuevo post con 1 palabra con 5000 random",
         "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
         "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random"
       },
@@ -32,7 +32,7 @@
       },
       {
         "funtionality": "PlayWright - Post",
-        "scenary": "Crear un post con caracteres random en la hora de publicación, dejando la hora default",
+        "scenary": "Crear un post con caracteres random",
         "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
         "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default"
       },
@@ -46,13 +46,13 @@
         "funtionality": "PlayWright - Post",
         "scenary": "Crear un post con excerpt",
         "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt",
-        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt"
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerp"
       },
       {
         "funtionality": "PlayWright - Post",
-        "scenary": "Crear un post con excerpt de 1 sola palabra con 50.000 caracteres random",
+        "scenary": "Crear un post con excerpt de 1 palabra con 50.000 random",
         "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
-        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random"
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50.000_caracteres_random"
       },
       {
         "funtionality": "PlayWright - Post",
