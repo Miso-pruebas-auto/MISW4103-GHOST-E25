@@ -49,11 +49,11 @@ function getImagesToCompare(paths) {
           const folderName = `${feature}/${scenario}`;
 
           if (!featuresToCompare[folderName]) {
-            featuresToCompare[folderName.toLowerCase()] = [{
+            featuresToCompare[folderName] = [{
               ghostVersion, steps: stepWithEntirePath
             }];
           } else {
-            featuresToCompare[folderName.toLowerCase()].push({
+            featuresToCompare[folderName].push({
               ghostVersion, steps: stepWithEntirePath
             });
           }
@@ -95,6 +95,7 @@ async function compare(paths, framework) {
   return new Promise(async (resolve, reject) => {
     const images = await getImagesToCompare(paths);
     const results = [];
+    const missing = [];
 
 
     for (const [key, steps] of Object.entries(images)) {
@@ -104,14 +105,6 @@ async function compare(paths, framework) {
 
         const longer = from.length > to.length ? from.steps : to.steps;
         const shorter = from.length <= to.length ? to.steps : from.steps;
-
-        const longerSteps = longer.map((step) => {
-          return step.split("/").pop();
-        });
-
-        const shorterSteps = shorter.map((step) => {
-          return step.split("/").pop();
-        });
 
         const resultArr = longer.map((step, i) => {
           const afterLastSlash = step.split("/").pop();
@@ -129,23 +122,26 @@ async function compare(paths, framework) {
           const fromStep = buffer[0];
           const toStep = buffer[1];
           const missingStep = () => {
-            if (!fromStep) {
-              return toStep;
+            if (!toStep && !fromStep) {
+              return "Both steps are missing";
             }
 
-
-            return fromStep;
+            return fromStep ? fromStep : toStep;
           };
 
           if (!fromStep || !toStep) {
+            missing.push({
+              from: fromStep || "missing", to: toStep || "missing"
+            });
+
             console.log("Missing step:", missingStep());
-            continue;
           }
+
 
           const resultPath = `./results/resemblejs/${key}`;
           const nextJsImagesPath = path.join(__dirname, `../resemble-report/public/results/${framework}`, key);
           const nextJsResultsPath = path.join(__dirname, `../resemble-report/src/results/${framework}`, key);
-          const result = await getDifferenceForImage(fromStep, toStep);
+          const result = fromStep && toStep ? await getDifferenceForImage(fromStep, toStep) : null;
 
           results.push({
             path: key, compare: `${i + 1}.png`, from: fromStep, to: toStep, data: result
@@ -156,16 +152,22 @@ async function compare(paths, framework) {
       }
     }
 
-    resolve(results);
+    resolve(results, missing);
   });
 }
 
 async function toNextJs(nextJsPath, imagesPath, i, result, fromStep, toStep) {
+  const buffer = path.join(__dirname, "images/missing.png");
+
   await makeDir(nextJsPath);
   await makeDir(imagesPath);
-  await storeResult(`${imagesPath}/${i + 1}.png`, result);
-  await copyFile(fromStep, `${imagesPath}/${i + 1}-from.png`);
-  await copyFile(toStep, `${imagesPath}/${i + 1}-to.png`);
+  if (!result) {
+    await copyFile(buffer, `${imagesPath}/${i + 1}.png`);
+  } else {
+    await storeResult(`${imagesPath}/${i + 1}.png`, result);
+  }
+  await copyFile(fromStep ?? buffer, `${imagesPath}/${i + 1}-from.png`);
+  await copyFile(toStep ?? buffer, `${imagesPath}/${i + 1}-to.png`);
 }
 
 async function storeResult(resultPath, result) {

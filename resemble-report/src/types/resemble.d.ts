@@ -1,9 +1,9 @@
 export type ResembleResult = {
   compare: string;
   path: string;
-  from: string;
-  to: string;
-  data: Data;
+  from: string | null;
+  to: string | null;
+  data: Data | null;
 };
 
 export type Data = {

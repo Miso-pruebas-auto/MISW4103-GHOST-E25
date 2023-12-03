@@ -3,12 +3,12 @@ import { SectionHeading } from '@/components';
 import Link from 'next/link';
 
 const reports = [
-  {
-    title: 'Kraken',
-    href: '/frameworks/kraken',
-    description:
-      'Report of results after running resemblejs on Kraken applications',
-  },
+  // {
+  //   title: 'Kraken',
+  //   href: '/frameworks/kraken',
+  //   description:
+  //     'Report of results after running resemblejs on Kraken applications',
+  // },
   {
     title: 'Playwright',
     href: '/frameworks/playwright',
