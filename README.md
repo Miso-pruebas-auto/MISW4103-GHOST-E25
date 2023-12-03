@@ -38,7 +38,7 @@ En esta entrega el equipo quiso realizar la creación de dos reportes para poder
 
 ### Resemble Report
 
-Proyecto de NextJS para visualizar el reporte de las pruebas de regresión visual de la herramienta usando ResembleJS para la aplicación GHOST en ambas versiones previamente seleccionadas(4.38.0 y 4.48.9) de Kraken y Playwright.
+Proyecto de NextJS para visualizar el reporte de las pruebas de regresión visual de la herramienta usando ResembleJS para la aplicación GHOST en ambas versiones previamente seleccionadas(4.48.9 y 5.74.5) de Playwright.
 
 * Leer la respectiva documentación: [README.md](resemble-report/README.md)
 * El reporte generado de **Resemble** se encuentra en la carpeta **`resemble-report`**  en la raiz de este proyecto
@@ -46,11 +46,8 @@ Proyecto de NextJS para visualizar el reporte de las pruebas de regresión visua
 
 ### Bakstop Report
 
-Proyecto de Html que visualiza el reporte de pruebas de regresión visual (VRT) implementando la herramienta BackStop para la aplicación GHOST en ambas versiones previamente seleccionadas(4.38.0 y 4.48.9) de Kraken y Playwright.
+Proyecto de Html que visualiza el reporte de pruebas de regresión visual (VRT) implementando la herramienta BackStop para la aplicación GHOST en ambas versiones previamente seleccionadas(4.48.9 y 5.74.5) de Playwright.
 
 * Leer la respectiva documentación: [README.md](backstop-report/README.md)
 * El reporte generado de **BackStop** se encuentra en la carpeta **`backstop-report`**  en la raiz de este proyecto
 * Puede verel reporte generado en el siguiente [REPORTE - BACKSTOP](https://misw-4103-ghost-e25-delta.vercel.app/)
-
-
-
