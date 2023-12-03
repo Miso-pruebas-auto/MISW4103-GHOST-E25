@@ -116,7 +116,7 @@ type ScenarioItemProps = {
 function ScenarioItem({ title, items, framework }: ScenarioItemProps) {
   const [offset, setOffset] = useState(0);
   const [page, setPage] = useState(1);
-  const itemsPerPage = 10;
+  const itemsPerPage = 5;
   const endOffset = offset + itemsPerPage;
   const currentItems = items.slice(offset, endOffset);
   const pageCount = Math.ceil(items.length / itemsPerPage);
@@ -188,7 +188,7 @@ export default function Page({ params }: PageProps) {
         <CardContent className="py-6 px-0">
           <Accordion type="single" collapsible className="w-full">
             {Object.entries(grouped)
-              .map(([key, value], index) => (
+              .map(([key, value]) => (
                 <ScenarioItem
                   title={key}
                   items={value}
