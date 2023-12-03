@@ -4,5 +4,8 @@ node_modules/
 /blob-report/
 /playwright/.cache/
 
-screenshots
+screenshots/pages
+screenshots/tags
+screenshots/members
+screenshots/settings
 .env

@@ -1,6 +1,36 @@
 {
   "scenarios": [
       {
+        "funtionality": "Kraken - Members",
+        "scenary": "Create a new Member with name and valid mail",
+        "url": "../kraken-ghost-4-48.9/screenshots/members/create_a_new_member_with_name_and_valid_mail",
+        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/members/create_a_new_member_with_name_and_valid_mail"
+      },
+      {
+        "funtionality": "Kraken - Pages",
+        "scenary": "Create a new Page",
+        "url": "../kraken-ghost-4-48.9/screenshots/pages/create_a_new_page",
+        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/pages/create_a_new_page"
+      },
+      {
+        "funtionality": "Kraken - Post",
+        "scenary": " Create a new valid post",
+        "url": "../kraken-ghost-4-48.9/screenshots/posts/create_a_new_valid_post",
+        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/posts/create_a_new_valid_post"
+      },
+      {
+        "funtionality": "Kraken - Settings",
+        "scenary": "Change site name",
+        "url": "../kraken-ghost-4-48.9/screenshots/general_settings/change_site_name",
+        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/general_settings/change_site_name"
+      },
+      {
+        "funtionality": "Kraken - Tags",
+        "scenary": "Create a new valid tag",
+        "url": "../kraken-ghost-4-48.9/screenshots/tags/create_a_new_valid_tag",
+        "referenceUrl": "../kraken-ghost-4-38.0/screenshots/tags/create_a_new_valid_tag"
+      },
+      {
         "funtionality": "PlayWright - Members",
         "scenary": "Create a new Member with name and valid mail",
         "url": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro",
