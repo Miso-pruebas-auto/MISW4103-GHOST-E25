@@ -12,6 +12,12 @@
 
 # Semana 1
 
+## Pruebas Manuales de Ghost V5.74.5
+se adjunta el Excel trabajado
+
+[inventario-pruebas-e25.xlsx](https://github.com/Miso-pruebas-auto/MISW4103-GHOST-E25/files/13537897/inventario-pruebas-e25.xlsx)
+
+
 ## Test e2e
 Debido a que este repositorio se ha usado para las pruebas de las semanas anteriores, tener en cuenta que todos los test se encuentran en la carpeta playwright-ghost-5.74.5
 ``` shell
