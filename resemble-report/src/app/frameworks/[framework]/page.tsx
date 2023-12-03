@@ -54,8 +54,8 @@ function ComparableItem({
   const mainImage = item.compare.split('/').pop()?.split('.')[0];
   const fromImage = `${mainImage}-from.png`;
   const toImage = `${mainImage}-to.png`;
-  const krakenVersionFrom = item.from.split('/')[1];
-  const krakenVersionTo = item.to.split('/')[1];
+  const krakenVersionFrom = item.from ? item.from.split('/')[1] : 'N/A';
+  const krakenVersionTo = item.to ? item.to.split('/')[1] : 'N/A';
 
   const images = [
     {
@@ -90,11 +90,17 @@ function ComparableItem({
         ))}
         <div className="relative lg:w-1/3 break-words">
           <span className="text-sm font-medium">Analysis</span>
-          <p className="text-sm">
-            The second image is{' '}
-            <span className="font-medium">{item.data.misMatchPercentage}%</span>{' '}
-            different compared to the first.
-          </p>
+          {item.data ? (
+            <p className="text-sm">
+              The second image is{' '}
+              <span className="font-medium">
+                {item.data.misMatchPercentage}%
+              </span>{' '}
+              different compared to the first.
+            </p>
+          ) : (
+            <p className="text-sm">No data available for this comparison.</p>
+          )}
         </div>
       </div>
     </li>
@@ -110,7 +116,7 @@ type ScenarioItemProps = {
 function ScenarioItem({ title, items, framework }: ScenarioItemProps) {
   const [offset, setOffset] = useState(0);
   const [page, setPage] = useState(1);
-  const itemsPerPage = 5;
+  const itemsPerPage = 10;
   const endOffset = offset + itemsPerPage;
   const currentItems = items.slice(offset, endOffset);
   const pageCount = Math.ceil(items.length / itemsPerPage);
@@ -153,7 +159,7 @@ function ScenarioItem({ title, items, framework }: ScenarioItemProps) {
 }
 
 export default function Page({ params }: PageProps) {
-  const [showAll, setShowAll] = useState(false);
+  const [showAll, setShowAll] = useState(true);
   const items = results[params.framework];
   const grouped = groupBy(items, 'path');
 
@@ -172,9 +178,9 @@ export default function Page({ params }: PageProps) {
           <Button variant="secondary" asChild>
             <Link href="/">Go Back</Link>
           </Button>
-          <Button onClick={() => setShowAll(!showAll)}>
-            {showAll ? 'Show only selected' : 'Show all'}
-          </Button>
+          {/*<Button onClick={() => setShowAll(!showAll)}>*/}
+          {/*  {showAll ? 'Show only selected' : 'Show all'}*/}
+          {/*</Button>*/}
         </div>
       </div>
 
@@ -182,13 +188,12 @@ export default function Page({ params }: PageProps) {
         <CardContent className="py-6 px-0">
           <Accordion type="single" collapsible className="w-full">
             {Object.entries(grouped)
-              .filter(([key]) => showAll || highlightScenarios.includes(key))
               .map(([key, value], index) => (
                 <ScenarioItem
                   title={key}
                   items={value}
                   framework={params.framework}
-                  key={index}
+                  key={key}
                 />
               ))}
           </Accordion>

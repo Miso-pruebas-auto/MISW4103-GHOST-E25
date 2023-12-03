@@ -3,653 +3,345 @@
     "path": "post/botón_borrar_post_aparece_antes_de_crearlo",
     "compare": "1.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso1.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Botón_borrar_post_aparece_antes_de_crearlo/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso1.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.002495659722222,
-      "misMatchPercentage": "5.00",
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
       },
-      "analysisTime": 56
+      "analysisTime": 43
     }
   },
   {
     "path": "post/botón_borrar_post_aparece_antes_de_crearlo",
     "compare": "2.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso2.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Botón_borrar_post_aparece_antes_de_crearlo/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso2.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.0029296875,
-      "misMatchPercentage": "5.00",
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 72
+      "analysisTime": 53
     }
   },
   {
     "path": "post/botón_borrar_post_aparece_antes_de_crearlo",
     "compare": "3.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso3.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Botón_borrar_post_aparece_antes_de_crearlo/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso3.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.065755208333334,
-      "misMatchPercentage": "5.07",
+      "rawMisMatchPercentage": 0.4357638888888889,
+      "misMatchPercentage": "0.44",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 61
+      "analysisTime": 41
     }
   },
   {
     "path": "post/botón_borrar_post_aparece_antes_de_crearlo",
     "compare": "4.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso4.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Botón_borrar_post_aparece_antes_de_crearlo/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso4.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.079318576388888,
-      "misMatchPercentage": "5.08",
+      "rawMisMatchPercentage": 0.4378255208333333,
+      "misMatchPercentage": "0.44",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 68
+      "analysisTime": 40
     }
   },
   {
     "path": "post/botón_borrar_post_aparece_antes_de_crearlo",
     "compare": "5.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso5.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Botón_borrar_post_aparece_antes_de_crearlo/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso5.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.482096354166666,
-      "misMatchPercentage": "5.48",
+      "rawMisMatchPercentage": 0.7520616319444445,
+      "misMatchPercentage": "0.75",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 671,
+        "right": 1241
       },
-      "analysisTime": 63
+      "analysisTime": 43
     }
   },
   {
     "path": "post/botón_borrar_post_aparece_antes_de_crearlo",
     "compare": "6.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso6.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Botón_borrar_post_aparece_antes_de_crearlo/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso6.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.244574652777778,
-      "misMatchPercentage": "6.24",
+      "rawMisMatchPercentage": 1.3309461805555556,
+      "misMatchPercentage": "1.33",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
+        "top": 40,
+        "left": 46,
         "bottom": 719,
-        "right": 1279
+        "right": 1276
       },
-      "analysisTime": 61
+      "analysisTime": 43
     }
   },
   {
     "path": "post/botón_borrar_post_aparece_antes_de_crearlo",
     "compare": "7.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso7.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Botón_borrar_post_aparece_antes_de_crearlo/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso7.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.361870659722222,
-      "misMatchPercentage": "6.36",
+      "rawMisMatchPercentage": 1.3972439236111112,
+      "misMatchPercentage": "1.40",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
       },
-      "analysisTime": 61
+      "analysisTime": 42
     }
   },
   {
     "path": "post/botón_borrar_post_aparece_antes_de_crearlo",
     "compare": "8.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso8.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Botón_borrar_post_aparece_antes_de_crearlo/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo/paso8.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 7.1669921875,
-      "misMatchPercentage": "7.17",
+      "rawMisMatchPercentage": 2.1107855902777777,
+      "misMatchPercentage": "2.11",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
       },
-      "analysisTime": 65
+      "analysisTime": 44
     }
   },
   {
     "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
     "compare": "1.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso1.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso1.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.002495659722222,
-      "misMatchPercentage": "5.00",
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
       },
-      "analysisTime": 57
+      "analysisTime": 36
     }
   },
   {
     "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
     "compare": "2.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso10.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso10.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 21.664747260956176,
-      "misMatchPercentage": "21.66",
+      "rawMisMatchPercentage": 21.4503429205268,
+      "misMatchPercentage": "21.45",
       "diffBounds": {
         "top": 1,
         "left": 1,
-        "bottom": 4015,
-        "right": 1279
+        "bottom": 4047,
+        "right": 1264
       },
-      "analysisTime": 880
+      "analysisTime": 714
     }
   },
   {
     "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
     "compare": "3.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso2.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso2.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.002495659722222,
-      "misMatchPercentage": "5.00",
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 57
+      "analysisTime": 40
     }
   },
   {
     "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
     "compare": "4.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso3.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso3.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.316623263888888,
-      "misMatchPercentage": "5.32",
+      "rawMisMatchPercentage": 0.3740234375,
+      "misMatchPercentage": "0.37",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 60
+      "analysisTime": 37
     }
   },
   {
     "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
     "compare": "5.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso4.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso4.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.323567708333334,
-      "misMatchPercentage": "5.32",
+      "rawMisMatchPercentage": 0.3760850694444444,
+      "misMatchPercentage": "0.38",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 58
+      "analysisTime": 40
     }
   },
   {
     "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
     "compare": "6.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso5.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso5.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 10.578125,
-      "misMatchPercentage": "10.58",
+      "rawMisMatchPercentage": 10.45290798611111,
+      "misMatchPercentage": "10.45",
       "diffBounds": {
         "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "left": 46,
+        "bottom": 715,
+        "right": 1276
       },
-      "analysisTime": 85
+      "analysisTime": 73
     }
   },
   {
     "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
     "compare": "7.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso6.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso6.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 9.817925347222223,
-      "misMatchPercentage": "9.82",
+      "rawMisMatchPercentage": 10.26388888888889,
+      "misMatchPercentage": "10.26",
       "diffBounds": {
         "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "left": 46,
+        "bottom": 715,
+        "right": 1276
       },
-      "analysisTime": 84
+      "analysisTime": 72
     }
   },
   {
     "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
     "compare": "8.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso7.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso7.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.746961805555555,
-      "misMatchPercentage": "6.75",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 74
-    }
-  },
-  {
-    "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
-    "compare": "9.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso8.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso8.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 61.991427951388886,
-      "misMatchPercentage": "61.99",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 296
-    }
-  },
-  {
-    "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
-    "compare": "10.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso9.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso9.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 21.385318102589643,
-      "misMatchPercentage": "21.39",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 4015,
-        "right": 1279
-      },
-      "analysisTime": 856
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
-    "compare": "1.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso1.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_contenido_con_caracteres_especiales/paso1.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 5.002495659722222,
-      "misMatchPercentage": "5.00",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 59
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
-    "compare": "2.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso10.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_contenido_con_caracteres_especiales/paso10.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 44.176,
-      "misMatchPercentage": "44.18",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 1249,
-        "right": 1279
-      },
-      "analysisTime": 422
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
-    "compare": "3.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso2.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_contenido_con_caracteres_especiales/paso2.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 5.0029296875,
-      "misMatchPercentage": "5.00",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 58
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
-    "compare": "4.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso3.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_contenido_con_caracteres_especiales/paso3.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 4.960069444444445,
-      "misMatchPercentage": "4.96",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 56
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
-    "compare": "5.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso4.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_contenido_con_caracteres_especiales/paso4.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 4.967013888888889,
-      "misMatchPercentage": "4.97",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 59
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
-    "compare": "6.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso5.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_contenido_con_caracteres_especiales/paso5.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 4.964735243055555,
-      "misMatchPercentage": "4.96",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 56
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
-    "compare": "7.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso6.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_contenido_con_caracteres_especiales/paso6.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 4.950737847222222,
-      "misMatchPercentage": "4.95",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 56
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
-    "compare": "8.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso7.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_contenido_con_caracteres_especiales/paso7.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 6.768229166666667,
-      "misMatchPercentage": "6.77",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 76
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
-    "compare": "9.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso8.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_contenido_con_caracteres_especiales/paso8.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 61.98187934027778,
-      "misMatchPercentage": "61.98",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 299
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
-    "compare": "10.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso9.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_contenido_con_caracteres_especiales/paso9.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 44.3035625,
-      "misMatchPercentage": "44.30",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 1249,
-        "right": 1279
-      },
-      "analysisTime": 384
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
-    "compare": "1.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso1.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso1.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 5.002495659722222,
-      "misMatchPercentage": "5.00",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 55
-    }
-  },
-  {
-    "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
-    "compare": "2.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso10.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso10.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 61.99685329861111,
-      "misMatchPercentage": "62.00",
+      "rawMisMatchPercentage": 62.0859375,
+      "misMatchPercentage": "62.09",
       "diffBounds": {
         "top": 1,
         "left": 1,
@@ -660,260 +352,1812 @@
     }
   },
   {
-    "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
-    "compare": "3.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso11.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso11.png",
+    "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso8.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 43.13858695652174,
-      "misMatchPercentage": "43.14",
+      "rawMisMatchPercentage": 61.93250868055556,
+      "misMatchPercentage": "61.93",
       "diffBounds": {
         "top": 1,
         "left": 1,
-        "bottom": 1287,
+        "bottom": 719,
         "right": 1279
       },
-      "analysisTime": 387
+      "analysisTime": 288
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 21.4503429205268,
+      "misMatchPercentage": "21.45",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 4047,
+        "right": 1264
+      },
+      "analysisTime": 706
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3721788194444444,
+      "misMatchPercentage": "0.37",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3721788194444444,
+      "misMatchPercentage": "0.37",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.5542534722222222,
+      "misMatchPercentage": "0.55",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 347,
+        "right": 1241
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 67.97384982638889,
+      "misMatchPercentage": "67.97",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 328
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 61.89995659722223,
+      "misMatchPercentage": "61.90",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 306
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 48.9181333763927,
+      "misMatchPercentage": "48.92",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1125,
+        "right": 1264
+      },
+      "analysisTime": 378
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 47.759040712164506,
+      "misMatchPercentage": "47.76",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1125,
+        "right": 1264
+      },
+      "analysisTime": 364
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 44.968972497672524,
+      "misMatchPercentage": "44.97",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1192,
+        "right": 1264
+      },
+      "analysisTime": 369
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3060980902777778,
+      "misMatchPercentage": "0.31",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 38
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3060980902777778,
+      "misMatchPercentage": "0.31",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.5985243055555556,
+      "misMatchPercentage": "0.60",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 671,
+        "right": 1241
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.814236111111111,
+      "misMatchPercentage": "0.81",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 49
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 67.96310763888889,
+      "misMatchPercentage": "67.96",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 342
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 61.89290364583333,
+      "misMatchPercentage": "61.89",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 298
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_solo_título_y_descripción",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 46.380168903584476,
+      "misMatchPercentage": "46.38",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1192,
+        "right": 1264
+      },
+      "analysisTime": 379
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 61.916449652777786,
+      "misMatchPercentage": "61.92",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 297
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso11.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso11.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 45.58267890576243,
+      "misMatchPercentage": "45.58",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1215,
+        "right": 1264
+      },
+      "analysisTime": 379
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso12.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso12.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 44.269099750364056,
+      "misMatchPercentage": "44.27",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1215,
+        "right": 1264
+      },
+      "analysisTime": 371
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.2619357638888889,
+      "misMatchPercentage": "0.26",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.2619357638888889,
+      "misMatchPercentage": "0.26",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.6896701388888888,
+      "misMatchPercentage": "0.69",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 671,
+        "right": 1241
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.2506510416666667,
+      "misMatchPercentage": "1.25",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 719,
+        "right": 1276
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.316948784722222,
+      "misMatchPercentage": "1.32",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "11.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.2906901041666667,
+      "misMatchPercentage": "1.29",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 46
+    }
+  },
+  {
+    "path": "post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+    "compare": "12.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 8.823567708333334,
+      "misMatchPercentage": "8.82",
+      "diffBounds": {
+        "top": 1,
+        "left": 46,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 84
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 66.04014756944444,
+      "misMatchPercentage": "66.04",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 324
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso11.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso11.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 60.7333984375,
+      "misMatchPercentage": "60.73",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 293
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso12.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso12.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 46.35431458173933,
+      "misMatchPercentage": "46.35",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1181,
+        "right": 1264
+      },
+      "analysisTime": 371
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso13.png",
+    "data": null
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.29296875,
+      "misMatchPercentage": "0.29",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.2950303819444445,
+      "misMatchPercentage": "0.30",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3161892361111111,
+      "misMatchPercentage": "0.32",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.8429904513888888,
+      "misMatchPercentage": "0.84",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 719,
+        "right": 1276
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "11.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.91015625,
+      "misMatchPercentage": "0.91",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "12.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.910915798611111,
+      "misMatchPercentage": "0.91",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+    "compare": "13.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 2.857204861111111,
+      "misMatchPercentage": "2.86",
+      "diffBounds": {
+        "top": 4,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 48
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 47.39972785589322,
+      "misMatchPercentage": "47.40",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1157,
+        "right": 1264
+      },
+      "analysisTime": 375
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 36
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.24978298611111113,
+      "misMatchPercentage": "0.25",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.24978298611111113,
+      "misMatchPercentage": "0.25",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3576388888888889,
+      "misMatchPercentage": "0.36",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.5116102430555556,
+      "misMatchPercentage": "0.51",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 7.040907118055556,
+      "misMatchPercentage": "7.04",
+      "diffBounds": {
+        "top": 32,
+        "left": 46,
+        "bottom": 680,
+        "right": 1241
+      },
+      "analysisTime": 79
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 62.089084201388886,
+      "misMatchPercentage": "62.09",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 297
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_contenido_con_caracteres_especiales",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 47.4190303075774,
+      "misMatchPercentage": "47.42",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1157,
+        "right": 1264
+      },
+      "analysisTime": 378
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 65.32421875,
+      "misMatchPercentage": "65.32",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 322
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso11.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso11.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 61.92274305555555,
+      "misMatchPercentage": "61.92",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 298
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso12.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso12.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 44.76115012979966,
+      "misMatchPercentage": "44.76",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1281,
+        "right": 1264
+      },
+      "analysisTime": 400
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso13.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso13.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 43.746431280176104,
+      "misMatchPercentage": "43.75",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1281,
+        "right": 1264
+      },
+      "analysisTime": 388
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 36
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3387586805555556,
+      "misMatchPercentage": "0.34",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3387586805555556,
+      "misMatchPercentage": "0.34",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.7702907986111112,
+      "misMatchPercentage": "0.77",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 671,
+        "right": 1241
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.325737847222222,
+      "misMatchPercentage": "1.33",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 719,
+        "right": 1276
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "11.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.392035590277778,
+      "misMatchPercentage": "1.39",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "12.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 2.0130208333333335,
+      "misMatchPercentage": "2.01",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 47
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt",
+    "compare": "13.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.8262803819444444,
+      "misMatchPercentage": "1.83",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 67.85188802083333,
+      "misMatchPercentage": "67.85",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 325
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso11.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso11.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 60.88096788194445,
+      "misMatchPercentage": "60.88",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 297
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
     "compare": "4.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso12.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso12.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso12.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 43.10813761645963,
-      "misMatchPercentage": "43.11",
+      "rawMisMatchPercentage": 44.28308464297647,
+      "misMatchPercentage": "44.28",
       "diffBounds": {
         "top": 1,
         "left": 1,
-        "bottom": 1287,
-        "right": 1279
+        "bottom": 1253,
+        "right": 1264
       },
-      "analysisTime": 392
+      "analysisTime": 384
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
     "compare": "5.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso2.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso2.png",
-    "data": {
-      "isSameDimensions": true,
-      "dimensionDifference": {
-        "width": 0,
-        "height": 0
-      },
-      "rawMisMatchPercentage": 5.0029296875,
-      "misMatchPercentage": "5.00",
-      "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
-      },
-      "analysisTime": 56
-    }
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso13.png",
+    "data": null
   },
   {
     "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
     "compare": "6.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso3.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso2.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.034722222222222,
-      "misMatchPercentage": "5.03",
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 56
+      "analysisTime": 37
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
     "compare": "7.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso4.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso3.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.045247395833333,
-      "misMatchPercentage": "5.05",
+      "rawMisMatchPercentage": 0.48177083333333337,
+      "misMatchPercentage": "0.48",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 58
+      "analysisTime": 37
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
     "compare": "8.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso5.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso4.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.584635416666667,
-      "misMatchPercentage": "5.58",
+      "rawMisMatchPercentage": 0.48177083333333337,
+      "misMatchPercentage": "0.48",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 57
+      "analysisTime": 42
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
     "compare": "9.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso6.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso5.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.308159722222221,
-      "misMatchPercentage": "6.31",
+      "rawMisMatchPercentage": 0.7641059027777778,
+      "misMatchPercentage": "0.76",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 671,
+        "right": 1241
       },
-      "analysisTime": 71
+      "analysisTime": 38
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
     "compare": "10.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso7.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso6.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.425455729166667,
-      "misMatchPercentage": "6.43",
+      "rawMisMatchPercentage": 1.3208550347222223,
+      "misMatchPercentage": "1.32",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
+        "top": 40,
+        "left": 46,
         "bottom": 719,
-        "right": 1279
+        "right": 1276
       },
-      "analysisTime": 64
+      "analysisTime": 41
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
     "compare": "11.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso8.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso7.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.203450520833333,
-      "misMatchPercentage": "6.20",
+      "rawMisMatchPercentage": 1.3871527777777777,
+      "misMatchPercentage": "1.39",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
       },
-      "analysisTime": 62
+      "analysisTime": 43
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
     "compare": "12.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.4605034722222223,
+      "misMatchPercentage": "1.46",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_con_caracteres_especiales",
+    "compare": "13.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso9.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_con_caracteres_especiales/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_con_caracteres_especiales/paso9.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 7.164496527777778,
-      "misMatchPercentage": "7.16",
+      "rawMisMatchPercentage": 3.1124131944444446,
+      "misMatchPercentage": "3.11",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 4,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
       },
-      "analysisTime": 81
+      "analysisTime": 51
     }
   },
   {
-    "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
     "compare": "1.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso1.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_de_5000_palabras_random/paso1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso1.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.002495659722222,
-      "misMatchPercentage": "5.00",
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
       },
-      "analysisTime": 59
+      "analysisTime": 39
     }
   },
   {
-    "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
     "compare": "2.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso10.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_de_5000_palabras_random/paso10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso10.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 60.563259548611114,
-      "misMatchPercentage": "60.56",
+      "rawMisMatchPercentage": 66.31304253472223,
+      "misMatchPercentage": "66.31",
       "diffBounds": {
         "top": 1,
         "left": 1,
@@ -924,685 +2168,1451 @@
     }
   },
   {
-    "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
     "compare": "3.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso11.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_de_5000_palabras_random/paso11.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso11.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso11.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 12.676432291666668,
-      "misMatchPercentage": "12.68",
+      "rawMisMatchPercentage": 60.45062934027777,
+      "misMatchPercentage": "60.45",
       "diffBounds": {
         "top": 1,
         "left": 1,
         "bottom": 719,
         "right": 1279
       },
-      "analysisTime": 90
+      "analysisTime": 290
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso12.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso12.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 2.577039930555556,
+      "misMatchPercentage": "2.58",
+      "diffBounds": {
+        "top": 19,
+        "left": 15,
+        "bottom": 719,
+        "right": 1261
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3446180555555556,
+      "misMatchPercentage": "0.34",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 43
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3491753472222222,
+      "misMatchPercentage": "0.35",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 36
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.0926649305555556,
+      "misMatchPercentage": "1.09",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.7432725694444446,
+      "misMatchPercentage": "1.74",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 719,
+        "right": 1276
+      },
+      "analysisTime": 47
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.8095703125,
+      "misMatchPercentage": "1.81",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
+    "compare": "11.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 2.5322265625,
+      "misMatchPercentage": "2.53",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 45
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
+    "compare": "12.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 8.422309027777777,
+      "misMatchPercentage": "8.42",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 76
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 62.33897569444444,
+      "misMatchPercentage": "62.34",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 318
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso11.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso11.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 60.759982638888886,
+      "misMatchPercentage": "60.76",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 291
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
     "compare": "4.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso2.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_de_5000_palabras_random/paso2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso12.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso12.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.002495659722222,
-      "misMatchPercentage": "5.00",
+      "rawMisMatchPercentage": 2.1324869791666665,
+      "misMatchPercentage": "2.13",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
+        "top": 19,
+        "left": 15,
         "bottom": 719,
-        "right": 1279
+        "right": 1261
       },
-      "analysisTime": 56
+      "analysisTime": 43
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
     "compare": "5.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso3.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_de_5000_palabras_random/paso3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso2.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.169921875,
-      "misMatchPercentage": "5.17",
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 57
+      "analysisTime": 45
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
     "compare": "6.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso4.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_de_5000_palabras_random/paso4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso3.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.176866319444445,
-      "misMatchPercentage": "5.18",
+      "rawMisMatchPercentage": 0.31315104166666663,
+      "misMatchPercentage": "0.31",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 59
+      "analysisTime": 36
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
     "compare": "7.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso5.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_de_5000_palabras_random/paso5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso4.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.910481770833333,
-      "misMatchPercentage": "5.91",
+      "rawMisMatchPercentage": 0.3152126736111111,
+      "misMatchPercentage": "0.32",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 60
+      "analysisTime": 38
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
     "compare": "8.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso6.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_de_5000_palabras_random/paso6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso5.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.740776909722222,
-      "misMatchPercentage": "6.74",
+      "rawMisMatchPercentage": 0.853298611111111,
+      "misMatchPercentage": "0.85",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
       },
-      "analysisTime": 63
+      "analysisTime": 37
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
     "compare": "9.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso7.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_de_5000_palabras_random/paso7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso6.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.858072916666667,
-      "misMatchPercentage": "6.86",
+      "rawMisMatchPercentage": 1.4035373263888888,
+      "misMatchPercentage": "1.40",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
+        "top": 40,
+        "left": 46,
         "bottom": 719,
-        "right": 1279
+        "right": 1276
       },
-      "analysisTime": 74
+      "analysisTime": 40
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
     "compare": "10.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso8.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_de_5000_palabras_random/paso8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso7.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 7.425889756944444,
-      "misMatchPercentage": "7.43",
+      "rawMisMatchPercentage": 1.4698350694444446,
+      "misMatchPercentage": "1.47",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
       },
-      "analysisTime": 66
+      "analysisTime": 44
     }
   },
   {
     "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
     "compare": "11.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso9.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_excerpt_de_5000_palabras_random/paso9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso8.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 7.426106770833334,
-      "misMatchPercentage": "7.43",
+      "rawMisMatchPercentage": 2.060329861111111,
+      "misMatchPercentage": "2.06",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_excerpt_de_5000_palabras_random",
+    "compare": "12.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 7.851996527777779,
+      "misMatchPercentage": "7.85",
       "diffBounds": {
         "top": 1,
         "left": 1,
         "bottom": 719,
         "right": 1279
       },
-      "analysisTime": 74
+      "analysisTime": 71
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "1.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso1.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso1.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.002495659722222,
-      "misMatchPercentage": "5.00",
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
       },
-      "analysisTime": 58
+      "analysisTime": 39
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "2.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso10.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso10.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 61.904730902777786,
-      "misMatchPercentage": "61.90",
+      "rawMisMatchPercentage": 67.70225694444446,
+      "misMatchPercentage": "67.70",
       "diffBounds": {
         "top": 1,
         "left": 1,
         "bottom": 719,
         "right": 1279
       },
-      "analysisTime": 320
+      "analysisTime": 317
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "3.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso11.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso11.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso11.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 46.74226459703947,
-      "misMatchPercentage": "46.74",
+      "rawMisMatchPercentage": 61.92892795138889,
+      "misMatchPercentage": "61.93",
       "diffBounds": {
         "top": 1,
         "left": 1,
-        "bottom": 1215,
+        "bottom": 719,
         "right": 1279
       },
-      "analysisTime": 393
+      "analysisTime": 293
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "4.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso12.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso12.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso12.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 46.847951788651315,
-      "misMatchPercentage": "46.85",
+      "rawMisMatchPercentage": 44.886213451058076,
+      "misMatchPercentage": "44.89",
       "diffBounds": {
         "top": 1,
         "left": 1,
-        "bottom": 1215,
-        "right": 1279
+        "bottom": 1282,
+        "right": 1264
       },
-      "analysisTime": 395
+      "analysisTime": 401
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "5.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso2.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso13.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso13.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.0029296875,
-      "misMatchPercentage": "5.00",
+      "rawMisMatchPercentage": 43.345851342733646,
+      "misMatchPercentage": "43.35",
       "diffBounds": {
         "top": 1,
         "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "bottom": 1282,
+        "right": 1264
       },
-      "analysisTime": 58
+      "analysisTime": 384
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "6.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso3.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso2.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.228515625,
-      "misMatchPercentage": "5.23",
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 56
+      "analysisTime": 40
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "7.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso4.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso3.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.235460069444445,
-      "misMatchPercentage": "5.24",
+      "rawMisMatchPercentage": 0.259765625,
+      "misMatchPercentage": "0.26",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 65
+      "analysisTime": 36
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "8.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso5.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso4.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.616753472222222,
-      "misMatchPercentage": "5.62",
+      "rawMisMatchPercentage": 0.2618272569444444,
+      "misMatchPercentage": "0.26",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 58
+      "analysisTime": 37
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "9.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso6.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso5.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.380859375,
-      "misMatchPercentage": "6.38",
+      "rawMisMatchPercentage": 1.196723090277778,
+      "misMatchPercentage": "1.20",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 671,
+        "right": 1241
       },
-      "analysisTime": 64
+      "analysisTime": 42
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "10.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso7.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso6.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.498155381944444,
-      "misMatchPercentage": "6.50",
+      "rawMisMatchPercentage": 1.745659722222222,
+      "misMatchPercentage": "1.75",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
+        "top": 40,
+        "left": 46,
         "bottom": 719,
-        "right": 1279
+        "right": 1276
       },
-      "analysisTime": 64
+      "analysisTime": 43
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "11.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso8.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso7.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.481336805555555,
-      "misMatchPercentage": "6.48",
+      "rawMisMatchPercentage": 1.811957465277778,
+      "misMatchPercentage": "1.81",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
       },
-      "analysisTime": 62
+      "analysisTime": 47
     }
   },
   {
     "path": "post/crear_un_post_con_hora_de_publicación",
     "compare": "12.png",
-    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso9.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_hora_de_publicación/paso9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso8.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.268012152777777,
-      "misMatchPercentage": "6.27",
+      "rawMisMatchPercentage": 1.8106553819444444,
+      "misMatchPercentage": "1.81",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
       },
-      "analysisTime": 75
+      "analysisTime": 44
+    }
+  },
+  {
+    "path": "post/crear_un_post_con_hora_de_publicación",
+    "compare": "13.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 1.9430338541666667,
+      "misMatchPercentage": "1.94",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 698,
+        "right": 1276
+      },
+      "analysisTime": 45
     }
   },
   {
     "path": "post/crear_un_post_con_título_con_caracteres_especiales",
     "compare": "1.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso1.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_título_con_caracteres_especiales/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso1.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.002495659722222,
-      "misMatchPercentage": "5.00",
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
       },
-      "analysisTime": 56
+      "analysisTime": 46
     }
   },
   {
     "path": "post/crear_un_post_con_título_con_caracteres_especiales",
     "compare": "2.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso10.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_título_con_caracteres_especiales/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso10.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 46.611680113160105,
-      "misMatchPercentage": "46.61",
+      "rawMisMatchPercentage": 45.45302141278671,
+      "misMatchPercentage": "45.45",
       "diffBounds": {
         "top": 1,
         "left": 1,
         "bottom": 1192,
-        "right": 1279
+        "right": 1264
       },
-      "analysisTime": 413
+      "analysisTime": 373
     }
+  },
+  {
+    "path": "post/crear_un_post_con_título_con_caracteres_especiales",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso11.png",
+    "data": null
   },
   {
     "path": "post/crear_un_post_con_título_con_caracteres_especiales",
     "compare": "4.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso2.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_título_con_caracteres_especiales/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso2.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.0029296875,
-      "misMatchPercentage": "5.00",
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
       },
-      "analysisTime": 57
+      "analysisTime": 41
     }
   },
   {
     "path": "post/crear_un_post_con_título_con_caracteres_especiales",
     "compare": "5.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso3.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_título_con_caracteres_especiales/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso3.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.447699652777778,
-      "misMatchPercentage": "5.45",
+      "rawMisMatchPercentage": 0.9024522569444445,
+      "misMatchPercentage": "0.90",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 58
+      "analysisTime": 39
     }
   },
   {
     "path": "post/crear_un_post_con_título_con_caracteres_especiales",
     "compare": "6.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso4.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_título_con_caracteres_especiales/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso4.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.454644097222222,
-      "misMatchPercentage": "5.45",
+      "rawMisMatchPercentage": 0.9024522569444445,
+      "misMatchPercentage": "0.90",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
       },
-      "analysisTime": 59
+      "analysisTime": 39
     }
   },
   {
     "path": "post/crear_un_post_con_título_con_caracteres_especiales",
     "compare": "7.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso5.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_título_con_caracteres_especiales/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso5.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.877278645833333,
-      "misMatchPercentage": "5.88",
+      "rawMisMatchPercentage": 1.2057291666666665,
+      "misMatchPercentage": "1.21",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 671,
+        "right": 1241
       },
-      "analysisTime": 59
+      "analysisTime": 43
     }
   },
   {
     "path": "post/crear_un_post_con_título_con_caracteres_especiales",
     "compare": "8.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso6.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_título_con_caracteres_especiales/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso6.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 5.769097222222222,
-      "misMatchPercentage": "5.77",
+      "rawMisMatchPercentage": 1.3774956597222223,
+      "misMatchPercentage": "1.38",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
       },
-      "analysisTime": 61
+      "analysisTime": 42
     }
   },
   {
     "path": "post/crear_un_post_con_título_con_caracteres_especiales",
     "compare": "9.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso7.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_título_con_caracteres_especiales/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso7.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 6.543077256944445,
-      "misMatchPercentage": "6.54",
+      "rawMisMatchPercentage": 2.4072265625,
+      "misMatchPercentage": "2.41",
       "diffBounds": {
-        "top": 1,
-        "left": 1,
-        "bottom": 719,
-        "right": 1279
+        "top": 32,
+        "left": 46,
+        "bottom": 680,
+        "right": 1241
       },
-      "analysisTime": 62
+      "analysisTime": 64
     }
   },
   {
     "path": "post/crear_un_post_con_título_con_caracteres_especiales",
     "compare": "10.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso8.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_título_con_caracteres_especiales/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso8.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 62.18044704861111,
-      "misMatchPercentage": "62.18",
+      "rawMisMatchPercentage": 62.11024305555556,
+      "misMatchPercentage": "62.11",
       "diffBounds": {
         "top": 1,
         "left": 1,
         "bottom": 719,
         "right": 1279
       },
-      "analysisTime": 296
+      "analysisTime": 298
     }
   },
   {
     "path": "post/crear_un_post_con_título_con_caracteres_especiales",
     "compare": "11.png",
     "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso9.png",
-    "to": "../playwright-ghost-5.74.5/screenshots/post/Crear_un_post_con_título_con_caracteres_especiales/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_título_con_caracteres_especiales/paso9.png",
     "data": {
       "isSameDimensions": true,
       "dimensionDifference": {
         "width": 0,
         "height": 0
       },
-      "rawMisMatchPercentage": 8.303819444444445,
-      "misMatchPercentage": "8.30",
+      "rawMisMatchPercentage": 5.550238715277778,
+      "misMatchPercentage": "5.55",
+      "diffBounds": {
+        "top": 4,
+        "left": 31,
+        "bottom": 719,
+        "right": 1276
+      },
+      "analysisTime": 61
+    }
+  },
+  {
+    "path": "post/crear_un_post_post_sin_título",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_post_sin_título/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_post_sin_título/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 39
+    }
+  },
+  {
+    "path": "post/crear_un_post_post_sin_título",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_post_sin_título/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_post_sin_título/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 46.602026735806,
+      "misMatchPercentage": "46.60",
       "diffBounds": {
         "top": 1,
         "left": 1,
-        "bottom": 699,
+        "bottom": 1181,
+        "right": 1264
+      },
+      "analysisTime": 377
+    }
+  },
+  {
+    "path": "post/crear_un_post_post_sin_título",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_post_sin_título/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_post_sin_título/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "post/crear_un_post_post_sin_título",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_post_sin_título/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_post_sin_título/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.18229166666666666,
+      "misMatchPercentage": "0.18",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/crear_un_post_post_sin_título",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_post_sin_título/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_post_sin_título/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.7185329861111112,
+      "misMatchPercentage": "0.72",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 719,
+        "right": 1276
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/crear_un_post_post_sin_título",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_post_sin_título/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_post_sin_título/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.7856987847222222,
+      "misMatchPercentage": "0.79",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 42
+    }
+  },
+  {
+    "path": "post/crear_un_post_post_sin_título",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_post_sin_título/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_post_sin_título/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.7839626736111112,
+      "misMatchPercentage": "0.78",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/crear_un_post_post_sin_título",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_post_sin_título/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_post_sin_título/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 67.73166232638889,
+      "misMatchPercentage": "67.73",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
         "right": 1279
       },
-      "analysisTime": 70
+      "analysisTime": 325
+    }
+  },
+  {
+    "path": "post/crear_un_post_post_sin_título",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_post_sin_título/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_post_sin_título/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 61.92654079861111,
+      "misMatchPercentage": "61.93",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 295
+    }
+  },
+  {
+    "path": "post/crear_un_post_post_sin_título",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_post_sin_título/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_post_sin_título/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 46.61853196970254,
+      "misMatchPercentage": "46.62",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 1181,
+        "right": 1264
+      },
+      "analysisTime": 375
+    }
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "1.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso1.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso1.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.162109375,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 36
+    }
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "2.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso10.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso10.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 64.60112847222223,
+      "misMatchPercentage": "64.60",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 317
+    }
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "3.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso11.png",
+    "data": null
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "4.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso12.png",
+    "data": null
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "5.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso2.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso2.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.16048177083333334,
+      "misMatchPercentage": "0.16",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "6.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso3.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso3.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.2579210069444444,
+      "misMatchPercentage": "0.26",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 36
+    }
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "7.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso4.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso4.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.2599826388888889,
+      "misMatchPercentage": "0.26",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 297,
+        "right": 1241
+      },
+      "analysisTime": 37
+    }
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "8.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso5.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso5.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.3162977430555556,
+      "misMatchPercentage": "0.32",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 677,
+        "right": 1241
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "9.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso6.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso6.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.8118489583333333,
+      "misMatchPercentage": "0.81",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 719,
+        "right": 1276
+      },
+      "analysisTime": 48
+    }
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "10.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso7.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso7.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.8790147569444444,
+      "misMatchPercentage": "0.88",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 680,
+        "right": 1276
+      },
+      "analysisTime": 40
+    }
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "11.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso8.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso8.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 0.9985894097222222,
+      "misMatchPercentage": "1.00",
+      "diffBounds": {
+        "top": 40,
+        "left": 46,
+        "bottom": 718,
+        "right": 1276
+      },
+      "analysisTime": 41
+    }
+  },
+  {
+    "path": "post/falla_la_creación_de_un_post_sin_autor",
+    "compare": "12.png",
+    "from": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso9.png",
+    "to": "../playwright-ghost-5.74.5/screenshots/post/falla_la_creación_de_un_post_sin_autor/paso9.png",
+    "data": {
+      "isSameDimensions": true,
+      "dimensionDifference": {
+        "width": 0,
+        "height": 0
+      },
+      "rawMisMatchPercentage": 6.452799479166667,
+      "misMatchPercentage": "6.45",
+      "diffBounds": {
+        "top": 1,
+        "left": 1,
+        "bottom": 719,
+        "right": 1279
+      },
+      "analysisTime": 64
     }
   }
 ]
