@@ -534,8 +534,7 @@ test.describe('Posts - A priori data', () => {
       // Haz clic en el enlace que abrirá una nueva pestaña
       const [newPage] = await Promise.all([
         page.waitForEvent('popup'),
-        // page.getByRole('link', { name: 'grupo 25 •andes' }).click()
-        page.getByRole('link', { name: 'eget 社會科學院語學研究所 labore sint sunt •Juan Dario' }).click()
+        page.getByRole('link', { name: 'grupo 25 •andes' }).click()
       ]);
 
       // Espera a que la nueva página cargue completamente
@@ -1094,7 +1093,7 @@ test.describe('Posts - Dynamic data', () => {
 
     await test.step('And: El usuario se dirige al post creado', async () => {
       await page.waitForTimeout(2000);
-      await page.goto(`./${replaceSpaceByHyphen(titulo_post)}/`);
+      await page.goto(`http://localhost:2368/${replaceSpaceByHyphen(titulo_post)}/`);
       await screenshotPagePath(page, 'post', 'crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
@@ -1312,7 +1311,7 @@ test.describe('Posts - Random data', () => {
 
     await test.step('And: El usuario se dirige al post creado', async () => {
       await page.waitForTimeout(4000);
-      await page.goto(`./${replaceSpaceByHyphen(titulo_post)}/`);
+      await page.goto(`http://localhost:2368/${replaceSpaceByHyphen(titulo_post)}/`);
       await screenshotPagePath(page, 'post', 'crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random', paso++);
     });
 
