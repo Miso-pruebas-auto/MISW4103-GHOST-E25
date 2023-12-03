@@ -422,6 +422,11 @@ test.describe('Posts - A priori data', () => {
 
     });
 
+    await test.step("And: Selecciona el botón de configuración", async () => {
+      await page.getByRole("button", { name: "Settings" }).click();
+      await screenshotPagePath(page, "post", "crear_un_post_con_título_con_caracteres_especiales", paso++);
+    });
+
     await test.step('And: El usuario se dirige al post creado', async () => {
       // Haz clic en el enlace que abrirá una nueva pestaña
       const [newPage] = await Promise.all([
@@ -751,6 +756,7 @@ test.describe('Posts - A priori data', () => {
     await test.step('And: Llena el excerpt', async () => {
       await page.getByLabel('Excerpt').click();
       await page.getByLabel('Excerpt').fill(excerpt);
+      await screenshotPagePath(page, 'post', 'crear_un_post_con_excerpt_con_caracteres_especiales', paso++);
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
@@ -1077,6 +1083,7 @@ test.describe('Posts - Dynamic data', () => {
 
     await test.step('And: Define la hora de publicación', async () => {
       await page.getByRole('textbox').nth(3).fill(hour);
+      await screenshotPagePath(page, 'post', 'crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default', paso++);
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
@@ -1227,7 +1234,7 @@ test.describe('Posts - Dynamic data', () => {
     });
 
     await test.step('And: Hace clic en "Publish"', async () => {
-      await page.waitForTimeout
+      await page.waitForTimeout(2000)
       await page.getByRole('button', { name: 'Publish', exact: true }).click();
       await screenshotPagePath(page, 'post', 'falla_la_creación_de_un_post_sin_Autor', paso++);
     });

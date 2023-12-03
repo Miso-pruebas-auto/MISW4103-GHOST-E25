@@ -210,7 +210,6 @@ test.describe("Posts - A priori data", () => {
 
     await test.step("Then: Se verifica que el Post con título, contenido y tag se a creado correctamente", async () => {
       await page.waitForTimeout(2000);
-
       const title_post_create = await page.locator("h1").innerText();
       const content = await page.locator('.gh-content p').innerText();
       const tag = await page.locator("section").first().innerText();
@@ -762,13 +761,10 @@ test.describe("Posts - Dynamic data", () => {
       await screenshotPagePath(page, "post", "crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default", paso++);
     });
 
-    await test.step("And: Hace clic en el botón de publicar para confirmar", async () => {
-      await page.waitForTimeout(1000);
-      await page.locator("button:has-text(\"Publish\")").click();
-      await screenshotPagePath(page, "post", "crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default", paso++);
-    });
-
     await test.step("And: El usuario se dirige al post creado", async () => {
+      await page.waitForTimeout(2000);
+      await page.locator("button:has-text(\"Publish\")").click();
+      await page.waitForTimeout(2000);
       await page.goto(`./${replaceSpaceByHyphen(titulo_post)}/`);
       await screenshotPagePath(page, "post", "crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default", paso++);
     });
@@ -899,17 +895,9 @@ test.describe("Posts - Dynamic data", () => {
       await screenshotPagePath(page, "post", "falla_la_creación_de_un_post_sin_autor", paso++);
     });
 
-    await test.step("And: Hace clic en \"Publish\"", async () => {
+    await test.step("And: Hace clic en \"Publish\" y confirmacion hace clic en confirmación de publicación", async () => {
       await page.getByRole("button", { name: "Publish" }).click();
-      await screenshotPagePath(page, "post", "falla_la_creación_de_un_post_sin_autor", paso++);
-    });
-
-    await test.step("And: hace clic en confirmación de publicación", async () => {
       await page.getByRole("button", { name: "Publish", exact: true }).click();
-      await screenshotPagePath(page, "post", "falla_la_creación_de_un_post_sin_autor", paso++);
-    });
-
-    await test.step("And: Hace clic en el botón de publicar para confirmar", async () => {
       await page.locator("button:has-text(\"Publish\")").click();
       await screenshotPagePath(page, "post", "falla_la_creación_de_un_post_sin_autor", paso++);
     });
