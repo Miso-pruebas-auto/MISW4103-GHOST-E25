@@ -18,6 +18,12 @@ se adjunta el Excel trabajado
 [inventario-pruebas-e25.xlsx](https://github.com/Miso-pruebas-auto/MISW4103-GHOST-E25/files/13537897/inventario-pruebas-e25.xlsx)
 
 
+## Se adjunta el documento de la estrategia de pruebas 
+[Estrategia.doc](https://docs.google.com/document/d/1BaZXPP8hprxiuusnbXI9QEPhLfvhZzQT/edit?usp=sharing&ouid=108262238256063551321&rtpof=true&sd=true)
+
+## Enlace presentación Final Video
+[Presentación Final](https://drive.google.com/drive/folders/1qN1zex_3QeX-a-N1LGGl5kS2pbrAo-Oz?usp=sharing)
+
 ## Test e2e
 Debido a que este repositorio se ha usado para las pruebas de las semanas anteriores, tener en cuenta que todos los test se encuentran en la carpeta playwright-ghost-5.74.5
 ``` shell
