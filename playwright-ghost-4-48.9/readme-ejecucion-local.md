@@ -29,11 +29,7 @@ Espere a que Ghost esté disponible. Puede verificar su estado accediendo a http
 
 Ahora deberá ubicar el archivo de playwright.config.ts y modificar la ruta del archivo de
 
-``` js
-  use: {
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'http://ec2-44-216-57-54.compute-1.amazonaws.com:8082/',
-```
+
 ``` js
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */

@@ -29,11 +29,7 @@ Espere a que Ghost esté disponible. Puede verificar su estado accediendo a http
 
 Ahora deberá ubicar el archivo de playwright.config.ts y modificar la ruta del archivo de
 
-``` js
-  use: {
-    /* Base URL to use in actions like `await page.goto('/')`. */
-    baseURL: 'http://ec2-44-216-57-54.compute-1.amazonaws.com:8082/',
-```
+
 ``` js
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
@@ -44,7 +40,7 @@ Ahora deberá ubicar el archivo de playwright.config.ts y modificar la ruta del 
 Ejecute las pruebas automatizadas con el siguiente comando:
 
 ```bash
-$ cd playwright-ghost-4-48.9
+$ cd playwright-ghost-5-74.5
 $ npm install
 $ npx playwright install chrome
 # $ npx playwright install-deps firefox

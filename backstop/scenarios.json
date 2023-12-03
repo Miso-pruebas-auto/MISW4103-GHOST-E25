@@ -1,34 +1,88 @@
 {
   "scenarios": [
       {
-        "funtionality": "PlayWright - Members",
-        "scenary": "Create a new Member with name and valid mail",
-        "url": "../playwright-ghost-4-48.9/screenshots/members/creación_de_miembro",
-        "referenceUrl": "../playwright-ghost-4-38.0/screenshots/members/creación_de_miembro"
-      },
-      {
-        "funtionality": "PlayWright - Pages",
-        "scenary": "Create a new Page",
-        "url": "../playwright-ghost-4-48.9/screenshots/pages/Creación_página_y_publicarla",
-        "referenceUrl": "../playwright-ghost-4-38.0/screenshots/pages/Creación_página_y_publicarla"
+        "funtionality": "PlayWright - Post",
+        "scenary": "Botón borrar post aparece antes de crearlo",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/botón_borrar_post_aparece_antes_de_crearlo"
       },
       {
         "funtionality": "PlayWright - Post",
-        "scenary": " Create a new valid post",
-        "url": "../playwright-ghost-4-48.9/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción",
-        "referenceUrl": "../playwright-ghost-4-38.0/screenshots/post/Crear_un_nuevo_post_con_solo_título_y_descripción"
+        "scenary": "Crear un nuevo post con contenido de 1 sola palabra con 5000 caracteres random",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_contenido_de_1_sola_palabra_con_5000_caracteres_random"
       },
       {
-        "funtionality": "PlayWright - Settings",
-        "scenary": "Change site name",
-        "url": "../playwright-ghost-4-48.9/screenshots/settings/cambiar_el_site_title_con_otro_nombre",
-        "referenceUrl": "../playwright-ghost-4-38.0/screenshots/settings/cambiar_el_site_title_con_otro_nombre"
+        "funtionality": "PlayWright - Post",
+        "scenary": "Crear un nuevo post con solo título",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título"
       },
       {
-        "funtionality": "PlayWright - Tags",
-        "scenary": "Create a new valid tag",
-        "url": "../playwright-ghost-4-48.9/screenshots/tags/Creación_de_tag_con_título_y_color",
-        "referenceUrl": "../playwright-ghost-4-38.0/screenshots/tags/Creación_de_tag_con_título_y_color"
+        "funtionality": "PlayWright - Post",
+        "scenary": "Crear un nuevo post con solo título y descripción",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_solo_título_y_descripción"
+      },
+      {
+        "funtionality": "PlayWright - Post",
+        "scenary": "Crear un nuevo post con título y descripción y tag",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_nuevo_post_con_título_y_descripción_y_tag"
+      },
+      {
+        "funtionality": "PlayWright - Post",
+        "scenary": "Crear un post con caracteres random en la hora de publicación, dejando la hora default",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_caracteres_random_en_la_hora_de_publicación_dejando_la_hora_default"
+      },
+      {
+        "funtionality": "PlayWright - Post",
+        "scenary": "Crear un post con contenido con caracteres especiales",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_contenido_con_caracteres_especiales"
+      },
+      {
+        "funtionality": "PlayWright - Post",
+        "scenary": "Crear un post con excerpt",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt"
+      },
+      {
+        "funtionality": "PlayWright - Post",
+        "scenary": "Crear un post con excerpt de 1 sola palabra con 50.000 caracteres random",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_1_sola_palabra_con_50_000_caracteres_random"
+      },
+      {
+        "funtionality": "PlayWright - Post",
+        "scenary": "Crear un post con excerpt con caracteres especiales",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_excerpt_de_5000_palabras_random"
+      },
+      {
+        "funtionality": "PlayWright - Post",
+        "scenary": "Crear un post con hora de publicación",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_hora_de_publicación",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_hora_de_publicación"
+      },
+      {
+        "funtionality": "PlayWright - Post",
+        "scenary": "Crear un post con título con caracteres especiales",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_con_título_con_caracteres_especiales",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_con_título_con_caracteres_especiales"
+      },
+      {
+        "funtionality": "PlayWright - Post",
+        "scenary": "Crear un post post sin título",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/crear_un_post_post_sin_título",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/crear_un_post_post_sin_título"
+      },
+      {
+        "funtionality": "PlayWright - Post",
+        "scenary": "Falla la creación de un post sin Autor",
+        "url": "../playwright-ghost-4-48.9/screenshots/post/falla_la_creación_de_un_post_sin_autor",
+        "referenceUrl": "../playwright-ghost-5.74.5/screenshots/post/falla_la_creación_de_un_post_sin_Autor"
       }
   ]
 }
