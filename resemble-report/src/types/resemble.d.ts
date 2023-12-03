@@ -1,8 +1,8 @@
 export type ResembleResult = {
   compare: string;
   path: string;
-  from: string | null;
-  to: string | null;
+  from?: string;
+  to?: string;
   data: Data | null;
 };
 
